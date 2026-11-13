@@ -1,3 +1,9 @@
+> Son güncelleme: Ev kategorisi ve 5 ev görseli yayındaki katalogdan çıkarıldı;
+> katalog 68 model ve 6 kategoridir. Turuncu düğmelerin yazıları beyazdır.
+> Arama talebi bölümü kaldırıldı; harita doğrudan gömülü olarak görünür.
+> Tekrarlanan üst başlıklar, model sayıları, gösterim sayaçları ve kullanım
+> talimatı alt metinleri kaldırıldı. Aşağıdaki v3 ölçümleri önceki revizyonun kaydıdır.
+
 # Şimşek Mobilya — 14 Kasım 2026 revizyonu
 
 Gemini oturumunda yarım kalan görsel yenileme tamamlandı. Yeni şablon ve stiller,

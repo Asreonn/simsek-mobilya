@@ -1,8 +1,8 @@
 {
   "date": "2026-11-14",
   "scope": "local Chromium and static Python preview; no deployment",
-  "catalog_models": 73,
-  "categories": 7,
+  "catalog_models": 68,
+  "categories": 6,
   "python_tests": 29,
   "python_tests_passed": true,
   "media_validation": {
@@ -68,11 +68,11 @@
       }
     ],
     "flows": [
-      "7 categories, role filter, empty state, pagination",
-      "7 static category pages, relative assets, lightbox and filters",
+      "6 categories, role filter, empty state, pagination",
+      "6 static category pages, relative assets, lightbox and filters",
       "selection, correct WhatsApp message, persistence, removal, clear",
       "lightbox, model URL, reload, browser back/forward, keyboard focus, swipe, pinch, sharing",
-      "click to load map, callback message, mobile contact bar after hero",
+      "automatic map, no callback form, white button text, mobile contact bar after hero",
       "corrupt, stale and blocked localStorage",
       "decoded images, desktop/mobile screenshots, JavaScript disabled"
     ],
@@ -94,7 +94,8 @@
       "speed-index": "1.7 s",
       "cumulative-layout-shift": "0"
     },
-    "label_content_name_mismatch": 0
+    "label_content_name_mismatch": 0,
+    "scope": "Historical v3 baseline before the latest content simplification"
   },
   "assets": {
     "site.js": {
@@ -121,5 +122,11 @@
     "Live maps rendering",
     "Public deployment",
     "Production analytics"
+  ],
+  "latest_changes": [
+    "Removed prefab category and its 5 models from published pages",
+    "White text on orange buttons",
+    "Removed callback form; map embedded directly",
+    "Removed duplicate headings, counts and instructional copy"
   ]
 }

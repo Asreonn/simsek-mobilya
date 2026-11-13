@@ -43,11 +43,10 @@
   "hero": {
     "eyebrow": "Payas / Hatay · Tasarım & Dekorasyon",
     "title": "Hayalinizdeki mobilyayı birlikte yapalım.",
-    "subtitle": "Beğendiğiniz modeli seçin, ölçünüze ve evinize göre üretelim.",
+    "subtitle": "",
     "cta_browse": "Modelleri Gör",
     "cta_whatsapp": "WhatsApp'tan Yaz",
-    "image": "P-TV-01",
-    "picks_title": "Ne arıyorsunuz?"
+    "image": "P-TV-01"
   },
   "categories": [
     {
@@ -76,11 +75,6 @@
       "text": "Yaşam alanınız için tekli oturma modelleri."
     },
     {
-      "key": "prefab",
-      "title": "Prefabrik Ev",
-      "text": "Prefabrik yaşam alanları için model fikirleri."
-    },
-    {
       "key": "hall",
       "title": "Antre & Ayna",
       "text": "Evinizin girişine uygun ayna ve dolaplar."
@@ -105,8 +99,6 @@
   },
   "catalog": {
     "title": "Katalog",
-    "intro": "Beğendiğiniz modeli seçin, ölçü ve renk seçeneklerini konuşalım.",
-    "hint": "Beğendiğiniz fotoğrafın kalp simgesine dokunun. Seçtiklerinizi tek mesajda bize gönderin.",
     "price_note": "Fiyat; ölçüye ve seçilen malzemeye göre belirlenir. WhatsApp'tan hemen öğrenebilirsiniz.",
     "ask_label": "Bunu istiyorum",
     "page_size": 12
@@ -115,20 +107,20 @@
     "title": "Nasıl çalışıyoruz?",
     "items": [
       {
-        "title": "Modeli seçin",
-        "text": "Katalogda beğendiğiniz modellerin kalbine dokunun ya da model numarasını söyleyin."
+        "title": "Tasarım",
+        "text": "Model, renk ve malzeme seçimi."
       },
       {
-        "title": "Bize ulaşın",
-        "text": "Arayın ya da WhatsApp'tan yazın; ölçünüzü ve ihtiyacınızı konuşalım."
+        "title": "Ölçülendirme",
+        "text": "Mekâna uygun ölçü ve planlama."
       },
       {
-        "title": "Ölçünüze göre üretim",
-        "text": "Mobilyanız atölyemizde hazırlanır."
+        "title": "Üretim",
+        "text": "Kendi atölyemizde üretim."
       },
       {
-        "title": "Yerinde montaj",
-        "text": "Hazır mobilya evinizde monte edilir."
+        "title": "Montaj",
+        "text": "Yerinde kurulum."
       }
     ]
   },
@@ -165,9 +157,9 @@
   ],
   "contact": {
     "title": "Bize ulaşın.",
-    "text": "Bir model beğendiyseniz ya da aklınızda bir fikir varsa konuşalım.",
+    "text": "",
     "whatsapp_message": "Merhaba, web sitenizden ulaşıyorum. Mobilya hakkında bilgi almak istiyorum.",
-    "form_label": "Ne yaptırmak istediğinizi kısaca yazın",
+    "form_label": "Mesajınız",
     "form_placeholder": "Örn: Mutfak dolabı yaptırmak istiyorum."
   },
   "analytics": {

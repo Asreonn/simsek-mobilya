@@ -150,7 +150,6 @@ class SiteBuildTests(unittest.TestCase):
             tile = source.split(f'data-category-link="{key}">')[1].split('</a>')[0]
             # Cover without explicit ID uses the first provided image, else first reference.
             self.assertIn(first["id"].lower(), tile.lower())
-            self.assertIn(f'{len(entries)} model', tile)
         self.assertEqual(source.count('class="work-badge"'), sum(a["role"] == "provided" for a in gallery.values()))
         self.assertNotIn('fonts.googleapis.com', source)
         self.assertNotIn('family=Outfit', source)
@@ -161,12 +160,12 @@ class SiteBuildTests(unittest.TestCase):
             c["cover"] = "DOES-NOT-EXIST"
         self.write_json("content/site.json", site)
         prototype = next(a for a in self.catalog["assets"] if a["category"] == "kitchen")
-        for index, key in enumerate(("wardrobe", "armchair", "prefab")):
+        for index, key in enumerate(("wardrobe", "armchair")):
             self.catalog["assets"].append(dict(prototype, id=f"R-NEW-{index}", category=key, model_no=f"ŞM-NEW-{index}", description="Sade bir model. Filigran kırpılmalı. İkinci cümle."))
         self.write_json("data/media/catalog.json", self.catalog)
         source = self.build()
         gallery = self.gallery(source)
-        for index, slug in enumerate(("gomme-dolap", "berjer", "prefabrik-ev")):
+        for index, slug in enumerate(("gomme-dolap", "berjer")):
             self.assertIn(f'href="#katalog/{slug}"', source)
             item = gallery[f"R-NEW-{index}"]
             self.assertEqual(item["model_no"], f"ŞM-NEW-{index}")
@@ -184,10 +183,12 @@ class SiteBuildTests(unittest.TestCase):
         self.write_json("content/site.json", site)
         source = self.build()
         page = Page(source)
-        self.assertFalse(any(tag == "iframe" for tag, _ in page.tags))
-        map_button = next(attrs for tag, attrs in page.tags if "data-map-src" in attrs)
-        self.assertTrue(map_button["data-map-title"])
-        self.assertEqual(parse_qs(urlsplit(map_button["data-map-src"]).query)["q"][0], site["brand"]["address"])
+        iframe = next(attrs for tag, attrs in page.tags if tag == "iframe")
+        self.assertEqual(iframe["loading"], "lazy")
+        self.assertTrue(iframe["title"])
+        self.assertEqual(parse_qs(urlsplit(iframe["src"]).query)["q"][0], site["brand"]["address"])
+        self.assertNotIn('map-load', source)
+        self.assertNotIn('callback-form', source)
         directions = next(attrs for tag, attrs in page.tags if tag == "a" and attrs.get("href", "").startswith("https://www.google.com/maps/dir/"))
         self.assertEqual(parse_qs(urlsplit(directions["href"]).query)["destination"][0], site["brand"]["address"])
         structured = json.loads(source.split('<script type="application/ld+json">')[1].split('</script>')[0])
@@ -204,7 +205,14 @@ class SiteBuildTests(unittest.TestCase):
 
     def test_category_documents_have_unique_metadata_and_complete_sitemap(self):
         self.write_json("content/site.json", {"site_url": "https://example.test/catalog"})
-        self.build()
+        retired = self.root / "public/prefabrik-ev/index.html"
+        retired.parent.mkdir(parents=True)
+        retired.write_text("outdated category")
+        source = self.build()
+        self.assertFalse(retired.exists())
+        self.assertNotIn("prefab", source)
+        self.assertNotIn("prefabrik", source)
+        self.assertFalse(any(item["category"] == "prefab" for item in self.gallery(source).values()))
         urls = [el.text for el in ET.parse(self.root / "public/sitemap.xml").findall(".//{*}loc")]
         active = {a["category"] for a in self.catalog["assets"] if a["category"] in MODULE.CATEGORY_META}
         self.assertEqual(len(urls), len(active) + 1)

@@ -13,6 +13,7 @@ const storageKey = 'simsek-mobilya-picks-v1';
   const report = { widths: [], flows: [], errors: [], failedRequests: [] };
   try {
     const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: 'reduce', hasTouch: true });
+    await context.route('https://maps.google.com/**', route => route.fulfill({ contentType: 'text/html', body: '<p>Map test fixture</p>' }));
     const page = await context.newPage();
     page.on('pageerror', error => report.errors.push(error.message));
     page.on('response', response => { if (response.status() >= 400 && response.url().startsWith(url)) report.failedRequests.push(response.url()); });
@@ -31,7 +32,7 @@ const storageKey = 'simsek-mobilya-picks-v1';
     const entries = Object.values(gallery);
     const allCount = entries.length;
     assert.equal(allCount, await page.locator('.model-card').count());
-    for (const category of ['kitchen', 'coffee', 'wardrobe', 'tv', 'armchair', 'prefab', 'hall', 'all']) {
+    for (const category of ['kitchen', 'coffee', 'wardrobe', 'tv', 'armchair', 'hall', 'all']) {
       await page.locator(`[data-filter="${category}"]`).click();
       const shown = await page.locator('.model-card:visible').evaluateAll(cards => cards.map(card => card.dataset.category));
       assert(shown.length > 0 && shown.length <= 12);
@@ -39,16 +40,16 @@ const storageKey = 'simsek-mobilya-picks-v1';
     }
     await page.locator('button[data-role="provided"]').click();
     assert(await page.locator('.model-card:visible').evaluateAll(cards => cards.every(card => card.dataset.role === 'provided')));
-    await page.locator('[data-filter="prefab"]').click();
+    await page.locator('[data-filter="armchair"]').click();
     assert(await page.locator('#model-empty').isVisible());
     await page.locator('#reset-role').click();
     assert(await page.locator('.model-card:visible').count() > 0);
     await page.locator('[data-filter="all"]').click();
     await page.locator('#more-models').click();
     assert.equal(await page.locator('.model-card:visible').count(), 24);
-    report.flows.push('7 categories, role filter, empty state, pagination');
+    report.flows.push('6 categories, role filter, empty state, pagination');
 
-    for (const [slug, category] of [['mutfak-dolabi', 'kitchen'], ['tv-unitesi', 'tv'], ['kahve-kosesi', 'coffee'], ['gomme-dolap', 'wardrobe'], ['berjer', 'armchair'], ['prefabrik-ev', 'prefab'], ['antre-ayna', 'hall']]) {
+    for (const [slug, category] of [['mutfak-dolabi', 'kitchen'], ['tv-unitesi', 'tv'], ['kahve-kosesi', 'coffee'], ['gomme-dolap', 'wardrobe'], ['berjer', 'armchair'], ['antre-ayna', 'hall']]) {
       await page.goto(`${url}/${slug}/`);
       assert(await page.locator('.model-card:visible').evaluateAll((cards, key) => cards.every(card => card.dataset.category === key), category));
       await page.locator('.model-card:visible .product-link').first().click();
@@ -58,7 +59,7 @@ const storageKey = 'simsek-mobilya-picks-v1';
       assert.equal(await page.locator('.model-card:visible').count(), 12);
     }
     await page.goto(url);
-    report.flows.push('7 static category pages, relative assets, lightbox and filters');
+    report.flows.push('6 static category pages, relative assets, lightbox and filters');
 
     const first = await page.locator('.model-card:visible [data-lightbox]').first().getAttribute('data-lightbox');
     const second = await page.locator('.model-card:visible [data-lightbox]').nth(1).getAttribute('data-lightbox');
@@ -122,17 +123,12 @@ const storageKey = 'simsek-mobilya-picks-v1';
     await page.keyboard.press('Escape');
     report.flows.push('lightbox, model URL, reload, browser back/forward, keyboard focus, swipe, pinch, sharing');
 
-    await page.route('https://maps.google.com/**', route => route.fulfill({ contentType: 'text/html', body: '<p>Map test fixture</p>' }));
-    await page.locator('.map-load').click();
     assert.equal(await page.locator('.map-card iframe').count(), 1);
     assert((await page.locator('.map-card iframe').getAttribute('src')).includes('output=embed'));
-    await page.locator('.callback summary').click();
-    await page.locator('#callback-name').fill('Deneme Kullanıcı');
-    await page.locator('#callback-phone').fill('0532 123 45 67');
-    await page.locator('#callback-form').evaluate(form => form.addEventListener('submit', event => event.preventDefault()));
-    await page.locator('#callback-form button').click();
-    const callbackMessage = await page.locator('#callback-text').inputValue();
-    assert(callbackMessage.includes('Deneme Kullanıcı') && callbackMessage.includes('0532 123 45 67'));
+    assert.equal(await page.locator('.map-load, #callback-form').count(), 0);
+    assert(entries.every(item => item.category !== 'prefab'));
+    assert.equal(await page.locator('[data-filter="prefab"], [data-category-link="prefab"]').count(), 0);
+    assert(await page.locator('.button-call, .button-primary, .step-no').evaluateAll(elements => elements.every(element => getComputedStyle(element).color === 'rgb(255, 255, 255)')));
     await page.evaluate(key => localStorage.removeItem(key), storageKey);
     await page.setViewportSize({ width: 390, height: 844 }); await page.goto(url);
     assert.equal(await page.locator('.mobile-contact').evaluate(el => el.getBoundingClientRect().top >= innerHeight), true);
@@ -140,7 +136,7 @@ const storageKey = 'simsek-mobilya-picks-v1';
     await page.waitForTimeout(400);
     assert(await page.locator('.mobile-contact').evaluate(el => el.getBoundingClientRect().top < innerHeight));
     assert((await layout()).scroll <= 390);
-    report.flows.push('click to load map, callback message, mobile contact bar after hero');
+    report.flows.push('automatic map, no callback form, white button text, mobile contact bar after hero');
 
     // Malformed or unavailable storage must not break browsing or in-page selection.
     await page.evaluate(key => localStorage.setItem(key, '{bad json'), storageKey); await page.reload();

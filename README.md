@@ -1,6 +1,6 @@
 # Şimşek Mobilya kataloğu
 
-Payas / Hatay’daki Şimşek Mobilya için statik katalog sitesi. **73 model, 7 kategori**;
+Payas / Hatay’daki Şimşek Mobilya için statik katalog sitesi. **68 model, 6 kategori**;
 favorilere ekleme, toplu WhatsApp mesajı, paylaşılabilir model bağlantısı ve fotoğraf
 büyütme içerir. Kütüphanede ayrıca iki atölye fotoğrafı bulunur. Orijinal medya korunur.
 
@@ -25,7 +25,7 @@ make qr            # site_url için doğrulanmış PNG/SVG katalog QR kodu
 |---|---|
 | `content/site.json` | Firma bilgileri, metinler, kategori tanımları, site adresi |
 | `src/` | HTML şablonu, CSS, JavaScript, yerel fontlar ve paylaşım görseli |
-| `public/` | Derlenmiş ana sayfa, 7 kategori sayfası ve yayın varlıkları |
+| `public/` | Derlenmiş ana sayfa, 6 kategori sayfası ve yayın varlıkları |
 | `assets/originals/` | Teslim arşivleri, orijinal fotoğraf ve videolar |
 | `assets/catalog/`, `assets/web/` | Seçilmiş masterlar ve WebP varyantları |
 | `data/media/` | Katalog, orijinal/eşleme kayıtları ve işlenmiş görsel manifesti |

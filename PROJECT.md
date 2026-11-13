@@ -2,7 +2,7 @@
 
 Yol: `/home/asreonn/uwu/Scripts/web/marangoz`.
 Git: `https://github.com/Asreonn/simsek-mobilya.git`; GitHub Pages yayın iş akışı mevcut.
-Durum: **73 model, 7 kategori içeren statik katalog; v3 revizyonu hazır. Yayın: GitHub Pages.**
+Durum: **68 model, 6 kategori içeren statik katalog; v3 revizyonu hazır. Yayın: GitHub Pages.**
 
 Önce [README](README.md), ardından [revizyon durumu](docs/SITE_REVIZYON_DURUMU.md)
 ve [kullanım notu](docs/SITE_KULLANIM.md) okunmalı.
@@ -21,7 +21,7 @@ ve logo vardır; 2 atölye fotoğrafı katalog model sayısına dahil değildir.
 
 Seçimler tarayıcıda saklanır. Model bağlantıları `#model/ŞM-MUT-01` biçimindedir.
 Kategori adresleri `mutfak-dolabi/`, `kahve-kosesi/`, `gomme-dolap/`, `tv-unitesi/`,
-`berjer/`, `prefabrik-ev/`, `antre-ayna/` altında üretilir.
+`berjer/`, `antre-ayna/` altında üretilir.
 
 Fotoğraf ekleme mevcut yardımcı süreciyle sürer; yönetim paneli istenmiyor.
 `assets/originals/` ve master görseller korunur. Referans fotoğraflar firmanın

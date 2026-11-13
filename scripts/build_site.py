@@ -175,14 +175,13 @@ CATEGORY_META = {
     "wardrobe": ("gomme-dolap", "Gömme Dolap"),
     "tv": ("tv-unitesi", "TV Ünitesi"),
     "armchair": ("berjer", "Berjer"),
-    "prefab": ("prefabrik-ev", "Prefabrik Ev"),
     "hall": ("antre-ayna", "Antre & Ayna"),
 }
 
 CATEGORY_PAGES = {key: slug for key, slug in (
     ("kitchen", "mutfak-dolabi"), ("coffee", "kahve-kosesi"),
     ("wardrobe", "gomme-dolap"), ("tv", "tv-unitesi"),
-    ("armchair", "berjer"), ("prefab", "prefabrik-ev"), ("hall", "antre-ayna"))}
+    ("armchair", "berjer"), ("hall", "antre-ayna"))}
 
 SAFE_URL = re.compile(r"https://[^\s\"'<>]+")
 
@@ -226,6 +225,12 @@ def testimonials_html(section):
 def build(root=ROOT):
     public = root / "public"
     public.mkdir(parents=True, exist_ok=True)
+    # Remove only the retired generated page; source photos remain in the library.
+    retired_page = public / "prefabrik-ev/index.html"
+    if retired_page.is_file():
+        retired_page.unlink()
+        if not any(retired_page.parent.iterdir()):
+            retired_page.parent.rmdir()
     defaults = read_json(root / "content/site.example.json")
     content_path = root / "content/site.json"
     site = merge(defaults, read_json(content_path)) if content_path.is_file() else defaults
@@ -266,7 +271,7 @@ def build(root=ROOT):
     picks, tabs, gallery = [], [], {}
     card_groups = []
     total = sum(map(len, buckets.values()))
-    tabs.append(f'<a class="filter-button" href="#katalog" data-filter="all" aria-controls="model-grid">Tümü <span>{total}</span></a>')
+    tabs.append(f'<a class="filter-button" href="#katalog" data-filter="all" aria-controls="model-grid">Tümü</a>')
     for key, assets in buckets.items():
         cards = []
         card_groups.append(cards)
@@ -276,8 +281,8 @@ def build(root=ROOT):
         cover = category.get("cover")
         if cover not in {a["id"] for a in assets}:
             cover = assets[0]["id"]
-        picks.append(f'<a class="pick" href="#katalog/{slug}" data-category-link="{key}"><span class="pick-photo">{media.picture(cover, "card", "56px")}</span><span class="pick-text"><strong>{e(title)}</strong><small>{len(assets)} model</small></span></a>')
-        tabs.append(f'<a class="filter-button" href="#katalog/{slug}" data-filter="{key}" data-slug="{slug}" aria-controls="model-grid">{e(title)} <span>{len(assets)}</span></a>')
+        picks.append(f'<a class="pick" href="#katalog/{slug}" data-category-link="{key}"><span class="pick-photo">{media.picture(cover, "card", "56px")}</span><span class="pick-text"><strong>{e(title)}</strong></span></a>')
+        tabs.append(f'<a class="filter-button" href="#katalog/{slug}" data-filter="{key}" data-slug="{slug}" aria-controls="model-grid">{e(title)}</a>')
         for asset in assets:
             full = [v for v in asset["full"] if v["format"] == "webp"]
             largest = full[-1]
@@ -336,9 +341,8 @@ def build(root=ROOT):
     maps = "https://www.google.com/maps/dir/?api=1&destination=" + quote(address, safe="")
     map_embed = "https://maps.google.com/maps?q=" + quote(address, safe="") + "&z=16&output=embed"
     map_title = f'{brand["name"]} — Payas atölye konumu'
-    contact_map = (f'<div class="map-card" data-reveal><div class="map-copy">{icon("pin")}<strong>Atölyemizin konumu</strong><span>{e(address)}</span></div>'
-                   f'<button class="button button-outline map-load" type="button" data-map-src="{e(map_embed)}" data-map-title="{e(map_title)}">{icon("pin")} Haritayı göster</button>'
-                   f'<noscript><a class="button button-outline" href="{e(maps)}">Haritada aç</a></noscript></div>') if address else ""
+    contact_map = (f'<div class="map-card"><iframe src="{e(map_embed)}" title="{e(map_title)}" '
+                   'loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>') if address else ""
 
     faq_items = site.get("faq", [])
     faq_ld = ""
@@ -385,7 +389,7 @@ def build(root=ROOT):
         "picks": "".join(picks), "picks_title": e(hero_config.get("picks_title", "Ne arıyorsunuz?")),
         "why_title": e(site["why"].get("title", "")), "why_items": why_html(site["why"]["items"]),
         "models": "".join(card if i < page_size else card.replace('<article ', '<article hidden data-paged ', 1) for i, card in enumerate(cards)), "filters": "".join(tabs), "model_count": total,
-        "catalog_title": e(catalog["title"]), "catalog_hint": e(catalog["hint"]), "price_note": e(catalog["price_note"]), "ask_label": e(catalog["ask_label"]),
+        "catalog_title": e(catalog["title"]), "price_note": e(catalog["price_note"]), "ask_label": e(catalog["ask_label"]),
         "steps_title": e(site["steps"]["title"]), "steps_items": steps_html(site["steps"]["items"]),
         "workshop_pictures": "".join(media.picture(a["id"], "card", "(max-width: 767px) 46vw, 22vw") for a in workshop[:2]), "workshop_video": video,
         "testimonials": testimonials_html(site.get("testimonials", {})),
@@ -419,7 +423,7 @@ def build(root=ROOT):
         slug = CATEGORY_PAGES[key]
         title = definitions.get(key, {}).get("title", CATEGORY_META[key][1])
         category_title = f'{title} Modelleri | {brand["name"]} · {brand["service_area"]}'
-        description = definitions.get(key, {}).get("text", "") + f' {len(assets)} modeli inceleyin; ölçü ve renk seçenekleri için bize ulaşın.'
+        description = definitions.get(key, {}).get("text", "")
         page = dict(values, base_tag='<base href="../">', default_category=key,
                     seo_title=e(category_title), seo_description=e(description),
                     hero_title=e(f'{title} modelleri.'), hero_subtitle=e(description),

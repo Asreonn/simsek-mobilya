@@ -50,7 +50,6 @@
       else link.removeAttribute('aria-current');
     });
     $$('button[data-role]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.role === role)));
-    $('#model-status').textContent = `${matching.length} modelden ${Math.min(limit, matching.length)} tanesi gösteriliyor`;
     $('#more-models').hidden = matching.length <= limit;
     $('#model-empty').hidden = matching.length > 0;
     updateIndicator();
@@ -321,25 +320,6 @@
     if (link) track('WhatsApp', { models: link.id === 'lightbox-ask' ? current?.model_no : [...selected].map(id => gallery[id].model_no).join(', ') });
   });
   $('.wa-form').addEventListener('submit', () => track('WhatsApp mesajı'));
-  $$('#callback-form input:not([type="hidden"])').forEach(input => input.addEventListener('input', () => {
-    $('#callback-phone').setCustomValidity(''); $('#callback-name').setCustomValidity('');
-  }));
-  $('#callback-form').addEventListener('submit', event => {
-    const phone = $('#callback-phone'), name = $('#callback-name'), digits = phone.value.replace(/\D/g, '').length;
-    if (!name.value.trim() || digits < 10 || digits > 15) {
-      event.preventDefault();
-      const invalid = name.value.trim() ? phone : name;
-      invalid.setCustomValidity('Lütfen adınızı ve geçerli bir telefon numarası yazın.'); invalid.reportValidity(); return;
-    }
-    $('#callback-text').value = `Merhaba, ben ${name.value.trim()}. Mobilya hakkında görüşmek için beni ${phone.value.trim()} numarasından arayabilir misiniz?`;
-    track('Arama talebi');
-  });
-  $$('.map-load').forEach(button => button.addEventListener('click', () => {
-    const frame = make('iframe'); frame.title = button.dataset.mapTitle; frame.src = button.dataset.mapSrc;
-    frame.loading = 'lazy'; frame.referrerPolicy = 'no-referrer-when-downgrade'; frame.allowFullscreen = true;
-    button.closest('.map-card').append(frame);
-    frame.tabIndex = 0; frame.focus(); button.hidden = true;
-  }));
   const video = $('#work-video');
   if (video) {
     $('.video-play').addEventListener('click', () => video.play().catch(() => announce('Videoyu oynatmak için video denetimlerini kullanın.')));

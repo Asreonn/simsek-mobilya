@@ -13,9 +13,8 @@ ile ayrıntıyı görün. Paylaş düğmesi modele özel bağlantı üretir. Adr
 **Bizim işlerimiz** firma uygulamalarını, **Örnek modeller** fikir veren modelleri
 filtreler. “Uygulamamız” rozeti yalnızca firma fotoğraflarında görünür.
 
-İletişim bölümünde arama, WhatsApp ve yol tarifi bulunur. Harita “Haritayı göster”
-düğmesiyle yüklenir. Mesaj ve arama talebi formları WhatsApp'ı açar; mesajın gönderilmesi
-WhatsApp'taki Gönder düğmesiyle tamamlanır. Formlar talebi kendiliğinden iletmez.
+İletişim bölümünde arama, WhatsApp ve yol tarifi bulunur. Harita doğrudan görünür;
+bir düğmeye basılması gerekmez. Mesaj formu WhatsApp'ı açar; mesajı kullanıcı gönderir.
 
 ## Yeni fotoğraf ekleme
 
@@ -44,7 +43,7 @@ Fotoğraf ekleme **mevcut yardımcı süreciyle** sürer. Yönetim paneli eklenm
 6. `http://localhost:8080` adresinde yeni fotoğrafı, büyük görünümü, kategori
    filtrelerini ve WhatsApp mesajındaki model numarasını kontrol edin.
 
-Kategoriler: `kitchen`, `coffee`, `wardrobe`, `tv`, `armchair`, `prefab`, `hall`.
+Kategoriler: `kitchen`, `coffee`, `wardrobe`, `tv`, `armchair`, `hall`.
 Atölye fotoğrafları `workshop` kategorisindedir. `provided` kendi işiniz,
 `reference` örnek model, `brand` logo anlamına gelir.
 
@@ -62,7 +61,7 @@ sosyal hesapları, müşteri yorumlarını ve hizmet iddialarını yalnızca do�
 doldurun; boş alanlar gösterilmez. `src/` kaynak, `public/` üretim çıktısıdır.
 
 `site_url` mevcut GitHub Pages adresidir. Alan adı değişirse `make site` ve
-`make qr` çalıştırın. Ana sayfa, 7 kategori sayfası, canonical, sosyal paylaşım
+`make qr` çalıştırın. Ana sayfa, 6 kategori sayfası, canonical, sosyal paylaşım
 etiketleri ve site haritası birlikte güncellenir.
 
 ## Yayın ve QR

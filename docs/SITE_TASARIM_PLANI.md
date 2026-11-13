@@ -192,3 +192,10 @@ kuralları yenilendi. Güncel durum: [SITE_REVIZYON_DURUMU.md](SITE_REVIZYON_DUR
   eklenmemesi kullanıcı tarafından seçildi.**
 - Çalışma saatleri, izinli yorumlar, sosyal hesaplar ve analitik hizmeti boş bırakılır;
   bu bilgiler veya dış servis kurulumu doğrulanmadan etkinleştirilmez.
+
+## Son kullanıcı düzeltmeleri
+
+Prefabrik Ev ve ev görselleri sitede gösterilmez; kaynak kütüphanesi korunur.
+Turuncu düğmelerde beyaz yazı kullanılır. Arama talebi formu kaldırılmıştır.
+Harita HTML iframe olarak doğrudan görünür. Katalogda yalnız ana başlık,
+kategoriler ve ürün bilgileri kalır; sayaçlar ve kullanım talimatları gösterilmez.
