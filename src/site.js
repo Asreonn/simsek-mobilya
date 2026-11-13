@@ -36,7 +36,8 @@
     const stop = () => { clearTimeout(timer); timer = null; };
     const schedule = () => {
       stop();
-      toggle.textContent = paused ? 'Oynat' : 'Duraklat';
+      toggle.dataset.paused = String(paused);
+      controls.classList.toggle('is-running', !paused && !hovered && !focused && !document.hidden && inView);
       toggle.setAttribute('aria-label', paused ? 'Slaytı oynat' : 'Slaytı duraklat');
       if (!paused && !hovered && !focused && !document.hidden && inView) timer = setTimeout(() => change(index + 1), 6000);
     };

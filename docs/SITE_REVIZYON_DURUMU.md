@@ -1,3 +1,8 @@
+> Görsel düzeltme: Katalog kartlarındaki Uygulamamız rozetleri kaldırıldı.
+> Slayt etiketi 12px köşe etiketidir. Mobilde oklar gizlidir; kaydırma ve
+> küçük simgeli denetimler korunur. Geçişte yumuşak solma, hafif fotoğraf
+> hareketi ve ilerleme çizgisi vardır; azaltılmış hareket tercihi desteklenir.
+
 > Ek güncelleme: Son uygulamalarımız için dört gerçek mutfak/TV fotoğrafından
 > kaydırılabilir slayt eklendi. Videoda tek başlangıç düğmesi ve tıklamaya kadar
 > ertelenen MP4 kaynağı var. Model numaraları görünüm ve WhatsApp mesajlarından

@@ -293,11 +293,10 @@ def build(root=ROOT):
                 "alt": asset["alt_tr"], "role": asset["role"], "category": key, "src": quote(largest["path"]), "srcset": media.srcset(full),
                 "thumb": quote(thumb["path"]), "width": largest["w"], "height": largest["h"],
                 "whatsapp": whatsapp(f'Merhaba, {asset["title"]} hakkında bilgi almak istiyorum.\n{absolute(largest["path"])}')}
-            badge = '<span class="work-badge">Uygulamamız</span>' if asset["role"] == "provided" else ''
             fav = (f'<button class="fav-button" type="button" data-fav="{e(asset["id"])}" aria-pressed="false" '
                    f'aria-label="{e(asset["title"])} modelini seçtiklerime ekle">{icon("heart")}</button>')
             label = ("Uygulamamız " if asset["role"] == "provided" else "") + asset["title"]
-            cards.append(f'<article class="model-card" data-category="{key}" data-role="{asset["role"]}"><a class="product-link" href="{e(quote(largest["path"]))}" data-lightbox="{e(asset["id"])}" aria-label="{e(label)}"><div class="product-photo">{media.picture(asset["id"], "card", "(max-width: 639px) 46vw, (max-width: 1023px) 30vw, 23vw")}{badge}</div><div class="model-body"><h3>{e(asset["title"])}</h3></div></a>{fav}</article>')
+            cards.append(f'<article class="model-card" data-category="{key}" data-role="{asset["role"]}"><a class="product-link" href="{e(quote(largest["path"]))}" data-lightbox="{e(asset["id"])}" aria-label="{e(label)}"><div class="product-photo">{media.picture(asset["id"], "card", "(max-width: 639px) 46vw, (max-width: 1023px) 30vw, 23vw")}</div><div class="model-body"><h3>{e(asset["title"])}</h3></div></a>{fav}</article>')
 
     # Tümü offers a cross-section; category views retain provided-first order.
     cards = [group[index] for index in range(max(map(len, card_groups), default=0)) for group in card_groups if index < len(group)]
@@ -319,7 +318,7 @@ def build(root=ROOT):
         dots = "".join(f'<button type="button" class="hero-dot" data-hero-dot="{i}" aria-label="{e(asset["title"])}" aria-pressed="{"true" if i == 0 else "false"}"></button>' for i, asset in enumerate(slide_assets))
         hero_controls = (f'<div class="hero-controls" hidden><button type="button" data-hero-prev aria-label="Önceki uygulama">{icon("left")}</button>'
                          f'<div class="hero-dots">{dots}</div><button type="button" data-hero-next aria-label="Sonraki uygulama">{icon("arrow")}</button>'
-                         '<button type="button" data-hero-toggle aria-label="Slaytı duraklat">Duraklat</button></div>')
+                         '<button type="button" data-hero-toggle data-paused="false" aria-label="Slaytı duraklat"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="hero-play" d="m9 5 10 7-10 7Z"/><path class="hero-pause" d="M8 5v14M16 5v14"/></svg></button></div>')
     else:
         hero_picture = media.picture(hero["id"], hero=True)
     hero_caption = '<span class="hero-caption">Son uygulamalarımız</span>' if hero["role"] == "provided" else ""

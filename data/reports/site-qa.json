@@ -99,12 +99,12 @@
   },
   "assets": {
     "site.js": {
-      "bytes": 24568,
-      "gzip_bytes": 6817
+      "bytes": 24666,
+      "gzip_bytes": 6829
     },
     "site.css": {
-      "bytes": 29152,
-      "gzip_bytes": 7291
+      "bytes": 30360,
+      "gzip_bytes": 7556
     }
   },
   "qr": {
@@ -132,7 +132,10 @@
     "Single video start button and MP4 deferred until click",
     "No visible model numbers or codes in WhatsApp messages",
     "Photo URLs in WhatsApp; native image file sharing on supported phones",
-    "Content-hash CSS/JS versions for normal reloads"
+    "Content-hash CSS/JS versions for normal reloads",
+    "Removed catalog application badge overlays",
+    "Small corner caption; mobile carousel arrows hidden",
+    "Icon playback control, animated slide progress, soft crossfade and subtle photo motion"
   ],
   "hero_video_checks": {
     "errors": [],

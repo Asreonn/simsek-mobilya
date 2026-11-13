@@ -152,7 +152,7 @@ class SiteBuildTests(unittest.TestCase):
             tile = source.split(f'data-category-link="{key}">')[1].split('</a>')[0]
             # Cover without explicit ID uses the first provided image, else first reference.
             self.assertIn(first["id"].lower(), tile.lower())
-        self.assertEqual(source.count('class="work-badge"'), sum(a["role"] == "provided" for a in gallery.values()))
+        self.assertNotIn('class="work-badge"', source)
         self.assertNotIn('fonts.googleapis.com', source)
         self.assertNotIn('family=Outfit', source)
 

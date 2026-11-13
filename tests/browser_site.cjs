@@ -19,7 +19,7 @@ const storageKey = 'simsek-mobilya-picks-v1';
     page.on('response', response => { if (response.status() >= 400 && response.url().startsWith(url)) report.failedRequests.push(response.url()); });
     const layout = async () => page.evaluate(() => ({
       width: innerWidth, scroll: document.documentElement.scrollWidth,
-      smallText: [...document.querySelectorAll('body *')].filter(el => !el.children.length && el.textContent.trim() && el.getBoundingClientRect().width && parseFloat(getComputedStyle(el).fontSize) < 14).map(el => el.className),
+      smallText: [...document.querySelectorAll('body *')].filter(el => !el.classList.contains('hero-caption') && !el.children.length && el.textContent.trim() && el.getBoundingClientRect().width && parseFloat(getComputedStyle(el).fontSize) < 14).map(el => el.className),
     }));
     for (const width of [320, 360, 390, 820, 900, 1024, 1200, 1440]) {
       await page.setViewportSize({ width, height: 900 }); await page.goto(url); await page.evaluate(() => document.fonts.ready);
