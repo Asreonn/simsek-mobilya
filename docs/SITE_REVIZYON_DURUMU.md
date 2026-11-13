@@ -1,3 +1,9 @@
+> Ek güncelleme: Son uygulamalarımız için dört gerçek mutfak/TV fotoğrafından
+> kaydırılabilir slayt eklendi. Videoda tek başlangıç düğmesi ve tıklamaya kadar
+> ertelenen MP4 kaynağı var. Model numaraları görünüm ve WhatsApp mesajlarından
+> kaldırıldı; mesajlar ürün adı/fotoğraf bağlantısı taşır. Destekli telefonda
+> görsel dosyası paylaşılır. CSS/JS adresleri içerik özetiyle sürümlenir.
+
 > Son güncelleme: Ev kategorisi ve 5 ev görseli yayındaki katalogdan çıkarıldı;
 > katalog 68 model ve 6 kategoridir. Turuncu düğmelerin yazıları beyazdır.
 > Arama talebi bölümü kaldırıldı; harita doğrudan gömülü olarak görünür.

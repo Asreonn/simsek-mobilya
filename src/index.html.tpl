@@ -16,12 +16,12 @@
   $font_preload$hero_preload
   $seo_extra
   $favicon
-  <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="assets/site.css?v=$asset_version">
   <script type="application/ld+json">$structured_data</script>
   $faq_ld
   <script id="gallery-data" type="application/json">$gallery_data</script>
   $analytics
-  <script src="assets/site.js" defer></script>
+  <script src="assets/site.js?v=$asset_version" defer></script>
 </head>
 <body data-site-url="$site_url_attr" data-wa-number="$wa_number" data-page-size="$page_size" data-category="$default_category">
   <a class="skip-link" href="#icerik">İçeriğe geç</a>
@@ -38,7 +38,7 @@
   </header>
   <main id="icerik">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-photo">$hero_picture$hero_caption</div>
+      <div class="hero-photo">$hero_picture$hero_caption$hero_controls</div>
       <div class="container hero-inner">
         <div class="hero-content">
           <p class="eyebrow">$hero_eyebrow</p>
@@ -121,8 +121,8 @@
     <div class="lightbox-top"><span id="lightbox-count" aria-live="polite"></span><div class="lightbox-tools"><button class="icon-button" type="button" id="lightbox-zoom" aria-label="Fotoğrafı yakınlaştır" aria-pressed="false">$zoom_icon</button><button class="icon-button" type="button" id="lightbox-share" aria-label="Bu modeli arkadaşınıza gönderin">$share_icon</button><button class="icon-button" type="button" id="lightbox-close" aria-label="Fotoğrafı kapat">$close_icon</button></div></div>
     <div class="lightbox-stage"><button class="icon-button lightbox-prev" type="button" aria-label="Önceki fotoğraf">$left_icon</button><div class="zoom-frame"><img id="lightbox-image" alt="" width="1600" height="1200"></div><button class="icon-button lightbox-next" type="button" aria-label="Sonraki fotoğraf">$arrow_icon</button></div>
     <div class="lightbox-caption">
-      <div class="lightbox-info"><p class="lightbox-kind" id="lightbox-kind"></p><h2 id="lightbox-title"></h2><p id="lightbox-model"></p><p id="lightbox-description"></p><p class="price-note">$price_note</p></div>
-      <div class="lightbox-actions"><button class="button button-outline" type="button" id="lightbox-fav" aria-pressed="false">$heart_icon <span>Seçtiklerime ekle</span></button><a class="button button-wa" id="lightbox-ask" href="$whatsapp" target="_blank" rel="noopener">$wa_icon $ask_label</a></div>
+      <div class="lightbox-info"><p class="lightbox-kind" id="lightbox-kind"></p><h2 id="lightbox-title"></h2><p id="lightbox-description"></p><p class="price-note">$price_note</p></div>
+      <div class="lightbox-actions"><button class="button button-outline" type="button" id="lightbox-share-photo" hidden>$share_icon Fotoğrafı paylaş</button><button class="button button-outline" type="button" id="lightbox-fav" aria-pressed="false">$heart_icon <span>Seçtiklerime ekle</span></button><a class="button button-wa" id="lightbox-ask" href="$whatsapp" target="_blank" rel="noopener">$wa_icon $ask_label</a></div>
     </div>
     <div class="lightbox-similar" id="lightbox-similar" hidden><h3>Benzer modeller</h3><div class="similar-list" id="similar-list"></div></div>
   </dialog>

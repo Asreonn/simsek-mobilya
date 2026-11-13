@@ -1,5 +1,9 @@
 # Siteyi kullanma ve güncelleme
 
+Üstteki “Son uygulamalarımız” alanı dört uygulama fotoğrafı arasında geçer. Oklar,
+noktalar veya telefonda yatay kaydırma kullanılabilir; hareket azaltma açıksa otomatik
+geçiş kapalı başlar.
+
 Katalogda kategori seçin, beğendiğiniz fotoğrafların kalbine dokunun. **Seçtiklerim**
 listesini açıp modelleri çıkarabilir veya tek WhatsApp mesajında ustaya gönderebilirsiniz.
 Seçimler aynı tarayıcıda saklanır. Tarayıcı saklamaya izin vermiyorsa sayfa açıkken
@@ -41,7 +45,7 @@ Fotoğraf ekleme **mevcut yardımcı süreciyle** sürer. Yönetim paneli eklenm
    ```
 
 6. `http://localhost:8080` adresinde yeni fotoğrafı, büyük görünümü, kategori
-   filtrelerini ve WhatsApp mesajındaki model numarasını kontrol edin.
+   filtrelerini ve WhatsApp mesajındaki ürün adını ve fotoğraf bağlantısını kontrol edin.
 
 Kategoriler: `kitchen`, `coffee`, `wardrobe`, `tv`, `armchair`, `hall`.
 Atölye fotoğrafları `workshop` kategorisindedir. `provided` kendi işiniz,
@@ -93,3 +97,17 @@ PLAYWRIGHT_MODULE=/path/to/node_modules/playwright node tests/browser_site.cjs
 
 Testler gerçek WhatsApp mesajı göndermez. Harita testinde dış servis yerine yerel
 bir yanıt kullanılır. Ekran görüntüleri `work/screens/` altında oluşur.
+
+## Video ve mobil güncellemeler
+
+Video ilk ekranda yalnız önizleme gösterir. Tek oynat düğmesine basıldığında video
+kaynağı bağlanır ve tarayıcının oynatma denetimleri açılır; MP4 önceden indirilmez.
+
+Model numaraları görünümde ve WhatsApp mesajlarında gösterilmez. WhatsApp düğmesi
+ürün adını ve doğrudan fotoğraf bağlantısını hazırlar. Dosya paylaşımını destekleyen
+telefonlarda “Fotoğrafı paylaş” düğmesi telefonun paylaşım ekranını gerçek görsel
+dosyasıyla açar; buradan WhatsApp seçilebilir. Destek yoksa bağlantılı mesaj kullanılır.
+
+CSS/JS dosyaları içerik özetiyle sürümlenir; sonraki yayınlar normal yenilemede yeni
+varlıkları ister. Önceden açık kalmış sekmeler için paylaşılan sürümlü site bağlantısı
+kullanılabilir; geçmiş önbellek sunucu tarafından uzaktan silinmez.

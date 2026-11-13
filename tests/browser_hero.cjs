@@ -1,0 +1,88 @@
+const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
+const assert = require('node:assert/strict');
+const fs = require('node:fs/promises');
+const url = process.env.SITE_TEST_URL || 'http://127.0.0.1:8080/';
+(async () => {
+  const browser = await chromium.launch({ headless: true });
+  const report = { errors: [], videoRequestsBeforePlay: [], slides: [], flows: [] };
+  try {
+    const context = await browser.newContext({ viewport: { width: 390, height: 844 }, reducedMotion: 'reduce', hasTouch: true });
+    await context.route('https://maps.google.com/**', route => route.fulfill({ contentType: 'text/html', body: 'Map test fixture' }));
+    const page = await context.newPage();
+    page.on('pageerror', e => report.errors.push(e.message));
+    const mp4 = [];
+    page.on('request', r => { if (r.url().includes('.mp4')) mp4.push(r.url()); });
+    await page.goto(url);
+    await page.evaluate(() => document.fonts.ready);
+    assert.equal(await page.locator('.hero-slide').count(), 4);
+    report.slides = await page.locator('.hero-slide').evaluateAll(es => es.map(e => e.dataset.slideId));
+    assert(report.slides.every(id => !/BER|PRE/.test(id)));
+    assert.equal(await page.locator('[data-hero-toggle]').textContent(), 'Oynat');
+    const active = () => page.locator('.hero-slide.is-active').getAttribute('data-slide-id');
+    const expectActive = id => page.waitForFunction(id => document.querySelector('.hero-slide.is-active')?.dataset.slideId === id, id);
+    await page.locator('[data-hero-next]').click(); await expectActive(report.slides[1]);
+    await page.locator('[data-hero-prev]').click(); await expectActive(report.slides[0]);
+    await page.locator('[data-hero-dot="2"]').click(); await expectActive(report.slides[2]);
+    await page.locator('.hero-carousel').focus(); await page.keyboard.press('ArrowRight'); await expectActive(report.slides[3]);
+    await page.locator('.hero-carousel').dispatchEvent('touchstart', { touches: [{ identifier: 1, clientX: 320, clientY: 200 }] });
+    await page.locator('.hero-carousel').dispatchEvent('touchend', { touches: [], changedTouches: [{ identifier: 1, clientX: 80, clientY: 205 }] });
+    await expectActive(report.slides[0]);
+    await page.locator('.hero-carousel').dispatchEvent('touchstart', { touches: [{ identifier: 1, clientX: 200, clientY: 200 }] });
+    await page.locator('.hero-carousel').dispatchEvent('touchend', { touches: [], changedTouches: [{ identifier: 1, clientX: 210, clientY: 400 }] });
+    assert.equal(await active(), report.slides[0]);
+    await page.locator('[data-hero-toggle]').click();
+    await page.evaluate(() => document.activeElement.blur()); await page.mouse.move(0, 0);
+    await expectActive(report.slides[1]);
+    await page.locator('[data-hero-toggle]').click();
+    assert.equal(await page.locator('[data-hero-toggle]').textContent(), 'Oynat');
+    report.flows.push('prev, next, dots, keyboard, swipe, vertical scroll, explicit autoplay, pause');
+    for (const width of [320, 390, 1440]) {
+      await page.setViewportSize({ width, height: 900 });
+      assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+      assert(await page.locator('[data-hero-next]').evaluate(e => { const r = e.getBoundingClientRect(); return document.elementFromPoint(r.x + r.width/2, r.y + r.height/2)?.closest('[data-hero-next]') === e; }));
+    }
+    await page.setViewportSize({ width: 390, height: 844 });
+    assert.equal(await page.locator('.video-play').count(), 0);
+    assert.equal(await page.locator('#work-video source[src]').count(), 0);
+    assert.deepEqual(mp4, []);
+    await page.locator('#work-video').scrollIntoViewIfNeeded();
+    await page.waitForTimeout(300);
+    report.videoRequestsBeforePlay = [...mp4];
+    assert.deepEqual(mp4, []);
+    const poster = await page.locator('#work-video').getAttribute('poster');
+    const response = await page.request.get(new URL(poster, url).href); assert(response.ok());
+    assert(await page.locator('#work-video').evaluate(e => !e.controls && e.preload === 'none' && e.playsInline));
+    assert(await page.locator('.video-start').isVisible());
+    await page.locator('.video-start').click();
+    assert(await page.locator('#work-video').evaluate(e => e.controls));
+    assert.equal(await page.locator('.video-start').isVisible(), false);
+    await page.waitForFunction(() => document.querySelector('#work-video').currentTime > 0);
+    assert(mp4.length > 0);
+    await page.locator('#work-video').evaluate(e => e.pause());
+    await page.screenshot({ path: 'work/screens/video-mobile.png' });
+    report.flows.push('poster, source attached only on play, no MP4 download before play, native controls, actual playback');
+    await page.goto(url);
+    await page.locator('.model-card:visible .product-link').first().click();
+    assert.equal(await page.locator('#lightbox-model').count(), 0);
+    assert(!/ŞM-|Model No/.test(await page.locator('#lightbox').innerText()));
+    const message = new URL(await page.locator('#lightbox-ask').getAttribute('href')).searchParams.get('text');
+    assert(!/ŞM-|Model No/.test(message)); assert(/https?:\/\/.+\.webp/.test(message));
+    // File sharing is mocked only at the OS boundary; the real image is fetched.
+    await page.evaluate(() => {
+      navigator.canShare = data => !!data.files;
+      navigator.share = async data => { window.sharedFile = { name: data.files?.[0]?.name, size: data.files?.[0]?.size }; };
+    });
+    await page.keyboard.press('Escape');
+    await page.locator('.model-card:visible .product-link').first().click();
+    await page.locator('#lightbox-share-photo').waitFor({ state: 'visible' });
+    await page.locator('#lightbox-share-photo').click();
+    assert((await page.evaluate(() => window.sharedFile.size)) > 1000);
+    report.flows.push('no visible model numbers, WhatsApp photo URL, real photo file prepared for OS share');
+    await page.keyboard.press('Escape');
+    await page.goto(url); await page.locator('.hero-slide.is-active img').evaluate(i => i.decode()); await page.screenshot({ path: 'work/screens/hero-mobile.png' });
+    await page.setViewportSize({ width: 1440, height: 900 }); await page.goto(url); await page.locator('.hero-slide.is-active img').evaluate(i => i.decode()); await page.screenshot({ path: 'work/screens/hero-desktop.png' });
+    assert.deepEqual(report.errors, []);
+    await fs.writeFile('work/screens/hero-video-checks.json', JSON.stringify(report, null, 2));
+    console.log(JSON.stringify(report, null, 2));
+  } finally { await browser.close(); }
+})().catch(e => { console.error(e); process.exitCode = 1; });

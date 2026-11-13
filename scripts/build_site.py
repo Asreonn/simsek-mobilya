@@ -8,6 +8,7 @@ from __future__ import annotations
 from datetime import date
 from html import escape
 import json
+import hashlib
 from pathlib import Path
 import re
 import shutil
@@ -291,12 +292,12 @@ def build(root=ROOT):
             gallery[asset["id"]] = {"id": asset["id"], "model_no": asset["model_no"], "title": asset["title"], "description": description,
                 "alt": asset["alt_tr"], "role": asset["role"], "category": key, "src": quote(largest["path"]), "srcset": media.srcset(full),
                 "thumb": quote(thumb["path"]), "width": largest["w"], "height": largest["h"],
-                "whatsapp": whatsapp(f'Merhaba, {asset["model_no"]} modeli hakkında bilgi almak istiyorum.')}
+                "whatsapp": whatsapp(f'Merhaba, {asset["title"]} hakkında bilgi almak istiyorum.\n{absolute(largest["path"])}')}
             badge = '<span class="work-badge">Uygulamamız</span>' if asset["role"] == "provided" else ''
             fav = (f'<button class="fav-button" type="button" data-fav="{e(asset["id"])}" aria-pressed="false" '
-                   f'aria-label="{e(asset["model_no"])} modelini seçtiklerime ekle">{icon("heart")}</button>')
-            label = ("Uygulamamız " if asset["role"] == "provided" else "") + f'{asset["title"]} Model No: {asset["model_no"]}'
-            cards.append(f'<article class="model-card" data-category="{key}" data-role="{asset["role"]}"><a class="product-link" href="{e(quote(largest["path"]))}" data-lightbox="{e(asset["id"])}" aria-label="{e(label)}"><div class="product-photo">{media.picture(asset["id"], "card", "(max-width: 639px) 46vw, (max-width: 1023px) 30vw, 23vw")}{badge}</div><div class="model-body"><h3>{e(asset["title"])}</h3><p>Model No: {e(asset["model_no"])}</p></div></a>{fav}</article>')
+                   f'aria-label="{e(asset["title"])} modelini seçtiklerime ekle">{icon("heart")}</button>')
+            label = ("Uygulamamız " if asset["role"] == "provided" else "") + asset["title"]
+            cards.append(f'<article class="model-card" data-category="{key}" data-role="{asset["role"]}"><a class="product-link" href="{e(quote(largest["path"]))}" data-lightbox="{e(asset["id"])}" aria-label="{e(label)}"><div class="product-photo">{media.picture(asset["id"], "card", "(max-width: 639px) 46vw, (max-width: 1023px) 30vw, 23vw")}{badge}</div><div class="model-body"><h3>{e(asset["title"])}</h3></div></a>{fav}</article>')
 
     # Tümü offers a cross-section; category views retain provided-first order.
     cards = [group[index] for index in range(max(map(len, card_groups), default=0)) for group in card_groups if index < len(group)]
@@ -306,7 +307,23 @@ def build(root=ROOT):
     hero = pool.get(hero_config.get("image", "")) or pool.get("P-MUT-01") or next(iter(pool.values()))
     hero_full = [a for a in hero["full"] if a["format"] == "webp"]
     hero_image = hero_full[-1]
-    hero_caption = '<span class="hero-caption">Kendi uygulamalarımızdan</span>' if hero["role"] == "provided" else ""
+    slide_ids = list(dict.fromkeys(hero_config.get("slides", [])))
+    slide_assets = [pool[id] for id in slide_ids if id in pool and pool[id]["role"] == "provided" and pool[id]["category"] != "armchair"]
+    hero_controls = ""
+    if len(slide_assets) > 1:
+        hero = slide_assets[0]
+        slides = "".join(
+            f'<div class="hero-slide{" is-active" if i == 0 else ""}" data-slide-id="{e(asset["id"])}" aria-hidden="{"false" if i == 0 else "true"}"{(" inert" if i else "")}>'
+            f'{media.picture(asset["id"], hero=i == 0)}</div>' for i, asset in enumerate(slide_assets))
+        hero_picture = f'<div class="hero-carousel" role="region" aria-roledescription="slayt gösterisi" aria-label="Son uygulamalarımız" tabindex="0">{slides}</div>'
+        dots = "".join(f'<button type="button" class="hero-dot" data-hero-dot="{i}" aria-label="{e(asset["title"])}" aria-pressed="{"true" if i == 0 else "false"}"></button>' for i, asset in enumerate(slide_assets))
+        hero_controls = (f'<div class="hero-controls" hidden><button type="button" data-hero-prev aria-label="Önceki uygulama">{icon("left")}</button>'
+                         f'<div class="hero-dots">{dots}</div><button type="button" data-hero-next aria-label="Sonraki uygulama">{icon("arrow")}</button>'
+                         '<button type="button" data-hero-toggle aria-label="Slaytı duraklat">Duraklat</button></div>')
+    else:
+        hero_picture = media.picture(hero["id"], hero=True)
+    hero_caption = '<span class="hero-caption">Son uygulamalarımız</span>' if hero["role"] == "provided" else ""
+    asset_version = hashlib.sha256(b"".join((root / "src" / name).read_bytes() for name in ("site.css", "site.js"))).hexdigest()[:12]
 
     og_source = root / "src/og-image.jpg"
     if og_source.is_file():
@@ -354,10 +371,11 @@ def build(root=ROOT):
     video = ""
     video_path, poster_path = public / "media/video/montaj.mp4", public / "media/video/montaj-poster.webp"
     if video_path.is_file() and poster_path.is_file():
-        video = (f'<div class="video-tile" data-reveal><video id="work-video" controls preload="none" playsinline poster="media/video/montaj-poster.webp" '
-                 f'aria-label="Bir mutfağın montajından kısa kayıt"><source src="media/video/montaj.mp4" type="video/mp4"></video>'
-                 f'<button class="video-play" type="button" aria-label="Montaj videosunu oynat">{icon("play")}</button>'
-                 f'<span class="video-caption">Montajdan kısa kayıt</span></div>')
+        video = ('<div class="video-tile" data-reveal><video id="work-video" controls preload="none" playsinline poster="media/video/montaj-poster.webp" '
+                 'aria-label="Bir mutfağın montajından kısa kayıt"><source data-src="media/video/montaj.mp4" type="video/mp4">'
+                 '</video><noscript><video class="video-fallback" controls preload="none" playsinline '
+                 'poster="media/video/montaj-poster.webp" src="media/video/montaj.mp4" aria-label="Bir mutfağın montajından kısa kayıt"></video></noscript>'
+                 f'<button class="video-start" type="button" hidden aria-label="Montaj videosunu oynat">{icon("play")}</button></div>')
 
     directions = f'<a class="button button-outline" href="{e(maps)}">{icon("pin")} Yol Tarifi</a>' if address else ""
     mobile_bar = (f'<a class="button button-call" href="tel:{phone}">{icon("phone")} Ara</a>'
@@ -384,7 +402,7 @@ def build(root=ROOT):
         "whatsapp": e(whatsapp(site["contact"]["whatsapp_message"])),
         "nav_links": nav_links, "base_tag": "", "default_category": "",
         "category_pages": "".join(f'<a href="{CATEGORY_PAGES[key]}/">{e(definitions.get(key, {}).get("title", CATEGORY_META[key][1]))}</a>' for key in buckets),
-        "hero_picture": media.picture(hero["id"], hero=True, sizes="100vw"), "hero_caption": hero_caption,
+        "hero_picture": hero_picture, "hero_caption": hero_caption, "hero_controls": hero_controls, "asset_version": asset_version,
         "hero_preload": media.preload(hero["id"], sizes="100vw"),
         "picks": "".join(picks), "picks_title": e(hero_config.get("picks_title", "Ne arıyorsunuz?")),
         "why_title": e(site["why"].get("title", "")), "why_items": why_html(site["why"]["items"]),
@@ -431,6 +449,7 @@ def build(root=ROOT):
         cover = definitions.get(key, {}).get("cover")
         cover = cover if cover in {a["id"] for a in assets} else assets[0]["id"]
         page["hero_picture"] = media.picture(cover, hero=True)
+        page["hero_controls"] = ""
         page["hero_preload"] = media.preload(cover)
         page["hero_caption"] = '<span class="hero-caption">Kendi uygulamalarımızdan</span>' if media.assets[cover]["role"] == "provided" else '<span class="hero-caption">Örnek model · Size özel uyarlanır</span>'
         # Retain all cards for filtering, but the HTML-only view starts in this category.

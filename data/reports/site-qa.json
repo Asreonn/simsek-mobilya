@@ -3,7 +3,7 @@
   "scope": "local Chromium and static Python preview; no deployment",
   "catalog_models": 68,
   "categories": 6,
-  "python_tests": 29,
+  "python_tests": 30,
   "python_tests_passed": true,
   "media_validation": {
     "ok": true,
@@ -99,12 +99,12 @@
   },
   "assets": {
     "site.js": {
-      "bytes": 21223,
-      "gzip_bytes": 6110
+      "bytes": 24568,
+      "gzip_bytes": 6817
     },
     "site.css": {
-      "bytes": 29184,
-      "gzip_bytes": 7294
+      "bytes": 29152,
+      "gzip_bytes": 7291
     }
   },
   "qr": {
@@ -127,6 +127,26 @@
     "Removed prefab category and its 5 models from published pages",
     "White text on orange buttons",
     "Removed callback form; map embedded directly",
-    "Removed duplicate headings, counts and instructional copy"
-  ]
+    "Removed duplicate headings, counts and instructional copy",
+    "Four provided kitchen/TV images in swipeable hero carousel",
+    "Single video start button and MP4 deferred until click",
+    "No visible model numbers or codes in WhatsApp messages",
+    "Photo URLs in WhatsApp; native image file sharing on supported phones",
+    "Content-hash CSS/JS versions for normal reloads"
+  ],
+  "hero_video_checks": {
+    "errors": [],
+    "videoRequestsBeforePlay": [],
+    "slides": [
+      "P-TV-01",
+      "P-MUT-07",
+      "P-TV-06",
+      "P-MUT-04"
+    ],
+    "flows": [
+      "prev, next, dots, keyboard, swipe, vertical scroll, explicit autoplay, pause",
+      "poster, source attached only on play, no MP4 download before play, native controls, actual playback",
+      "no visible model numbers, WhatsApp photo URL, real photo file prepared for OS share"
+    ]
+  }
 }

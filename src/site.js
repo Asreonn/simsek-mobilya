@@ -27,6 +27,70 @@
     if (Array.isArray(stored)) selected = new Set(stored.filter(id => Object.hasOwn(gallery, id)));
   } catch { storageAvailable = false; }
 
+  const carousel = $('.hero-carousel');
+  if (carousel) {
+    const slides = [...carousel.querySelectorAll('.hero-slide')];
+    const controls = $('.hero-controls'), dots = $$('[data-hero-dot]'), toggle = $('[data-hero-toggle]');
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+    let index = 0, paused = reduced.matches, timer = null, hovered = false, focused = false, inView = true, generation = 0;
+    const stop = () => { clearTimeout(timer); timer = null; };
+    const schedule = () => {
+      stop();
+      toggle.textContent = paused ? 'Oynat' : 'Duraklat';
+      toggle.setAttribute('aria-label', paused ? 'Slaytı oynat' : 'Slaytı duraklat');
+      if (!paused && !hovered && !focused && !document.hidden && inView) timer = setTimeout(() => change(index + 1), 6000);
+    };
+    const change = async (next, manual = false) => {
+      if (manual) paused = true;
+      stop();
+      const request = ++generation, target = (next + slides.length) % slides.length;
+      const img = slides[target].querySelector('img');
+      img.loading = 'eager';
+      try { await img.decode(); } catch { /* Retain navigation for failed image loads. */ }
+      if (request !== generation) return;
+      index = target;
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('is-active', i === index);
+        slide.setAttribute('aria-hidden', String(i !== index)); slide.inert = i !== index;
+      });
+      dots.forEach((dot, i) => dot.setAttribute('aria-pressed', String(i === index)));
+      schedule();
+    };
+    controls.hidden = false;
+    $('[data-hero-prev]').addEventListener('click', () => change(index - 1, true));
+    $('[data-hero-next]').addEventListener('click', () => change(index + 1, true));
+    dots.forEach((dot, i) => dot.addEventListener('click', () => change(i, true)));
+    toggle.addEventListener('click', () => { paused = !paused; schedule(); });
+    const hero = carousel.closest('.hero');
+    hero.addEventListener('keydown', event => {
+      if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+      event.preventDefault(); change(index + (event.key === 'ArrowRight' ? 1 : -1), true);
+    });
+    carousel.addEventListener('mouseenter', () => { hovered = true; stop(); });
+    carousel.addEventListener('mouseleave', () => { hovered = false; schedule(); });
+    hero.addEventListener('focusin', () => { focused = true; stop(); });
+    hero.addEventListener('focusout', event => { focused = hero.contains(event.relatedTarget); schedule(); });
+    document.addEventListener('visibilitychange', schedule);
+    reduced.addEventListener('change', () => { if (reduced.matches) paused = true; schedule(); });
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(([entry]) => { inView = entry.isIntersecting; schedule(); }).observe(carousel);
+    }
+    let touch = null;
+    carousel.addEventListener('touchstart', event => {
+      touch = event.touches.length === 1 ? { x: event.touches[0].clientX, y: event.touches[0].clientY } : null;
+    }, { passive: true });
+    carousel.addEventListener('touchmove', event => { if (event.touches.length !== 1) touch = null; }, { passive: true });
+    carousel.addEventListener('touchend', event => {
+      if (touch && event.changedTouches.length) {
+        const dx = event.changedTouches[0].clientX - touch.x, dy = event.changedTouches[0].clientY - touch.y;
+        if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy) * 1.4) change(index + (dx < 0 ? 1 : -1), true);
+      }
+      touch = null;
+    }, { passive: true });
+    carousel.addEventListener('touchcancel', () => { touch = null; }, { passive: true });
+    schedule();
+  }
+
   $$('.pic img').forEach(img => {
     if (img.complete) img.classList.add('is-loaded');
   });
@@ -85,7 +149,7 @@
       const item = gallery[button.dataset.fav], on = selected.has(item.id);
       button.classList.toggle('is-on', on);
       button.setAttribute('aria-pressed', String(on));
-      button.setAttribute('aria-label', `${item.model_no} modelini seçtiklerim${on ? 'den çıkar' : 'e ekle'}`);
+      button.setAttribute('aria-label', `${item.title} modelini seçtiklerim${on ? 'den çıkar' : 'e ekle'}`);
     });
     if (current) {
       const on = selected.has(current.id);
@@ -109,10 +173,10 @@
       const item = gallery[id], li = make('li', 'picks-item');
       const copy = make('div'), link = make('a', '', item.title);
       link.href = modelHash(item); link.dataset.openModel = item.id;
-      copy.append(link, make('small', '', item.model_no));
+      copy.append(link);
       const remove = make('button', 'icon-button', '×');
       remove.type = 'button'; remove.dataset.removePick = id;
-      remove.setAttribute('aria-label', `${item.model_no} modelini çıkar`);
+      remove.setAttribute('aria-label', `${item.title} modelini çıkar`);
       li.append(thumbnail(item), copy, remove); list.append(li);
     });
     $('#picks-empty').hidden = selected.size > 0;
@@ -132,8 +196,8 @@
     });
     $('.picks-count').textContent = count;
     $('#fav-bar-count').textContent = count;
-    const numbers = [...selected].map(id => gallery[id].model_no).join(', ');
-    const message = `Merhaba, şu modelleri beğendim: ${numbers}. Ölçü ve fiyat hakkında bilgi alabilir miyim?`;
+    const choices = [...selected].map(id => `${gallery[id].title}\n${new URL(gallery[id].src, document.baseURI).href}`).join('\n\n');
+    const message = `Merhaba, şu modeller hakkında bilgi almak istiyorum:\n\n${choices}`;
     const href = waLink(message);
     $('#fav-send').href = href; $('#picks-send').href = href;
     syncFavoriteButtons();
@@ -144,7 +208,7 @@
     const adding = !selected.has(id);
     if (adding) selected.add(id); else selected.delete(id);
     updatePicks(true);
-    announce(`${gallery[id].model_no} ${adding ? 'seçtiklerinize eklendi' : 'seçtiklerinizden çıkarıldı'}.${storageAvailable ? '' : ' Bu tarayıcıda seçimler yalnızca sayfa açıkken saklanıyor.'}`);
+    announce(`${gallery[id].title} ${adding ? 'seçtiklerinize eklendi' : 'seçtiklerinizden çıkarıldı'}.${storageAvailable ? '' : ' Bu tarayıcıda seçimler yalnızca sayfa açıkken saklanıyor.'}`);
     track(adding ? 'Model seçildi' : 'Model çıkarıldı', { model: gallery[id].model_no });
     const button = $$('[data-fav]').find(b => b.dataset.fav === id);
     button?.classList.remove('is-pop');
@@ -158,6 +222,26 @@
       updatePicks();
     } catch { /* Leave current selections intact if another tab writes bad data. */ }
   });
+  const photoShare = $('#lightbox-share-photo');
+  let shareFile = null, shareRequest = 0;
+  const preparePhotoShare = async item => {
+    const request = ++shareRequest; shareFile = null; photoShare.hidden = true;
+    if (!navigator.share || !navigator.canShare) return;
+    try {
+      const response = await fetch(item.src);
+      if (!response.ok) return;
+      const blob = await response.blob();
+      const file = new File([blob], 'mobilya.webp', { type: blob.type || 'image/webp' });
+      if (request === shareRequest && navigator.canShare({ files: [file] })) {
+        shareFile = file; photoShare.hidden = false;
+      }
+    } catch { /* The WhatsApp photo link remains available. */ }
+  };
+  photoShare.addEventListener('click', async () => {
+    if (!shareFile || !current) return;
+    try { await navigator.share({ title: current.title, files: [shareFile] }); }
+    catch (error) { if (error.name !== 'AbortError') announce('Fotoğraf bağlantısını WhatsApp düğmesiyle gönderebilirsiniz.'); }
+  });
   const showModel = (item, push = false) => {
     if (!item) return;
     if (!dialog.open) {
@@ -165,13 +249,12 @@
       group = matchingCards().map(card => gallery[card.querySelector('[data-lightbox]').dataset.lightbox]).filter(other => other.category === item.category);
       if (!group.some(other => other.id === item.id)) group = entries.filter(other => other.category === item.category);
     }
-    current = item; resetZoom();
+    current = item; resetZoom(); preparePhotoShare(item);
     image.alt = item.alt; image.width = item.width; image.height = item.height;
     image.sizes = '(max-width: 639px) 100vw, min(1120px, 96vw)';
     image.srcset = item.srcset; image.src = item.src;
     $('#lightbox-title').textContent = item.title;
     $('#lightbox-description').textContent = item.description;
-    $('#lightbox-model').textContent = 'Model No: ' + item.model_no;
     $('#lightbox-kind').textContent = item.role === 'provided' ? 'Uygulamamız' : 'Örnek model · Size özel uyarlanır';
     $('#lightbox-count').textContent = `${group.findIndex(other => other.id === item.id) + 1} / ${group.length}`;
     $('#lightbox-ask').href = item.whatsapp;
@@ -179,7 +262,7 @@
     const similar = $('#similar-list'); similar.replaceChildren();
     entries.filter(other => other.category === item.category && other.id !== item.id).slice(0, 4).forEach(other => {
       const button = make('button', 'similar-item'); button.type = 'button'; button.dataset.openModel = other.id;
-      button.append(thumbnail(other), make('span', '', other.model_no)); similar.append(button);
+      button.append(thumbnail(other), make('span', '', other.title)); similar.append(button);
     });
     $('#lightbox-similar').hidden = !similar.children.length;
     syncFavoriteButtons();
@@ -302,9 +385,9 @@
     if (!current) return;
     const item = current, url = modelURL(item);
     try {
-      if (navigator.share) await navigator.share({ title: `${item.title} · ${item.model_no}`, url });
+      if (navigator.share) await navigator.share({ title: item.title, url });
       else if (navigator.clipboard?.writeText) { await navigator.clipboard.writeText(url); announce('Model bağlantısı kopyalandı.'); }
-      else window.open(`https://wa.me/?text=${encodeURIComponent(`${item.model_no} ${url}`)}`, '_blank', 'noopener');
+      else window.open(`https://wa.me/?text=${encodeURIComponent(`${item.title} ${url}`)}`, '_blank', 'noopener');
     } catch (error) { if (error.name !== 'AbortError') announce('Bağlantıyı adres çubuğundan kopyalayabilirsiniz.'); }
   });
   $$('[data-open-picks]').forEach(button => button.addEventListener('click', () => {
@@ -322,9 +405,17 @@
   $('.wa-form').addEventListener('submit', () => track('WhatsApp mesajı'));
   const video = $('#work-video');
   if (video) {
-    $('.video-play').addEventListener('click', () => video.play().catch(() => announce('Videoyu oynatmak için video denetimlerini kullanın.')));
-    video.addEventListener('play', () => video.closest('.video-tile').classList.add('is-playing'));
-    video.addEventListener('ended', () => video.closest('.video-tile').classList.remove('is-playing'));
+    const start = $('.video-start');
+    video.controls = false; start.hidden = false;
+    start.addEventListener('click', async () => {
+      start.hidden = true;
+      video.querySelectorAll('source[data-src]').forEach(source => {
+        source.src = source.dataset.src; source.removeAttribute('data-src');
+      });
+      video.controls = true; video.load();
+      try { await video.play(); }
+      catch { announce('Videoyu oynatmak için video denetimlerini kullanın.'); }
+    }, { once: true });
   }
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(records => records.forEach(record => {

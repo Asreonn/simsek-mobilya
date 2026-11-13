@@ -124,7 +124,9 @@ class SiteBuildTests(unittest.TestCase):
         gallery = self.gallery(source)
         for item in gallery.values():
             message = parse_qs(urlsplit(item["whatsapp"]).query)["text"][0]
-            self.assertIn(item["model_no"], message)
+            self.assertIn(item["title"], message)
+            self.assertNotIn(item["model_no"], message)
+            self.assertIn(item["src"], message)
         cards = [attrs for tag, attrs in Page(source).tags if tag == "article" and attrs.get("class") == "model-card"]
         expected = [a for a in self.catalog["assets"] if a["role"] in ("reference", "provided") and a["category"] in MODULE.CATEGORY_META]
         self.assertEqual(len(cards), len(expected))
@@ -228,6 +230,29 @@ class SiteBuildTests(unittest.TestCase):
             visible = [attrs for tag, attrs in page.tags if tag == "article" and "hidden" not in attrs]
             self.assertTrue(visible)
             self.assertTrue(all(attrs["data-category"] == key for attrs in visible))
+
+    def test_carousel_cache_versions_and_video_loading(self):
+        (self.root / "public/media/video").mkdir(parents=True)
+        for name in ("montaj.mp4", "montaj-poster.webp"):
+            (self.root / "public/media/video" / name).write_bytes(b"fixture")
+        source = self.build()
+        tags = Page(source).tags
+        slides = [attrs for _, attrs in tags if "data-slide-id" in attrs]
+        self.assertEqual(len(slides), 4)
+        for slide in slides:
+            asset = next(a for a in self.catalog["assets"] if a["id"] == slide["data-slide-id"])
+            self.assertEqual(asset["role"], "provided")
+            self.assertNotEqual(asset["category"], "armchair")
+        versioned = next(attrs["href"] for _, attrs in tags if attrs.get("rel") == "stylesheet")
+        self.assertIn("?v=", versioned)
+        self.assertNotIn("Model No:", source)
+        self.assertNotIn("video-play", source)
+        self.assertTrue(any(attrs.get("preload") == "none" and "controls" in attrs for tag, attrs in tags if tag == "video"))
+        self.assertTrue(any("data-src" in attrs for tag, attrs in tags if tag == "source"))
+        js = self.root / "src/site.js"
+        js.write_text(js.read_text() + "\n// New release\n")
+        updated = Page(self.build()).tags
+        self.assertNotEqual(versioned, next(attrs["href"] for _, attrs in updated if attrs.get("rel") == "stylesheet"))
 
 
 if __name__ == "__main__":

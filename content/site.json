@@ -46,7 +46,13 @@
     "subtitle": "",
     "cta_browse": "Modelleri Gör",
     "cta_whatsapp": "WhatsApp'tan Yaz",
-    "image": "P-TV-01"
+    "image": "P-TV-01",
+    "slides": [
+      "P-TV-01",
+      "P-MUT-07",
+      "P-TV-06",
+      "P-MUT-04"
+    ]
   },
   "categories": [
     {
