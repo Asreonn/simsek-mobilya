@@ -1,0 +1,234 @@
+{
+  "reviewed_at": "2026-11-13",
+  "scope": "web catalog photo assets; visible overlay text, social UI, dates and watermarks excluded; intentional logo lettering is retained",
+  "approved": {
+    "pool:e1afe6e73a9b0128aa26": {
+      "category": "coffee",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:1ddd848ecea446c46c65": {
+      "category": "coffee",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:46b0cdc62febd045253a": {
+      "category": "coffee",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:f31df64bd132fa0f16fc": {
+      "category": "coffee",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:8feeb5bdd76b3413f913": {
+      "category": "coffee",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:edf1f81c9a7748e781af": {
+      "category": "coffee",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:a32ee379b24d5cc6e82f": {
+      "category": "coffee",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:2305ce6e5021398c49fa": {
+      "category": "coffee",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:776e1f0e97fd11777ef3": {
+      "category": "coffee",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:2e0048d4cee03de0c213": {
+      "category": "coffee",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:476cbf127aaa31eb46cd": {
+      "category": "coffee",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:7d8bc09f209699e14982": {
+      "category": "coffee",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:c95a972415bf781281c7": {
+      "category": "coffee",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:5c1ccf0c6a0aeb04c0b1": {
+      "category": "coffee",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:9bb75c9fd34f71cef39d": {
+      "category": "coffee",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:7f95e9df37a588d2239b": {
+      "category": "coffee",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:342231d53c9538eee330": {
+      "category": "hall",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:1104f39eb26d421ee801": {
+      "category": "hall",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:5438de960a5f73598db3": {
+      "category": "hall",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:30940b9542454ea18698": {
+      "category": "hall",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:c14e7554894020f8bf7d": {
+      "category": "kitchen",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:8f4dde4931889c32684f": {
+      "category": "kitchen",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:1fba51abbdfb12bf6d5e": {
+      "category": "kitchen",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:ccf1af57dbb8cc8c4797": {
+      "category": "kitchen",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:4edc405482d9c3040178": {
+      "category": "kitchen",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:10773d541bc1b8b0706c": {
+      "category": "kitchen",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:098f176f195e8c7ef034": {
+      "category": "kitchen",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:1e79cb1ffe6f7b8d8763": {
+      "category": "kitchen",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:fa3d4f463a91d447c9f9": {
+      "category": "kitchen",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "pool:56b0402ac2b1f77d19ef": {
+      "category": "tv",
+      "visual_text_clear": true,
+      "inspection": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen"
+    },
+    "local:0f85c7dba92fee33": {
+      "category": "kitchen",
+      "visual_text_clear": true,
+      "inspection": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay"
+    },
+    "local:c4ba22a0fe90f25a": {
+      "category": "tv",
+      "visual_text_clear": true,
+      "inspection": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay"
+    },
+    "local:20022a5f6621507c": {
+      "category": "kitchen",
+      "visual_text_clear": true,
+      "inspection": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay"
+    },
+    "local:b1ff5d93121b6057": {
+      "category": "kitchen",
+      "visual_text_clear": true,
+      "inspection": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay"
+    },
+    "local:8c41c2a48e0bced0": {
+      "category": "kitchen",
+      "visual_text_clear": true,
+      "inspection": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay"
+    },
+    "local:97d0d1f04e69a0c3": {
+      "category": "kitchen",
+      "visual_text_clear": true,
+      "inspection": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay"
+    },
+    "local:5426e4be09d05c75": {
+      "category": "kitchen",
+      "visual_text_clear": true,
+      "inspection": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay"
+    },
+    "local:9a1f4fde66170d01": {
+      "category": "tv",
+      "visual_text_clear": true,
+      "inspection": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay"
+    },
+    "local:82b7e566b6e3439c": {
+      "category": "tv",
+      "visual_text_clear": true,
+      "inspection": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay"
+    },
+    "local:76db4dd44ab29823": {
+      "category": "tv",
+      "visual_text_clear": true,
+      "inspection": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay"
+    },
+    "local:e975b4e92f44a365": {
+      "category": "workshop",
+      "visual_text_clear": true,
+      "inspection": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay"
+    },
+    "local:0ca01e2784fa4d0e": {
+      "category": "workshop",
+      "visual_text_clear": true,
+      "inspection": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay"
+    },
+    "variant:ref38": {
+      "category": "coffee",
+      "visual_text_clear": true,
+      "inspection": "Bottom crop removes the printed magazine without cutting the cabinet; no overlay or caption"
+    },
+    "logo:617e71c9eb17a47a": {
+      "category": "logo",
+      "visual_text_clear": false,
+      "inspection": "Brand asset; intentional brand lettering is retained"
+    }
+  },
+  "rejected_examples": {
+    "pool:4545bbf49a7911d814ba": "Large creator handle across the cabinet",
+    "pool:f9527580ffe4d255da86": "Large diagonal real-estate watermark",
+    "pool:1e3e1003654e64a170b8": "Creator logo at upper-left",
+    "pool:4564c880d301f35f697d": "Coffee text printed on the backsplash",
+    "pool:99e20f3aeb11fa6bdf40": "Social-media interface over the photograph",
+    "recovered:3f2eb9bbbb76c758": "Large book titles CHANEL and LOEWE inside the scene; select a cleaner alternative"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "site_url": "",
+  "brand": {
+    "name": "Şimşek Mobilya",
+    "tagline": "Tasarım · Dekorasyon",
+    "owner": "Bayram Şimşek",
+    "phone_display": "0532 652 7813",
+    "phone_e164": "+905326527813",
+    "whatsapp": "905326527813",
+    "address": "",
+    "hours": "",
+    "service_area": ""
+  },
+  "seo": {
+    "title": "Şimşek Mobilya | Mutfak Dolabı, TV Ünitesi ve Size Özel Ahşap İşleri",
+    "description": "Mutfak dolabı, TV ünitesi, kahve köşesi ve antre için size özel ahşap tasarım. Ücretsiz keşif ve ölçü, montaj dahil."
+  },
+  "nav": [
+    {"id": "uygulamalar", "label": "Uygulamalar"},
+    {"id": "modeller", "label": "Modeller"},
+    {"id": "surec", "label": "Nasıl Çalışırız"},
+    {"id": "atolye", "label": "Atölye"},
+    {"id": "iletisim", "label": "İletişim"}
+  ],
+  "hero": {
+    "eyebrow": "Atölyemizden size özel işler",
+    "title": "Mutfağınızdan antreye, ahşabı size göre yapıyoruz",
+    "subtitle": "Mutfak dolabı, TV ünitesi, kahve köşesi ve antre için ölçüye göre tasarım. Önce dinleriz, sonra üretir, yerinde montajını yaparız.",
+    "cta_call": "Hemen Ara",
+    "cta_whatsapp": "WhatsApp'tan Yaz",
+    "badges": [
+      "Ücretsiz keşif ve ölçü",
+      "Size özel tasarım",
+      "Montaj dahil"
+    ]
+  },
+  "categories": [
+    {
+      "key": "kitchen",
+      "title": "Mutfak Dolabı",
+      "text": "Mutfağınızın ölçüsüne ve kullanım alışkanlığınıza göre dolap tasarımı. İster yeni mutfak, ister mevcut dolapların yenilenmesi; önce konuşuruz.",
+      "cover": "P-MUT-02"
+    },
+    {
+      "key": "tv",
+      "title": "TV Ünitesi",
+      "text": "Televizyon, uydu ve kabloları toplayan sade üniteler. Duvarınıza ve odanıza göre ölçülendirilir.",
+      "cover": "P-TV-01"
+    },
+    {
+      "key": "coffee",
+      "title": "Kahve Köşesi",
+      "text": "Küçük ama keyifli bir köşe: fincanlar, makine ve çekmeceler için düzenli bir çözüm. Ölçüye göre yapılır, yerinde kurulur.",
+      "cover": "R-KAH-03"
+    },
+    {
+      "key": "hall",
+      "title": "Antre & Ayna",
+      "text": "Ayakkabı, palto ve anahtar için düzenli bir karşılama alanı. Dar koridorlara da uygun ölçülerde çalışırız.",
+      "cover": "R-ANT-03"
+    }
+  ],
+  "projects": {
+    "title": "Uygulamalarımız",
+    "intro": "Atölyemizden çıkan işlerden örnekler. Beğendiğiniz bir işi olduğu gibi değil, kendi ölçünüze uyarlanmış olarak yaparız."
+  },
+  "models": {
+    "title": "Örnek Modeller",
+    "intro": "Aşağıdaki modeller ilham amaçlıdır. Her biri sizin ölçünüze ve renginize göre uyarlanır.",
+    "note": "Bu görseller ilham amaçlı örnek modellerdir.",
+    "ask_label": "Benzerini İstiyorum",
+    "filters": {
+      "all": "Tümü",
+      "kitchen": "Mutfak",
+      "coffee": "Kahve Köşesi",
+      "tv": "TV Ünitesi",
+      "hall": "Antre & Ayna"
+    }
+  },
+  "process": {
+    "title": "Nasıl Çalışırız?",
+    "steps": [
+      {
+        "title": "Görüşme",
+        "text": "Bizi arar ya da WhatsApp'tan yazarsınız. Ne istediğinizi ve nerede kullanacağınızı dinleriz."
+      },
+      {
+        "title": "Ölçü ve Tasarım",
+        "text": "Yerinde ölçü alırız. Ölçüye uygun tasarımı konuşur, birlikte son haline karar veririz."
+      },
+      {
+        "title": "Atölyede Üretim",
+        "text": "Parçalar atölyede hazırlanır. İş, ustanın elinden tek tek geçer."
+      },
+      {
+        "title": "Montaj",
+        "text": "Ürünü evinize getirir, yerinde kurarız. Yerine oturduğundan emin olmadan bırakmayız."
+      }
+    ]
+  },
+  "workshop": {
+    "title": "Atölyemiz",
+    "text": "İşler atölyede, elde yapılır. Ölçüyü alan da üreten de aynı eldir; bu yüzden detaylar atlanmaz."
+  },
+  "contact": {
+    "title": "Bize Ulaşın",
+    "text": "Telefonla arayabilir ya da WhatsApp'tan yazabilirsiniz. Uygun olduğunuzda ölçü için gelelim.",
+    "whatsapp_message": "Merhaba, web sitenizden ulaşıyorum."
+  },
+  "footer": {
+    "text": "Şimşek Mobilya · Tasarım ve Dekorasyon. Ahşap işleri atölyemizde, size özel yapılır."
+  }
+}

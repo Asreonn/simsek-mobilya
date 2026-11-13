@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "local_links_checked": 791,
+  "errors": [],
+  "tests": {
+    "command": "make media-check media-docs media-preview test",
+    "count": 8,
+    "exit_code": 0,
+    "after_cleanup": true
+  }
+}

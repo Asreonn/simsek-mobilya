@@ -1,0 +1,59 @@
+{
+  "site_url": "",
+  "brand": {
+    "name": "Şimşek Mobilya",
+    "tagline": "Tasarım · Dekorasyon",
+    "owner": "Bayram Şimşek",
+    "phone_display": "0532 652 7813",
+    "phone_e164": "+905326527813",
+    "whatsapp": "905326527813",
+    "address": "",
+    "hours": "",
+    "service_area": ""
+  },
+  "seo": {
+    "title": "Şimşek Mobilya | Tasarım · Dekorasyon",
+    "description": "Mutfak, TV ünitesi, kahve köşesi ve antre için mobilya fikirleri. Uygulamaları ve örnek modelleri inceleyin, Bayram Şimşek ile görüşün."
+  },
+  "nav": [
+    {"id": "uygulamalar", "label": "Uygulamalar"},
+    {"id": "modeller", "label": "Modeller"},
+    {"id": "nasil-calisiriz", "label": "Nasıl Çalışırız"},
+    {"id": "atolye", "label": "Atölye"},
+    {"id": "iletisim", "label": "İletişim"}
+  ],
+  "hero": {
+    "eyebrow": "Şimşek Mobilya · Tasarım & Dekorasyon",
+    "title": "Evinize yakışan, size özel mobilyalar.",
+    "subtitle": "Mutfaktan kahve köşesine, aklınızdaki mobilyayı birlikte şekillendirelim. Beğendiğiniz modeli bize gösterin, konuşalım.",
+    "cta_call": "Hemen Ara",
+    "cta_whatsapp": "WhatsApp'tan Yaz",
+    "badges": ["Birlikte planlayalım", "Size özel düşünelim", "Ustayla doğrudan görüşün"]
+  },
+  "categories": [
+    {"key": "kitchen", "title": "Mutfak Dolabı", "text": "Evinizin en çok yaşanan yerine, size uygun bir düzen.", "cover": "P-MUT-02"},
+    {"key": "tv", "title": "TV Ünitesi", "text": "Salonunuzu tamamlayan, derli toplu bir yaşam alanı.", "cover": "P-TV-01"},
+    {"key": "coffee", "title": "Kahve Köşesi", "text": "Günün küçük molaları için kendinize ait bir köşe.", "cover": "R-KAH-03"},
+    {"key": "hall", "title": "Antre & Ayna", "text": "Evinize ilk adımda sıcak bir karşılama.", "cover": "R-ANT-03"}
+  ],
+  "projects": {"title": "Uygulamalarımız", "intro": "Mutfak ve TV ünitesi çekimlerine yakından bakın. Ayrıntıları görmek için fotoğrafa dokunun."},
+  "models": {
+    "title": "Örnek Modeller",
+    "intro": "Önce bir fikir, sonra size özel bir tasarım. Beğendiğiniz modelleri ölçü ve renk tercihlerinize göre birlikte değerlendirelim.",
+    "note": "Bu görseller ilham amaçlı örnek modellerdir. Size özel uyarlanır.",
+    "ask_label": "Benzerini İstiyorum",
+    "filters": {"all": "Tümü", "kitchen": "Mutfak", "coffee": "Kahve Köşesi", "tv": "TV Ünitesi", "hall": "Antre & Ayna"}
+  },
+  "process": {
+    "title": "Nasıl Çalışırız?",
+    "steps": [
+      {"title": "Önce konuşalım", "text": "Bizi arayın ya da beğendiğiniz modeli WhatsApp'tan gönderin."},
+      {"title": "Ölçü & tasarım", "text": "İhtiyaçlarınızı, ölçüleri ve istediğiniz görünümü birlikte değerlendirelim."},
+      {"title": "Atölyede üretim", "text": "Kararlaştırdığımız tasarım atölyede adım adım şekillensin."},
+      {"title": "Montaj", "text": "Mobilyanızın evinizdeki yerini alması için montajı planlayalım."}
+    ]
+  },
+  "workshop": {"title": "Fikirden mobilyaya, usta elinden.", "text": "Bir mobilyanın hikâyesi atölyede başlar. Bayram Şimşek ile ne istediğinizi doğrudan konuşun; evinize uygun çözümü birlikte düşünelim."},
+  "contact": {"title": "Aklınızda bir fikir mi var?", "text": "Bir fotoğraf, bir ölçü ya da sadece bir fikir… Bize anlatın, birlikte bakalım.", "whatsapp_message": "Merhaba, web sitenizden ulaşıyorum. Mobilya yaptırmak için bilgi almak istiyorum."},
+  "footer": {"text": "Evinize yakışan fikirler, usta elinden mobilyalar."}
+}

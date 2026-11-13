@@ -1,0 +1,22 @@
+test_archive_paths_never_control_extraction_and_hashes_survive (test_catalog_assets.CatalogTests.test_archive_paths_never_control_extraction_and_hashes_survive) ... ok
+test_blocked_upgrade_keeps_previous_verified_download (test_catalog_assets.CatalogTests.test_blocked_upgrade_keeps_previous_verified_download) ... {"assets": 1, "kinds": {"unclassified": 1}, "errors": 0, "inventory": "/tmp/tmpaslctc97/work/inventory.json"}
+{"verified": true, "failures": []}
+{"assets": 1, "kinds": {"unclassified": 1}, "errors": 0, "inventory": "/tmp/tmpaslctc97/work/inventory.json"}
+{"verified": true, "failures": []}
+{"assets": 1, "kinds": {"reference": 1}, "errors": 0, "inventory": "/tmp/tmpkv2vo9yf/work/inventory.json"}
+[1/1] 7f73ce8db7ad45a2 #1
+  matched 800x650
+Search challenge
+ok
+test_cropped_recompressed_match (test_catalog_assets.CatalogTests.test_cropped_recompressed_match) ... ok
+test_plain_image_does_not_match (test_catalog_assets.CatalogTests.test_plain_image_does_not_match) ... ok
+test_screenshot_crop_selects_photo_band (test_catalog_assets.CatalogTests.test_screenshot_crop_selects_photo_band) ... ok
+test_search_parser_merges_source_pages (test_catalog_assets.CatalogTests.test_search_parser_merges_source_pages) ... ok
+test_similar_layout_different_photo_rejected (test_catalog_assets.CatalogTests.test_similar_layout_different_photo_rejected) ... ok
+test_literal_quotes_do_not_merge_tsv_rows (test_catalog_curation.CurationTests.test_literal_quotes_do_not_merge_tsv_rows) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.379s
+
+OK
+{"matched": 1}

@@ -1,0 +1,2151 @@
+{
+  "schema_version": 1,
+  "purpose": "Site öncesi medya hazırlığı; müşteri sitesi uygulanmadı",
+  "quality": {
+    "minimum_short_edge": 1000,
+    "minimum_long_edge": 1500,
+    "no_upscaling": true,
+    "generative_edits": false,
+    "visual_review": true,
+    "text_scope": "No overlaid text, social UI, phone/date stamps or watermarks; logo lettering intentionally retained"
+  },
+  "assets": [
+    {
+      "id": "R-KAH-01",
+      "legacy_choice": "pool:e1afe6e73a9b0128aa26",
+      "title": "Mavi ahşap kahve ünitesi cam üst vitrin",
+      "description": "Mavi alt kapak/çekmeceler, ahşap tezgâh ve siyah çerçeveli sıcak ışıklı üst cam vitrin; ortada kahve ekipmanları.",
+      "alt_tr": "Mavi alt kapak/çekmeceler, ahşap tezgâh ve siyah çerçeveli sıcak ışıklı üst cam vitrin; ortada kahve ekipmanları.",
+      "category": "coffee",
+      "category_label": "Kahve köşesi / servis",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Kahve köşesi modelleri",
+      "master": "assets/catalog/reference/kahve-kosesi/r-kah-01-mavi-ahsap-kahve-unitesi-cam-ust-vitrin.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-01-mavi-ahsap-kahve-unitesi-cam-ust-vitrin-600.webp",
+          "width": 600,
+          "height": 704,
+          "sha256": "cecee5f32fae663c86d64a57b2b46fe91b5595a2bc9d2557dc4010ef52adfec8"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-01-mavi-ahsap-kahve-unitesi-cam-ust-vitrin-1000.webp",
+          "width": 1000,
+          "height": 1174,
+          "sha256": "f7278205c50efee9d493bfe1d3f30b836ab9b0c469eb5e301c96eabe055dca2e"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-01-mavi-ahsap-kahve-unitesi-cam-ust-vitrin-1400.webp",
+          "width": 1400,
+          "height": 1643,
+          "sha256": "3e9903839fcf3e7a6878eb6eecbd9d414604b6cb64d6f76515a392daa0f6458d"
+        }
+      ],
+      "width": 3000,
+      "height": 3521,
+      "sha256": "465038120b138ffddd997eb92d817f6193eaf767c5cc34446d4320a0caeeb259",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://i.pinimg.com/originals/10/55/e3/1055e3920d6be6ec273bd07ad78e4402.jpg",
+        "page_url": "",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/kahve-kosesi/r-kah-01-mavi-ahsap-kahve-unitesi-cam-ust-vitrin.jpg",
+        "source_sha256": "465038120b138ffddd997eb92d817f6193eaf767c5cc34446d4320a0caeeb259",
+        "source_crop_box": [
+          0,
+          0,
+          3000,
+          3521
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-KAH-02",
+      "legacy_choice": "pool:1ddd848ecea446c46c65",
+      "title": "Gri country kahve servis ünitesi",
+      "description": "Gri çerçeveli kapaklar, yüksek yan depolama, orta cam üst dolap ve beyaz tezgâh; ahşap zeminli gerçek iç mekân.",
+      "alt_tr": "Gri çerçeveli kapaklar, yüksek yan depolama, orta cam üst dolap ve beyaz tezgâh; ahşap zeminli gerçek iç mekân.",
+      "category": "coffee",
+      "category_label": "Kahve köşesi / servis",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Kahve köşesi modelleri",
+      "master": "assets/catalog/reference/kahve-kosesi/r-kah-02-gri-country-kahve-servis-unitesi.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-02-gri-country-kahve-servis-unitesi-600.webp",
+          "width": 600,
+          "height": 900,
+          "sha256": "1839536d5a69ff5ed41ee53c2650e6f2cf3942651606811c5a1a3d8ecc8c1a0d"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-02-gri-country-kahve-servis-unitesi-1000.webp",
+          "width": 1000,
+          "height": 1500,
+          "sha256": "9ad75edf2ed8a1325f9695565fb720cbf7ca82a340036088666c68815bb3a2f7"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-02-gri-country-kahve-servis-unitesi-1400.webp",
+          "width": 1400,
+          "height": 2100,
+          "sha256": "2e6806f457f946ba1e368f04dabc462576626f9aa2119892c26a2845c5c7963c"
+        }
+      ],
+      "width": 2454,
+      "height": 3681,
+      "sha256": "5ce2696ac9e71e0afa013328511fb27eeab8edd6305dee4da57618d75a645f49",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://i.pinimg.com/originals/81/55/a6/8155a6ee0157cb0eaa360860486526a2.jpg",
+        "page_url": "https://ru.pinterest.com/twilson1968/air-fryer/?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/kahve-kosesi/r-kah-02-gri-country-kahve-servis-unitesi.jpg",
+        "source_sha256": "5ce2696ac9e71e0afa013328511fb27eeab8edd6305dee4da57618d75a645f49",
+        "source_crop_box": [
+          0,
+          0,
+          2454,
+          3681
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-KAH-03",
+      "legacy_choice": "pool:46b0cdc62febd045253a",
+      "title": "Beyaz kemerli kahve ünitesi koyu yan vitrin",
+      "description": "Beyaz klasik taç/kemer ve raflar; iki yanda koyu cam vitrin, altta çekmeceler. Cihazsız ürün görünümü.",
+      "alt_tr": "Beyaz klasik taç/kemer ve raflar; iki yanda koyu cam vitrin, altta çekmeceler. Cihazsız ürün görünümü.",
+      "category": "coffee",
+      "category_label": "Kahve köşesi / servis",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Kahve köşesi modelleri",
+      "master": "assets/catalog/reference/kahve-kosesi/r-kah-03-beyaz-kemerli-kahve-unitesi-koyu-yan-vitrin.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-03-beyaz-kemerli-kahve-unitesi-koyu-yan-vitrin-600.webp",
+          "width": 600,
+          "height": 739,
+          "sha256": "38f21b8ca8b1e79d8ba0fcc5855cfbdb900679abc8e2fb2b62dd190cb5759399"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-03-beyaz-kemerli-kahve-unitesi-koyu-yan-vitrin-1000.webp",
+          "width": 1000,
+          "height": 1232,
+          "sha256": "c86ee7ca01c7b3e7bab72e1845d7f4859b525572ebda5a65dc8f23bfe1ee2c98"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-03-beyaz-kemerli-kahve-unitesi-koyu-yan-vitrin-1400.webp",
+          "width": 1400,
+          "height": 1725,
+          "sha256": "466c282193049584c3d7035d9304b094c81b146462673fbc39d4ae27f754435a"
+        }
+      ],
+      "width": 1662,
+      "height": 2048,
+      "sha256": "96c85961cb198d6bde90675e2b107536b3091b89ec8ba1eb05faac8083d95de6",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://i.pinimg.com/originals/03/bf/6c/03bf6c69d4d86d076998a60b3e744060.jpg",
+        "page_url": "",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/kahve-kosesi/r-kah-03-beyaz-kemerli-kahve-unitesi-koyu-yan-vitrin.jpg",
+        "source_sha256": "96c85961cb198d6bde90675e2b107536b3091b89ec8ba1eb05faac8083d95de6",
+        "source_crop_box": [
+          0,
+          0,
+          1662,
+          2048
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-KAH-04",
+      "legacy_choice": "pool:f31df64bd132fa0f16fc",
+      "title": "Ahşap sağ vitrinli bağımsız kahve dolabı",
+      "description": "Ahşap gövde ve iç yüzeyler, gri uzun çekmeceler, siyah cam üst dolap ve sağda boy vitrin; beyaz fonlu ürün sahnesi.",
+      "alt_tr": "Ahşap gövde ve iç yüzeyler, gri uzun çekmeceler, siyah cam üst dolap ve sağda boy vitrin; beyaz fonlu ürün sahnesi.",
+      "category": "coffee",
+      "category_label": "Kahve köşesi / servis",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Kahve köşesi modelleri",
+      "master": "assets/catalog/reference/kahve-kosesi/r-kah-04-ahsap-sag-vitrinli-bagimsiz-kahve-dolabi.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-04-ahsap-sag-vitrinli-bagimsiz-kahve-dolabi-600.webp",
+          "width": 600,
+          "height": 1066,
+          "sha256": "4b2d8abc9e464267665a59f348c0023b1a5ba0b0944bf7cb740877073aff5c34"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-04-ahsap-sag-vitrinli-bagimsiz-kahve-dolabi-1000.webp",
+          "width": 1000,
+          "height": 1778,
+          "sha256": "b78cc5806b6c511dd72b5d4c0246b4b1177890b8506b83752639902110b33658"
+        }
+      ],
+      "width": 1200,
+      "height": 2133,
+      "sha256": "e9fab24c3fd8b27e69494e1af49b4a948122c278e06b8009e0ed1e01e410b8ba",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://i.pinimg.com/originals/05/24/94/052494a37b453b991c277f0998559614.jpg",
+        "page_url": "https://www.pinterest.com/pin/independence-day-big-sale-offer-grab-it-now--665125438752471262/?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/kahve-kosesi/r-kah-04-ahsap-sag-vitrinli-bagimsiz-kahve-dolabi.jpg",
+        "source_sha256": "e9fab24c3fd8b27e69494e1af49b4a948122c278e06b8009e0ed1e01e410b8ba",
+        "source_crop_box": [
+          0,
+          0,
+          1200,
+          2133
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-KAH-05",
+      "legacy_choice": "pool:8feeb5bdd76b3413f913",
+      "title": "Beyaz country servis ve ankastre duvarı",
+      "description": "Duvar boyunca beyaz çerçeveli/cam dolaplar, orta kahve tezgâhı ve sağ ankastre kolonu; geniş yatay iç mekân.",
+      "alt_tr": "Duvar boyunca beyaz çerçeveli/cam dolaplar, orta kahve tezgâhı ve sağ ankastre kolonu; geniş yatay iç mekân.",
+      "category": "coffee",
+      "category_label": "Kahve köşesi / servis",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Kahve köşesi modelleri",
+      "master": "assets/catalog/reference/kahve-kosesi/r-kah-05-beyaz-country-servis-ve-ankastre-duvari.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-05-beyaz-country-servis-ve-ankastre-duvari-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "36f02a0f3f73cd51ef7dc4b66ad6e1b85984e718a7978b56f262da1044c496fa"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-05-beyaz-country-servis-ve-ankastre-duvari-1000.webp",
+          "width": 1000,
+          "height": 667,
+          "sha256": "a51290554cbf5a64c82caac0fadaba14ccac1b1f412f347005e778a23c81ad04"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-05-beyaz-country-servis-ve-ankastre-duvari-1400.webp",
+          "width": 1400,
+          "height": 933,
+          "sha256": "ebc62b5df848e1bca1767ed23038966853e64e4a9b9ea3a2fbec56db6c731ddf"
+        }
+      ],
+      "width": 1920,
+      "height": 1280,
+      "sha256": "9f1edf2b78f56ce553a894f657957d8b1931e57169785b362496ad7358cb569a",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://www.celilkaramobilya.com.tr/img/sehir/21941221692779920710manavgat_3.jpg",
+        "page_url": "",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/kahve-kosesi/r-kah-05-beyaz-country-servis-ve-ankastre-duvari.jpg",
+        "source_sha256": "9f1edf2b78f56ce553a894f657957d8b1931e57169785b362496ad7358cb569a",
+        "source_crop_box": [
+          0,
+          0,
+          1920,
+          1280
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-KAH-06",
+      "legacy_choice": "pool:edf1f81c9a7748e781af",
+      "title": "Fırın nişli dört kapaklı beyaz kiler dolabı",
+      "description": "Bağımsız beyaz uzun dolap; ortada siyah fırın/mikrodalga nişi, üst ve altta ikişer kapak. Sade mutfak sahnesi.",
+      "alt_tr": "Bağımsız beyaz uzun dolap; ortada siyah fırın/mikrodalga nişi, üst ve altta ikişer kapak. Sade mutfak sahnesi.",
+      "category": "coffee",
+      "category_label": "Kahve köşesi / servis",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Kahve köşesi modelleri",
+      "master": "assets/catalog/reference/kahve-kosesi/r-kah-06-firin-nisli-dort-kapakli-beyaz-kiler-dolabi.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-06-firin-nisli-dort-kapakli-beyaz-kiler-dolabi-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "47cbc4e284f30f4684faa107a40c93a9342fa5129d2b9ab5e18a4639d7ae83a5"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-06-firin-nisli-dort-kapakli-beyaz-kiler-dolabi-1000.webp",
+          "width": 1000,
+          "height": 667,
+          "sha256": "bdcb037be94b6185b85c72735162b2db72338677be014ebf230ed668a343d5fe"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-06-firin-nisli-dort-kapakli-beyaz-kiler-dolabi-1400.webp",
+          "width": 1400,
+          "height": 933,
+          "sha256": "3d93cc6ac9711e3217426c00e5e9bb65ecba285b02925d4afbeadc43db3da620"
+        }
+      ],
+      "width": 1920,
+      "height": 1280,
+      "sha256": "0e8e6453aad2d1a3f4f2fb494533ed67c89cb8141be879b0b046770b587db163",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://img.vivense.com/1920x1280/images/414aa6cc1e33455bb130ec93b105b2dd.jpg",
+        "page_url": "https://www.vivense.com/lucas-4-kapakli-cok-amacli-dolap-cok-amacli-banyo-mutfak-ve-mikrodalga-firin-dolabi-beyaz-modeli.html?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/kahve-kosesi/r-kah-06-firin-nisli-dort-kapakli-beyaz-kiler-dolabi.jpg",
+        "source_sha256": "0e8e6453aad2d1a3f4f2fb494533ed67c89cb8141be879b0b046770b587db163",
+        "source_crop_box": [
+          0,
+          0,
+          1920,
+          1280
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-KAH-07",
+      "legacy_choice": "pool:a32ee379b24d5cc6e82f",
+      "title": "Siyah alt modüllü ahşap kahve köşesi",
+      "description": "Ahşap boy dolaplar, siyah alt modül ve asimetrik yükselen cam vitrin; pencere yanında kahve ekipmanları.",
+      "alt_tr": "Ahşap boy dolaplar, siyah alt modül ve asimetrik yükselen cam vitrin; pencere yanında kahve ekipmanları.",
+      "category": "coffee",
+      "category_label": "Kahve köşesi / servis",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Kahve köşesi modelleri",
+      "master": "assets/catalog/reference/kahve-kosesi/r-kah-07-siyah-alt-modullu-ahsap-kahve-kosesi.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-07-siyah-alt-modullu-ahsap-kahve-kosesi-600.webp",
+          "width": 600,
+          "height": 800,
+          "sha256": "f92441e9b1db71a4fc8c58dcc36468840cf11b05de5957af5f83cf47462b4426"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-07-siyah-alt-modullu-ahsap-kahve-kosesi-1000.webp",
+          "width": 1000,
+          "height": 1333,
+          "sha256": "25b2830662c056713662a6efd979def908d15455b22399ed0a9d4c0b39b18132"
+        }
+      ],
+      "width": 1350,
+      "height": 1800,
+      "sha256": "f2f2e41a92fb05f7f4f25f9566256e3bb1f340e3d19a2c5cdfc2f4d48b2f8cee",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://i.pinimg.com/originals/26/1f/75/261f7530a6c8ab880099c79c8846f7b3.jpg",
+        "page_url": "https://au.pinterest.com/pin/728105464801849634/?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/kahve-kosesi/r-kah-07-siyah-alt-modullu-ahsap-kahve-kosesi.jpg",
+        "source_sha256": "f2f2e41a92fb05f7f4f25f9566256e3bb1f340e3d19a2c5cdfc2f4d48b2f8cee",
+        "source_crop_box": [
+          0,
+          0,
+          1350,
+          1800
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-KAH-08",
+      "legacy_choice": "pool:2305ce6e5021398c49fa",
+      "title": "Kavisli nişli sade krem gömme dolap",
+      "description": "Krem düz kapaklar, sıcak ışıklı kemerli açık raf ve tam boy yan depolama; cihazsız minimal servis/saklama tasarımı.",
+      "alt_tr": "Krem düz kapaklar, sıcak ışıklı kemerli açık raf ve tam boy yan depolama; cihazsız minimal servis/saklama tasarımı.",
+      "category": "coffee",
+      "category_label": "Kahve köşesi / servis",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Kahve köşesi modelleri",
+      "master": "assets/catalog/reference/kahve-kosesi/r-kah-08-kavisli-nisli-sade-krem-gomme-dolap.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-08-kavisli-nisli-sade-krem-gomme-dolap-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "763deac9f7433ca9a0848c5ea9342466f0c5080aaa12e3667078f5d9fc22a925"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-08-kavisli-nisli-sade-krem-gomme-dolap-1000.webp",
+          "width": 1000,
+          "height": 667,
+          "sha256": "feb4b547d4675a5534bf9ecfef47242db86786a55349de84e514e270972b45f4"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-08-kavisli-nisli-sade-krem-gomme-dolap-1400.webp",
+          "width": 1400,
+          "height": 933,
+          "sha256": "e14e2b9d7684105f75061650c811a8401b7e1110a1e233cadeb1ec4a9892d93c"
+        }
+      ],
+      "width": 1800,
+      "height": 1200,
+      "sha256": "655ef652030f11a573a1d5ca2a8223cc8f7a274fff17d2173fad527a798259b1",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://i.pinimg.com/originals/c3/8d/c4/c38dc463f93dc5c33461623eeb4bc1a8.jpg",
+        "page_url": "",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/kahve-kosesi/r-kah-08-kavisli-nisli-sade-krem-gomme-dolap.jpg",
+        "source_sha256": "655ef652030f11a573a1d5ca2a8223cc8f7a274fff17d2173fad527a798259b1",
+        "source_crop_box": [
+          0,
+          0,
+          1800,
+          1200
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-KAH-09",
+      "legacy_choice": "pool:776e1f0e97fd11777ef3",
+      "title": "Beyaz ahşap ışıklı kahve kiler dolabı",
+      "description": "Beyaz alt dolap, ahşap çerçeve ve ortada cam kapaklı ışıklı servis bölümü; kahve makineli, sıcak tonlu ürün sahnesi.",
+      "alt_tr": "Beyaz alt dolap, ahşap çerçeve ve ortada cam kapaklı ışıklı servis bölümü; kahve makineli, sıcak tonlu ürün sahnesi.",
+      "category": "coffee",
+      "category_label": "Kahve köşesi / servis",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Kahve köşesi modelleri",
+      "master": "assets/catalog/reference/kahve-kosesi/r-kah-09-beyaz-ahsap-isikli-kahve-kiler-dolabi.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-09-beyaz-ahsap-isikli-kahve-kiler-dolabi-600.webp",
+          "width": 600,
+          "height": 900,
+          "sha256": "0e73a30999dab5f0e81aebc61e5e34aa67a7387caff68a7b148676f850ea7344"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-09-beyaz-ahsap-isikli-kahve-kiler-dolabi-1000.webp",
+          "width": 1000,
+          "height": 1500,
+          "sha256": "0120c5989a9a7dee421cb9dc8b9377298572301f3bece82ca3d2fda7634936c9"
+        }
+      ],
+      "width": 1200,
+      "height": 1800,
+      "sha256": "b9a5bab8c104dda6cfcb37d4ed822bc45f1b2ed5d43ed9892a853a5a6dc53d2e",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://cdn.dsmcdn.com/ty1818/prod/QC_PREP/20260129/16/b1e3dcbb-d22e-3690-b0ff-929c04ba73b3/1_org_zoom.jpg",
+        "page_url": "https://www.trendyol.com/avmpark/kent-kahve-kosesi-cam-kapakli-led-isikli-airfry-kiler-dolabi-cok-amacli-dolap-p-1093731433?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/kahve-kosesi/r-kah-09-beyaz-ahsap-isikli-kahve-kiler-dolabi.jpg",
+        "source_sha256": "b9a5bab8c104dda6cfcb37d4ed822bc45f1b2ed5d43ed9892a853a5a6dc53d2e",
+        "source_crop_box": [
+          0,
+          0,
+          1200,
+          1800
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-KAH-10",
+      "legacy_choice": "pool:2e0048d4cee03de0c213",
+      "title": "Ayaklı beyaz country kahve dolabı",
+      "description": "İnce ayaklar, beyaz çerçeveli kapaklar, yarım ay kulplar ve ahşap tezgâh; üstte geniş camlı raf ve kahve makinesi.",
+      "alt_tr": "İnce ayaklar, beyaz çerçeveli kapaklar, yarım ay kulplar ve ahşap tezgâh; üstte geniş camlı raf ve kahve makinesi.",
+      "category": "coffee",
+      "category_label": "Kahve köşesi / servis",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Kahve köşesi modelleri",
+      "master": "assets/catalog/reference/kahve-kosesi/r-kah-10-ayakli-beyaz-country-kahve-dolabi.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-10-ayakli-beyaz-country-kahve-dolabi-600.webp",
+          "width": 600,
+          "height": 900,
+          "sha256": "a40139df0472de068aea8ff98c46cd72e51b6b5391576e9d0e899aae2cb1b36e"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-10-ayakli-beyaz-country-kahve-dolabi-1000.webp",
+          "width": 1000,
+          "height": 1500,
+          "sha256": "a2b26494802a4ce734c8acd29e7976534dedcab0875340669a894c2623b0dbe9"
+        }
+      ],
+      "width": 1200,
+      "height": 1800,
+      "sha256": "c97ab3abcbbd9ccc4719867c99515fa6fe806b3e351a02f78859977bd0ff4e79",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://cdn.dsmcdn.com/ty1631/prod/QC/20250130/10/2cf27931-4fca-359d-8f00-1546001f3835/1_org_zoom.jpg",
+        "page_url": "http://trndyl.medianova.com/fly-mobilya/esin-cok-amacli-dolap-membran-mdf-cekmeceli-kahve-kosesi-firin-dolabi-kiler-dolabi-p-890641417?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/kahve-kosesi/r-kah-10-ayakli-beyaz-country-kahve-dolabi.jpg",
+        "source_sha256": "c97ab3abcbbd9ccc4719867c99515fa6fe806b3e351a02f78859977bd0ff4e79",
+        "source_crop_box": [
+          0,
+          0,
+          1200,
+          1800
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-KAH-11",
+      "legacy_choice": "pool:476cbf127aaa31eb46cd",
+      "title": "Beyaz ahşap çok amaçlı kahve dolabı",
+      "description": "Ahşap yan çerçeve, beyaz kapaklar, açık fincan rafı ve alt fırın bölümü; pencere yanında bağımsız ürün sahnesi.",
+      "alt_tr": "Ahşap yan çerçeve, beyaz kapaklar, açık fincan rafı ve alt fırın bölümü; pencere yanında bağımsız ürün sahnesi.",
+      "category": "coffee",
+      "category_label": "Kahve köşesi / servis",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Kahve köşesi modelleri",
+      "master": "assets/catalog/reference/kahve-kosesi/r-kah-11-beyaz-ahsap-cok-amacli-kahve-dolabi.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-11-beyaz-ahsap-cok-amacli-kahve-dolabi-600.webp",
+          "width": 600,
+          "height": 900,
+          "sha256": "5b5db047a00ba0e9d72b4e06fd70175f894c7d514f442e0cb0fb675d2ca12114"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-11-beyaz-ahsap-cok-amacli-kahve-dolabi-1000.webp",
+          "width": 1000,
+          "height": 1500,
+          "sha256": "8a952b22377328d306b20bc8967f2b6f7ad6f5097bd137de7a5e5d9e941ba7c9"
+        }
+      ],
+      "width": 1200,
+      "height": 1800,
+      "sha256": "96a1a0430a8504449e0387a7dc216cc7fbcdaa9e0b394f4e62694d4c59e8ffc9",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://cdn.dsmcdn.com/ty1955/prod/QC_ENRICHMENT/20260908/11/2e0b4522-cb7c-3c89-98d3-3511bd807118/1_org_zoom.jpg",
+        "page_url": "https://www.trendyol.com/evdemo/silva-kahve-kosesi-cok-amacli-dolap-beyaz-atlantik-cam-p-957623433?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/kahve-kosesi/r-kah-11-beyaz-ahsap-cok-amacli-kahve-dolabi.jpg",
+        "source_sha256": "96a1a0430a8504449e0387a7dc216cc7fbcdaa9e0b394f4e62694d4c59e8ffc9",
+        "source_crop_box": [
+          0,
+          0,
+          1200,
+          1800
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-KAH-12",
+      "legacy_choice": "pool:7d8bc09f209699e14982",
+      "title": "Asimetrik beyaz fırın ve kiler dolabı",
+      "description": "Ayaklı beyaz depolama, sol açık raflar ve sağ fırın/mikrodalga nişi; sade modern mutfak ürün sahnesi.",
+      "alt_tr": "Ayaklı beyaz depolama, sol açık raflar ve sağ fırın/mikrodalga nişi; sade modern mutfak ürün sahnesi.",
+      "category": "coffee",
+      "category_label": "Kahve köşesi / servis",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Kahve köşesi modelleri",
+      "master": "assets/catalog/reference/kahve-kosesi/r-kah-12-asimetrik-beyaz-firin-ve-kiler-dolabi.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-12-asimetrik-beyaz-firin-ve-kiler-dolabi-600.webp",
+          "width": 600,
+          "height": 900,
+          "sha256": "59871c16352363d37c7882b0051c3e985181b83ea8efd02bc0dea240b5fd6cb7"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-12-asimetrik-beyaz-firin-ve-kiler-dolabi-1000.webp",
+          "width": 1000,
+          "height": 1500,
+          "sha256": "7ad2cce7903acb1a339e2eb98f8ad50ae2d265d92d219e40fea3babf686d7c59"
+        }
+      ],
+      "width": 1200,
+      "height": 1800,
+      "sha256": "fb6a06d3b312bc5b443f5a52b231089d07d943e298abfc5c1ec377b5575aa00b",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://cdn.dsmcdn.com/ty1766/prod/QC_PREP/20250930/10/e8fb2a34-ddf5-3c48-aa68-4fc585b31b6a/1_org_zoom.jpg",
+        "page_url": "",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/kahve-kosesi/r-kah-12-asimetrik-beyaz-firin-ve-kiler-dolabi.jpg",
+        "source_sha256": "fb6a06d3b312bc5b443f5a52b231089d07d943e298abfc5c1ec377b5575aa00b",
+        "source_crop_box": [
+          0,
+          0,
+          1200,
+          1800
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-KAH-13",
+      "legacy_choice": "pool:c95a972415bf781281c7",
+      "title": "Kompakt beyaz ahşap kahve köşesi",
+      "description": "Beyaz country alt kapaklar, ahşap sırt paneli ve siyah cam üst dolap; sıcak LED ve kahve makinesi. Boş dış bantlar kesildi.",
+      "alt_tr": "Beyaz country alt kapaklar, ahşap sırt paneli ve siyah cam üst dolap; sıcak LED ve kahve makinesi. Boş dış bantlar kesildi.",
+      "category": "coffee",
+      "category_label": "Kahve köşesi / servis",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Kahve köşesi modelleri",
+      "master": "assets/catalog/reference/kahve-kosesi/r-kah-13-kompakt-beyaz-ahsap-kahve-kosesi.png",
+      "web": [
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-13-kompakt-beyaz-ahsap-kahve-kosesi-600.webp",
+          "width": 600,
+          "height": 754,
+          "sha256": "5b38e8066c8fb905a55c9d3be41ca177836e3bd9c17cae163146916d26d05107"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-13-kompakt-beyaz-ahsap-kahve-kosesi-1000.webp",
+          "width": 1000,
+          "height": 1258,
+          "sha256": "32c12ff4a84d38bc43e110503151c39298a0365bdf3e12630c74b690c8fc4907"
+        }
+      ],
+      "width": 1200,
+      "height": 1509,
+      "sha256": "f35ee8aa598f9fb68c16b3860de411084de8ac9330f504958322bfbfe81758de",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://cdn.dsmcdn.com/ty1860/prod/QC_PREP/20260426/14/3fd1b53b-0fd1-3b0b-a1d1-8bb7cdb400ae/1_org_zoom.jpg",
+        "page_url": "https://www.trendyol.com/izlanda/kahve-kosesi-p-1138553144?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/originals/downloaded/r-kah-13-bos-bantli-kaynak.jpg",
+        "source_sha256": "8d7e2de814b172fe2f8c66b36405e9cbd1dc420de6479437746b3bb817432505",
+        "source_crop_box": [
+          0,
+          144,
+          1200,
+          1653
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-KAH-14",
+      "legacy_choice": "pool:5c1ccf0c6a0aeb04c0b1",
+      "title": "Beyaz country kemerli kahve köşesi",
+      "description": "Kemerli beyaz niş, iki yanda ışıklı cam vitrin, siyah tezgâh ve alt çerçeveli kapaklar; gri zeminli iç mekân.",
+      "alt_tr": "Kemerli beyaz niş, iki yanda ışıklı cam vitrin, siyah tezgâh ve alt çerçeveli kapaklar; gri zeminli iç mekân.",
+      "category": "coffee",
+      "category_label": "Kahve köşesi / servis",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Kahve köşesi modelleri",
+      "master": "assets/catalog/reference/kahve-kosesi/r-kah-14-beyaz-country-kemerli-kahve-kosesi.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-14-beyaz-country-kemerli-kahve-kosesi-600.webp",
+          "width": 600,
+          "height": 1067,
+          "sha256": "aaaa71b11b34213ac79b3ac3ad74afb82e4c53cdef592fb1d85e38e283855c8b"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-14-beyaz-country-kemerli-kahve-kosesi-1000.webp",
+          "width": 1000,
+          "height": 1778,
+          "sha256": "a6312aa47a87ce6afe40d15b3f6a2e9feed8cbe609b36d84ecfaea1cfdb9b968"
+        }
+      ],
+      "width": 1080,
+      "height": 1920,
+      "sha256": "de6d9a9dbd79e17377dad88d8cb716b3c2d27a9e136bc5b7f34ed1779f753061",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://i.pinimg.com/originals/f1/29/f9/f129f9a1f45b184604681d66b5cd4536.jpg",
+        "page_url": "https://es.pinterest.com/aysegulsilahsor26/?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/kahve-kosesi/r-kah-14-beyaz-country-kemerli-kahve-kosesi.jpg",
+        "source_sha256": "de6d9a9dbd79e17377dad88d8cb716b3c2d27a9e136bc5b7f34ed1779f753061",
+        "source_crop_box": [
+          0,
+          0,
+          1080,
+          1920
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-KAH-15",
+      "legacy_choice": "pool:9bb75c9fd34f71cef39d",
+      "title": "Bej uzun kemerli kahve ünitesi",
+      "description": "Siyah çerçeveli yan cam vitrinler, ışıklı kemerli orta niş, açık raflar ve uzun çekmeceler; sıcak bej tonlar.",
+      "alt_tr": "Siyah çerçeveli yan cam vitrinler, ışıklı kemerli orta niş, açık raflar ve uzun çekmeceler; sıcak bej tonlar.",
+      "category": "coffee",
+      "category_label": "Kahve köşesi / servis",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Kahve köşesi modelleri",
+      "master": "assets/catalog/reference/kahve-kosesi/r-kah-15-bej-uzun-kemerli-kahve-unitesi.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-15-bej-uzun-kemerli-kahve-unitesi-600.webp",
+          "width": 600,
+          "height": 1067,
+          "sha256": "5654a9fca03cda191dae32159224e9dcbd7c649a50601fe9dd70c1b5ced40826"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-15-bej-uzun-kemerli-kahve-unitesi-1000.webp",
+          "width": 1000,
+          "height": 1778,
+          "sha256": "55e731b144b64631225fe4684c3b6f5cb9fde3af129cdb2c4b9542663d55098f"
+        }
+      ],
+      "width": 1080,
+      "height": 1920,
+      "sha256": "a84706665e90d3e943532ee57d295adbdf4e3c54403410cef54fca82aececd96",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://i.pinimg.com/originals/b7/11/dc/b711dca87c33eb3c069853f9191ce156.jpg",
+        "page_url": "https://storage.googleapis.com/bmrbzgivsucokykquhebguwryigxkv/modern-crockery-unit-design-ideas-for-kitchen.html?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/kahve-kosesi/r-kah-15-bej-uzun-kemerli-kahve-unitesi.jpg",
+        "source_sha256": "a84706665e90d3e943532ee57d295adbdf4e3c54403410cef54fca82aececd96",
+        "source_crop_box": [
+          0,
+          0,
+          1080,
+          1920
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-KAH-16",
+      "legacy_choice": "pool:7f95e9df37a588d2239b",
+      "title": "Gri çekmeceli sağ vitrinli kahve ünitesi",
+      "description": "Ahşap arka yüzey, siyah cam üst dolap, sağda boy cam vitrin, gri uzun çekmeceler ve tezgahta ekipmanlar.",
+      "alt_tr": "Ahşap arka yüzey, siyah cam üst dolap, sağda boy cam vitrin, gri uzun çekmeceler ve tezgahta ekipmanlar.",
+      "category": "coffee",
+      "category_label": "Kahve köşesi / servis",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Kahve köşesi modelleri",
+      "master": "assets/catalog/reference/kahve-kosesi/r-kah-16-gri-cekmeceli-sag-vitrinli-kahve-unitesi.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-16-gri-cekmeceli-sag-vitrinli-kahve-unitesi-600.webp",
+          "width": 600,
+          "height": 880,
+          "sha256": "5ecda0edc2d22be526d55e7ea57897f938407b9179284e982fdc9ca18fd4dbc9"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-16-gri-cekmeceli-sag-vitrinli-kahve-unitesi-1000.webp",
+          "width": 1000,
+          "height": 1466,
+          "sha256": "72b66eca797997d982eaec1b5d61c9f73cc2719af0f847ff7880d653be7ceecc"
+        }
+      ],
+      "width": 1142,
+      "height": 1674,
+      "sha256": "dd621c650aa35f374d745763dd46b523a7a9118061b3f5c9c0b5ffae7aa58243",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://i.pinimg.com/originals/04/a8/ad/04a8ad0343c62746f292291c2a8d94ec.jpg",
+        "page_url": "https://www.pinterest.com/ideas/coffee-corner-ideas-modern/903369777797/?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/kahve-kosesi/r-kah-16-gri-cekmeceli-sag-vitrinli-kahve-unitesi.jpg",
+        "source_sha256": "dd621c650aa35f374d745763dd46b523a7a9118061b3f5c9c0b5ffae7aa58243",
+        "source_crop_box": [
+          0,
+          0,
+          1142,
+          1674
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-ANT-01",
+      "legacy_choice": "pool:342231d53c9538eee330",
+      "title": "Organik yuvarlak LED ayna",
+      "description": "Kavisli organik formlu duvar aynası, çevresinde sıcak LED ve solda ayaklı bitki; sade antre/ayna referansı.",
+      "alt_tr": "Kavisli organik formlu duvar aynası, çevresinde sıcak LED ve solda ayaklı bitki; sade antre/ayna referansı.",
+      "category": "hall",
+      "category_label": "Antre / ayna",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Antre / ayna bölümü",
+      "master": "assets/catalog/reference/antre-ayna/r-ant-01-organik-yuvarlak-led-ayna.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/antre-ayna/r-ant-01-organik-yuvarlak-led-ayna-600.webp",
+          "width": 600,
+          "height": 1067,
+          "sha256": "5df83b00282a3a9fa5c1dc14fa3c8340ca861b5ad6e85f7e59ae4a63931c9fc1"
+        },
+        {
+          "path": "assets/web/reference/antre-ayna/r-ant-01-organik-yuvarlak-led-ayna-1000.webp",
+          "width": 1000,
+          "height": 1778,
+          "sha256": "94f77005fc949d915e4a6fab1a0507dbab9cdbebcc1aaa8045bcbe7854041555"
+        }
+      ],
+      "width": 1080,
+      "height": 1920,
+      "sha256": "ec4e8cdc27f41f34c9813444a400424b24cd798d7654113e9825b7964f2fc9f0",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://i.pinimg.com/originals/74/d6/02/74d602c1283d7acc8a320ef21c6eb1fe.jpg",
+        "page_url": "https://fi.pinterest.com/rcd_loirinha_cris/sala-espelho/?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/antre-ayna/r-ant-01-organik-yuvarlak-led-ayna.jpg",
+        "source_sha256": "ec4e8cdc27f41f34c9813444a400424b24cd798d7654113e9825b7964f2fc9f0",
+        "source_crop_box": [
+          0,
+          0,
+          1080,
+          1920
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-ANT-02",
+      "legacy_choice": "pool:1104f39eb26d421ee801",
+      "title": "Gri çıtalı asimetrik LED ayna konsolu",
+      "description": "Gri çıtalı yarım duvar ve asimetrik ayna; önünde tek asma çekmece, kenarlarda sıcak LED. Dikey yakın kompozisyon.",
+      "alt_tr": "Gri çıtalı yarım duvar ve asimetrik ayna; önünde tek asma çekmece, kenarlarda sıcak LED. Dikey yakın kompozisyon.",
+      "category": "hall",
+      "category_label": "Antre / ayna",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Antre / ayna bölümü",
+      "master": "assets/catalog/reference/antre-ayna/r-ant-02-gri-citali-asimetrik-led-ayna-konsolu.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/antre-ayna/r-ant-02-gri-citali-asimetrik-led-ayna-konsolu-600.webp",
+          "width": 600,
+          "height": 1067,
+          "sha256": "c41ad67411c58ca2d7bfc62fc0e28c3f49bbd3f913e54bcf10c5ddcff67723ba"
+        },
+        {
+          "path": "assets/web/reference/antre-ayna/r-ant-02-gri-citali-asimetrik-led-ayna-konsolu-1000.webp",
+          "width": 1000,
+          "height": 1778,
+          "sha256": "6421ce48e28ead276ce67ced04d80b8a13284bec15c0fc721414b074dc1bbd3f"
+        }
+      ],
+      "width": 1080,
+      "height": 1920,
+      "sha256": "56524cc6c8744eb8366aee6484c9f1a756d13c85fe0b54c5b9f3815193dba332",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://i.pinimg.com/originals/19/d1/9e/19d19ed4461934310bc8d0ecb6f8fa2b.jpg",
+        "page_url": "https://ru.pinterest.com/pin/493496071691882231/?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/antre-ayna/r-ant-02-gri-citali-asimetrik-led-ayna-konsolu.jpg",
+        "source_sha256": "56524cc6c8744eb8366aee6484c9f1a756d13c85fe0b54c5b9f3815193dba332",
+        "source_crop_box": [
+          0,
+          0,
+          1080,
+          1920
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-ANT-03",
+      "legacy_choice": "pool:5438de960a5f73598db3",
+      "title": "Ahşap çıtalı yuvarlak ayna siyah konsol",
+      "description": "Duvarın yarısı ahşap çıta, yarısı yuvarlak ayna; siyah asma çekmece ve açık renk puf. Dikey antre görünümü.",
+      "alt_tr": "Duvarın yarısı ahşap çıta, yarısı yuvarlak ayna; siyah asma çekmece ve açık renk puf. Dikey antre görünümü.",
+      "category": "hall",
+      "category_label": "Antre / ayna",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Antre / ayna bölümü",
+      "master": "assets/catalog/reference/antre-ayna/r-ant-03-ahsap-citali-yuvarlak-ayna-siyah-konsol.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/antre-ayna/r-ant-03-ahsap-citali-yuvarlak-ayna-siyah-konsol-600.webp",
+          "width": 600,
+          "height": 1067,
+          "sha256": "9d7b47dc1fd3f4907ad1bd9dfbc12f633b7daf7a341b28adbdc547e5fc230497"
+        },
+        {
+          "path": "assets/web/reference/antre-ayna/r-ant-03-ahsap-citali-yuvarlak-ayna-siyah-konsol-1000.webp",
+          "width": 1000,
+          "height": 1778,
+          "sha256": "2ff0b82cea6c85df981675186385ddb74a3fbfcb22fa1d9838cc3a059cf914b0"
+        }
+      ],
+      "width": 1080,
+      "height": 1920,
+      "sha256": "3cdbe8d8ae6c86c4a6f1c1a776e8385a86093e61b203f20f90229a993671e63f",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://i.pinimg.com/originals/14/8b/90/148b90b636c2c9dec0d60d8e6345ac5f.jpg",
+        "page_url": "https://fi.pinterest.com/piletskayaliza/%D0%B7%D0%B5%D1%80%D0%BA%D0%B0%D0%BB%D0%B0/?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/antre-ayna/r-ant-03-ahsap-citali-yuvarlak-ayna-siyah-konsol.jpg",
+        "source_sha256": "3cdbe8d8ae6c86c4a6f1c1a776e8385a86093e61b203f20f90229a993671e63f",
+        "source_crop_box": [
+          0,
+          0,
+          1080,
+          1920
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-ANT-04",
+      "legacy_choice": "pool:30940b9542454ea18698",
+      "title": "Gri mermer üstlü çift çekmeceli antre",
+      "description": "Geniş ayna, gri çıtalı yüzey, mermer görünümlü üst tabla ve iki çekmece; vazolu, sıcak LED aydınlatmalı iç mekân.",
+      "alt_tr": "Geniş ayna, gri çıtalı yüzey, mermer görünümlü üst tabla ve iki çekmece; vazolu, sıcak LED aydınlatmalı iç mekân.",
+      "category": "hall",
+      "category_label": "Antre / ayna",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Antre / ayna bölümü",
+      "master": "assets/catalog/reference/antre-ayna/r-ant-04-gri-mermer-ustlu-cift-cekmeceli-antre.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/antre-ayna/r-ant-04-gri-mermer-ustlu-cift-cekmeceli-antre-600.webp",
+          "width": 600,
+          "height": 800,
+          "sha256": "6d0db615d948bccf77edd3ab7d9eaa8aa08a6f74466c68c062c94c22468c46bb"
+        },
+        {
+          "path": "assets/web/reference/antre-ayna/r-ant-04-gri-mermer-ustlu-cift-cekmeceli-antre-1000.webp",
+          "width": 1000,
+          "height": 1333,
+          "sha256": "b5945067765932a47ff9f187cc6ee0a1faafecf34f63cf563414f5f3beef6c18"
+        }
+      ],
+      "width": 1224,
+      "height": 1632,
+      "sha256": "154e91febadfe9ad761f2cdeb3138fa2bc24b8b51731b5ebe0cdc116b25fbec6",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://i.pinimg.com/originals/9a/42/29/9a422964937587232b2067d08067e03b.jpg",
+        "page_url": "https://ca.pinterest.com/ideas/drasuvar-modelleri/900720303907/?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/antre-ayna/r-ant-04-gri-mermer-ustlu-cift-cekmeceli-antre.jpg",
+        "source_sha256": "154e91febadfe9ad761f2cdeb3138fa2bc24b8b51731b5ebe0cdc116b25fbec6",
+        "source_crop_box": [
+          0,
+          0,
+          1224,
+          1632
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-MUT-01",
+      "legacy_choice": "pool:c14e7554894020f8bf7d",
+      "title": "Açık gri U mutfak geometrik tavan ışığı",
+      "description": "Ortada pencere, siyah tezgâh, açık gri düz dolaplar ve U yerleşim; tavanda dikdörtgen LED çizgisi. Dikey model referansı.",
+      "alt_tr": "Ortada pencere, siyah tezgâh, açık gri düz dolaplar ve U yerleşim; tavanda dikdörtgen LED çizgisi. Dikey model referansı.",
+      "category": "kitchen",
+      "category_label": "Mutfak",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Mutfak bölümü",
+      "master": "assets/catalog/reference/mutfak/r-mut-01-acik-gri-u-mutfak-geometrik-tavan-isigi.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/mutfak/r-mut-01-acik-gri-u-mutfak-geometrik-tavan-isigi-600.webp",
+          "width": 600,
+          "height": 804,
+          "sha256": "7b63a53d66991a1c2457168b1f79536b84be6f3051587287193e682162ae3644"
+        },
+        {
+          "path": "assets/web/reference/mutfak/r-mut-01-acik-gri-u-mutfak-geometrik-tavan-isigi-1000.webp",
+          "width": 1000,
+          "height": 1339,
+          "sha256": "c0b537a9160fb85fe444bf4a45340cd6b6e9de325b8f83d17e0d410e4defdd0d"
+        },
+        {
+          "path": "assets/web/reference/mutfak/r-mut-01-acik-gri-u-mutfak-geometrik-tavan-isigi-1400.webp",
+          "width": 1400,
+          "height": 1875,
+          "sha256": "cabbb5560a9d9ca9156a9fe5026817f46943f19bb6ed18086059cac0f852d160"
+        }
+      ],
+      "width": 1792,
+      "height": 2400,
+      "sha256": "c16f033b998e458eeb320301200ab6353305c5088bc3f930edf96e5c26543c0e",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://i.pinimg.com/originals/7e/b8/c6/7eb8c6d323996b42eec933cf4f4bf4e3.jpg",
+        "page_url": "https://in.pinterest.com/ideas/kitchen-wall-panels/922313825542/?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/mutfak/r-mut-01-acik-gri-u-mutfak-geometrik-tavan-isigi.jpg",
+        "source_sha256": "c16f033b998e458eeb320301200ab6353305c5088bc3f930edf96e5c26543c0e",
+        "source_crop_box": [
+          0,
+          0,
+          1792,
+          2400
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-MUT-02",
+      "legacy_choice": "pool:8f4dde4931889c32684f",
+      "title": "Pudra krem düz mutfak duvarı",
+      "description": "Pudra/krem düz üst ve alt dolaplar, mermer desenli arka yüzey ve yüksek ankastre kolonu; geniş yatay kompozisyon.",
+      "alt_tr": "Pudra/krem düz üst ve alt dolaplar, mermer desenli arka yüzey ve yüksek ankastre kolonu; geniş yatay kompozisyon.",
+      "category": "kitchen",
+      "category_label": "Mutfak",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Mutfak bölümü",
+      "master": "assets/catalog/reference/mutfak/r-mut-02-pudra-krem-duz-mutfak-duvari.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/mutfak/r-mut-02-pudra-krem-duz-mutfak-duvari-600.webp",
+          "width": 600,
+          "height": 338,
+          "sha256": "907c803acbc697e3c34c4d082acfd537521b44db7de69620622aa03533625eed"
+        },
+        {
+          "path": "assets/web/reference/mutfak/r-mut-02-pudra-krem-duz-mutfak-duvari-1000.webp",
+          "width": 1000,
+          "height": 563,
+          "sha256": "f91d7b2e00632375ef9377bf8ab3cffdcf35fcb6ea65f2c23b23cc6174927c3b"
+        },
+        {
+          "path": "assets/web/reference/mutfak/r-mut-02-pudra-krem-duz-mutfak-duvari-1400.webp",
+          "width": 1400,
+          "height": 788,
+          "sha256": "fd8aa16cf52c55cd793f8fe211de736c92a1a158ea0e5d55e3485538c9c822e6"
+        }
+      ],
+      "width": 2560,
+      "height": 1441,
+      "sha256": "2358e9882fcf07565af8931f6c586967fb9f799a0448b08bfb109b5b0b5d7002",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://hasporealty.com/wp-content/uploads/2023/10/08.effectsresult-scaled.jpg",
+        "page_url": "https://hasporealty.com/en/properties/villa-5-2-v-tutku-villas-buyukchekmedzhe-stambul/?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/mutfak/r-mut-02-pudra-krem-duz-mutfak-duvari.jpg",
+        "source_sha256": "2358e9882fcf07565af8931f6c586967fb9f799a0448b08bfb109b5b0b5d7002",
+        "source_crop_box": [
+          0,
+          0,
+          2560,
+          1441
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-MUT-03",
+      "legacy_choice": "pool:1fba51abbdfb12bf6d5e",
+      "title": "Bej kulpsuz mutfak yakın açı",
+      "description": "Bej düz dolaplar, uzun yatay tutamak çizgileri, gazlı ocak ve yüksek ankastre kolonu; sıcak ışıklı tezgâh yakın açısı.",
+      "alt_tr": "Bej düz dolaplar, uzun yatay tutamak çizgileri, gazlı ocak ve yüksek ankastre kolonu; sıcak ışıklı tezgâh yakın açısı.",
+      "category": "kitchen",
+      "category_label": "Mutfak",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Mutfak bölümü",
+      "master": "assets/catalog/reference/mutfak/r-mut-03-bej-kulpsuz-mutfak-yakin-aci.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/mutfak/r-mut-03-bej-kulpsuz-mutfak-yakin-aci-600.webp",
+          "width": 600,
+          "height": 750,
+          "sha256": "f0ea5fe64f5b22bc4b8df9ac382908512b9bff09ff22cf37fc9662bd0c51606a"
+        },
+        {
+          "path": "assets/web/reference/mutfak/r-mut-03-bej-kulpsuz-mutfak-yakin-aci-1000.webp",
+          "width": 1000,
+          "height": 1250,
+          "sha256": "d333091b0523e648d6d4a068900bc354a9d08dc7fc0ba1f96e68d783ee9e3990"
+        },
+        {
+          "path": "assets/web/reference/mutfak/r-mut-03-bej-kulpsuz-mutfak-yakin-aci-1400.webp",
+          "width": 1400,
+          "height": 1750,
+          "sha256": "492640c9d832945b5db8f0f2111f24694f33ce3a5ce3f30314d3c9bdd6570a12"
+        }
+      ],
+      "width": 1440,
+      "height": 1800,
+      "sha256": "c7d2ebb8432b1a9a2e7567e1862557931d6fd6e8dc50fe43fac2147aeb246119",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://i.pinimg.com/originals/9b/7a/dd/9b7add65f9b8256d0746d2494864cd52.jpg",
+        "page_url": "",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/mutfak/r-mut-03-bej-kulpsuz-mutfak-yakin-aci.jpg",
+        "source_sha256": "c7d2ebb8432b1a9a2e7567e1862557931d6fd6e8dc50fe43fac2147aeb246119",
+        "source_crop_box": [
+          0,
+          0,
+          1440,
+          1800
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-MUT-04",
+      "legacy_choice": "pool:ccf1af57dbb8cc8c4797",
+      "title": "Gri mutfak siyah cam üst dolap",
+      "description": "Gri çekmeceler, açık mermer tezgâh/arka panel, siyah batarya ve yansıtıcı siyah cam üst dolaplar; yakın açı.",
+      "alt_tr": "Gri çekmeceler, açık mermer tezgâh/arka panel, siyah batarya ve yansıtıcı siyah cam üst dolaplar; yakın açı.",
+      "category": "kitchen",
+      "category_label": "Mutfak",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Mutfak bölümü",
+      "master": "assets/catalog/reference/mutfak/r-mut-04-gri-mutfak-siyah-cam-ust-dolap.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/mutfak/r-mut-04-gri-mutfak-siyah-cam-ust-dolap-600.webp",
+          "width": 600,
+          "height": 800,
+          "sha256": "6922df98913b252b6928c26b124695a29ac448c3e64b5b29332cd09ff928389d"
+        },
+        {
+          "path": "assets/web/reference/mutfak/r-mut-04-gri-mutfak-siyah-cam-ust-dolap-1000.webp",
+          "width": 1000,
+          "height": 1333,
+          "sha256": "14f8e75ddfa4fb3ccf369b7bb73463fbddb3c659f3bcdf87492440af33464bc4"
+        }
+      ],
+      "width": 1200,
+      "height": 1600,
+      "sha256": "6d41d6135ecfcf2e4a245e533b8b6402d0d0a3f12217cba626728357bceb1dcc",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://i.pinimg.com/originals/c7/4b/45/c74b455bd162045c369ef83ebe10904a.jpg",
+        "page_url": "",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/mutfak/r-mut-04-gri-mutfak-siyah-cam-ust-dolap.jpg",
+        "source_sha256": "6d41d6135ecfcf2e4a245e533b8b6402d0d0a3f12217cba626728357bceb1dcc",
+        "source_crop_box": [
+          0,
+          0,
+          1200,
+          1600
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-MUT-05",
+      "legacy_choice": "pool:4edc405482d9c3040178",
+      "title": "Açık renk L mutfak sarı tavan ışığı",
+      "description": "Açık bej/gri L dolaplar, koyu tezgâh, ankastre ekipmanlar ve sıcak asma tavan ışığı; uzun dar mekân.",
+      "alt_tr": "Açık bej/gri L dolaplar, koyu tezgâh, ankastre ekipmanlar ve sıcak asma tavan ışığı; uzun dar mekân.",
+      "category": "kitchen",
+      "category_label": "Mutfak",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Mutfak bölümü",
+      "master": "assets/catalog/reference/mutfak/r-mut-05-acik-renk-l-mutfak-sari-tavan-isigi.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/mutfak/r-mut-05-acik-renk-l-mutfak-sari-tavan-isigi-600.webp",
+          "width": 600,
+          "height": 800,
+          "sha256": "6443eb61869a5ac819bbee7858200433acf2ea00761603639ca116960e2c367e"
+        },
+        {
+          "path": "assets/web/reference/mutfak/r-mut-05-acik-renk-l-mutfak-sari-tavan-isigi-1000.webp",
+          "width": 1000,
+          "height": 1333,
+          "sha256": "0148bacc71edb9fd9948e2d00b74ef3ca3a223e6c728d85bd94730d055ddefc2"
+        }
+      ],
+      "width": 1200,
+      "height": 1600,
+      "sha256": "c05b7c3bcb5b46af28e9eb027fc88733faf047ec20206db5666d5197fd42b56c",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://www.erkulinsaat.com/img/devam-eden/gonca/17.jpeg",
+        "page_url": "https://www.erkulinsaat.com/gonca.html?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/mutfak/r-mut-05-acik-renk-l-mutfak-sari-tavan-isigi.jpg",
+        "source_sha256": "c05b7c3bcb5b46af28e9eb027fc88733faf047ec20206db5666d5197fd42b56c",
+        "source_crop_box": [
+          0,
+          0,
+          1200,
+          1600
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-MUT-06",
+      "legacy_choice": "pool:10773d541bc1b8b0706c",
+      "title": "Gri cam vitrinli bitkili mutfak",
+      "description": "Geniş cam üst dolaplar ve içlerinde bitkiler; açık gri alt çekmeceler, mermer arka yüzey ve pencere önü evye.",
+      "alt_tr": "Geniş cam üst dolaplar ve içlerinde bitkiler; açık gri alt çekmeceler, mermer arka yüzey ve pencere önü evye.",
+      "category": "kitchen",
+      "category_label": "Mutfak",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Mutfak bölümü",
+      "master": "assets/catalog/reference/mutfak/r-mut-06-gri-cam-vitrinli-bitkili-mutfak.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/mutfak/r-mut-06-gri-cam-vitrinli-bitkili-mutfak-600.webp",
+          "width": 600,
+          "height": 1066,
+          "sha256": "d22ab89f052badae2c64106b3d5e4b669726fddd2cc6de7ca50ceb0faadb1297"
+        },
+        {
+          "path": "assets/web/reference/mutfak/r-mut-06-gri-cam-vitrinli-bitkili-mutfak-1000.webp",
+          "width": 1000,
+          "height": 1777,
+          "sha256": "67bd6575adb11bc8e21d4863348752a1da90de6f53a3622a24c24d51885f6d8c"
+        }
+      ],
+      "width": 1024,
+      "height": 1820,
+      "sha256": "ab9b5a9b62d89c769ec1b7e5453915d5de4fbe3fed76ea7eec0047bc0bc5fa0c",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://i.pinimg.com/originals/bc/3d/d3/bc3dd3b9ac67f291d97a2a70864c21be.jpg",
+        "page_url": "https://uk.pinterest.com/danalhall98/aunt-onie-house/?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/mutfak/r-mut-06-gri-cam-vitrinli-bitkili-mutfak.jpg",
+        "source_sha256": "ab9b5a9b62d89c769ec1b7e5453915d5de4fbe3fed76ea7eec0047bc0bc5fa0c",
+        "source_crop_box": [
+          0,
+          0,
+          1024,
+          1820
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-MUT-07",
+      "legacy_choice": "pool:098f176f195e8c7ef034",
+      "title": "Açık gri L mutfak pencere önü evye",
+      "description": "Açık gri düz dolaplar, siyah yatay çizgi, köşede ocak ve büyük pencere önünde evye. Yatay modern mutfak referansı.",
+      "alt_tr": "Açık gri düz dolaplar, siyah yatay çizgi, köşede ocak ve büyük pencere önünde evye. Yatay modern mutfak referansı.",
+      "category": "kitchen",
+      "category_label": "Mutfak",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Mutfak bölümü",
+      "master": "assets/catalog/reference/mutfak/r-mut-07-acik-gri-l-mutfak-pencere-onu-evye.webp",
+      "web": [
+        {
+          "path": "assets/web/reference/mutfak/r-mut-07-acik-gri-l-mutfak-pencere-onu-evye-600.webp",
+          "width": 600,
+          "height": 400,
+          "sha256": "89961e60c013710a538e4d891ba34af04edc03650420d7a41be98714fc758717"
+        },
+        {
+          "path": "assets/web/reference/mutfak/r-mut-07-acik-gri-l-mutfak-pencere-onu-evye-1000.webp",
+          "width": 1000,
+          "height": 667,
+          "sha256": "104996fb95dd2b553380c6278d44c7374acfecfadfdda87b54a15b2f4a1c6788"
+        },
+        {
+          "path": "assets/web/reference/mutfak/r-mut-07-acik-gri-l-mutfak-pencere-onu-evye-1400.webp",
+          "width": 1400,
+          "height": 933,
+          "sha256": "8dbfca96573bbd8ac26dd826ff5e8f9f5680885d586cfb9bb4fd520d2006e6aa"
+        }
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sha256": "ddf019c6abdc6f162e56ff723dfb2111afeeb14dcc4e570f0915081fb16a1d5f",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://sc04.alicdn.com/kf/Hfef017bb1756483da925824a095c5300M/SANTOPOVA-Custom-Modern-Kitchen-Full-Height-Cabinet-Hidden-Handle-Waterproof-MDF-Wall-Backsplash.jpg",
+        "page_url": "",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/mutfak/r-mut-07-acik-gri-l-mutfak-pencere-onu-evye.webp",
+        "source_sha256": "ddf019c6abdc6f162e56ff723dfb2111afeeb14dcc4e570f0915081fb16a1d5f",
+        "source_crop_box": [
+          0,
+          0,
+          1536,
+          1024
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-MUT-08",
+      "legacy_choice": "pool:1e79cb1ffe6f7b8d8763",
+      "title": "Ahşap çıtalı sıcak ışıklı mutfak",
+      "description": "Ahşap çıtalı üst kapaklar ve cam vitrinler, açık tezgâh ve düz alt çekmeceler; sıcak LED aydınlatma.",
+      "alt_tr": "Ahşap çıtalı üst kapaklar ve cam vitrinler, açık tezgâh ve düz alt çekmeceler; sıcak LED aydınlatma.",
+      "category": "kitchen",
+      "category_label": "Mutfak",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Mutfak bölümü",
+      "master": "assets/catalog/reference/mutfak/r-mut-08-ahsap-citali-sicak-isikli-mutfak.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/mutfak/r-mut-08-ahsap-citali-sicak-isikli-mutfak-600.webp",
+          "width": 600,
+          "height": 900,
+          "sha256": "68a435a6a6903c74cedae16d84ebb06eb43cff39e04f37db6bbe9b3d35c62428"
+        },
+        {
+          "path": "assets/web/reference/mutfak/r-mut-08-ahsap-citali-sicak-isikli-mutfak-1000.webp",
+          "width": 1000,
+          "height": 1500,
+          "sha256": "5941a1849f7b3db62234f778b7de8970f33a9d514091289e29cf2f107b542434"
+        }
+      ],
+      "width": 1024,
+      "height": 1536,
+      "sha256": "61c91ad3f22fc0a1b3b859bd5acf101c8a6d43e7c77ca05954312448268e21a2",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://i.pinimg.com/originals/de/e1/c0/dee1c0ed96b32d756efce9cdc28a5c92.jpg",
+        "page_url": "https://ru.pinterest.com/pin/658651514303967353/?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/mutfak/r-mut-08-ahsap-citali-sicak-isikli-mutfak.jpg",
+        "source_sha256": "61c91ad3f22fc0a1b3b859bd5acf101c8a6d43e7c77ca05954312448268e21a2",
+        "source_crop_box": [
+          0,
+          0,
+          1024,
+          1536
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-MUT-09",
+      "legacy_choice": "pool:fa3d4f463a91d447c9f9",
+      "title": "Antrasit mutfak siyah metro seramik",
+      "description": "Koyu/antrasit dolaplar, siyah metro seramik arka yüzey, ışıklı cam vitrinler ve siyah tezgâh; güçlü koyu palet.",
+      "alt_tr": "Koyu/antrasit dolaplar, siyah metro seramik arka yüzey, ışıklı cam vitrinler ve siyah tezgâh; güçlü koyu palet.",
+      "category": "kitchen",
+      "category_label": "Mutfak",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Mutfak bölümü",
+      "master": "assets/catalog/reference/mutfak/r-mut-09-antrasit-mutfak-siyah-metro-seramik.webp",
+      "web": [
+        {
+          "path": "assets/web/reference/mutfak/r-mut-09-antrasit-mutfak-siyah-metro-seramik-600.webp",
+          "width": 600,
+          "height": 900,
+          "sha256": "ebdfe2457be42f90b0f57cc9d7afa32e5a7d9c4c5b0bc3672e41497e302246ea"
+        },
+        {
+          "path": "assets/web/reference/mutfak/r-mut-09-antrasit-mutfak-siyah-metro-seramik-1000.webp",
+          "width": 1000,
+          "height": 1500,
+          "sha256": "d64326374e456c31cc4917a183e1f9fabcb3275bf42188fb9f858b7167dc7ee7"
+        }
+      ],
+      "width": 1024,
+      "height": 1536,
+      "sha256": "bce047502543bbaed8eda6873b3dd7b44038cd40f336b084fd4391efa881d2b4",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://i.pinimg.com/originals/45/7a/90/457a901676207100378f232939290a22.webp",
+        "page_url": "https://za.pinterest.com/ideas/black-kitchen-tiles-ideas/908845291360/?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/mutfak/r-mut-09-antrasit-mutfak-siyah-metro-seramik.webp",
+        "source_sha256": "bce047502543bbaed8eda6873b3dd7b44038cd40f336b084fd4391efa881d2b4",
+        "source_crop_box": [
+          0,
+          0,
+          1024,
+          1536
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "R-TV-01",
+      "legacy_choice": "pool:56b0402ac2b1f77d19ef",
+      "title": "Açık ahşap TV şömine duvarı",
+      "description": "Tam boy açık ahşap panel, sağda siyah TV, solda doğrusal şömine, mermer görünümlü alt baza ve yuvarlak sehpa.",
+      "alt_tr": "Tam boy açık ahşap panel, sağda siyah TV, solda doğrusal şömine, mermer görünümlü alt baza ve yuvarlak sehpa.",
+      "category": "tv",
+      "category_label": "TV ünitesi",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "TV ünitesi bölümü",
+      "master": "assets/catalog/reference/tv-unitesi/r-tv-01-acik-ahsap-tv-somine-duvari.jpg",
+      "web": [
+        {
+          "path": "assets/web/reference/tv-unitesi/r-tv-01-acik-ahsap-tv-somine-duvari-600.webp",
+          "width": 600,
+          "height": 954,
+          "sha256": "7adc0951075b569fd84d49427344f7d51e2e4bf402c9f6286d339ac2d55d8b7f"
+        },
+        {
+          "path": "assets/web/reference/tv-unitesi/r-tv-01-acik-ahsap-tv-somine-duvari-1000.webp",
+          "width": 1000,
+          "height": 1590,
+          "sha256": "80b84390f71c4aa3c1b3ebc7f16c5561dd6210896eba5a4ce5104135c052a24e"
+        }
+      ],
+      "width": 1036,
+      "height": 1647,
+      "sha256": "f18d6a2b6f2137a6bc140a269123fe25d40b45028f9cdf546bf4beae7eb111d6",
+      "visual_review": "Detailed contact sheet review; no overlay, caption, date stamp or watermark seen",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://i.pinimg.com/originals/45/b1/66/45b1664df5da6d65f483aa70703a3b6f.jpg",
+        "page_url": "https://ru.pinterest.com/pin/562668547217901697/?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/catalog/reference/tv-unitesi/r-tv-01-acik-ahsap-tv-somine-duvari.jpg",
+        "source_sha256": "f18d6a2b6f2137a6bc140a269123fe25d40b45028f9cdf546bf4beae7eb111d6",
+        "source_crop_box": [
+          0,
+          0,
+          1036,
+          1647
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "P-MUT-01",
+      "legacy_choice": "local:0f85c7dba92fee33",
+      "title": "Beyaz L mutfak ışıklı cam vitrin",
+      "description": "Doğrudan çekim: beyaz köşe mutfak, siyah kulplar, sarı tezgâh ışığı ve üstte cam vitrin. Alt telefon/tarih damgası kırpıldı.",
+      "alt_tr": "Doğrudan çekim: beyaz köşe mutfak, siyah kulplar, sarı tezgâh ışığı ve üstte cam vitrin. Alt telefon/tarih damgası kırpıldı.",
+      "category": "kitchen",
+      "category_label": "Mutfak",
+      "role": "provided",
+      "role_label": "Müşteriden gelen gerçek çekim",
+      "suggested_usage": "Uygulama fotoğrafları — aidiyet teyidi sonrası",
+      "master": "assets/catalog/provided/mutfak/p-mut-01-beyaz-l-mutfak-isikli-cam-vitrin.png",
+      "web": [
+        {
+          "path": "assets/web/provided/mutfak/p-mut-01-beyaz-l-mutfak-isikli-cam-vitrin-600.webp",
+          "width": 600,
+          "height": 419,
+          "sha256": "71fe158ee956c73d6de42d2642a6cc1ea669e0e49ec605e932101a7c6a78427a"
+        },
+        {
+          "path": "assets/web/provided/mutfak/p-mut-01-beyaz-l-mutfak-isikli-cam-vitrin-1000.webp",
+          "width": 1000,
+          "height": 699,
+          "sha256": "b30f6bee625560007fe68b1130fa2835e0fa05a2ca99c48aa65ef33ca672c3c4"
+        },
+        {
+          "path": "assets/web/provided/mutfak/p-mut-01-beyaz-l-mutfak-isikli-cam-vitrin-1400.webp",
+          "width": 1400,
+          "height": 978,
+          "sha256": "6066811cad8cc40fe06706d2fc28f3f8d10db867c17da3b6a5f4b8ff91df9a66"
+        }
+      ],
+      "width": 2040,
+      "height": 1425,
+      "sha256": "8ccaf28657c92fc10d3afbaf46c60fe529440519ffc3b5c8717dede7a7fafc6a",
+      "visual_review": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay",
+      "text_clear": true,
+      "provenance": {
+        "processing": "lossless_bottom_crop",
+        "authorship": "user_provided_not_independently_verified",
+        "source_path": "assets/originals/photos/o021-beyaz-kose-mutfak-siyah-kulplar-sari-tezgah-isigi-ve-ustte-cam-vitrin-altinda-telefon-.jpeg",
+        "source_sha256": "0f85c7dba92fee33e73c2af24cbf6022b33c4293e09e19a405178226c977f48e",
+        "source_crop_box": [
+          0,
+          0,
+          2040,
+          1425
+        ],
+        "original_id": "O021"
+      }
+    },
+    {
+      "id": "P-TV-01",
+      "legacy_choice": "local:c4ba22a0fe90f25a",
+      "title": "Ceviz çıtalı TV duvarı cam vitrin",
+      "description": "Doğrudan çekim: ceviz çıtalı TV duvarı, solda uzun cam vitrin, koyu alt konsol ve sıcak LED. Alt telefon/tarih damgası kırpıldı.",
+      "alt_tr": "Doğrudan çekim: ceviz çıtalı TV duvarı, solda uzun cam vitrin, koyu alt konsol ve sıcak LED. Alt telefon/tarih damgası kırpıldı.",
+      "category": "tv",
+      "category_label": "TV ünitesi",
+      "role": "provided",
+      "role_label": "Müşteriden gelen gerçek çekim",
+      "suggested_usage": "Uygulama fotoğrafları — aidiyet teyidi sonrası",
+      "master": "assets/catalog/provided/tv-unitesi/p-tv-01-ceviz-citali-tv-duvari-cam-vitrin.png",
+      "web": [
+        {
+          "path": "assets/web/provided/tv-unitesi/p-tv-01-ceviz-citali-tv-duvari-cam-vitrin-600.webp",
+          "width": 600,
+          "height": 419,
+          "sha256": "b4a9280d0c663ec8440a57a2746f5a1e2585810a5bc9e8caae78cccc1dbe1b08"
+        },
+        {
+          "path": "assets/web/provided/tv-unitesi/p-tv-01-ceviz-citali-tv-duvari-cam-vitrin-1000.webp",
+          "width": 1000,
+          "height": 699,
+          "sha256": "4d57163444e8677747ce05b8fae6170d48548bf5a6b892f29eae547c0e2e51de"
+        },
+        {
+          "path": "assets/web/provided/tv-unitesi/p-tv-01-ceviz-citali-tv-duvari-cam-vitrin-1400.webp",
+          "width": 1400,
+          "height": 978,
+          "sha256": "75d4cb8ca2539180deabf592c88cedf6743414b34848c127a584f65e5c41f0d0"
+        }
+      ],
+      "width": 2040,
+      "height": 1425,
+      "sha256": "24af078c4958e42c038c399e435bdfde62374da93a0b3622f67d0ad3a42efb85",
+      "visual_review": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay",
+      "text_clear": true,
+      "provenance": {
+        "processing": "lossless_bottom_crop",
+        "authorship": "user_provided_not_independently_verified",
+        "source_path": "assets/originals/photos/o022-ceviz-citali-tv-duvari-solda-uzun-cam-vitrin-koyu-alt-konsol-ve-sicak-led-telefon-tari.jpeg",
+        "source_sha256": "c4ba22a0fe90f25a2592005d2d570c703d3b7fc3683576452a31bf70aad61ce0",
+        "source_crop_box": [
+          0,
+          0,
+          2040,
+          1425
+        ],
+        "original_id": "O022"
+      }
+    },
+    {
+      "id": "P-MUT-02",
+      "legacy_choice": "local:20022a5f6621507c",
+      "title": "Beyaz L mutfak gri tezgâh",
+      "description": "Doğrudan çekim: beyaz L mutfak, siyah çerçeveli üst camlar, gri tezgâh ve sağda buzdolabı. Alt telefon/tarih damgası kırpıldı.",
+      "alt_tr": "Doğrudan çekim: beyaz L mutfak, siyah çerçeveli üst camlar, gri tezgâh ve sağda buzdolabı. Alt telefon/tarih damgası kırpıldı.",
+      "category": "kitchen",
+      "category_label": "Mutfak",
+      "role": "provided",
+      "role_label": "Müşteriden gelen gerçek çekim",
+      "suggested_usage": "Uygulama fotoğrafları — aidiyet teyidi sonrası",
+      "master": "assets/catalog/provided/mutfak/p-mut-02-beyaz-l-mutfak-gri-tezgah.png",
+      "web": [
+        {
+          "path": "assets/web/provided/mutfak/p-mut-02-beyaz-l-mutfak-gri-tezgah-600.webp",
+          "width": 600,
+          "height": 419,
+          "sha256": "b6bc112d033171e74686802385e2393a6793e3686d02845badcf41c40722e091"
+        },
+        {
+          "path": "assets/web/provided/mutfak/p-mut-02-beyaz-l-mutfak-gri-tezgah-1000.webp",
+          "width": 1000,
+          "height": 698,
+          "sha256": "653ef3a1168f32108ef2e493c56f5e428800a07de8fb1a50ef7862e8d5870168"
+        },
+        {
+          "path": "assets/web/provided/mutfak/p-mut-02-beyaz-l-mutfak-gri-tezgah-1400.webp",
+          "width": 1400,
+          "height": 978,
+          "sha256": "91b15c176c38362266f02c193b657cee0766dfa79755a24784554e8cebe3680c"
+        }
+      ],
+      "width": 2048,
+      "height": 1430,
+      "sha256": "54e4da4162aca636e2a5d7b183c49f84cd7948779615fac581255901fcf0f96a",
+      "visual_review": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay",
+      "text_clear": true,
+      "provenance": {
+        "processing": "lossless_bottom_crop",
+        "authorship": "user_provided_not_independently_verified",
+        "source_path": "assets/originals/photos/o025-beyaz-l-mutfak-siyah-cerceveli-ust-camlar-gri-tezgah-ve-sagda-buzdolabi-telefon-tarih-.jpeg",
+        "source_sha256": "20022a5f6621507cfbc903e591bd1ee403a97ff8f0abe43ae151be55dee7cefd",
+        "source_crop_box": [
+          0,
+          0,
+          2048,
+          1430
+        ],
+        "original_id": "O025"
+      }
+    },
+    {
+      "id": "P-MUT-03",
+      "legacy_choice": "local:b1ff5d93121b6057",
+      "title": "Beyaz mutfak cam üst dolap yakın açı",
+      "description": "Aynı beyaz mutfağın yakın açısı; cam üst dolaplar, siyah kulplar ve tezgâh ekipmanları. Alt telefon/tarih damgası kırpıldı.",
+      "alt_tr": "Aynı beyaz mutfağın yakın açısı; cam üst dolaplar, siyah kulplar ve tezgâh ekipmanları. Alt telefon/tarih damgası kırpıldı.",
+      "category": "kitchen",
+      "category_label": "Mutfak",
+      "role": "provided",
+      "role_label": "Müşteriden gelen gerçek çekim",
+      "suggested_usage": "Uygulama fotoğrafları — aidiyet teyidi sonrası",
+      "master": "assets/catalog/provided/mutfak/p-mut-03-beyaz-mutfak-cam-ust-dolap-yakin-aci.png",
+      "web": [
+        {
+          "path": "assets/web/provided/mutfak/p-mut-03-beyaz-mutfak-cam-ust-dolap-yakin-aci-600.webp",
+          "width": 600,
+          "height": 421,
+          "sha256": "20de1bf2af5d3df7adea0e1285a86b8cc279934d5cbaf320194910a007d23a60"
+        },
+        {
+          "path": "assets/web/provided/mutfak/p-mut-03-beyaz-mutfak-cam-ust-dolap-yakin-aci-1000.webp",
+          "width": 1000,
+          "height": 701,
+          "sha256": "328aef139786fc05b72aa823d02ddf3fa1708d62ce02e2f085d0c1e81ba1bc71"
+        },
+        {
+          "path": "assets/web/provided/mutfak/p-mut-03-beyaz-mutfak-cam-ust-dolap-yakin-aci-1400.webp",
+          "width": 1400,
+          "height": 981,
+          "sha256": "d77b41889dd0cc922a278f869e69dc95d5a3c8dd61d681cd137208ac3c6cea66"
+        }
+      ],
+      "width": 2040,
+      "height": 1430,
+      "sha256": "4c71136f95a5fa2f7b3aeb08dc87d3893d65bbd1b11ddbb9d3f72378811b74ff",
+      "visual_review": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay",
+      "text_clear": true,
+      "provenance": {
+        "processing": "lossless_bottom_crop",
+        "authorship": "user_provided_not_independently_verified",
+        "source_path": "assets/originals/photos/o026-ayni-beyaz-mutfagin-yakin-acisi.jpeg",
+        "source_sha256": "b1ff5d93121b605768d194ab780258bdb0d996c386ca6f065d684e246ae90df9",
+        "source_crop_box": [
+          0,
+          0,
+          2040,
+          1430
+        ],
+        "original_id": "O026"
+      }
+    },
+    {
+      "id": "P-MUT-04",
+      "legacy_choice": "local:8c41c2a48e0bced0",
+      "title": "Beyaz U mutfak geniş açı",
+      "description": "Doğrudan çekim: beyaz U mutfak, gri tezgâh ve mermer görünümlü zemin; sıcak asma tavan ışığı. Geniş açı.",
+      "alt_tr": "Doğrudan çekim: beyaz U mutfak, gri tezgâh ve mermer görünümlü zemin; sıcak asma tavan ışığı. Geniş açı.",
+      "category": "kitchen",
+      "category_label": "Mutfak",
+      "role": "provided",
+      "role_label": "Müşteriden gelen gerçek çekim",
+      "suggested_usage": "Uygulama fotoğrafları — aidiyet teyidi sonrası",
+      "master": "assets/catalog/provided/mutfak/p-mut-04-beyaz-u-mutfak-genis-aci.jpeg",
+      "web": [
+        {
+          "path": "assets/web/provided/mutfak/p-mut-04-beyaz-u-mutfak-genis-aci-600.webp",
+          "width": 600,
+          "height": 450,
+          "sha256": "81d3bbd9945afc4f8e464fb40eb05ab6624b5fb7a4ff4064324de0adfc694538"
+        },
+        {
+          "path": "assets/web/provided/mutfak/p-mut-04-beyaz-u-mutfak-genis-aci-1000.webp",
+          "width": 1000,
+          "height": 750,
+          "sha256": "1b26d506dbbb6b951a4523e697c46bbe0c200948491c3a960efdbaa74e4de7ab"
+        },
+        {
+          "path": "assets/web/provided/mutfak/p-mut-04-beyaz-u-mutfak-genis-aci-1400.webp",
+          "width": 1400,
+          "height": 1050,
+          "sha256": "76f745cb3b01776bdeec517a35513cd3a1038809ba0adcb9051e4708dc85c05e"
+        }
+      ],
+      "width": 1600,
+      "height": 1200,
+      "sha256": "8c41c2a48e0bced0760056121ea56d72cca32df9cf20c75ebc04d6131469f7e5",
+      "visual_review": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay",
+      "text_clear": true,
+      "provenance": {
+        "processing": "unchanged",
+        "authorship": "user_provided_not_independently_verified",
+        "source_path": "assets/originals/photos/o027-beyaz-u-mutfak-gri-tezgah-ve-mermer-gorunumlu-zemin.jpeg",
+        "source_sha256": "8c41c2a48e0bced0760056121ea56d72cca32df9cf20c75ebc04d6131469f7e5",
+        "source_crop_box": [
+          0,
+          0,
+          1600,
+          1200
+        ],
+        "original_id": "O027"
+      }
+    },
+    {
+      "id": "P-MUT-05",
+      "legacy_choice": "local:97d0d1f04e69a0c3",
+      "title": "Beyaz U mutfak pencere açısı",
+      "description": "Aynı beyaz U mutfağın pencereye bakan dikey açısı; tavan ve zemin birlikte görünüyor.",
+      "alt_tr": "Aynı beyaz U mutfağın pencereye bakan dikey açısı; tavan ve zemin birlikte görünüyor.",
+      "category": "kitchen",
+      "category_label": "Mutfak",
+      "role": "provided",
+      "role_label": "Müşteriden gelen gerçek çekim",
+      "suggested_usage": "Uygulama fotoğrafları — aidiyet teyidi sonrası",
+      "master": "assets/catalog/provided/mutfak/p-mut-05-beyaz-u-mutfak-pencere-acisi.jpeg",
+      "web": [
+        {
+          "path": "assets/web/provided/mutfak/p-mut-05-beyaz-u-mutfak-pencere-acisi-600.webp",
+          "width": 600,
+          "height": 800,
+          "sha256": "52e55716e24ad9ba45e73017342bdb5a1de2038fc2363b686a28b8a8dc2848b4"
+        },
+        {
+          "path": "assets/web/provided/mutfak/p-mut-05-beyaz-u-mutfak-pencere-acisi-1000.webp",
+          "width": 1000,
+          "height": 1333,
+          "sha256": "5fe0e756e943be6651921b59a018f2b90341c318dc785c4eece8a0b5b6f80629"
+        }
+      ],
+      "width": 1200,
+      "height": 1600,
+      "sha256": "97d0d1f04e69a0c36943a8348808659421bcc928dedf0895be8351092a12f623",
+      "visual_review": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay",
+      "text_clear": true,
+      "provenance": {
+        "processing": "unchanged",
+        "authorship": "user_provided_not_independently_verified",
+        "source_path": "assets/originals/photos/o028-ayni-beyaz-u-mutfagin-pencereye-bakan-dikey-acisi.jpeg",
+        "source_sha256": "97d0d1f04e69a0c36943a8348808659421bcc928dedf0895be8351092a12f623",
+        "source_crop_box": [
+          0,
+          0,
+          1200,
+          1600
+        ],
+        "original_id": "O028"
+      }
+    },
+    {
+      "id": "P-MUT-06",
+      "legacy_choice": "local:5426e4be09d05c75",
+      "title": "Beyaz country mutfak koyu tezgâh",
+      "description": "Doğrudan çekim: beyaz country mutfak, cam kapaklı üst dolaplar, kemerli davlumbaz bölümü ve koyu tezgâh.",
+      "alt_tr": "Doğrudan çekim: beyaz country mutfak, cam kapaklı üst dolaplar, kemerli davlumbaz bölümü ve koyu tezgâh.",
+      "category": "kitchen",
+      "category_label": "Mutfak",
+      "role": "provided",
+      "role_label": "Müşteriden gelen gerçek çekim",
+      "suggested_usage": "Uygulama fotoğrafları — aidiyet teyidi sonrası",
+      "master": "assets/catalog/provided/mutfak/p-mut-06-beyaz-country-mutfak-koyu-tezgah.jpeg",
+      "web": [
+        {
+          "path": "assets/web/provided/mutfak/p-mut-06-beyaz-country-mutfak-koyu-tezgah-600.webp",
+          "width": 600,
+          "height": 452,
+          "sha256": "08b33594c68a15053f2a1f2e190433542a67893d330c00e3724a5e23ed76e50f"
+        },
+        {
+          "path": "assets/web/provided/mutfak/p-mut-06-beyaz-country-mutfak-koyu-tezgah-1000.webp",
+          "width": 1000,
+          "height": 752,
+          "sha256": "bbf27bb8b0f286a7f46c3e78f9614ee48d8663fbd2b3bc86b577307072e83d9a"
+        },
+        {
+          "path": "assets/web/provided/mutfak/p-mut-06-beyaz-country-mutfak-koyu-tezgah-1400.webp",
+          "width": 1400,
+          "height": 1054,
+          "sha256": "27ae6fed1fe9db5440a6e2b75029583b9e44bee5879250000fd7004d48ca51e3"
+        }
+      ],
+      "width": 1600,
+      "height": 1204,
+      "sha256": "5426e4be09d05c7567579f8847d5e3049aa40fdc5b1bced16ae4928542f3192d",
+      "visual_review": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay",
+      "text_clear": true,
+      "provenance": {
+        "processing": "unchanged",
+        "authorship": "user_provided_not_independently_verified",
+        "source_path": "assets/originals/photos/o030-beyaz-country-mutfak-cam-kapakli-ust-dolaplar-kemerli-davlumbaz-bolumu-ve-koyu-tezgah.jpeg",
+        "source_sha256": "5426e4be09d05c7567579f8847d5e3049aa40fdc5b1bced16ae4928542f3192d",
+        "source_crop_box": [
+          0,
+          0,
+          1600,
+          1204
+        ],
+        "original_id": "O030"
+      }
+    },
+    {
+      "id": "P-TV-02",
+      "legacy_choice": "local:9a1f4fde66170d01",
+      "title": "Mor LED TV ünitesi ön açı",
+      "description": "Koyu çıtalı duvar, siyah kapalı TV, beyaz uzun alt konsol ve solda cam vitrin. Alt telefon/tarih damgası kırpıldı.",
+      "alt_tr": "Koyu çıtalı duvar, siyah kapalı TV, beyaz uzun alt konsol ve solda cam vitrin. Alt telefon/tarih damgası kırpıldı.",
+      "category": "tv",
+      "category_label": "TV ünitesi",
+      "role": "provided",
+      "role_label": "Müşteriden gelen gerçek çekim",
+      "suggested_usage": "Uygulama fotoğrafları — aidiyet teyidi sonrası",
+      "master": "assets/catalog/provided/tv-unitesi/p-tv-02-mor-led-tv-unitesi-on-aci.png",
+      "web": [
+        {
+          "path": "assets/web/provided/tv-unitesi/p-tv-02-mor-led-tv-unitesi-on-aci-600.webp",
+          "width": 600,
+          "height": 419,
+          "sha256": "d6d36a5530cda536f58c9b3f887a856d9cfc9cca60c5e408a7982ff9a3d6d5f7"
+        },
+        {
+          "path": "assets/web/provided/tv-unitesi/p-tv-02-mor-led-tv-unitesi-on-aci-1000.webp",
+          "width": 1000,
+          "height": 699,
+          "sha256": "06ea2aa48520ab27ddd76ccefff4ec924e28577bf54875e1df8cc070af2504a0"
+        },
+        {
+          "path": "assets/web/provided/tv-unitesi/p-tv-02-mor-led-tv-unitesi-on-aci-1400.webp",
+          "width": 1400,
+          "height": 978,
+          "sha256": "2f2be568c432ed39cd6caa57722f1d0176035d2605577d0b721fbe1bb07dcb8a"
+        }
+      ],
+      "width": 2040,
+      "height": 1425,
+      "sha256": "280ada12eb7def8a9d89a9e069773e76ed9f0033576380b5cfda1f51d9714806",
+      "visual_review": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay",
+      "text_clear": true,
+      "provenance": {
+        "processing": "lossless_bottom_crop",
+        "authorship": "user_provided_not_independently_verified",
+        "source_path": "assets/originals/photos/o066-mor-led-tv-unitesi-duz-aci.jpeg",
+        "source_sha256": "9a1f4fde66170d011eea2e0fa335a922183fe24a1ffc09f455738b9b0695ab64",
+        "source_crop_box": [
+          0,
+          0,
+          2040,
+          1425
+        ],
+        "original_id": "O066"
+      }
+    },
+    {
+      "id": "P-TV-03",
+      "legacy_choice": "local:82b7e566b6e3439c",
+      "title": "Mor LED TV ünitesi salon açısı",
+      "description": "Aynı TV duvarının daha geniş/yan açısı; sağda ayaklı aydınlatma, zeminde salon ayrıntıları. Alt telefon/tarih damgası kırpıldı.",
+      "alt_tr": "Aynı TV duvarının daha geniş/yan açısı; sağda ayaklı aydınlatma, zeminde salon ayrıntıları. Alt telefon/tarih damgası kırpıldı.",
+      "category": "tv",
+      "category_label": "TV ünitesi",
+      "role": "provided",
+      "role_label": "Müşteriden gelen gerçek çekim",
+      "suggested_usage": "Uygulama fotoğrafları — aidiyet teyidi sonrası",
+      "master": "assets/catalog/provided/tv-unitesi/p-tv-03-mor-led-tv-unitesi-salon-acisi.png",
+      "web": [
+        {
+          "path": "assets/web/provided/tv-unitesi/p-tv-03-mor-led-tv-unitesi-salon-acisi-600.webp",
+          "width": 600,
+          "height": 419,
+          "sha256": "ba7d26e01b9d16f7e5d21c5dfb49652ce174c15d1381c9d9e9b09c71f7a82e5c"
+        },
+        {
+          "path": "assets/web/provided/tv-unitesi/p-tv-03-mor-led-tv-unitesi-salon-acisi-1000.webp",
+          "width": 1000,
+          "height": 699,
+          "sha256": "6918678ac276bbced8e95d96712a0a1fb11499366b6c59cbcb6ff16a29d1e105"
+        },
+        {
+          "path": "assets/web/provided/tv-unitesi/p-tv-03-mor-led-tv-unitesi-salon-acisi-1400.webp",
+          "width": 1400,
+          "height": 978,
+          "sha256": "65fb09251f686f4e486d0b1bf81d7a9c0b0a09b070cd352b4b3f9a563ec28289"
+        }
+      ],
+      "width": 2040,
+      "height": 1425,
+      "sha256": "7bec13c5a825f5c8fc0787cba489d66f275a4640adccb423a775ae40ee724ab0",
+      "visual_review": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay",
+      "text_clear": true,
+      "provenance": {
+        "processing": "lossless_bottom_crop",
+        "authorship": "user_provided_not_independently_verified",
+        "source_path": "assets/originals/photos/o067-mor-led-tv-unitesi-genis-aci.jpeg",
+        "source_sha256": "82b7e566b6e3439c6adae1236e4f7b8f85b9ad90eeaf0af786794ef8552d29f7",
+        "source_crop_box": [
+          0,
+          0,
+          2040,
+          1425
+        ],
+        "original_id": "O067"
+      }
+    },
+    {
+      "id": "P-TV-04",
+      "legacy_choice": "local:76db4dd44ab29823",
+      "title": "Mor LED TV ünitesi yakın açı",
+      "description": "Aynı çıtalı TV duvarının daha yakın, mor ışığı baskın açısı. Alt telefon/tarih damgası kırpıldı.",
+      "alt_tr": "Aynı çıtalı TV duvarının daha yakın, mor ışığı baskın açısı. Alt telefon/tarih damgası kırpıldı.",
+      "category": "tv",
+      "category_label": "TV ünitesi",
+      "role": "provided",
+      "role_label": "Müşteriden gelen gerçek çekim",
+      "suggested_usage": "Uygulama fotoğrafları — aidiyet teyidi sonrası",
+      "master": "assets/catalog/provided/tv-unitesi/p-tv-04-mor-led-tv-unitesi-yakin-aci.png",
+      "web": [
+        {
+          "path": "assets/web/provided/tv-unitesi/p-tv-04-mor-led-tv-unitesi-yakin-aci-600.webp",
+          "width": 600,
+          "height": 419,
+          "sha256": "2263f2dc766a13ef238a5387831bf6cafb86b20d810a6d74d9e64ab001955fe4"
+        },
+        {
+          "path": "assets/web/provided/tv-unitesi/p-tv-04-mor-led-tv-unitesi-yakin-aci-1000.webp",
+          "width": 1000,
+          "height": 699,
+          "sha256": "9f5fb5b93f30851e77dbd12cb58f03949052f0a0b7d72dbc66feeff147fe829b"
+        },
+        {
+          "path": "assets/web/provided/tv-unitesi/p-tv-04-mor-led-tv-unitesi-yakin-aci-1400.webp",
+          "width": 1400,
+          "height": 978,
+          "sha256": "86fbd35f771e59ed2c867516bf4d79ab259bd6b077225f173210907b16872512"
+        }
+      ],
+      "width": 2040,
+      "height": 1425,
+      "sha256": "af00866d5cab40d58e20652303b10bd814c6e61d1fad00add308a7b525e78be2",
+      "visual_review": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay",
+      "text_clear": true,
+      "provenance": {
+        "processing": "lossless_bottom_crop",
+        "authorship": "user_provided_not_independently_verified",
+        "source_path": "assets/originals/photos/o068-mor-led-tv-unitesi-yakin-aci.jpeg",
+        "source_sha256": "76db4dd44ab29823eaee61a27abd513aa85417e27906c00289d2bdc40fe70e43",
+        "source_crop_box": [
+          0,
+          0,
+          2040,
+          1425
+        ],
+        "original_id": "O068"
+      }
+    },
+    {
+      "id": "P-ATL-01",
+      "legacy_choice": "local:e975b4e92f44a365",
+      "title": "Atölyede panel işleme uzun tezgâh",
+      "description": "Turuncu tişörtlü usta, dik beyaz paneli uzun makine tezgâhında işlerken; uzak üç çeyrek açı.",
+      "alt_tr": "Turuncu tişörtlü usta, dik beyaz paneli uzun makine tezgâhında işlerken; uzak üç çeyrek açı.",
+      "category": "workshop",
+      "category_label": "Atölye",
+      "role": "provided",
+      "role_label": "Müşteriden gelen gerçek çekim",
+      "suggested_usage": "Atölye / üretim süreci",
+      "master": "assets/catalog/provided/atolye/p-atl-01-atolyede-panel-isleme-uzun-tezgah.jpeg",
+      "web": [
+        {
+          "path": "assets/web/provided/atolye/p-atl-01-atolyede-panel-isleme-uzun-tezgah-600.webp",
+          "width": 600,
+          "height": 800,
+          "sha256": "d865af331160775060a868888901472482274e14ff75d46f9d25d2e62bf1ee59"
+        },
+        {
+          "path": "assets/web/provided/atolye/p-atl-01-atolyede-panel-isleme-uzun-tezgah-1000.webp",
+          "width": 1000,
+          "height": 1333,
+          "sha256": "20241854e7b52061ab4ed91cab44af59af3bea4240d5e058942e674c024fb55c"
+        },
+        {
+          "path": "assets/web/provided/atolye/p-atl-01-atolyede-panel-isleme-uzun-tezgah-1400.webp",
+          "width": 1400,
+          "height": 1867,
+          "sha256": "5dd380c54dd5f9c7c055aa8e2213acb2ff0d056c2e9010f2efc2353d1a6cdbbd"
+        }
+      ],
+      "width": 1536,
+      "height": 2048,
+      "sha256": "e975b4e92f44a365adfea41b6b2b9965560b58e0e678831154655f213ce9ca9f",
+      "visual_review": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay",
+      "text_clear": true,
+      "provenance": {
+        "processing": "unchanged",
+        "authorship": "user_provided_not_independently_verified",
+        "source_path": "assets/originals/photos/o069-atolyede-panel-isleme-uzun-tezgah.jpeg",
+        "source_sha256": "e975b4e92f44a365adfea41b6b2b9965560b58e0e678831154655f213ce9ca9f",
+        "source_crop_box": [
+          0,
+          0,
+          1536,
+          2048
+        ],
+        "original_id": "O069"
+      }
+    },
+    {
+      "id": "P-ATL-02",
+      "legacy_choice": "local:0ca01e2784fa4d0e",
+      "title": "Atölyede panel işleme ön açı",
+      "description": "Usta, beyaz panel ve uzun tezgâhın daha önden görüldüğü üretim karesi.",
+      "alt_tr": "Usta, beyaz panel ve uzun tezgâhın daha önden görüldüğü üretim karesi.",
+      "category": "workshop",
+      "category_label": "Atölye",
+      "role": "provided",
+      "role_label": "Müşteriden gelen gerçek çekim",
+      "suggested_usage": "Atölye / üretim süreci",
+      "master": "assets/catalog/provided/atolye/p-atl-02-atolyede-panel-isleme-on-aci.jpeg",
+      "web": [
+        {
+          "path": "assets/web/provided/atolye/p-atl-02-atolyede-panel-isleme-on-aci-600.webp",
+          "width": 600,
+          "height": 800,
+          "sha256": "1a72ece5fed579dc4627ab1cc0fcae085583c8d20623bdd09b6df1500b3bd3e9"
+        },
+        {
+          "path": "assets/web/provided/atolye/p-atl-02-atolyede-panel-isleme-on-aci-1000.webp",
+          "width": 1000,
+          "height": 1333,
+          "sha256": "6ee23fc6cf86b5e8e2601bf0d0f0b45438a52977ed78267b6c32fb298f8413cb"
+        },
+        {
+          "path": "assets/web/provided/atolye/p-atl-02-atolyede-panel-isleme-on-aci-1400.webp",
+          "width": 1400,
+          "height": 1867,
+          "sha256": "08c54b6c3cc5425faac20eac80c2cf202582ab86bd73e373fed14f52d33736af"
+        }
+      ],
+      "width": 1536,
+      "height": 2048,
+      "sha256": "0ca01e2784fa4d0e3fe24b538671a4708b0061643cf5fd169165e202e848509c",
+      "visual_review": "Full local contact sheets reviewed; crop removes phone/date stamp where present; remaining OCR glyphs are scene texture, not an overlay",
+      "text_clear": true,
+      "provenance": {
+        "processing": "unchanged",
+        "authorship": "user_provided_not_independently_verified",
+        "source_path": "assets/originals/photos/o071-atolyede-panel-isleme-on-aci.jpeg",
+        "source_sha256": "0ca01e2784fa4d0e3fe24b538671a4708b0061643cf5fd169165e202e848509c",
+        "source_crop_box": [
+          0,
+          0,
+          1536,
+          2048
+        ],
+        "original_id": "O071"
+      }
+    },
+    {
+      "id": "R-KAH-17",
+      "legacy_choice": "variant:ref38",
+      "title": "Siyah cam vitrinli beyaz kahve ünitesi",
+      "description": "İki yanda boy siyah cam vitrin, ortada ahşap niş ve altta beyaz kapaklar. Alt sehpa/dergi alanı kırpılarak yazı kaldırıldı.",
+      "alt_tr": "İki yanda boy siyah cam vitrin, ortada ahşap niş ve altta beyaz kapaklar. Alt sehpa/dergi alanı kırpılarak yazı kaldırıldı.",
+      "category": "coffee",
+      "category_label": "Kahve köşesi / servis",
+      "role": "reference",
+      "role_label": "Model referansı",
+      "suggested_usage": "Kahve köşesi modelleri",
+      "master": "assets/catalog/reference/kahve-kosesi/r-kah-17-siyah-cam-vitrinli-beyaz-kahve-unitesi.png",
+      "web": [
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-17-siyah-cam-vitrinli-beyaz-kahve-unitesi-600.webp",
+          "width": 600,
+          "height": 765,
+          "sha256": "61100e71c6c3fa250edae0ef09b2929902359d55d93d3219211613222c581110"
+        },
+        {
+          "path": "assets/web/reference/kahve-kosesi/r-kah-17-siyah-cam-vitrinli-beyaz-kahve-unitesi-1000.webp",
+          "width": 1000,
+          "height": 1275,
+          "sha256": "b08dc2f820eda3330be3ef0a69fcc50cc12cb19ad66a8b606f921adb3d5af2d9"
+        }
+      ],
+      "width": 1200,
+      "height": 1530,
+      "sha256": "f86764e1f4b1fe562a42c6331e9169e9ff3b7798e3436e2ddb07a6222a9c3394",
+      "visual_review": "Bottom crop removes the printed magazine without cutting the cabinet; no overlay or caption",
+      "text_clear": true,
+      "provenance": {
+        "url": "https://cdn.dsmcdn.com/ty1820/prod/QC_PREP/20260130/15/09106020-d61d-3d56-b7fb-635121ce0b5c/1_org_zoom.jpg",
+        "page_url": "https://www.trendyol.com/eymense/modi-kahve-kosesi-mutfak-dolabi-camli-cok-amacli-dolap-ledli-rafli-3-modullu-p-1094191106?utm_medium=organic&utm_source=yandexsmartcamera",
+        "authorship": "unverified",
+        "source_path": "assets/originals/downloaded/r-kah-17-kirilmamis-kaynak.jpg",
+        "source_sha256": "19c9674135afe42acce91f4d892746be34814384c4001302b56e32d3783db75d",
+        "source_crop_box": [
+          0,
+          0,
+          1200,
+          1530
+        ],
+        "original_id": null
+      }
+    },
+    {
+      "id": "LOGO-01",
+      "legacy_choice": "logo:617e71c9eb17a47a",
+      "title": "Şimşek Mobilya logosu",
+      "description": "Krem zemin, koyu ahşap ev/koltuk işareti, ŞİMŞEK marka yazısı ve iletişim satırı. JPEG; şeffaf değil.",
+      "alt_tr": "Krem zemin, koyu ahşap ev/koltuk işareti, ŞİMŞEK marka yazısı ve iletişim satırı. JPEG; şeffaf değil.",
+      "category": "logo",
+      "category_label": "Logo",
+      "role": "brand",
+      "role_label": "Marka görseli",
+      "suggested_usage": "Site başlığı, iletişim ve marka kimliği; JPEG opak zemin",
+      "master": "assets/catalog/brand/logo/logo-01-simsek-mobilya-logosu.jpeg",
+      "web": [
+        {
+          "path": "assets/web/brand/logo/logo-01-simsek-mobilya-logosu-600.webp",
+          "width": 600,
+          "height": 716,
+          "sha256": "8e19d0aff80d14ac0069f1d0c82ed2381d5f12b2c469008c90018a4fc7229948"
+        },
+        {
+          "path": "assets/web/brand/logo/logo-01-simsek-mobilya-logosu-1000.webp",
+          "width": 1000,
+          "height": 1193,
+          "sha256": "5b5059abbbfb7520eb31e6ae07f1cb21345ef3fdd249f78077ab4c7466abd7fd"
+        }
+      ],
+      "width": 1290,
+      "height": 1539,
+      "sha256": "617e71c9eb17a47a31e0afe41a14d5d69072bbfca07159af14d38bcec7fa6be4",
+      "visual_review": "Brand asset; intentional brand lettering is retained",
+      "text_clear": false,
+      "provenance": {
+        "processing": "unchanged",
+        "authorship": "user_provided_not_independently_verified",
+        "source_path": "assets/originals/incoming/WhatsApp Image 2026-11-12 at 10.47.33 PM.jpeg",
+        "source_sha256": "617e71c9eb17a47a31e0afe41a14d5d69072bbfca07159af14d38bcec7fa6be4",
+        "source_crop_box": [
+          0,
+          0,
+          1290,
+          1539
+        ],
+        "original_id": "O001"
+      }
+    }
+  ]
+}

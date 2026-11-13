@@ -1,0 +1,5028 @@
+{
+  "generated": "2026-11-13T00:02:20+00:00",
+  "schema_version": 1,
+  "assets": {
+    "R-KAH-01": {
+      "role": "reference",
+      "category": "coffee",
+      "title": "Mavi ahşap kahve ünitesi cam üst vitrin",
+      "alt_tr": "Mavi alt kapak/çekmeceler, ahşap tezgâh ve siyah çerçeveli sıcak ışıklı üst cam vitrin; ortada kahve ekipmanları.",
+      "width": 3000,
+      "height": 3521,
+      "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABQBACdASoYABwAPwFsrE6rJiQiMAgBYCAJZACdMoACmOkjA4VZeiKImMUgAPrWw31dTcIEi+sdAcqYUUrqZfmoqd3jJNJ6QYUF96oAGLMDh/UMPiWU1iQ77IPhENS3SMKtNqTQ4FKzuHKO3H3RlNFpco0ExE/VBl5oTgggJI/6SrHCzAAAAA==",
+      "color": "#6d839a",
+      "full": [
+        {
+          "path": "media/r-kah-01-640.webp",
+          "w": 640,
+          "h": 751,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-01-640.avif",
+          "w": 640,
+          "h": 751,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-01-1024.webp",
+          "w": 1024,
+          "h": 1202,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-01-1024.avif",
+          "w": 1024,
+          "h": 1202,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-01-1600.webp",
+          "w": 1600,
+          "h": 1878,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-01-1600.avif",
+          "w": 1600,
+          "h": 1878,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-01-2048.webp",
+          "w": 2048,
+          "h": 2404,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-01-2048.avif",
+          "w": 2048,
+          "h": 2404,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-kah-01-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-01-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-01-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-01-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-kah-01-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-01-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-01-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-01-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "465038120b138ffddd997eb92d817f6193eaf767c5cc34446d4320a0caeeb259",
+      "crops": {
+        "card": [
+          0,
+          159,
+          3000,
+          2409
+        ],
+        "tall": [
+          225,
+          0,
+          2865,
+          3520
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.947014,
+          0.998805,
+          1.065823
+        ],
+        "levels": [
+          4.0,
+          249.0
+        ],
+        "highlight_fraction_before": 0.007456,
+        "highlight_fraction_after": 0.00881
+      },
+      "flags": []
+    },
+    "R-KAH-02": {
+      "role": "reference",
+      "category": "coffee",
+      "title": "Gri country kahve servis ünitesi",
+      "alt_tr": "Gri çerçeveli kapaklar, yüksek yan depolama, orta cam üst dolap ve beyaz tezgâh; ahşap zeminli gerçek iç mekân.",
+      "width": 2454,
+      "height": 3681,
+      "lqip": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAACQBgCdASoYACQAPwFqq06rJiOiMBVdUWAgCUAWI+5Iidqm88H0mKZ47ck/ZMYPiNMDspRY4jiBx3RaAOI0AP5USfN9B1Rf0T3yyjtUyYOXNapxDJbwbE5UqZeoj2jOOhOMecR0LTZdmWPmZT5FbUyJr5zCQ75z/ZU0aUu1cZFLkfjjy0bE0eWAvbRbo8fzCzvizdCmpw1Es+uW/vU39SVXPSNUnr+AvP2MzPUQ8r5EwkAA",
+      "color": "#bfb19e",
+      "full": [
+        {
+          "path": "media/r-kah-02-640.webp",
+          "w": 640,
+          "h": 960,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-02-640.avif",
+          "w": 640,
+          "h": 960,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-02-1024.webp",
+          "w": 1024,
+          "h": 1536,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-02-1024.avif",
+          "w": 1024,
+          "h": 1536,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-02-1600.webp",
+          "w": 1600,
+          "h": 2400,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-02-1600.avif",
+          "w": 1600,
+          "h": 2400,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-02-2048.webp",
+          "w": 2048,
+          "h": 3072,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-02-2048.avif",
+          "w": 2048,
+          "h": 3072,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-kah-02-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-02-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-02-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-02-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-kah-02-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-02-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-02-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-02-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "5ce2696ac9e71e0afa013328511fb27eeab8edd6305dee4da57618d75a645f49",
+      "crops": {
+        "card": [
+          1,
+          737,
+          2453,
+          2576
+        ],
+        "tall": [
+          0,
+          409,
+          2454,
+          3681
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.958113,
+          0.993227,
+          1.056791
+        ],
+        "levels": [
+          8,
+          248.0
+        ],
+        "highlight_fraction_before": 0.00353,
+        "highlight_fraction_after": 0.020881
+      },
+      "flags": [
+        "highlight_clipping_increase",
+        "card_crop_retains_less_than_half"
+      ]
+    },
+    "R-KAH-03": {
+      "role": "reference",
+      "category": "coffee",
+      "title": "Beyaz kemerli kahve ünitesi koyu yan vitrin",
+      "alt_tr": "Beyaz klasik taç/kemer ve raflar; iki yanda koyu cam vitrin, altta çekmeceler. Cihazsız ürün görünümü.",
+      "width": 1662,
+      "height": 2048,
+      "lqip": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAACwBACdASoYAB4APwF6t1CrKKYisAgBYCAJZwDKABtY64hmeuPPF56zP1Z9NxsMAPnonXMhvH5ch+gfNd4YLQQGsKRM2YwcGMetgN09JPmzAcoYUwfYpz6OswZZ4gXZ47d0ZNZ/RYhwAA==",
+      "color": "#a5a6a8",
+      "full": [
+        {
+          "path": "media/r-kah-03-640.webp",
+          "w": 640,
+          "h": 789,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-03-640.avif",
+          "w": 640,
+          "h": 789,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-03-1024.webp",
+          "w": 1024,
+          "h": 1262,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-03-1024.avif",
+          "w": 1024,
+          "h": 1262,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-03-1600.webp",
+          "w": 1600,
+          "h": 1972,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-03-1600.avif",
+          "w": 1600,
+          "h": 1972,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-kah-03-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-03-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-03-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-03-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-kah-03-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-03-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-03-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-03-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "96c85961cb198d6bde90675e2b107536b3091b89ec8ba1eb05faac8083d95de6",
+      "crops": {
+        "card": [
+          1,
+          442,
+          1661,
+          1687
+        ],
+        "tall": [
+          123,
+          0,
+          1659,
+          2048
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          1.007379,
+          1.00274,
+          0.990148
+        ],
+        "levels": [
+          2.0,
+          244
+        ],
+        "highlight_fraction_before": 0.000883,
+        "highlight_fraction_after": 0.00108
+      },
+      "flags": []
+    },
+    "R-KAH-04": {
+      "role": "reference",
+      "category": "coffee",
+      "title": "Ahşap sağ vitrinli bağımsız kahve dolabı",
+      "alt_tr": "Ahşap gövde ve iç yüzeyler, gri uzun çekmeceler, siyah cam üst dolap ve sağda boy vitrin; beyaz fonlu ürün sahnesi.",
+      "width": 1200,
+      "height": 2133,
+      "lqip": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAAAQBgCdASoYACsAPwFyrlGrJqQiqrgMAWAgCWMAuOQitt2tyZziA+bmyqdk6TlvlghW0uFZx9J53SAA/uHrqdMtCSndvZxWny2U3W9CRqQX3iBPwUam9E+fXngwJ+mvFzoBzSV+ipMUYjKe/lmDviSWFVv4HlYm+kMhG5eOc7FS0Ej+66IY3EJT891gPioqPTXy4yC8LTekBx9UQ09Fyt2twMbGtiwsAAA=",
+      "color": "#eff9fc",
+      "full": [
+        {
+          "path": "media/r-kah-04-640.webp",
+          "w": 640,
+          "h": 1138,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-04-640.avif",
+          "w": 640,
+          "h": 1138,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-04-1024.webp",
+          "w": 1024,
+          "h": 1820,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-04-1024.avif",
+          "w": 1024,
+          "h": 1820,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-kah-04-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-04-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-04-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-04-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-kah-04-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-04-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-04-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-04-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "e9fab24c3fd8b27e69494e1af49b4a948122c278e06b8009e0ed1e01e410b8ba",
+      "crops": {
+        "card": [
+          0,
+          493,
+          1200,
+          1393
+        ],
+        "tall": [
+          0,
+          173,
+          1200,
+          1773
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.964662,
+          1.008356,
+          1.030814
+        ],
+        "levels": [
+          2.0,
+          248.0
+        ],
+        "highlight_fraction_before": 0.004279,
+        "highlight_fraction_after": 0.068165
+      },
+      "flags": [
+        "highlight_clipping_increase",
+        "card_crop_retains_less_than_half"
+      ]
+    },
+    "R-KAH-05": {
+      "role": "reference",
+      "category": "coffee",
+      "title": "Beyaz country servis ve ankastre duvarı",
+      "alt_tr": "Duvar boyunca beyaz çerçeveli/cam dolaplar, orta kahve tezgâhı ve sağ ankastre kolonu; geniş yatay iç mekân.",
+      "width": 1920,
+      "height": 1280,
+      "lqip": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAwCdASoYABAAPwFIu1grIqckmAFgIAllALDsIcONcoYv8qwZ0pgAAOF1de+PEnyul0NVRO+f9Agozvkeidnb5dUrzPBZw1MzygAA",
+      "color": "#bebcbf",
+      "full": [
+        {
+          "path": "media/r-kah-05-640.webp",
+          "w": 640,
+          "h": 427,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-05-640.avif",
+          "w": 640,
+          "h": 427,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-05-1024.webp",
+          "w": 1024,
+          "h": 683,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-05-1024.avif",
+          "w": 1024,
+          "h": 683,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-05-1600.webp",
+          "w": 1600,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-05-1600.avif",
+          "w": 1600,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-kah-05-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-05-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-05-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-05-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [],
+      "source_sha256": "9f1edf2b78f56ce553a894f657957d8b1931e57169785b362496ad7358cb569a",
+      "crops": {
+        "card": [
+          0,
+          1,
+          1704,
+          1279
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.99129,
+          1.009076,
+          0.999898
+        ],
+        "levels": [
+          8,
+          244
+        ],
+        "highlight_fraction_before": 0.000362,
+        "highlight_fraction_after": 0.00361
+      },
+      "flags": []
+    },
+    "R-KAH-06": {
+      "role": "reference",
+      "category": "coffee",
+      "title": "Fırın nişli dört kapaklı beyaz kiler dolabı",
+      "alt_tr": "Bağımsız beyaz uzun dolap; ortada siyah fırın/mikrodalga nişi, üst ve altta ikişer kapak. Sade mutfak sahnesi.",
+      "width": 1920,
+      "height": 1280,
+      "lqip": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAwCdASoYABAAPwFsrU8rJiQiMAgBYCAJYwC7ACHGxVes/XJyroIAAP3PBTVOTG52xjvh1JAZk6r2aytEb3ugeA3dI+6OP+uy92OxLQAAAA==",
+      "color": "#b9b6ad",
+      "full": [
+        {
+          "path": "media/r-kah-06-640.webp",
+          "w": 640,
+          "h": 427,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-06-640.avif",
+          "w": 640,
+          "h": 427,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-06-1024.webp",
+          "w": 1024,
+          "h": 683,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-06-1024.avif",
+          "w": 1024,
+          "h": 683,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-06-1600.webp",
+          "w": 1600,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-06-1600.avif",
+          "w": 1600,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-kah-06-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-06-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-06-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-06-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [],
+      "source_sha256": "0e8e6453aad2d1a3f4f2fb494533ed67c89cb8141be879b0b046770b587db163",
+      "crops": {
+        "card": [
+          0,
+          1,
+          1704,
+          1279
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.983338,
+          0.996518,
+          1.021375
+        ],
+        "levels": [
+          0.0,
+          244
+        ],
+        "highlight_fraction_before": 5.1e-05,
+        "highlight_fraction_after": 0.075908
+      },
+      "flags": [
+        "highlight_clipping_increase"
+      ]
+    },
+    "R-KAH-07": {
+      "role": "reference",
+      "category": "coffee",
+      "title": "Siyah alt modüllü ahşap kahve köşesi",
+      "alt_tr": "Ahşap boy dolaplar, siyah alt modül ve asimetrik yükselen cam vitrin; pencere yanında kahve ekipmanları.",
+      "width": 1350,
+      "height": 1800,
+      "lqip": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAACwBACdASoYACAAPuFepU6opSOiN+gBEBwJQAAQ69nWEpVgCZsxZb7+dXfaH4jAANxOFRX3H7a3b8GI/F4scvTDiZ0Yla8foPi7O+2RrhXG8oGnZKluQm1f324QuuGldR8ebNOqk3fIQMhO4HO73bp0pIuLZVYMcezykIoWHk39Y0/pEvpUZ5sdSPQAAA==",
+      "color": "#50443a",
+      "full": [
+        {
+          "path": "media/r-kah-07-640.webp",
+          "w": 640,
+          "h": 853,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-07-640.avif",
+          "w": 640,
+          "h": 853,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-07-1024.webp",
+          "w": 1024,
+          "h": 1365,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-07-1024.avif",
+          "w": 1024,
+          "h": 1365,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-kah-07-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-07-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-07-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-07-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-kah-07-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-07-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-07-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-07-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "f2f2e41a92fb05f7f4f25f9566256e3bb1f340e3d19a2c5cdfc2f4d48b2f8cee",
+      "crops": {
+        "card": [
+          1,
+          158,
+          1349,
+          1169
+        ],
+        "tall": [
+          0,
+          0,
+          1350,
+          1800
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.978286,
+          1.002189,
+          1.021062
+        ],
+        "levels": [
+          1.0,
+          248.0
+        ],
+        "highlight_fraction_before": 0.006158,
+        "highlight_fraction_after": 0.014379
+      },
+      "flags": []
+    },
+    "R-KAH-08": {
+      "role": "reference",
+      "category": "coffee",
+      "title": "Kavisli nişli sade krem gömme dolap",
+      "alt_tr": "Krem düz kapaklar, sıcak ışıklı kemerli açık raf ve tam boy yan depolama; cihazsız minimal servis/saklama tasarımı.",
+      "width": 1800,
+      "height": 1200,
+      "lqip": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAwCdASoYABAAPwFsrU6rJiQiMAgBYCAJQBOgBDkfGstNr0QfAAD93Yikv7cPwel25ex1/gfj437i+9qHpeLFx0Sm/N9sufkn72gAAAA=",
+      "color": "#c6bfb3",
+      "full": [
+        {
+          "path": "media/r-kah-08-640.webp",
+          "w": 640,
+          "h": 427,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-08-640.avif",
+          "w": 640,
+          "h": 427,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-08-1024.webp",
+          "w": 1024,
+          "h": 683,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-08-1024.avif",
+          "w": 1024,
+          "h": 683,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-08-1600.webp",
+          "w": 1600,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-08-1600.avif",
+          "w": 1600,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-kah-08-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-08-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-08-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-08-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [],
+      "source_sha256": "655ef652030f11a573a1d5ca2a8223cc8f7a274fff17d2173fad527a798259b1",
+      "crops": {
+        "card": [
+          25,
+          0,
+          1625,
+          1200
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.949051,
+          0.988871,
+          1.075443
+        ],
+        "levels": [
+          8,
+          244
+        ],
+        "highlight_fraction_before": 0.007526,
+        "highlight_fraction_after": 0.006103
+      },
+      "flags": []
+    },
+    "R-KAH-09": {
+      "role": "reference",
+      "category": "coffee",
+      "title": "Beyaz ahşap ışıklı kahve kiler dolabı",
+      "alt_tr": "Beyaz alt dolap, ahşap çerçeve ve ortada cam kapaklı ışıklı servis bölümü; kahve makineli, sıcak tonlu ürün sahnesi.",
+      "width": 1200,
+      "height": 1800,
+      "lqip": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADwBQCdASoYACQAPu1apU6ppKOiNVv8ATAdiUAVyfAQU5fEifdiEXfUBKrkCRgd8OZx9dl/DexAAAD+lIuLb9zRV7FdqTp6mue4in5R1P88fsCCzAHQgKiNSBFlkwYGWv3fsHPbB2jkWdRGBV+6fb1t4whlpuClR4zTq/R2zJZ1892ftnDuAAAA",
+      "color": "#d3d9de",
+      "full": [
+        {
+          "path": "media/r-kah-09-640.webp",
+          "w": 640,
+          "h": 960,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-09-640.avif",
+          "w": 640,
+          "h": 960,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-09-1024.webp",
+          "w": 1024,
+          "h": 1536,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-09-1024.avif",
+          "w": 1024,
+          "h": 1536,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-kah-09-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-09-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-09-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-09-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-kah-09-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-09-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-09-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-09-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "b9a5bab8c104dda6cfcb37d4ed822bc45f1b2ed5d43ed9892a853a5a6dc53d2e",
+      "crops": {
+        "card": [
+          0,
+          315,
+          1200,
+          1215
+        ],
+        "tall": [
+          0,
+          200,
+          1200,
+          1800
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.950473,
+          0.999681,
+          1.059706
+        ],
+        "levels": [
+          5.0,
+          244
+        ],
+        "highlight_fraction_before": 0.001731,
+        "highlight_fraction_after": 0.005168
+      },
+      "flags": []
+    },
+    "R-KAH-10": {
+      "role": "reference",
+      "category": "coffee",
+      "title": "Ayaklı beyaz country kahve dolabı",
+      "alt_tr": "İnce ayaklar, beyaz çerçeveli kapaklar, yarım ay kulplar ve ahşap tezgâh; üstte geniş camlı raf ve kahve makinesi.",
+      "width": 1200,
+      "height": 1800,
+      "lqip": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAABwBgCdASoYACQAPvlsqk6qpqOiMBqtUVAfCWcAwGRbPCjt1Zr6K+f/s6qteGNFDKGuTn3dD9YskhOSTAAA/tlMBgk64NZNc3n0U32anXTPlnmEY3l7crDqwvvLB/9T1QhgDFsfpT4q5fUHy15988HByIlfDEWPY5+ecmp+/7OIu+lsCOW0a1ieZq3DjTfYeanCrZKiZFWAAA==",
+      "color": "#594f44",
+      "full": [
+        {
+          "path": "media/r-kah-10-640.webp",
+          "w": 640,
+          "h": 960,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-10-640.avif",
+          "w": 640,
+          "h": 960,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-10-1024.webp",
+          "w": 1024,
+          "h": 1536,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-10-1024.avif",
+          "w": 1024,
+          "h": 1536,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-kah-10-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-10-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-10-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-10-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-kah-10-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-10-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-10-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-10-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "c97ab3abcbbd9ccc4719867c99515fa6fe806b3e351a02f78859977bd0ff4e79",
+      "crops": {
+        "card": [
+          0,
+          292,
+          1200,
+          1192
+        ],
+        "tall": [
+          0,
+          200,
+          1200,
+          1800
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.989357,
+          0.998874,
+          1.012207
+        ],
+        "levels": [
+          0.0,
+          254.0
+        ],
+        "highlight_fraction_before": 0.058024,
+        "highlight_fraction_after": 0.028979
+      },
+      "flags": []
+    },
+    "R-KAH-11": {
+      "role": "reference",
+      "category": "coffee",
+      "title": "Beyaz ahşap çok amaçlı kahve dolabı",
+      "alt_tr": "Ahşap yan çerçeve, beyaz kapaklar, açık fincan rafı ve alt fırın bölümü; pencere yanında bağımsız ürün sahnesi.",
+      "width": 1200,
+      "height": 1800,
+      "lqip": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAACwBgCdASoYACQAPvlmqU6qpaOiNVgIAVAfCWMAuwASPnLpQymvn1fF0pxxw/1j4Qy8kCGn67RP/043PydUAADyfxK4AzGTNe8rgWq1uk+c3xaaeI8bgS3engTSnCSi0aH8EJ4KGhOyoXYAJkqjzhgjSY1l7sPao7h479PP5FIXOBbR1CLPiNe9krp/Lvv3fYGDossgAzF7aSYzfcj2UujrxAT8oAAA",
+      "color": "#e7e9eb",
+      "full": [
+        {
+          "path": "media/r-kah-11-640.webp",
+          "w": 640,
+          "h": 960,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-11-640.avif",
+          "w": 640,
+          "h": 960,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-11-1024.webp",
+          "w": 1024,
+          "h": 1536,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-11-1024.avif",
+          "w": 1024,
+          "h": 1536,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-kah-11-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-11-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-11-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-11-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-kah-11-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-11-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-11-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-11-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "96a1a0430a8504449e0387a7dc216cc7fbcdaa9e0b394f4e62694d4c59e8ffc9",
+      "crops": {
+        "card": [
+          0,
+          495,
+          1200,
+          1395
+        ],
+        "tall": [
+          0,
+          165,
+          1200,
+          1765
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.97172,
+          1.001414,
+          1.029667
+        ],
+        "levels": [
+          5.0,
+          250.0
+        ],
+        "highlight_fraction_before": 0.007392,
+        "highlight_fraction_after": 0.008808
+      },
+      "flags": []
+    },
+    "R-KAH-12": {
+      "role": "reference",
+      "category": "coffee",
+      "title": "Asimetrik beyaz fırın ve kiler dolabı",
+      "alt_tr": "Ayaklı beyaz depolama, sol açık raflar ve sağ fırın/mikrodalga nişi; sade modern mutfak ürün sahnesi.",
+      "width": 1200,
+      "height": 1800,
+      "lqip": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAABQBQCdASoYACQAPwFurE+rJqQiKq35YCAJZwDHME2TFzSIQQDIV3l5A9N0IFXemw4+fuAA/dIO3zpoJRdEqK0J7/1YDSo6nvfpd3zYq9gLSJwF7iK5IXbOhunyvUfc5Itk1Xy4P5PaiVeuCjEhy2WCUJakyqWD7Pn6UxYkOWcAAA==",
+      "color": "#a8a39e",
+      "full": [
+        {
+          "path": "media/r-kah-12-640.webp",
+          "w": 640,
+          "h": 960,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-12-640.avif",
+          "w": 640,
+          "h": 960,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-12-1024.webp",
+          "w": 1024,
+          "h": 1536,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-12-1024.avif",
+          "w": 1024,
+          "h": 1536,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-kah-12-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-12-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-12-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-12-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-kah-12-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-12-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-12-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-12-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "fb6a06d3b312bc5b443f5a52b231089d07d943e298abfc5c1ec377b5575aa00b",
+      "crops": {
+        "card": [
+          0,
+          900,
+          1200,
+          1800
+        ],
+        "tall": [
+          0,
+          200,
+          1200,
+          1800
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.979658,
+          0.99921,
+          1.022673
+        ],
+        "levels": [
+          8,
+          244
+        ],
+        "highlight_fraction_before": 1e-06,
+        "highlight_fraction_after": 0.000539
+      },
+      "flags": []
+    },
+    "R-KAH-13": {
+      "role": "reference",
+      "category": "coffee",
+      "title": "Kompakt beyaz ahşap kahve köşesi",
+      "alt_tr": "Beyaz country alt kapaklar, ahşap sırt paneli ve siyah cam üst dolap; sıcak LED ve kahve makinesi. Boş dış bantlar kesildi.",
+      "width": 1200,
+      "height": 1509,
+      "lqip": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAACQBQCdASoYAB4APwFqsE8rJiUiKA1RYCAJZACdAA9j951NznOgvlKl0bxV92pIrvYe9GpwAADfrYeM27YW0SmCWrqwDh5vjat0iLPTTTXxqyAUJ2oxYnZA4Xua3qsHODt+OrH3kCfFGSQEbcfoRC+kiiQOTjmqfAAegAAA",
+      "color": "#c7c2bd",
+      "full": [
+        {
+          "path": "media/r-kah-13-640.webp",
+          "w": 640,
+          "h": 805,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-13-640.avif",
+          "w": 640,
+          "h": 805,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-13-1024.webp",
+          "w": 1024,
+          "h": 1288,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-13-1024.avif",
+          "w": 1024,
+          "h": 1288,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-kah-13-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-13-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-13-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-13-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-kah-13-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-13-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-13-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-13-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "f35ee8aa598f9fb68c16b3860de411084de8ac9330f504958322bfbfe81758de",
+      "crops": {
+        "card": [
+          0,
+          122,
+          1200,
+          1022
+        ],
+        "tall": [
+          10,
+          0,
+          1141,
+          1508
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.932462,
+          1.002324,
+          1.084138
+        ],
+        "levels": [
+          7.0,
+          249.0
+        ],
+        "highlight_fraction_before": 0.01042,
+        "highlight_fraction_after": 0.009198
+      },
+      "flags": []
+    },
+    "R-KAH-14": {
+      "role": "reference",
+      "category": "coffee",
+      "title": "Beyaz country kemerli kahve köşesi",
+      "alt_tr": "Kemerli beyaz niş, iki yanda ışıklı cam vitrin, siyah tezgâh ve alt çerçeveli kapaklar; gri zeminli iç mekân.",
+      "width": 1080,
+      "height": 1920,
+      "lqip": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAACwBgCdASoYACsAPwFqrU6rJiQiMBqqqWAgCWQArww6MZEnOn3eKLzOddY0r6G2zAgeX2pHX8J3LkIJT20RYADeEl7U3+1PkrNdfsINQzLVzc1ynYiIQaYEkSzxSgVai3aOgLdv1P+qVtp7W4q+y6MMgVW3ZHyDeV7NrPQaS+SYsKc7FC2pgiNQfOZHwTVWxn6ekehYDzhl8/xTXkOoFKNl2oDQAAAA",
+      "color": "#9a9da1",
+      "full": [
+        {
+          "path": "media/r-kah-14-640.webp",
+          "w": 640,
+          "h": 1138,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-14-640.avif",
+          "w": 640,
+          "h": 1138,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-14-1024.webp",
+          "w": 1024,
+          "h": 1820,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-14-1024.avif",
+          "w": 1024,
+          "h": 1820,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-kah-14-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-14-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-14-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-14-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-kah-14-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-14-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-14-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-14-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "de6d9a9dbd79e17377dad88d8cb716b3c2d27a9e136bc5b7f34ed1779f753061",
+      "crops": {
+        "card": [
+          0,
+          421,
+          1080,
+          1231
+        ],
+        "tall": [
+          0,
+          106,
+          1080,
+          1546
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.966606,
+          0.992796,
+          1.045918
+        ],
+        "levels": [
+          0.0,
+          244
+        ],
+        "highlight_fraction_before": 0.002356,
+        "highlight_fraction_after": 0.007814
+      },
+      "flags": [
+        "card_crop_retains_less_than_half"
+      ]
+    },
+    "R-KAH-15": {
+      "role": "reference",
+      "category": "coffee",
+      "title": "Bej uzun kemerli kahve ünitesi",
+      "alt_tr": "Siyah çerçeveli yan cam vitrinler, ışıklı kemerli orta niş, açık raflar ve uzun çekmeceler; sıcak bej tonlar.",
+      "width": 1080,
+      "height": 1920,
+      "lqip": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAABwBgCdASoYACsAPwFqrk+rJaQiKrgN+WAgCWUAxNgHyOAwo/xguqQwEIVq95PD5PysPuKM3SXnJ6pQWAAA98oe+oG0ko9tKqY2SjEmG+j02WodQITGFNsFUpyZ0t2UDiHnUOY5VvmU2Weiw6gGqImPBzldfOXxs0gbimrRMGOFHw8+KOh7b53tDdW7MRmE2SDy/uiFxMIwAA==",
+      "color": "#b3a79a",
+      "full": [
+        {
+          "path": "media/r-kah-15-640.webp",
+          "w": 640,
+          "h": 1138,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-15-640.avif",
+          "w": 640,
+          "h": 1138,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-15-1024.webp",
+          "w": 1024,
+          "h": 1820,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-15-1024.avif",
+          "w": 1024,
+          "h": 1820,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-kah-15-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-15-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-15-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-15-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-kah-15-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-15-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-15-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-15-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "a84706665e90d3e943532ee57d295adbdf4e3c54403410cef54fca82aececd96",
+      "crops": {
+        "card": [
+          0,
+          416,
+          1080,
+          1226
+        ],
+        "tall": [
+          0,
+          108,
+          1080,
+          1548
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.912833,
+          0.993841,
+          1.12
+        ],
+        "levels": [
+          0.0,
+          244
+        ],
+        "highlight_fraction_before": 0.010273,
+        "highlight_fraction_after": 0.010223
+      },
+      "flags": [
+        "card_crop_retains_less_than_half"
+      ]
+    },
+    "R-KAH-16": {
+      "role": "reference",
+      "category": "coffee",
+      "title": "Gri çekmeceli sağ vitrinli kahve ünitesi",
+      "alt_tr": "Ahşap arka yüzey, siyah cam üst dolap, sağda boy cam vitrin, gri uzun çekmeceler ve tezgahta ekipmanlar.",
+      "width": 1142,
+      "height": 1674,
+      "lqip": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAABwBgCdASoYACMAPwFwrk+rJqQiKqwBYCAJZACdMvU6ADCPYyZvQ+Uo/n1vM6PSRbWnuLgXhIaVQFqo/AAA/e0uYGbRnhgmNYHPHalJLs0978ySpNroV1XkZ02HThxZSEFvhKfYxvfed6OZjB9LwscXmNJIF8ICX2VIVdkkgqvTjpakh0eRdnZ9RQ56EM4vBSa8w9TZjVDuLgZWw4fTp7HNnvUxQAAA",
+      "color": "#5b3e26",
+      "full": [
+        {
+          "path": "media/r-kah-16-640.webp",
+          "w": 640,
+          "h": 938,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-16-640.avif",
+          "w": 640,
+          "h": 938,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-16-1024.webp",
+          "w": 1024,
+          "h": 1501,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-16-1024.avif",
+          "w": 1024,
+          "h": 1501,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-kah-16-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-16-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-16-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-16-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-kah-16-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-16-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-16-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-16-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "dd621c650aa35f374d745763dd46b523a7a9118061b3f5c9c0b5ffae7aa58243",
+      "crops": {
+        "card": [
+          1,
+          225,
+          1141,
+          1080
+        ],
+        "tall": [
+          1,
+          112,
+          1141,
+          1632
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.949166,
+          1.001791,
+          1.059044
+        ],
+        "levels": [
+          3.0,
+          244
+        ],
+        "highlight_fraction_before": 0.00324,
+        "highlight_fraction_after": 0.021334
+      },
+      "flags": [
+        "highlight_clipping_increase"
+      ]
+    },
+    "R-ANT-01": {
+      "role": "reference",
+      "category": "hall",
+      "title": "Organik yuvarlak LED ayna",
+      "alt_tr": "Kavisli organik formlu duvar aynası, çevresinde sıcak LED ve solda ayaklı bitki; sade antre/ayna referansı.",
+      "width": 1080,
+      "height": 1920,
+      "lqip": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAABQBgCdASoYACsAPwFqrE+rJaQiNVQIAWAgCWMAqEAvJfSAwOykkQIXj3bovZMQ9Yd9JnehOMzTF2jcAAD+40tQYGlrN1SzNdM6xAaF4i9zwvKanl3AqfJhZ320DiTcy6FKCe7szyHdnUn5h4TbwEXXMQ9faXe0yaQHMEX+ik5uWtYR8cJQD4WR71yoU5V7lcMFPMsuYAA=",
+      "color": "#79736b",
+      "full": [
+        {
+          "path": "media/r-ant-01-640.webp",
+          "w": 640,
+          "h": 1138,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-01-640.avif",
+          "w": 640,
+          "h": 1138,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-ant-01-1024.webp",
+          "w": 1024,
+          "h": 1820,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-01-1024.avif",
+          "w": 1024,
+          "h": 1820,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-ant-01-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-01-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-ant-01-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-01-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-ant-01-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-01-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-ant-01-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-01-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "ec4e8cdc27f41f34c9813444a400424b24cd798d7654113e9825b7964f2fc9f0",
+      "crops": {
+        "card": [
+          0,
+          555,
+          1080,
+          1365
+        ],
+        "tall": [
+          0,
+          480,
+          1080,
+          1920
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.980881,
+          0.991677,
+          1.029579
+        ],
+        "levels": [
+          3.0,
+          244.0
+        ],
+        "highlight_fraction_before": 0.003904,
+        "highlight_fraction_after": 0.017946
+      },
+      "flags": [
+        "card_crop_retains_less_than_half"
+      ]
+    },
+    "R-ANT-02": {
+      "role": "reference",
+      "category": "hall",
+      "title": "Gri çıtalı asimetrik LED ayna konsolu",
+      "alt_tr": "Gri çıtalı yarım duvar ve asimetrik ayna; önünde tek asma çekmece, kenarlarda sıcak LED. Dikey yakın kompozisyon.",
+      "width": 1080,
+      "height": 1920,
+      "lqip": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAACQBgCdASoYACsAPwF2r1KrJyQipWzJYCAJYgC06DrHlFU7kEgwfRnbkg4dPaJa3Wn20HukWuyqS9S5L/cwAP3eGSLPqixJ884EFqYWDU/oskzH4PMyOVi2mXg8XNPfmrNRsSt5+vzTd8daaeF9VSqjFoo3pS7mP95ok+Tye4uT1tLBUzZUOwLkdXEuh0JHaYjxl87nSDOzygZ9DL46ETcHQAA=",
+      "color": "#bab3af",
+      "full": [
+        {
+          "path": "media/r-ant-02-640.webp",
+          "w": 640,
+          "h": 1138,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-02-640.avif",
+          "w": 640,
+          "h": 1138,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-ant-02-1024.webp",
+          "w": 1024,
+          "h": 1820,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-02-1024.avif",
+          "w": 1024,
+          "h": 1820,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-ant-02-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-02-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-ant-02-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-02-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-ant-02-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-02-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-ant-02-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-02-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "56524cc6c8744eb8366aee6484c9f1a756d13c85fe0b54c5b9f3815193dba332",
+      "crops": {
+        "card": [
+          0,
+          805,
+          1080,
+          1615
+        ],
+        "tall": [
+          0,
+          480,
+          1080,
+          1920
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.985291,
+          0.996168,
+          1.019552
+        ],
+        "levels": [
+          4.0,
+          244
+        ],
+        "highlight_fraction_before": 0.002267,
+        "highlight_fraction_after": 0.013923
+      },
+      "flags": [
+        "card_crop_retains_less_than_half"
+      ]
+    },
+    "R-ANT-03": {
+      "role": "reference",
+      "category": "hall",
+      "title": "Ahşap çıtalı yuvarlak ayna siyah konsol",
+      "alt_tr": "Duvarın yarısı ahşap çıta, yarısı yuvarlak ayna; siyah asma çekmece ve açık renk puf. Dikey antre görünümü.",
+      "width": 1080,
+      "height": 1920,
+      "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAwBgCdASoYACsAPu1iqE6ppaQiOrZoATAdiWMAt0BQuuJe8rEve/8ZzNYOPFaLlr3xjeuoNyJRNKAAAP7nMsQhRSld96g2UtrLiwkm1luBLp0QxkXanRA5zY1PO04A5euAf65/Oc9Imgqwr98IjvLCUyrg7iOKrSmWfXePWYJ31tIDym2CT/k11VNIAAAA",
+      "color": "#5d4c3a",
+      "full": [
+        {
+          "path": "media/r-ant-03-640.webp",
+          "w": 640,
+          "h": 1138,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-03-640.avif",
+          "w": 640,
+          "h": 1138,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-ant-03-1024.webp",
+          "w": 1024,
+          "h": 1820,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-03-1024.avif",
+          "w": 1024,
+          "h": 1820,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-ant-03-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-03-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-ant-03-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-03-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-ant-03-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-03-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-ant-03-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-03-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "3cdbe8d8ae6c86c4a6f1c1a776e8385a86093e61b203f20f90229a993671e63f",
+      "crops": {
+        "card": [
+          0,
+          444,
+          1080,
+          1254
+        ],
+        "tall": [
+          0,
+          144,
+          1080,
+          1584
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.960631,
+          0.99283,
+          1.053821
+        ],
+        "levels": [
+          1.0,
+          244
+        ],
+        "highlight_fraction_before": 0.000421,
+        "highlight_fraction_after": 0.010253
+      },
+      "flags": [
+        "card_crop_retains_less_than_half"
+      ]
+    },
+    "R-ANT-04": {
+      "role": "reference",
+      "category": "hall",
+      "title": "Gri mermer üstlü çift çekmeceli antre",
+      "alt_tr": "Geniş ayna, gri çıtalı yüzey, mermer görünümlü üst tabla ve iki çekmece; vazolu, sıcak LED aydınlatmalı iç mekân.",
+      "width": 1224,
+      "height": 1632,
+      "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACwBACdASoYACAAPuFepU6opSOiN+gBEBwJYwC/7CTtB6tzNnzgll+EzxOFSegAAPvcGYEIovC/OHm8ZjFLuWkAAvWjsKH4m7B973+/KpZU0mHl49l9boXgeidl4mJJemYX2p2PFqUn6hNAAAA=",
+      "color": "#787c81",
+      "full": [
+        {
+          "path": "media/r-ant-04-640.webp",
+          "w": 640,
+          "h": 853,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-04-640.avif",
+          "w": 640,
+          "h": 853,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-ant-04-1024.webp",
+          "w": 1024,
+          "h": 1365,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-04-1024.avif",
+          "w": 1024,
+          "h": 1365,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-ant-04-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-04-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-ant-04-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-04-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-ant-04-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-04-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-ant-04-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-ant-04-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "154e91febadfe9ad761f2cdeb3138fa2bc24b8b51731b5ebe0cdc116b25fbec6",
+      "crops": {
+        "card": [
+          0,
+          250,
+          1224,
+          1168
+        ],
+        "tall": [
+          0,
+          0,
+          1224,
+          1632
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.960083,
+          0.983334,
+          1.066548
+        ],
+        "levels": [
+          1.0,
+          248.0
+        ],
+        "highlight_fraction_before": 0.014841,
+        "highlight_fraction_after": 0.012638
+      },
+      "flags": []
+    },
+    "R-MUT-01": {
+      "role": "reference",
+      "category": "kitchen",
+      "title": "Açık gri U mutfak geometrik tavan ışığı",
+      "alt_tr": "Ortada pencere, siyah tezgâh, açık gri düz dolaplar ve U yerleşim; tavanda dikdörtgen LED çizgisi. Dikey model referansı.",
+      "width": 1792,
+      "height": 2400,
+      "lqip": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACQBQCdASoYACAAPwF4sFOrJyQiqAqpYCAJZwC+SDTvblz95O8rH3Ag3Nj+cprwCWv8krusAAD7ajjOpc8MnseTdNefnJFdU4QDXk5Ooug4Bhkm+f27GH0KTT6JlTIzmnlSDY00qdmjicftdORDGe64AAA=",
+      "color": "#aea8a4",
+      "full": [
+        {
+          "path": "media/r-mut-01-640.webp",
+          "w": 640,
+          "h": 857,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-01-640.avif",
+          "w": 640,
+          "h": 857,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-01-1024.webp",
+          "w": 1024,
+          "h": 1371,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-01-1024.avif",
+          "w": 1024,
+          "h": 1371,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-01-1600.webp",
+          "w": 1600,
+          "h": 2143,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-01-1600.avif",
+          "w": 1600,
+          "h": 2143,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-mut-01-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-01-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-01-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-01-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-mut-01-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-01-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-01-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-01-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "c16f033b998e458eeb320301200ab6353305c5088bc3f930edf96e5c26543c0e",
+      "crops": {
+        "card": [
+          0,
+          475,
+          1792,
+          1819
+        ],
+        "tall": [
+          0,
+          9,
+          1791,
+          2397
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.967978,
+          1.004365,
+          1.031019
+        ],
+        "levels": [
+          8,
+          252.0
+        ],
+        "highlight_fraction_before": 0.012881,
+        "highlight_fraction_after": 0.015647
+      },
+      "flags": []
+    },
+    "R-MUT-02": {
+      "role": "reference",
+      "category": "kitchen",
+      "title": "Pudra krem düz mutfak duvarı",
+      "alt_tr": "Pudra/krem düz üst ve alt dolaplar, mermer desenli arka yüzey ve yüksek ankastre kolonu; geniş yatay kompozisyon.",
+      "width": 2560,
+      "height": 1441,
+      "lqip": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAwCdASoYAA4APwForE6rJaQiMAgBYCAJZQCuHCDU+O/Houa6Y+QA/tb2HnexL1CdAGZ2NkH2CiblEMqf8w8BAUIZBbBUC+7GWX9CMAA=",
+      "color": "#9f8b79",
+      "full": [
+        {
+          "path": "media/r-mut-02-640.webp",
+          "w": 640,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-02-640.avif",
+          "w": 640,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-02-1024.webp",
+          "w": 1024,
+          "h": 576,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-02-1024.avif",
+          "w": 1024,
+          "h": 576,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-02-1600.webp",
+          "w": 1600,
+          "h": 901,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-02-1600.avif",
+          "w": 1600,
+          "h": 901,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-02-2048.webp",
+          "w": 2048,
+          "h": 1153,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-02-2048.avif",
+          "w": 2048,
+          "h": 1153,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-mut-02-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-02-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-02-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-02-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [],
+      "source_sha256": "2358e9882fcf07565af8931f6c586967fb9f799a0448b08bfb109b5b0b5d7002",
+      "crops": {
+        "card": [
+          0,
+          0,
+          1920,
+          1440
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.969777,
+          0.998141,
+          1.035696
+        ],
+        "levels": [
+          8,
+          244.0
+        ],
+        "highlight_fraction_before": 0.00228,
+        "highlight_fraction_after": 0.019065
+      },
+      "flags": [
+        "highlight_clipping_increase"
+      ]
+    },
+    "R-MUT-03": {
+      "role": "reference",
+      "category": "kitchen",
+      "title": "Bej kulpsuz mutfak yakın açı",
+      "alt_tr": "Bej düz dolaplar, uzun yatay tutamak çizgileri, gazlı ocak ve yüksek ankastre kolonu; sıcak ışıklı tezgâh yakın açısı.",
+      "width": 1440,
+      "height": 1800,
+      "lqip": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAQBQCdASoYAB4APwFyr1CrJyQisBgIAWAgCUAXYAaLj6vwRF2Ojy6P01GIzTz83vRAAP5Zma0Ao8rg4GUajIGaRnv8toIbWJesFJ1h/eHfLk7XVHLZKlSEuvnEUSIQUqUeVeNXaaITWpAVK2iG3STkx2CxCmQwAgLZJoAA",
+      "color": "#b18964",
+      "full": [
+        {
+          "path": "media/r-mut-03-640.webp",
+          "w": 640,
+          "h": 800,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-03-640.avif",
+          "w": 640,
+          "h": 800,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-03-1024.webp",
+          "w": 1024,
+          "h": 1280,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-03-1024.avif",
+          "w": 1024,
+          "h": 1280,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-mut-03-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-03-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-03-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-03-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-mut-03-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-03-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-03-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-03-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "c7d2ebb8432b1a9a2e7567e1862557931d6fd6e8dc50fe43fac2147aeb246119",
+      "crops": {
+        "card": [
+          0,
+          360,
+          1440,
+          1440
+        ],
+        "tall": [
+          2,
+          0,
+          1352,
+          1800
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.910328,
+          0.99843,
+          1.12
+        ],
+        "levels": [
+          8,
+          244
+        ],
+        "highlight_fraction_before": 0.007389,
+        "highlight_fraction_after": 0.006043
+      },
+      "flags": []
+    },
+    "R-MUT-04": {
+      "role": "reference",
+      "category": "kitchen",
+      "title": "Gri mutfak siyah cam üst dolap",
+      "alt_tr": "Gri çekmeceler, açık mermer tezgâh/arka panel, siyah batarya ve yansıtıcı siyah cam üst dolaplar; yakın açı.",
+      "width": 1200,
+      "height": 1600,
+      "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABQBACdASoYACAAPvlup06qpyMiMAwBUB8JZQC2yB5jRocs1ZT5soVrKWeAAPzF580VCD4vqlmE9H/jR3u6bJ7Cfg1JsMX5EWOkbtC034Qle4spzzezpSW6MqmvcOC6zkAAAA==",
+      "color": "#5d564c",
+      "full": [
+        {
+          "path": "media/r-mut-04-640.webp",
+          "w": 640,
+          "h": 853,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-04-640.avif",
+          "w": 640,
+          "h": 853,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-04-1024.webp",
+          "w": 1024,
+          "h": 1365,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-04-1024.avif",
+          "w": 1024,
+          "h": 1365,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-mut-04-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-04-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-04-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-04-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-mut-04-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-04-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-04-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-04-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "6d41d6135ecfcf2e4a245e533b8b6402d0d0a3f12217cba626728357bceb1dcc",
+      "crops": {
+        "card": [
+          0,
+          280,
+          1200,
+          1180
+        ],
+        "tall": [
+          0,
+          0,
+          1200,
+          1600
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.944825,
+          0.992469,
+          1.077188
+        ],
+        "levels": [
+          3.0,
+          248.0
+        ],
+        "highlight_fraction_before": 0.010121,
+        "highlight_fraction_after": 0.008707
+      },
+      "flags": []
+    },
+    "R-MUT-05": {
+      "role": "reference",
+      "category": "kitchen",
+      "title": "Açık renk L mutfak sarı tavan ışığı",
+      "alt_tr": "Açık bej/gri L dolaplar, koyu tezgâh, ankastre ekipmanlar ve sıcak asma tavan ışığı; uzun dar mekân.",
+      "width": 1200,
+      "height": 1600,
+      "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACwBACdASoYACAAPwFqr1CrJaQisBgIAWAgCWMAABl2kgD4ueqmZa4cQxL/6ClwAPUPNV7jqz9YJylglFt7QGMSfv27V32XbRHboT/j2MrneUAEsmKSNAeJqtAESPKo2CSh+dSwRsZiq1URMvseuT2fc6uXAAAA",
+      "color": "#68645e",
+      "full": [
+        {
+          "path": "media/r-mut-05-640.webp",
+          "w": 640,
+          "h": 853,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-05-640.avif",
+          "w": 640,
+          "h": 853,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-05-1024.webp",
+          "w": 1024,
+          "h": 1365,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-05-1024.avif",
+          "w": 1024,
+          "h": 1365,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-mut-05-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-05-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-05-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-05-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-mut-05-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-05-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-05-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-05-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "c05b7c3bcb5b46af28e9eb027fc88733faf047ec20206db5666d5197fd42b56c",
+      "crops": {
+        "card": [
+          0,
+          88,
+          1200,
+          988
+        ],
+        "tall": [
+          0,
+          0,
+          1200,
+          1600
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.969801,
+          0.986863,
+          1.048918
+        ],
+        "levels": [
+          0.0,
+          244
+        ],
+        "highlight_fraction_before": 0.002967,
+        "highlight_fraction_after": 0.008235
+      },
+      "flags": []
+    },
+    "R-MUT-06": {
+      "role": "reference",
+      "category": "kitchen",
+      "title": "Gri cam vitrinli bitkili mutfak",
+      "alt_tr": "Geniş cam üst dolaplar ve içlerinde bitkiler; açık gri alt çekmeceler, mermer arka yüzey ve pencere önü evye.",
+      "width": 1024,
+      "height": 1820,
+      "lqip": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAADQBQCdASoYACsAPwFyslIrJqSipWzJYCAJZQDImHUxSq6TdvlbohnGBxBkoD0SY5gVKOYQyy8AAPxSetrCqseWusp9334SCn06LKmOxryXYhnhj372kvSrvpxkfBYsaAJXBYmPLExw+m0bfkINuo8N2bPRxepYhTNQatz8dNK2q0MEf/KSDxTp6vMrw3SmiReLOkQEwJYftRkWgwhXe7YAAAA=",
+      "color": "#99928b",
+      "full": [
+        {
+          "path": "media/r-mut-06-640.webp",
+          "w": 640,
+          "h": 1138,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-06-640.avif",
+          "w": 640,
+          "h": 1138,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-06-1024.webp",
+          "w": 1024,
+          "h": 1820,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-06-1024.avif",
+          "w": 1024,
+          "h": 1820,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-mut-06-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-06-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-06-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-06-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-mut-06-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-06-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-06-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-06-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "ab9b5a9b62d89c769ec1b7e5453915d5de4fbe3fed76ea7eec0047bc0bc5fa0c",
+      "crops": {
+        "card": [
+          0,
+          473,
+          1024,
+          1241
+        ],
+        "tall": [
+          0,
+          285,
+          1023,
+          1649
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.965581,
+          0.991219,
+          1.049145
+        ],
+        "levels": [
+          8,
+          251.0
+        ],
+        "highlight_fraction_before": 0.018768,
+        "highlight_fraction_after": 0.027157
+      },
+      "flags": [
+        "card_crop_retains_less_than_half"
+      ]
+    },
+    "R-MUT-07": {
+      "role": "reference",
+      "category": "kitchen",
+      "title": "Açık gri L mutfak pencere önü evye",
+      "alt_tr": "Açık gri düz dolaplar, siyah yatay çizgi, köşede ocak ve büyük pencere önünde evye. Yatay modern mutfak referansı.",
+      "width": 1536,
+      "height": 1024,
+      "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQBACdASoYABAAPwF6sFCrKKSisAgBYCAJYwCnFCEnNfuzxa1bto0qAAD8fEtdBv0SLdIVFK973KD4uFi909KWPMZ4JGjBhQ4yc82UBbkwQAAA",
+      "color": "#6e6455",
+      "full": [
+        {
+          "path": "media/r-mut-07-640.webp",
+          "w": 640,
+          "h": 427,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-07-640.avif",
+          "w": 640,
+          "h": 427,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-07-1024.webp",
+          "w": 1024,
+          "h": 683,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-07-1024.avif",
+          "w": 1024,
+          "h": 683,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-mut-07-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-07-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-07-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-07-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [],
+      "source_sha256": "ddf019c6abdc6f162e56ff723dfb2111afeeb14dcc4e570f0915081fb16a1d5f",
+      "crops": {
+        "card": [
+          172,
+          0,
+          1536,
+          1023
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.96397,
+          0.994463,
+          1.047391
+        ],
+        "levels": [
+          8,
+          251.0
+        ],
+        "highlight_fraction_before": 0.021741,
+        "highlight_fraction_after": 0.033391
+      },
+      "flags": []
+    },
+    "R-MUT-08": {
+      "role": "reference",
+      "category": "kitchen",
+      "title": "Ahşap çıtalı sıcak ışıklı mutfak",
+      "alt_tr": "Ahşap çıtalı üst kapaklar ve cam vitrinler, açık tezgâh ve düz alt çekmeceler; sıcak LED aydınlatma.",
+      "width": 1024,
+      "height": 1536,
+      "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABQBgCdASoYACQAPvViqU6qpSOiOrM4AVAeiWUAw6wLPFagiFRWiyq8GjhcSIRliFsf6P/a4383AI1qAAD9zoYkXTMOBrsE/Dujk4vWr4Syyr5h/ziG99iJgFX9Do0DHs4Kmi+g2OzRx7P90Ei/+kUY+EPZ8fZVB+zYa3iEj4JdRCmihRjwAA==",
+      "color": "#715838",
+      "full": [
+        {
+          "path": "media/r-mut-08-640.webp",
+          "w": 640,
+          "h": 960,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-08-640.avif",
+          "w": 640,
+          "h": 960,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-08-1024.webp",
+          "w": 1024,
+          "h": 1536,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-08-1024.avif",
+          "w": 1024,
+          "h": 1536,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-mut-08-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-08-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-08-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-08-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-mut-08-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-08-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-08-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-08-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "61c91ad3f22fc0a1b3b859bd5acf101c8a6d43e7c77ca05954312448268e21a2",
+      "crops": {
+        "card": [
+          0,
+          211,
+          1024,
+          979
+        ],
+        "tall": [
+          0,
+          26,
+          1023,
+          1390
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.88,
+          1.000099,
+          1.12
+        ],
+        "levels": [
+          5.0,
+          244
+        ],
+        "highlight_fraction_before": 0.005306,
+        "highlight_fraction_after": 0.005178
+      },
+      "flags": []
+    },
+    "R-MUT-09": {
+      "role": "reference",
+      "category": "kitchen",
+      "title": "Antrasit mutfak siyah metro seramik",
+      "alt_tr": "Koyu/antrasit dolaplar, siyah metro seramik arka yüzey, ışıklı cam vitrinler ve siyah tezgâh; güçlü koyu palet.",
+      "width": 1024,
+      "height": 1536,
+      "lqip": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADwBQCdASoYACQAPuVgo06pJaMiNUwBIByJZQDD6Bu3AMChFfu8Y+ee4bpD7wbie2OAu+1BUh6YAAD8Uj2Lp0JmV3+6eTS3a4CdF7ceBOwlnnE7d372mVj8AhvTaiz9+O6Izt9cXVZm9gTE9f7ZclzZeJPV6DeHNjEUmt1UvakAAA==",
+      "color": "#969291",
+      "full": [
+        {
+          "path": "media/r-mut-09-640.webp",
+          "w": 640,
+          "h": 960,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-09-640.avif",
+          "w": 640,
+          "h": 960,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-09-1024.webp",
+          "w": 1024,
+          "h": 1536,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-09-1024.avif",
+          "w": 1024,
+          "h": 1536,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-mut-09-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-09-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-09-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-09-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-mut-09-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-09-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-mut-09-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-mut-09-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "bce047502543bbaed8eda6873b3dd7b44038cd40f336b084fd4391efa881d2b4",
+      "crops": {
+        "card": [
+          0,
+          250,
+          1024,
+          1018
+        ],
+        "tall": [
+          0,
+          172,
+          1023,
+          1536
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.972523,
+          0.997274,
+          1.033283
+        ],
+        "levels": [
+          4.0,
+          251.0
+        ],
+        "highlight_fraction_before": 0.007893,
+        "highlight_fraction_after": 0.008949
+      },
+      "flags": []
+    },
+    "R-TV-01": {
+      "role": "reference",
+      "category": "tv",
+      "title": "Açık ahşap TV şömine duvarı",
+      "alt_tr": "Tam boy açık ahşap panel, sağda siyah TV, solda doğrusal şömine, mermer görünümlü alt baza ve yuvarlak sehpa.",
+      "width": 1036,
+      "height": 1647,
+      "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABwBQCdASoYACYAPvVork6qpiSiMAqpUB6JZwC7M4oCZ8pidDoNim4LMwKlcdISKK2pYTgAAPofo9A9kEBzwz7s4+iulogkq46UV2d34s02jxAjzeCjZOXehKkWv7kJ65r2i066F8ZqcrAHt58WqegjaNAAAA==",
+      "color": "#8d8b84",
+      "full": [
+        {
+          "path": "media/r-tv-01-640.webp",
+          "w": 640,
+          "h": 1017,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-tv-01-640.avif",
+          "w": 640,
+          "h": 1017,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-tv-01-1024.webp",
+          "w": 1024,
+          "h": 1628,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-tv-01-1024.avif",
+          "w": 1024,
+          "h": 1628,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-tv-01-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-tv-01-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-tv-01-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-tv-01-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-tv-01-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-tv-01-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-tv-01-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-tv-01-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "f18d6a2b6f2137a6bc140a269123fe25d40b45028f9cdf546bf4beae7eb111d6",
+      "crops": {
+        "card": [
+          0,
+          696,
+          1036,
+          1473
+        ],
+        "tall": [
+          1,
+          167,
+          1036,
+          1547
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.952751,
+          0.991432,
+          1.066642
+        ],
+        "levels": [
+          0.0,
+          244
+        ],
+        "highlight_fraction_before": 1.1e-05,
+        "highlight_fraction_after": 2.6e-05
+      },
+      "flags": [
+        "card_crop_retains_less_than_half"
+      ]
+    },
+    "P-MUT-01": {
+      "role": "provided",
+      "category": "kitchen",
+      "title": "Beyaz L mutfak ışıklı cam vitrin",
+      "alt_tr": "Doğrudan çekim: beyaz köşe mutfak, siyah kulplar, sarı tezgâh ışığı ve üstte cam vitrin. Alt telefon/tarih damgası kırpıldı.",
+      "width": 2040,
+      "height": 1425,
+      "lqip": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAACQBACdASoYABEAPwFoq08rJaOiMAgBYCAJQBfnBAxf9Y7i1wfvMgnUloOHCAAA/svn8tpImKW1+TESWUsEXaFiEbBxZMXTOz5bcIFIOZRnoVF0D0/D3WSJz5nW8AAA",
+      "color": "#7a8295",
+      "full": [
+        {
+          "path": "media/p-mut-01-640.webp",
+          "w": 640,
+          "h": 447,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-01-640.avif",
+          "w": 640,
+          "h": 447,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-mut-01-1024.webp",
+          "w": 1024,
+          "h": 715,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-01-1024.avif",
+          "w": 1024,
+          "h": 715,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-mut-01-1600.webp",
+          "w": 1600,
+          "h": 1118,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-01-1600.avif",
+          "w": 1600,
+          "h": 1118,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/p-mut-01-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-01-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-mut-01-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-01-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [],
+      "source_sha256": "8ccaf28657c92fc10d3afbaf46c60fe529440519ffc3b5c8717dede7a7fafc6a",
+      "crops": {
+        "card": [
+          0,
+          0,
+          1900,
+          1425
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.936641,
+          0.97676,
+          1.112895
+        ],
+        "levels": [
+          7.0,
+          246.0
+        ],
+        "highlight_fraction_before": 0.027714,
+        "highlight_fraction_after": 0.011605
+      },
+      "flags": []
+    },
+    "P-TV-01": {
+      "role": "provided",
+      "category": "tv",
+      "title": "Ceviz çıtalı TV duvarı cam vitrin",
+      "alt_tr": "Doğrudan çekim: ceviz çıtalı TV duvarı, solda uzun cam vitrin, koyu alt konsol ve sıcak LED. Alt telefon/tarih damgası kırpıldı.",
+      "width": 2040,
+      "height": 1425,
+      "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAABwBACdASoYABEAPwFys1GrJqSiqAqpYCAJQBajZfgUiviWQVGm+6XIeAL3gABpMwB8YQbt/ZJDJYjenaHHZlCNMn355TPJOInse0cVfrwckvN9lpfiaxV7ytlcI6dlwYKR8aDKO6j/zS+IvNufh8AA",
+      "color": "#8389a5",
+      "full": [
+        {
+          "path": "media/p-tv-01-640.webp",
+          "w": 640,
+          "h": 447,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-tv-01-640.avif",
+          "w": 640,
+          "h": 447,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-tv-01-1024.webp",
+          "w": 1024,
+          "h": 715,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-tv-01-1024.avif",
+          "w": 1024,
+          "h": 715,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-tv-01-1600.webp",
+          "w": 1600,
+          "h": 1118,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-tv-01-1600.avif",
+          "w": 1600,
+          "h": 1118,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/p-tv-01-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-tv-01-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-tv-01-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-tv-01-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [],
+      "source_sha256": "24af078c4958e42c038c399e435bdfde62374da93a0b3622f67d0ad3a42efb85",
+      "crops": {
+        "card": [
+          105,
+          0,
+          2005,
+          1425
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.938296,
+          0.98052,
+          1.104378
+        ],
+        "levels": [
+          3.0,
+          244
+        ],
+        "highlight_fraction_before": 0.038331,
+        "highlight_fraction_after": 0.021323
+      },
+      "flags": []
+    },
+    "P-MUT-02": {
+      "role": "provided",
+      "category": "kitchen",
+      "title": "Beyaz L mutfak gri tezgâh",
+      "alt_tr": "Doğrudan çekim: beyaz L mutfak, siyah çerçeveli üst camlar, gri tezgâh ve sağda buzdolabı. Alt telefon/tarih damgası kırpıldı.",
+      "width": 2048,
+      "height": 1430,
+      "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwBACdASoYABEAPwFurE8rJqQiMAgBYCAJZwDCgA8Amh3xFQ8U/JziFAAA+ip3ZoVWS7rLi5r7f298gppdRKq+u45ezZSc6hWsIsCoi+nbgAAA",
+      "color": "#b7b8b9",
+      "full": [
+        {
+          "path": "media/p-mut-02-640.webp",
+          "w": 640,
+          "h": 447,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-02-640.avif",
+          "w": 640,
+          "h": 447,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-mut-02-1024.webp",
+          "w": 1024,
+          "h": 715,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-02-1024.avif",
+          "w": 1024,
+          "h": 715,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-mut-02-1600.webp",
+          "w": 1600,
+          "h": 1117,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-02-1600.avif",
+          "w": 1600,
+          "h": 1117,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-mut-02-2048.webp",
+          "w": 2048,
+          "h": 1430,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-02-2048.avif",
+          "w": 2048,
+          "h": 1430,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/p-mut-02-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-02-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-mut-02-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-02-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [],
+      "source_sha256": "54e4da4162aca636e2a5d7b183c49f84cd7948779615fac581255901fcf0f96a",
+      "crops": {
+        "card": [
+          0,
+          1,
+          1904,
+          1429
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.996973,
+          0.998488,
+          1.004593
+        ],
+        "levels": [
+          8,
+          244
+        ],
+        "highlight_fraction_before": 0.001042,
+        "highlight_fraction_after": 0.001794
+      },
+      "flags": []
+    },
+    "P-MUT-03": {
+      "role": "provided",
+      "category": "kitchen",
+      "title": "Beyaz mutfak cam üst dolap yakın açı",
+      "alt_tr": "Aynı beyaz mutfağın yakın açısı; cam üst dolaplar, siyah kulplar ve tezgâh ekipmanları. Alt telefon/tarih damgası kırpıldı.",
+      "width": 2040,
+      "height": 1430,
+      "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABwBACdASoYABEAPvFmq06ppaQiMAwBMB4JZwDDrB3p6tMypq+hORBxKa/ugADwy0/fbR3avsdhq4IV9HyjyqxA3bLe+ZJ+J3sWGUJqejwlJeI8P1fa/8P+3/XcNT4lrQAAAA==",
+      "color": "#c0c0bc",
+      "full": [
+        {
+          "path": "media/p-mut-03-640.webp",
+          "w": 640,
+          "h": 449,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-03-640.avif",
+          "w": 640,
+          "h": 449,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-mut-03-1024.webp",
+          "w": 1024,
+          "h": 718,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-03-1024.avif",
+          "w": 1024,
+          "h": 718,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-mut-03-1600.webp",
+          "w": 1600,
+          "h": 1122,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-03-1600.avif",
+          "w": 1600,
+          "h": 1122,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/p-mut-03-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-03-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-mut-03-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-03-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [],
+      "source_sha256": "4c71136f95a5fa2f7b3aeb08dc87d3893d65bbd1b11ddbb9d3f72378811b74ff",
+      "crops": {
+        "card": [
+          3,
+          1,
+          1907,
+          1429
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.998941,
+          1.000151,
+          1.000912
+        ],
+        "levels": [
+          8,
+          244
+        ],
+        "highlight_fraction_before": 0.001343,
+        "highlight_fraction_after": 0.010121
+      },
+      "flags": []
+    },
+    "P-MUT-04": {
+      "role": "provided",
+      "category": "kitchen",
+      "title": "Beyaz U mutfak geniş açı",
+      "alt_tr": "Doğrudan çekim: beyaz U mutfak, gri tezgâh ve mermer görünümlü zemin; sıcak asma tavan ışığı. Geniş açı.",
+      "width": 1600,
+      "height": 1200,
+      "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADQBACdASoYABIAPvFmqk6ppiQiN/VYATAeCWcAAB51vd/8U05cjBNbAt3Y3Y4q4ADwp3H7Rl6z/x60kdSZCfTrHpC8yNe4gof36JcnV7nALC/x++wuizU3maehp4W6pV4aKGasAAA=",
+      "color": "#a8a6a6",
+      "full": [
+        {
+          "path": "media/p-mut-04-640.webp",
+          "w": 640,
+          "h": 480,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-04-640.avif",
+          "w": 640,
+          "h": 480,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-mut-04-1024.webp",
+          "w": 1024,
+          "h": 768,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-04-1024.avif",
+          "w": 1024,
+          "h": 768,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-mut-04-1600.webp",
+          "w": 1600,
+          "h": 1200,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-04-1600.avif",
+          "w": 1600,
+          "h": 1200,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/p-mut-04-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-04-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-mut-04-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-04-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [],
+      "source_sha256": "8c41c2a48e0bced0760056121ea56d72cca32df9cf20c75ebc04d6131469f7e5",
+      "crops": {
+        "card": [
+          0,
+          0,
+          1600,
+          1200
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.967275,
+          0.992799,
+          1.045047
+        ],
+        "levels": [
+          1.0,
+          244
+        ],
+        "highlight_fraction_before": 0.008991,
+        "highlight_fraction_after": 0.010953
+      },
+      "flags": []
+    },
+    "P-MUT-05": {
+      "role": "provided",
+      "category": "kitchen",
+      "title": "Beyaz U mutfak pencere açısı",
+      "alt_tr": "Aynı beyaz U mutfağın pencereye bakan dikey açısı; tavan ve zemin birlikte görünüyor.",
+      "width": 1200,
+      "height": 1600,
+      "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAACQBQCdASoYACAAPwFwsFErJiSisBgIAWAgCWMAvzhfIaebO9sfhoEkyu+zMZrLKvC3UXqtAAD+cV2U5Q5w5Zs10V6lpuFM2uLsEzTY4KZ8NXWUPqRKo6v+3wSevtiCPq3aRuD+G267zOofRR+NlmEA87PibGGsmYgcBzBGf1hvvCqAAAA=",
+      "color": "#615d56",
+      "full": [
+        {
+          "path": "media/p-mut-05-640.webp",
+          "w": 640,
+          "h": 853,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-05-640.avif",
+          "w": 640,
+          "h": 853,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-mut-05-1024.webp",
+          "w": 1024,
+          "h": 1365,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-05-1024.avif",
+          "w": 1024,
+          "h": 1365,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/p-mut-05-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-05-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-mut-05-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-05-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/p-mut-05-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-05-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-mut-05-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-05-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "97d0d1f04e69a0c36943a8348808659421bcc928dedf0895be8351092a12f623",
+      "crops": {
+        "card": [
+          0,
+          350,
+          1200,
+          1250
+        ],
+        "tall": [
+          0,
+          0,
+          1200,
+          1600
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.965306,
+          0.987515,
+          1.054038
+        ],
+        "levels": [
+          1.0,
+          244
+        ],
+        "highlight_fraction_before": 0.009729,
+        "highlight_fraction_after": 0.011868
+      },
+      "flags": []
+    },
+    "P-MUT-06": {
+      "role": "provided",
+      "category": "kitchen",
+      "title": "Beyaz country mutfak koyu tezgâh",
+      "alt_tr": "Doğrudan çekim: beyaz country mutfak, cam kapaklı üst dolaplar, kemerli davlumbaz bölümü ve koyu tezgâh.",
+      "width": 1600,
+      "height": 1204,
+      "lqip": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABwBACdASoYABIAPwFurU6rJqQiMAgBYCAJZwDO7Bbqc8IQT9Ym/ARMis/ywAD8cPijgGBk4hPlYLcw8PAGqxhoFEPuBEnlXJj60wuI1yMBCI+/gyMZrRN/G4HRIAAA",
+      "color": "#c4c4c0",
+      "full": [
+        {
+          "path": "media/p-mut-06-640.webp",
+          "w": 640,
+          "h": 482,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-06-640.avif",
+          "w": 640,
+          "h": 482,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-mut-06-1024.webp",
+          "w": 1024,
+          "h": 771,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-06-1024.avif",
+          "w": 1024,
+          "h": 771,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-mut-06-1600.webp",
+          "w": 1600,
+          "h": 1204,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-06-1600.avif",
+          "w": 1600,
+          "h": 1204,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/p-mut-06-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-06-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-mut-06-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-mut-06-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [],
+      "source_sha256": "5426e4be09d05c7567579f8847d5e3049aa40fdc5b1bced16ae4928542f3192d",
+      "crops": {
+        "card": [
+          0,
+          2,
+          1600,
+          1202
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.995385,
+          0.996495,
+          1.008289
+        ],
+        "levels": [
+          8,
+          253.0
+        ],
+        "highlight_fraction_before": 0.008453,
+        "highlight_fraction_after": 0.008175
+      },
+      "flags": []
+    },
+    "P-TV-02": {
+      "role": "provided",
+      "category": "tv",
+      "title": "Mor LED TV ünitesi ön açı",
+      "alt_tr": "Koyu çıtalı duvar, siyah kapalı TV, beyaz uzun alt konsol ve solda cam vitrin. Alt telefon/tarih damgası kırpıldı.",
+      "width": 2040,
+      "height": 1425,
+      "lqip": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAwBACdASoYABEAPvVoqk6qpiQiMAwBUB6JZwC7ABX+giANPT8paPizbQAA4ehaFotHfH4tH7iEsz5s6RJ8WUI5TJmaMeI8y2H/tfkLc+sk1ICH6ZS51ghla94vovsTTIAl0H433wAAAA==",
+      "color": "#b9aca4",
+      "full": [
+        {
+          "path": "media/p-tv-02-640.webp",
+          "w": 640,
+          "h": 447,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-tv-02-640.avif",
+          "w": 640,
+          "h": 447,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-tv-02-1024.webp",
+          "w": 1024,
+          "h": 715,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-tv-02-1024.avif",
+          "w": 1024,
+          "h": 715,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-tv-02-1600.webp",
+          "w": 1600,
+          "h": 1118,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-tv-02-1600.avif",
+          "w": 1600,
+          "h": 1118,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/p-tv-02-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-tv-02-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-tv-02-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-tv-02-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [],
+      "source_sha256": "280ada12eb7def8a9d89a9e069773e76ed9f0033576380b5cfda1f51d9714806",
+      "crops": {
+        "card": [
+          105,
+          0,
+          2005,
+          1425
+        ]
+      },
+      "processing": {
+        "wb_enabled": false,
+        "wb_gains": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "levels": [
+          8,
+          255.0
+        ],
+        "highlight_fraction_before": 0.025767,
+        "highlight_fraction_after": 0.011297
+      },
+      "flags": []
+    },
+    "P-TV-03": {
+      "role": "provided",
+      "category": "tv",
+      "title": "Mor LED TV ünitesi salon açısı",
+      "alt_tr": "Aynı TV duvarının daha geniş/yan açısı; sağda ayaklı aydınlatma, zeminde salon ayrıntıları. Alt telefon/tarih damgası kırpıldı.",
+      "width": 2040,
+      "height": 1425,
+      "lqip": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAwBACdASoYABEAPwFytFErJqUiqAqpYCAJZwCdAAZIzc5Kfc+eA4ejC0AA/rPjk1VObEvisZ5ciSohKXj9gMlzFD+NksMCuChEYh36kW3hbSkW48lNXke2A2Dr6WuU1vnzAqbgN9AAAA==",
+      "color": "#c2b5ac",
+      "full": [
+        {
+          "path": "media/p-tv-03-640.webp",
+          "w": 640,
+          "h": 447,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-tv-03-640.avif",
+          "w": 640,
+          "h": 447,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-tv-03-1024.webp",
+          "w": 1024,
+          "h": 715,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-tv-03-1024.avif",
+          "w": 1024,
+          "h": 715,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-tv-03-1600.webp",
+          "w": 1600,
+          "h": 1118,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-tv-03-1600.avif",
+          "w": 1600,
+          "h": 1118,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/p-tv-03-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-tv-03-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-tv-03-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-tv-03-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [],
+      "source_sha256": "7bec13c5a825f5c8fc0787cba489d66f275a4640adccb423a775ae40ee724ab0",
+      "crops": {
+        "card": [
+          35,
+          0,
+          1935,
+          1425
+        ]
+      },
+      "processing": {
+        "wb_enabled": false,
+        "wb_gains": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "levels": [
+          8,
+          255.0
+        ],
+        "highlight_fraction_before": 0.017525,
+        "highlight_fraction_after": 0.016211
+      },
+      "flags": []
+    },
+    "P-TV-04": {
+      "role": "provided",
+      "category": "tv",
+      "title": "Mor LED TV ünitesi yakın açı",
+      "alt_tr": "Aynı çıtalı TV duvarının daha yakın, mor ışığı baskın açısı. Alt telefon/tarih damgası kırpıldı.",
+      "width": 2040,
+      "height": 1425,
+      "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQBACdASoYABEAPwFmq0+rJS2iMBgMAbAgCWIAuwAGyJtcvHaefEbtAAD9DJJXDNb8RmTk//1VSdVn1HsU6QkXhsoAaXzfkCYI8HJcGxAh/5W/AuU1h2HV+UCLE7pf3QyJcIvAAAA=",
+      "color": "#5a4b68",
+      "full": [
+        {
+          "path": "media/p-tv-04-640.webp",
+          "w": 640,
+          "h": 447,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-tv-04-640.avif",
+          "w": 640,
+          "h": 447,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-tv-04-1024.webp",
+          "w": 1024,
+          "h": 715,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-tv-04-1024.avif",
+          "w": 1024,
+          "h": 715,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-tv-04-1600.webp",
+          "w": 1600,
+          "h": 1118,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-tv-04-1600.avif",
+          "w": 1600,
+          "h": 1118,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/p-tv-04-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-tv-04-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-tv-04-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-tv-04-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [],
+      "source_sha256": "af00866d5cab40d58e20652303b10bd814c6e61d1fad00add308a7b525e78be2",
+      "crops": {
+        "card": [
+          35,
+          0,
+          1935,
+          1425
+        ]
+      },
+      "processing": {
+        "wb_enabled": false,
+        "wb_gains": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "levels": [
+          8,
+          254.0
+        ],
+        "highlight_fraction_before": 0.02563,
+        "highlight_fraction_after": 0.04571
+      },
+      "flags": [
+        "highlight_clipping_increase"
+      ]
+    },
+    "P-ATL-01": {
+      "role": "provided",
+      "category": "workshop",
+      "title": "Atölyede panel işleme uzun tezgâh",
+      "alt_tr": "Turuncu tişörtlü usta, dik beyaz paneli uzun makine tezgâhında işlerken; uzak üç çeyrek açı.",
+      "width": 1536,
+      "height": 2048,
+      "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABwBQCdASoYACAAPvFork6ppiSiMAwBMB4JZAC7AFe8iCYVQHlQzLMeDpJ6fK+U8db+Cdy0AP3rJQlCI0FmuxYvYhQf23+4P7Vp55FlCNrqA0CQwIJ2oqCDhE3qfa63cy6mWr3sg6MNcstX1ZqwcE0tiM348fZ8ZerdtLUNVfB1g1/x75jAAA==",
+      "color": "#cfd2d5",
+      "full": [
+        {
+          "path": "media/p-atl-01-640.webp",
+          "w": 640,
+          "h": 853,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-atl-01-640.avif",
+          "w": 640,
+          "h": 853,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-atl-01-1024.webp",
+          "w": 1024,
+          "h": 1365,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-atl-01-1024.avif",
+          "w": 1024,
+          "h": 1365,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/p-atl-01-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-atl-01-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-atl-01-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-atl-01-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/p-atl-01-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-atl-01-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-atl-01-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-atl-01-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "e975b4e92f44a365adfea41b6b2b9965560b58e0e678831154655f213ce9ca9f",
+      "crops": {
+        "card": [
+          0,
+          336,
+          1536,
+          1488
+        ],
+        "tall": [
+          0,
+          0,
+          1536,
+          2048
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.979614,
+          1.001618,
+          1.020144
+        ],
+        "levels": [
+          8,
+          253.0
+        ],
+        "highlight_fraction_before": 0.013292,
+        "highlight_fraction_after": 0.01672
+      },
+      "flags": []
+    },
+    "P-ATL-02": {
+      "role": "provided",
+      "category": "workshop",
+      "title": "Atölyede panel işleme ön açı",
+      "alt_tr": "Usta, beyaz panel ve uzun tezgâhın daha önden görüldüğü üretim karesi.",
+      "width": 1536,
+      "height": 2048,
+      "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAABwBQCdASoYACAAPvloq06qpiQiN/VYAVAfCWIAtsg3QVIrZOWyztS2mKeoMXfz/t3b4Y/gAPzjheImBE9yPPTVNk++GpfSNzn0biDpHhWyB8s+zaq4kEQXg5z3XyLlnXEEwDvhKA3IaVHv/U23+46Lunv3ctGivQpTVrTfVFCmb81yCCAAAA==",
+      "color": "#cdd0d2",
+      "full": [
+        {
+          "path": "media/p-atl-02-640.webp",
+          "w": 640,
+          "h": 853,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-atl-02-640.avif",
+          "w": 640,
+          "h": 853,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-atl-02-1024.webp",
+          "w": 1024,
+          "h": 1365,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-atl-02-1024.avif",
+          "w": 1024,
+          "h": 1365,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/p-atl-02-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-atl-02-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-atl-02-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-atl-02-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/p-atl-02-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-atl-02-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/p-atl-02-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/p-atl-02-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "0ca01e2784fa4d0e3fe24b538671a4708b0061643cf5fd169165e202e848509c",
+      "crops": {
+        "card": [
+          0,
+          358,
+          1536,
+          1510
+        ],
+        "tall": [
+          0,
+          0,
+          1536,
+          2048
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.980027,
+          0.999541,
+          1.021891
+        ],
+        "levels": [
+          8,
+          252.0
+        ],
+        "highlight_fraction_before": 0.007664,
+        "highlight_fraction_after": 0.013138
+      },
+      "flags": []
+    },
+    "R-KAH-17": {
+      "role": "reference",
+      "category": "coffee",
+      "title": "Siyah cam vitrinli beyaz kahve ünitesi",
+      "alt_tr": "İki yanda boy siyah cam vitrin, ortada ahşap niş ve altta beyaz kapaklar. Alt sehpa/dergi alanı kırpılarak yazı kaldırıldı.",
+      "width": 1200,
+      "height": 1530,
+      "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAADQBACdASoYAB8APv1urU6rJqQiMBgMAWAfiWMAxzAtgHqht0Yat1Rz64yg+t04gAD7TAAxFVcb7OE18G/BNpILo6GBgmelmKMi3duvyZ0FuDh99OOMY5YAyRExRt1itIyuk1Sj/2uvSkMEDGYz8bn8EtQ+DLaMV4AAAA==",
+      "color": "#282827",
+      "full": [
+        {
+          "path": "media/r-kah-17-640.webp",
+          "w": 640,
+          "h": 816,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-17-640.avif",
+          "w": 640,
+          "h": 816,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-17-1024.webp",
+          "w": 1024,
+          "h": 1306,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-17-1024.avif",
+          "w": 1024,
+          "h": 1306,
+          "format": "avif"
+        }
+      ],
+      "card": [
+        {
+          "path": "media/r-kah-17-card-480.webp",
+          "w": 480,
+          "h": 360,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-17-card-480.avif",
+          "w": 480,
+          "h": 360,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-17-card-800.webp",
+          "w": 800,
+          "h": 600,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-17-card-800.avif",
+          "w": 800,
+          "h": 600,
+          "format": "avif"
+        }
+      ],
+      "tall": [
+        {
+          "path": "media/r-kah-17-tall-480.webp",
+          "w": 480,
+          "h": 640,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-17-tall-480.avif",
+          "w": 480,
+          "h": 640,
+          "format": "avif"
+        },
+        {
+          "path": "media/r-kah-17-tall-800.webp",
+          "w": 800,
+          "h": 1067,
+          "format": "webp"
+        },
+        {
+          "path": "media/r-kah-17-tall-800.avif",
+          "w": 800,
+          "h": 1067,
+          "format": "avif"
+        }
+      ],
+      "source_sha256": "f86764e1f4b1fe562a42c6331e9169e9ff3b7798e3436e2ddb07a6222a9c3394",
+      "crops": {
+        "card": [
+          0,
+          284,
+          1200,
+          1184
+        ],
+        "tall": [
+          1,
+          1,
+          1147,
+          1529
+        ]
+      },
+      "processing": {
+        "wb_enabled": true,
+        "wb_gains": [
+          0.972727,
+          1.004608,
+          1.024998
+        ],
+        "levels": [
+          1.0,
+          244
+        ],
+        "highlight_fraction_before": 0.000311,
+        "highlight_fraction_after": 0.00223
+      },
+      "flags": []
+    }
+  },
+  "logo": {
+    "id": "LOGO-01",
+    "role": "brand",
+    "category": "logo",
+    "title": "Şimşek Mobilya logosu",
+    "alt_tr": "Krem zemin, koyu ahşap ev/koltuk işareti, ŞİMŞEK marka yazısı ve iletişim satırı. JPEG; şeffaf değil.",
+    "width": 1290,
+    "height": 1539,
+    "source_sha256": "617e71c9eb17a47a31e0afe41a14d5d69072bbfca07159af14d38bcec7fa6be4",
+    "full": [
+      {
+        "path": "media/logo-full-600.webp",
+        "w": 600,
+        "h": 716,
+        "format": "webp"
+      },
+      {
+        "path": "media/logo-full-1000.webp",
+        "w": 1000,
+        "h": 1193,
+        "format": "webp"
+      }
+    ],
+    "mark": [
+      {
+        "path": "media/logo-mark-192.png",
+        "w": 192,
+        "h": 192,
+        "format": "png"
+      },
+      {
+        "path": "media/logo-mark-192.webp",
+        "w": 192,
+        "h": 192,
+        "format": "webp"
+      },
+      {
+        "path": "media/logo-mark-384.png",
+        "w": 384,
+        "h": 384,
+        "format": "png"
+      },
+      {
+        "path": "media/logo-mark-384.webp",
+        "w": 384,
+        "h": 384,
+        "format": "webp"
+      }
+    ],
+    "favicon": [
+      {
+        "path": "media/favicon-32.png",
+        "w": 32,
+        "h": 32,
+        "format": "png"
+      },
+      {
+        "path": "media/favicon-180.png",
+        "w": 180,
+        "h": 180,
+        "format": "png"
+      },
+      {
+        "path": "media/favicon-512.png",
+        "w": 512,
+        "h": 512,
+        "format": "png"
+      }
+    ],
+    "crop_verification": {
+      "crop_box": [
+        140,
+        20,
+        1200,
+        936
+      ],
+      "emblem_bounds": [
+        165,
+        48,
+        1172,
+        933
+      ],
+      "lettering_bounds": [
+        113,
+        942,
+        1239,
+        1216
+      ],
+      "emblem_margins_ltrb": [
+        25,
+        28,
+        28,
+        3
+      ],
+      "lettering_gap": 6,
+      "square_padding": [
+        0,
+        144
+      ],
+      "verified": true
+    }
+  }
+}

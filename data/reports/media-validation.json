@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "original_media": 81,
+  "original_images": 79,
+  "videos": 2,
+  "delivery_files": 7,
+  "catalog_assets": 44,
+  "catalog_photos": 43,
+  "web_variants": 109,
+  "mapped_images": 79,
+  "uncovered": 0,
+  "pixel_preservation_checks": 44,
+  "roles": {
+    "reference": 31,
+    "provided": 12,
+    "brand": 1
+  },
+  "referenced_catalog_assets": 40
+}

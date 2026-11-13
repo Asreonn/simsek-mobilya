@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "removed_file_count": 677,
+  "removed_bytes": 112226537,
+  "removed_targets": [
+    "artifacts",
+    "work",
+    "scripts/__pycache__",
+    "tests/__pycache__"
+  ],
+  "method": "Explicit intermediate directories only; protected assets verified before removal"
+}
