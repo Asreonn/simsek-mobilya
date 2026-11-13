@@ -1,0 +1,125 @@
+{
+  "date": "2026-11-14",
+  "scope": "local Chromium and static Python preview; no deployment",
+  "catalog_models": 73,
+  "categories": 7,
+  "python_tests": 29,
+  "python_tests_passed": true,
+  "media_validation": {
+    "ok": true,
+    "original_media": 81,
+    "original_images": 79,
+    "videos": 2,
+    "delivery_files": 7,
+    "catalog_assets": 76,
+    "catalog_photos": 75,
+    "web_variants": 188,
+    "mapped_images": 79,
+    "uncovered": 0,
+    "pixel_preservation_checks": 76,
+    "roles": {
+      "provided": 23,
+      "reference": 52,
+      "brand": 1
+    },
+    "referenced_catalog_assets": 51
+  },
+  "browser": {
+    "widths": [
+      {
+        "width": 320,
+        "scroll": 320,
+        "smallText": []
+      },
+      {
+        "width": 360,
+        "scroll": 360,
+        "smallText": []
+      },
+      {
+        "width": 390,
+        "scroll": 390,
+        "smallText": []
+      },
+      {
+        "width": 820,
+        "scroll": 820,
+        "smallText": []
+      },
+      {
+        "width": 900,
+        "scroll": 900,
+        "smallText": []
+      },
+      {
+        "width": 1024,
+        "scroll": 1024,
+        "smallText": []
+      },
+      {
+        "width": 1200,
+        "scroll": 1200,
+        "smallText": []
+      },
+      {
+        "width": 1440,
+        "scroll": 1440,
+        "smallText": []
+      }
+    ],
+    "flows": [
+      "7 categories, role filter, empty state, pagination",
+      "7 static category pages, relative assets, lightbox and filters",
+      "selection, correct WhatsApp message, persistence, removal, clear",
+      "lightbox, model URL, reload, browser back/forward, keyboard focus, swipe, pinch, sharing",
+      "click to load map, callback message, mobile contact bar after hero",
+      "corrupt, stale and blocked localStorage",
+      "decoded images, desktop/mobile screenshots, JavaScript disabled"
+    ],
+    "errors": [],
+    "failedRequests": []
+  },
+  "lighthouse": {
+    "mode": "mobile simulated throttling, local Python http.server without compression",
+    "version": "13.6.0",
+    "scores": {
+      "performance": 92,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "largest-contentful-paint": "3.1 s",
+      "total-blocking-time": "110 ms",
+      "speed-index": "1.7 s",
+      "cumulative-layout-shift": "0"
+    },
+    "label_content_name_mismatch": 0
+  },
+  "assets": {
+    "site.js": {
+      "bytes": 21223,
+      "gzip_bytes": 6110
+    },
+    "site.css": {
+      "bytes": 29184,
+      "gzip_bytes": 7294
+    }
+  },
+  "qr": {
+    "url": "https://asreonn.github.io/simsek-mobilya/#katalog",
+    "decoded": "https://asreonn.github.io/simsek-mobilya/#katalog",
+    "verified": true,
+    "modules": 37,
+    "png_size": 592,
+    "quiet_zone_modules": 4
+  },
+  "management": "Existing assisted photo intake process; no management panel requested",
+  "not_verified": [
+    "Physical phone gestures",
+    "Live WhatsApp message delivery",
+    "Live maps rendering",
+    "Public deployment",
+    "Production analytics"
+  ]
+}

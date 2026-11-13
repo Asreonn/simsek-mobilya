@@ -1,5 +1,6 @@
 {
-  "site_url": "",
+  "schema_version": 3,
+  "site_url": "https://asreonn.github.io/simsek-mobilya",
   "brand": {
     "name": "Şimşek Mobilya",
     "tagline": "Tasarım · Dekorasyon",
@@ -9,7 +10,9 @@
     "whatsapp": "905326527813",
     "address": "İstiklal Mahallesi, Müge Sokak No:3, 31900 Payas / Hatay",
     "hours": "",
-    "service_area": "Payas / Hatay"
+    "service_area": "Payas / Hatay",
+    "instagram": "",
+    "facebook": ""
   },
   "seo": {
     "title": "Şimşek Mobilya | Payas Mobilya Kataloğu",
@@ -21,8 +24,16 @@
       "label": "Katalog"
     },
     {
+      "id": "surec",
+      "label": "Nasıl Çalışıyoruz"
+    },
+    {
       "id": "atolye",
       "label": "Atölyemiz"
+    },
+    {
+      "id": "sss",
+      "label": "Sık Sorulanlar"
     },
     {
       "id": "iletisim",
@@ -31,15 +42,12 @@
   ],
   "hero": {
     "eyebrow": "Payas / Hatay · Tasarım & Dekorasyon",
-    "title": "Evinize göre mobilya.",
-    "subtitle": "Beğendiğiniz modeli seçin, ölçünüze özel üretelim.",
-    "cta_call": "Ara",
-    "cta_whatsapp": "WhatsApp",
-    "badges": [
-      "Ölçüye özel üretim",
-      "Kendi atölyemizde",
-      "Yerinde montaj"
-    ]
+    "title": "Hayalinizdeki mobilyayı birlikte yapalım.",
+    "subtitle": "Beğendiğiniz modeli seçin, ölçünüze ve evinize göre üretelim.",
+    "cta_browse": "Modelleri Gör",
+    "cta_whatsapp": "WhatsApp'tan Yaz",
+    "image": "P-TV-01",
+    "picks_title": "Ne arıyorsunuz?"
   },
   "categories": [
     {
@@ -78,23 +86,94 @@
       "text": "Evinizin girişine uygun ayna ve dolaplar."
     }
   ],
+  "why": {
+    "title": "Neden Şimşek Mobilya?",
+    "items": [
+      {
+        "title": "Ölçünüze özel",
+        "text": "Mobilya, sizin alanınıza ve ihtiyacınıza göre hazırlanır."
+      },
+      {
+        "title": "Kendi atölyemizde",
+        "text": "Üretim atölyemizde yapılır; doğrudan ustayla konuşursunuz."
+      },
+      {
+        "title": "Yerinde montaj",
+        "text": "Hazırlanan mobilya evinizde monte edilir."
+      }
+    ]
+  },
+  "catalog": {
+    "title": "Katalog",
+    "intro": "Beğendiğiniz modeli seçin, ölçü ve renk seçeneklerini konuşalım.",
+    "hint": "Beğendiğiniz fotoğrafın kalp simgesine dokunun. Seçtiklerinizi tek mesajda bize gönderin.",
+    "price_note": "Fiyat; ölçüye ve seçilen malzemeye göre belirlenir. WhatsApp'tan hemen öğrenebilirsiniz.",
+    "ask_label": "Bunu istiyorum",
+    "page_size": 12
+  },
+  "steps": {
+    "title": "Nasıl çalışıyoruz?",
+    "items": [
+      {
+        "title": "Modeli seçin",
+        "text": "Katalogda beğendiğiniz modellerin kalbine dokunun ya da model numarasını söyleyin."
+      },
+      {
+        "title": "Bize ulaşın",
+        "text": "Arayın ya da WhatsApp'tan yazın; ölçünüzü ve ihtiyacınızı konuşalım."
+      },
+      {
+        "title": "Ölçünüze göre üretim",
+        "text": "Mobilyanız atölyemizde hazırlanır."
+      },
+      {
+        "title": "Yerinde montaj",
+        "text": "Hazır mobilya evinizde monte edilir."
+      }
+    ]
+  },
   "workshop": {
     "title": "Ölçüden montaja, birlikte.",
     "text": "Mobilyalarınızı kendi atölyemizde hazırlıyor, yerinde monte ediyoruz. İhtiyacınızı doğrudan ustayla konuşabilirsiniz."
   },
+  "testimonials": {
+    "title": "Müşterilerimiz ne diyor?",
+    "items": []
+  },
+  "faq_title": "Sık sorulan sorular",
+  "faq": [
+    {
+      "q": "Fiyatı nasıl öğrenebilirim?",
+      "a": "Fiyat; modele, ölçüye ve seçilen malzemeye göre değişir. Beğendiğiniz modeli WhatsApp'tan gönderin ya da bizi arayın, size bilgi verelim."
+    },
+    {
+      "q": "Katalogdaki modeller aynen mi yapılıyor?",
+      "a": "Katalog size fikir vermek içindir. Ölçü, renk ve ayrıntıları kendi evinize göre birlikte belirleriz. “Uygulamamız” yazan fotoğraflar kendi işlerimizdir."
+    },
+    {
+      "q": "Kendi fikrimi ya da bir fotoğrafı gösterebilir miyim?",
+      "a": "Elbette. Beğendiğiniz bir fotoğrafı ya da fikrinizi WhatsApp'tan gönderin, birlikte konuşalım."
+    },
+    {
+      "q": "Mobilyaları nerede üretiyorsunuz?",
+      "a": "Payas / Hatay'daki atölyemizde. Adres ve yol tarifi sayfanın altındaki iletişim bölümünde."
+    },
+    {
+      "q": "Montajı siz mi yapıyorsunuz?",
+      "a": "Evet, hazırlanan mobilyayı yerinde monte ediyoruz."
+    }
+  ],
   "contact": {
     "title": "Bize ulaşın.",
     "text": "Bir model beğendiyseniz ya da aklınızda bir fikir varsa konuşalım.",
-    "whatsapp_message": "Merhaba, web sitenizden ulaşıyorum. Mobilya hakkında bilgi almak istiyorum."
+    "whatsapp_message": "Merhaba, web sitenizden ulaşıyorum. Mobilya hakkında bilgi almak istiyorum.",
+    "form_label": "Ne yaptırmak istediğinizi kısaca yazın",
+    "form_placeholder": "Örn: Mutfak dolabı yaptırmak istiyorum."
+  },
+  "analytics": {
+    "plausible_domain": ""
   },
   "footer": {
     "text": "Ölçünüze özel mobilya · Payas / Hatay"
-  },
-  "schema_version": 2,
-  "catalog": {
-    "title": "Katalog",
-    "intro": "Beğendiğiniz modeli seçin, ölçü ve renk seçeneklerini konuşalım.",
-    "ask_label": "Bu modeli sor",
-    "page_size": 12
   }
 }

@@ -65,7 +65,7 @@ class SiteBuildTests(unittest.TestCase):
     def test_no_content_or_manifest_copies_webp_without_removing_media(self):
         source = self.build()
         page = Page(source)
-        self.assertIn("Evinize yakışan, size özel mobilyalar.", source)
+        self.assertIn("Hayalinizdeki mobilyayı birlikte yapalım.", source)
         self.assertEqual(self.sentinel.read_bytes(), b"preserve this")
         self.assertFalse((self.root / "public/sitemap.xml").exists())
         for tag, attrs in page.tags:
@@ -139,7 +139,7 @@ class SiteBuildTests(unittest.TestCase):
         source = self.build()
         page = Page(source)
         gallery = self.gallery(source)
-        tiles = [attrs for tag, attrs in page.tags if attrs.get("class") == "category-card"]
+        tiles = [attrs for tag, attrs in page.tags if attrs.get("class") == "pick"]
         active = {a["category"] for a in self.catalog["assets"] if a["category"] in MODULE.CATEGORY_META}
         self.assertEqual(len(tiles), len(active))
         for key in active:
@@ -147,16 +147,13 @@ class SiteBuildTests(unittest.TestCase):
             roles = [a["role"] for a in entries]
             self.assertEqual(roles, sorted(roles, key=lambda r: r != "provided"))
             first = next(a for a in self.catalog["assets"] if a["id"] == entries[0]["id"])
-            self.assertIn(f'data-category-link="{key}"><div class="category-photo">', source)
             tile = source.split(f'data-category-link="{key}">')[1].split('</a>')[0]
             # Cover without explicit ID uses the first provided image, else first reference.
             self.assertIn(first["id"].lower(), tile.lower())
             self.assertIn(f'{len(entries)} model', tile)
         self.assertEqual(source.count('class="work-badge"'), sum(a["role"] == "provided" for a in gallery.values()))
-        self.assertIn('family=Outfit', source)
-        self.assertIn('family=Inter', source)
-        self.assertNotIn('Fraunces', source)
-        self.assertNotIn('Manrope', source)
+        self.assertNotIn('fonts.googleapis.com', source)
+        self.assertNotIn('family=Outfit', source)
 
     def test_new_categories_model_numbers_invalid_cover_and_internal_notes(self):
         site = json.loads((ROOT / "content/site.json").read_text())
@@ -187,10 +184,10 @@ class SiteBuildTests(unittest.TestCase):
         self.write_json("content/site.json", site)
         source = self.build()
         page = Page(source)
-        iframe = next(attrs for tag, attrs in page.tags if tag == "iframe")
-        self.assertEqual(iframe["loading"], "lazy")
-        self.assertTrue(iframe["title"])
-        self.assertEqual(parse_qs(urlsplit(iframe["src"]).query)["q"][0], site["brand"]["address"])
+        self.assertFalse(any(tag == "iframe" for tag, _ in page.tags))
+        map_button = next(attrs for tag, attrs in page.tags if "data-map-src" in attrs)
+        self.assertTrue(map_button["data-map-title"])
+        self.assertEqual(parse_qs(urlsplit(map_button["data-map-src"]).query)["q"][0], site["brand"]["address"])
         directions = next(attrs for tag, attrs in page.tags if tag == "a" and attrs.get("href", "").startswith("https://www.google.com/maps/dir/"))
         self.assertEqual(parse_qs(urlsplit(directions["href"]).query)["destination"][0], site["brand"]["address"])
         structured = json.loads(source.split('<script type="application/ld+json">')[1].split('</script>')[0])
@@ -204,6 +201,25 @@ class SiteBuildTests(unittest.TestCase):
         self.write_json("data/media/web_manifest.json", {"assets": {"P-MUT-01": {"full": [{"path": "../outside.webp", "w": 100, "h": 100}]}}})
         with self.assertRaisesRegex(ValueError, "Geçersiz manifest yolu"):
             self.build()
+
+    def test_category_documents_have_unique_metadata_and_complete_sitemap(self):
+        self.write_json("content/site.json", {"site_url": "https://example.test/catalog"})
+        self.build()
+        urls = [el.text for el in ET.parse(self.root / "public/sitemap.xml").findall(".//{*}loc")]
+        active = {a["category"] for a in self.catalog["assets"] if a["category"] in MODULE.CATEGORY_META}
+        self.assertEqual(len(urls), len(active) + 1)
+        for key in active:
+            slug = MODULE.CATEGORY_PAGES[key]
+            source = (self.root / "public" / slug / "index.html").read_text()
+            page = Page(source)
+            self.assertIn(f'https://example.test/catalog/{slug}/', urls)
+            self.assertIn(f'data-category="{key}"', source)
+            self.assertTrue(any(tag == "base" and attrs.get("href") == "../" for tag, attrs in page.tags))
+            canonical = next(attrs["href"] for tag, attrs in page.tags if attrs.get("rel") == "canonical")
+            self.assertEqual(canonical, f'https://example.test/catalog/{slug}/')
+            visible = [attrs for tag, attrs in page.tags if tag == "article" and "hidden" not in attrs]
+            self.assertTrue(visible)
+            self.assertTrue(all(attrs["data-category"] == key for attrs in visible))
 
 
 if __name__ == "__main__":

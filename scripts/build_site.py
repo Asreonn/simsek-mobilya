@@ -48,6 +48,13 @@ ICONS = {
     "zoom": '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4M10.5 7.5v6m-3-3h6"/>',
     "info": '<circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v.1"/>',
     "craft": '<path d="m14 4 6 6-3 3-2-2-8 9-3-3 9-8-2-2zM5 4l3 3m9 10 3 3"/>',
+    "heart": '<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>',
+    "share": '<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4m0-11-6.8 4"/>',
+    "ruler": '<path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.4 2.4 0 0 1 0-3.4l2.6-2.6a2.4 2.4 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2m-5-1 2-2m-5-1 2-2m9 9 2-2"/>',
+    "home": '<path d="m3 10 9-7 9 7"/><path d="M5 9v11h14V9"/><path d="M10 20v-6h4v6"/>',
+    "pin": '<path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>',
+    "play": '<path d="M8 5v14l11-7z"/>',
+    "quote": '<path d="M7 8H5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2v2a3 3 0 0 1-3 3m13-10h-2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2v2a3 3 0 0 1-3 3"/>',
 }
 
 
@@ -172,6 +179,49 @@ CATEGORY_META = {
     "hall": ("antre-ayna", "Antre & Ayna"),
 }
 
+CATEGORY_PAGES = {key: slug for key, slug in (
+    ("kitchen", "mutfak-dolabi"), ("coffee", "kahve-kosesi"),
+    ("wardrobe", "gomme-dolap"), ("tv", "tv-unitesi"),
+    ("armchair", "berjer"), ("prefab", "prefabrik-ev"), ("hall", "antre-ayna"))}
+
+SAFE_URL = re.compile(r"https://[^\s\"'<>]+")
+
+
+def smallest_thumb(asset):
+    variants = [v for v in asset.get("card", []) if v["format"] == "webp"] or [v for v in asset["full"] if v["format"] == "webp"]
+    return variants[0]
+
+
+def why_html(items):
+    icons = ("ruler", "craft", "home")
+    return "".join(
+        f'<li class="why-item" data-reveal><span class="why-icon">{icon(icons[i % len(icons)])}</span>'
+        f'<div><h3>{e(item["title"])}</h3><p>{e(item["text"])}</p></div></li>'
+        for i, item in enumerate(items))
+
+
+def steps_html(items):
+    return "".join(
+        f'<li class="step" data-reveal><span class="step-no" aria-hidden="true">{i}</span>'
+        f'<div><h3>{e(item["title"])}</h3><p>{e(item["text"])}</p></div></li>'
+        for i, item in enumerate(items, 1))
+
+
+def faq_html(items):
+    return "".join(f'<details class="faq-item" data-reveal><summary>{e(item["q"])}</summary><p>{e(item["a"])}</p></details>' for item in items)
+
+
+def testimonials_html(section):
+    items = [t for t in section.get("items", []) if str(t.get("text", "")).strip()]
+    if not items:
+        return ""
+    cards = "".join(
+        f'<figure class="quote-card" data-reveal>{icon("quote")}<blockquote><p>{e(t["text"])}</p></blockquote>'
+        f'<figcaption>{e(t.get("name", ""))}</figcaption></figure>' for t in items)
+    return (f'<section id="yorumlar" class="section container" aria-labelledby="quotes-title"><div class="section-heading"><div>'
+            f'<p class="eyebrow">Müşterilerimiz</p><h2 id="quotes-title">{e(section.get("title", "Müşterilerimiz ne diyor?"))}</h2></div></div>'
+            f'<div class="quote-grid">{cards}</div></section>')
+
 
 def build(root=ROOT):
     public = root / "public"
@@ -213,7 +263,7 @@ def build(root=ROOT):
     definitions = {c["key"]: c for c in site["categories"]}
     buckets = {key: sorted([a for a in media.assets.values() if a["category"] == key and a["role"] in ("provided", "reference")], key=lambda a: a["role"] != "provided") for key in CATEGORY_META}
     buckets = {key: assets for key, assets in buckets.items() if assets}
-    categories, tabs, gallery = [], [], {}
+    picks, tabs, gallery = [], [], {}
     card_groups = []
     total = sum(map(len, buckets.values()))
     tabs.append(f'<a class="filter-button" href="#katalog" data-filter="all" aria-controls="model-grid">Tümü <span>{total}</span></a>')
@@ -226,68 +276,180 @@ def build(root=ROOT):
         cover = category.get("cover")
         if cover not in {a["id"] for a in assets}:
             cover = assets[0]["id"]
-        categories.append(f'<a class="category-card" href="#katalog/{slug}" data-category-link="{key}"><div class="category-photo">{media.picture(cover, "card", "(max-width: 639px) 46vw, (max-width: 1023px) 30vw, 280px")}</div><div class="category-body"><h3>{e(title)}</h3><span>{len(assets)} model {icon("arrow")}</span></div></a>')
+        picks.append(f'<a class="pick" href="#katalog/{slug}" data-category-link="{key}"><span class="pick-photo">{media.picture(cover, "card", "56px")}</span><span class="pick-text"><strong>{e(title)}</strong><small>{len(assets)} model</small></span></a>')
         tabs.append(f'<a class="filter-button" href="#katalog/{slug}" data-filter="{key}" data-slug="{slug}" aria-controls="model-grid">{e(title)} <span>{len(assets)}</span></a>')
         for asset in assets:
             full = [v for v in asset["full"] if v["format"] == "webp"]
             largest = full[-1]
+            thumb = smallest_thumb(asset)
             description = re.split(r"(?<=[.!?])\s+", asset["description"])[0]
             gallery[asset["id"]] = {"id": asset["id"], "model_no": asset["model_no"], "title": asset["title"], "description": description,
                 "alt": asset["alt_tr"], "role": asset["role"], "category": key, "src": quote(largest["path"]), "srcset": media.srcset(full),
-                "width": largest["w"], "height": largest["h"], "whatsapp": whatsapp(f'Merhaba, {asset["model_no"]} modeli hakkında bilgi almak istiyorum.')}
+                "thumb": quote(thumb["path"]), "width": largest["w"], "height": largest["h"],
+                "whatsapp": whatsapp(f'Merhaba, {asset["model_no"]} modeli hakkında bilgi almak istiyorum.')}
             badge = '<span class="work-badge">Uygulamamız</span>' if asset["role"] == "provided" else ''
-            cards.append(f'<article class="model-card" data-category="{key}"><a class="product-link" href="{e(quote(largest["path"]))}" data-lightbox="{e(asset["id"])}" aria-label="{e(asset["title"])} — Model No: {e(asset["model_no"])}"><div class="product-photo">{media.picture(asset["id"], "card", "(max-width: 639px) 46vw, (max-width: 1023px) 30vw, 23vw")}{badge}</div><div class="model-body"><h3>{e(asset["title"])}</h3><p>Model No: {e(asset["model_no"])}</p></div></a></article>')
+            fav = (f'<button class="fav-button" type="button" data-fav="{e(asset["id"])}" aria-pressed="false" '
+                   f'aria-label="{e(asset["model_no"])} modelini seçtiklerime ekle">{icon("heart")}</button>')
+            label = ("Uygulamamız " if asset["role"] == "provided" else "") + f'{asset["title"]} Model No: {asset["model_no"]}'
+            cards.append(f'<article class="model-card" data-category="{key}" data-role="{asset["role"]}"><a class="product-link" href="{e(quote(largest["path"]))}" data-lightbox="{e(asset["id"])}" aria-label="{e(label)}"><div class="product-photo">{media.picture(asset["id"], "card", "(max-width: 639px) 46vw, (max-width: 1023px) 30vw, 23vw")}{badge}</div><div class="model-body"><h3>{e(asset["title"])}</h3><p>Model No: {e(asset["model_no"])}</p></div></a>{fav}</article>')
 
     # Tümü offers a cross-section; category views retain provided-first order.
     cards = [group[index] for index in range(max(map(len, card_groups), default=0)) for group in card_groups if index < len(group)]
-    hero = media.assets.get("P-MUT-01") or next(a for assets in buckets.values() for a in assets)
-    hero_image = [a for a in hero["full"] if a["format"] == "webp"][-1]
-    seo_extra = f'<meta property="og:image" content="{e(absolute(hero_image["path"]))}"><meta property="og:image:alt" content="{e(hero["alt_tr"])}"><meta property="og:image:width" content="{hero_image["w"]}"><meta property="og:image:height" content="{hero_image["h"]}">'
+
+    hero_config = site["hero"]
+    pool = {a["id"]: a for assets in buckets.values() for a in assets}
+    hero = pool.get(hero_config.get("image", "")) or pool.get("P-MUT-01") or next(iter(pool.values()))
+    hero_full = [a for a in hero["full"] if a["format"] == "webp"]
+    hero_image = hero_full[-1]
+    hero_caption = '<span class="hero-caption">Kendi uygulamalarımızdan</span>' if hero["role"] == "provided" else ""
+
+    og_source = root / "src/og-image.jpg"
+    if og_source.is_file():
+        (public / "media").mkdir(exist_ok=True)
+        shutil.copyfile(og_source, public / "media/og-image.jpg")
+        og_path, og_w, og_h = "media/og-image.jpg", 1200, 630
+    else:
+        og_path, og_w, og_h = hero_image["path"], hero_image["w"], hero_image["h"]
+
+    seo_title, seo_description = e(site["seo"]["title"]), e(site["seo"]["description"])
+    seo_extra = (f'<meta property="og:image" content="{e(absolute(og_path))}"><meta property="og:image:alt" content="{e(hero["alt_tr"])}">'
+                 f'<meta property="og:image:width" content="{og_w}"><meta property="og:image:height" content="{og_h}">'
+                 f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{seo_title}">'
+                 f'<meta name="twitter:description" content="{seo_description}"><meta name="twitter:image" content="{e(absolute(og_path))}">')
     if base:
         seo_extra += f'<link rel="canonical" href="{e(base)}/"><meta property="og:url" content="{e(base)}/">'
-    structured = {"@context": "https://schema.org", "@type": "FurnitureStore", "name": brand["name"], "telephone": phone, "image": absolute(hero_image["path"])}
+
+    address = brand["address"].strip()
+    hours = brand.get("hours", "").strip()
+    socials = [(label, brand.get(key, "").strip()) for label, key in (("Instagram", "instagram"), ("Facebook", "facebook"))]
+    socials = [(label, url) for label, url in socials if SAFE_URL.fullmatch(url)]
+
+    structured = {"@context": "https://schema.org", "@type": "FurnitureStore", "name": brand["name"], "telephone": phone, "image": absolute(og_path), "description": site["seo"]["description"]}
     if base:
         structured["url"] = base + "/"
-    address = brand["address"].strip()
     if address:
         structured["address"] = {"@type": "PostalAddress", "streetAddress": ", ".join(part.strip() for part in address.split(",")[:2]), "addressLocality": "Payas", "addressRegion": "Hatay", "postalCode": "31900", "addressCountry": "TR"}
     if brand["service_area"].strip():
         structured["areaServed"] = brand["service_area"]
+    if socials:
+        structured["sameAs"] = [url for _, url in socials]
     maps = "https://www.google.com/maps/dir/?api=1&destination=" + quote(address, safe="")
     map_embed = "https://maps.google.com/maps?q=" + quote(address, safe="") + "&z=16&output=embed"
-    contact_map = f'<iframe class="contact-map" src="{e(map_embed)}" loading="lazy" title="Şimşek Mobilya — Payas atölye konumu" referrerpolicy="no-referrer-when-downgrade"></iframe>' if address else ""
+    map_title = f'{brand["name"]} — Payas atölye konumu'
+    contact_map = (f'<div class="map-card" data-reveal><div class="map-copy">{icon("pin")}<strong>Atölyemizin konumu</strong><span>{e(address)}</span></div>'
+                   f'<button class="button button-outline map-load" type="button" data-map-src="{e(map_embed)}" data-map-title="{e(map_title)}">{icon("pin")} Haritayı göster</button>'
+                   f'<noscript><a class="button button-outline" href="{e(maps)}">Haritada aç</a></noscript></div>') if address else ""
+
+    faq_items = site.get("faq", [])
+    faq_ld = ""
+    if faq_items:
+        faq_ld = '<script type="application/ld+json">' + json_script({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": item["q"], "acceptedAnswer": {"@type": "Answer", "text": item["a"]}} for item in faq_items]}) + "</script>"
+
     workshop = [a for a in media.assets.values() if a["category"] == "workshop" and a["role"] == "provided"]
+    video = ""
+    video_path, poster_path = public / "media/video/montaj.mp4", public / "media/video/montaj-poster.webp"
+    if video_path.is_file() and poster_path.is_file():
+        video = (f'<div class="video-tile" data-reveal><video id="work-video" controls preload="none" playsinline poster="media/video/montaj-poster.webp" '
+                 f'aria-label="Bir mutfağın montajından kısa kayıt"><source src="media/video/montaj.mp4" type="video/mp4"></video>'
+                 f'<button class="video-play" type="button" aria-label="Montaj videosunu oynat">{icon("play")}</button>'
+                 f'<span class="video-caption">Montajdan kısa kayıt</span></div>')
+
+    directions = f'<a class="button button-outline" href="{e(maps)}">{icon("pin")} Yol Tarifi</a>' if address else ""
+    mobile_bar = (f'<a class="button button-call" href="tel:{phone}">{icon("phone")} Ara</a>'
+                  f'<a class="button button-wa" href="{e(whatsapp(site["contact"]["whatsapp_message"]))}">{icon("wa")} WhatsApp</a>')
+    if address:
+        mobile_bar += f'<a class="button button-outline" href="{e(maps)}">{icon("pin")} Konum</a>'
+
+    nav = site["nav"]
+    nav_links = "".join(f'<a href="#{e(n["id"])}">{e(n["label"])}</a>' for n in nav)
+    domain = site.get("analytics", {}).get("plausible_domain", "").strip()
+    analytics = f'<script defer data-domain="{e(domain)}" src="https://plausible.io/js/script.js"></script>' if re.fullmatch(r"[a-z0-9][a-z0-9.-]*", domain) else ""
+    fonts_dir = root / "src/fonts"
+    font_preload = "".join(f'<link rel="preload" href="assets/fonts/{name}.woff2" as="font" type="font/woff2" crossorigin>\n  '
+                           for name in ("inter-latin-compact", "fraunces-latin-compact", "fraunces-tr") if (fonts_dir / f"{name}.woff2").is_file())
+    catalog = site["catalog"]
+    page_size = max(4, min(48, int(catalog.get("page_size", 12))))
+
     values = {
-        "seo_title": e(site["seo"]["title"]), "seo_description": e(site["seo"]["description"]), "seo_extra": seo_extra,
-        "favicon": favicon, "structured_data": json_script(structured), "gallery_data": json_script(gallery),
+        "seo_title": seo_title, "seo_description": seo_description, "seo_extra": seo_extra, "analytics": analytics, "font_preload": font_preload,
+        "favicon": favicon, "structured_data": json_script(structured), "faq_ld": faq_ld, "gallery_data": json_script(gallery),
         "brand_name": e(brand["name"]), "brand_tagline": e(brand["tagline"]), "brand_mark": brand_mark,
         "owner": e(brand["owner"]), "tel": "tel:" + phone, "phone_display": e(brand["phone_display"]),
+        "site_url_attr": e(base), "wa_number": wa_number, "page_size": page_size,
         "whatsapp": e(whatsapp(site["contact"]["whatsapp_message"])),
-        "hero_picture": media.picture(hero["id"], hero=True, sizes="(max-width: 767px) 100vw, 50vw"),
-        "hero_preload": media.preload(hero["id"], sizes="(max-width: 767px) 100vw, 50vw"),
-        "badges": "".join(f'<li>{icon("check")}{e(badge)}</li>' for badge in site["hero"]["badges"]),
-        "categories": "".join(categories), "models": "".join(cards), "filters": "".join(tabs), "model_count": total,
-        "workshop_pictures": "".join(media.picture(a["id"], "card", "(max-width: 767px) 46vw, 25vw") for a in workshop[:2]),
-        "address": e(address), "map_url": e(maps), "contact_map": contact_map,
-        "directions": f'<a class="button button-outline" href="{e(maps)}">{icon("arrow")} Yol Tarifi</a>' if address else "",
+        "nav_links": nav_links, "base_tag": "", "default_category": "",
+        "category_pages": "".join(f'<a href="{CATEGORY_PAGES[key]}/">{e(definitions.get(key, {}).get("title", CATEGORY_META[key][1]))}</a>' for key in buckets),
+        "hero_picture": media.picture(hero["id"], hero=True, sizes="100vw"), "hero_caption": hero_caption,
+        "hero_preload": media.preload(hero["id"], sizes="100vw"),
+        "picks": "".join(picks), "picks_title": e(hero_config.get("picks_title", "Ne arıyorsunuz?")),
+        "why_title": e(site["why"].get("title", "")), "why_items": why_html(site["why"]["items"]),
+        "models": "".join(card if i < page_size else card.replace('<article ', '<article hidden data-paged ', 1) for i, card in enumerate(cards)), "filters": "".join(tabs), "model_count": total,
+        "catalog_title": e(catalog["title"]), "catalog_hint": e(catalog["hint"]), "price_note": e(catalog["price_note"]), "ask_label": e(catalog["ask_label"]),
+        "steps_title": e(site["steps"]["title"]), "steps_items": steps_html(site["steps"]["items"]),
+        "workshop_pictures": "".join(media.picture(a["id"], "card", "(max-width: 767px) 46vw, 22vw") for a in workshop[:2]), "workshop_video": video,
+        "testimonials": testimonials_html(site.get("testimonials", {})),
+        "faq_title": e(site["faq_title"]), "faq_items": faq_html(faq_items),
+        "address": e(address), "map_url": e(maps), "contact_map": contact_map, "directions": directions,
+        "hours_html": f'<p class="contact-hours"><strong>Çalışma saatleri:</strong> {e(hours)}</p>' if hours else "",
+        "social_html": "".join(f'<a href="{e(url)}" rel="noopener" target="_blank">{e(label)}</a>' for label, url in socials),
+        "address_html": f'<address>{icon("pin")}<span>{e(address)}</span></address>' if address else "",
+        "mobile_bar": mobile_bar, "mobile_cols": 3 if address else 2,
         "footer_text": e(site["footer"]["text"]), "year": date.today().year,
     }
-    for key in ("eyebrow", "title", "subtitle", "cta_call", "cta_whatsapp"):
-        values[key if key.startswith("cta_") else f"hero_{key}"] = e(site["hero"][key])
+    for key in ("eyebrow", "title", "subtitle", "cta_browse", "cta_whatsapp"):
+        values[f"hero_{key}"] = e(hero_config[key])
     for section in ("workshop", "contact"):
         for key in ("title", "text"):
             values[f"{section}_{key}"] = e(site[section].get(key, ""))
-    values["catalog_intro"] = e(site.get("catalog", {}).get("intro", "Beğendiğiniz modeli seçin, ölçü ve renk seçeneklerini konuşalım."))
+    values["catalog_intro"] = e(catalog.get("intro", "Beğendiğiniz modeli seçin, ölçü ve renk seçeneklerini konuşalım."))
+    values["contact_form_label"] = e(site["contact"]["form_label"])
+    values["contact_form_placeholder"] = e(site["contact"]["form_placeholder"])
     values.update({f"{name}_icon": icon(name) for name in ICONS})
-    document = Template((root / "src/index.html.tpl").read_text(encoding="utf-8")).substitute(values)
-    (public / "index.html").write_text(document, encoding="utf-8")
+    template = Template((root / "src/index.html.tpl").read_text(encoding="utf-8"))
+
+    def render(path, context):
+        document = template.substitute(context)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text("\n".join(line.rstrip() for line in document.splitlines()) + "\n", encoding="utf-8")
+
+    render(public / "index.html", values)
+    page_urls = [base + "/"] if base else []
+    for key, assets in buckets.items():
+        slug = CATEGORY_PAGES[key]
+        title = definitions.get(key, {}).get("title", CATEGORY_META[key][1])
+        category_title = f'{title} Modelleri | {brand["name"]} · {brand["service_area"]}'
+        description = definitions.get(key, {}).get("text", "") + f' {len(assets)} modeli inceleyin; ölçü ve renk seçenekleri için bize ulaşın.'
+        page = dict(values, base_tag='<base href="../">', default_category=key,
+                    seo_title=e(category_title), seo_description=e(description),
+                    hero_title=e(f'{title} modelleri.'), hero_subtitle=e(description),
+                    catalog_title=e(title), catalog_intro=e(description), model_count=len(assets))
+        cover = definitions.get(key, {}).get("cover")
+        cover = cover if cover in {a["id"] for a in assets} else assets[0]["id"]
+        page["hero_picture"] = media.picture(cover, hero=True)
+        page["hero_preload"] = media.preload(cover)
+        page["hero_caption"] = '<span class="hero-caption">Kendi uygulamalarımızdan</span>' if media.assets[cover]["role"] == "provided" else '<span class="hero-caption">Örnek model · Size özel uyarlanır</span>'
+        # Retain all cards for filtering, but the HTML-only view starts in this category.
+        page["models"] = "".join(card if f'data-category="{key}"' in card else card.replace('<article ', '<article hidden ', 1) for card in cards)
+        page_url = f'{base}/{slug}/' if base else ""
+        page["seo_extra"] = re.sub(r'<(?:link rel="canonical"|meta property="og:url")[^>]*>', '', seo_extra)
+        if page_url:
+            page["seo_extra"] += f'<link rel="canonical" href="{e(page_url)}"><meta property="og:url" content="{e(page_url)}">'
+            page_urls.append(page_url)
+        # Social metadata must describe the category rather than the home page.
+        page["seo_extra"] = page["seo_extra"].replace(f'content="{seo_title}"', f'content="{e(category_title)}"').replace(f'content="{seo_description}"', f'content="{e(description)}"')
+        page["structured_data"] = json_script(dict(structured, **({"url": page_url} if page_url else {})))
+        render(public / slug / "index.html", page)
     (public / "assets").mkdir(exist_ok=True)
     for filename in ("site.css", "site.js"):
         shutil.copyfile(root / "src" / filename, public / "assets" / filename)
+    if fonts_dir.is_dir():
+        shutil.copytree(fonts_dir, public / "assets/fonts", dirs_exist_ok=True)
     robots = "User-agent: *\nAllow: /\n"
     sitemap = public / "sitemap.xml"
     if base:
-        sitemap.write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{e(base)}/</loc></url></urlset>\n', encoding="utf-8")
+        urls = "".join(f'<url><loc>{e(url)}</loc></url>' for url in page_urls)
+        sitemap.write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>\n', encoding="utf-8")
         robots += f"Sitemap: {base}/sitemap.xml\n"
     elif sitemap.is_file():
         sitemap.unlink()

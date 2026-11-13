@@ -18,9 +18,12 @@ photos:
 test:
 	PYTHONDONTWRITEBYTECODE=1 $(PYTHON) -m unittest discover -s tests -v
 
-.PHONY: site serve
+.PHONY: site serve qr
 site:
 	PYTHONDONTWRITEBYTECODE=1 $(PYTHON) scripts/build_site.py
 
 serve:
 	$(PYTHON) -m http.server 8080 -d public
+
+qr:
+	PYTHONDONTWRITEBYTECODE=1 $(PYTHON) scripts/make_qr.py

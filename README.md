@@ -1,73 +1,63 @@
-# Şimşek Mobilya — site hazırlık alanı
+# Şimşek Mobilya kataloğu
 
-Site henüz yapılmadı. Orijinaller, seçilmiş katalog görselleri, kaynak kayıtları ve
-sonraki geliştirme için içerik hazırlığı düzenlendi.
-
-İlk okunacak dosya: **[Fotoğraf envanteri](docs/FOTO_ENVANTERI.md)**. Her fotoğrafın
-ne gösterdiği, boyutu, kullanım yeri ve orijinal/alternatif bağlantısı tek dosyada.
-
-- [Site geliştirmesi için başlangıç notu](docs/SITE_HAZIRLIK.md)
-- [Medya kalitesi ve doğrulama](docs/MEDYA_KALITESI.md)
-- [Temiz seçim galerisi](preview/index.html) · [Orijinal/seçim karşılaştırması](preview/comparison.html)
-- [Temizlik kaydı](docs/TEMIZLIK_RAPORU.md)
-
-```text
-assets/
-  originals/incoming/    Gelen 6 ZIP ve JPEG logo; teslim dosyaları korunur
-  originals/photos/      ZIP'lerden çıkan 78 orijinal fotoğraf
-  originals/videos/      2 orijinal video
-  originals/downloaded/  Kırpılmış referansların gerekli 2 ham kaynağı
-  catalog/               43 seçilmiş fotoğraf + logo; açıklayıcı dosya adları
-  web/                   109 amaçlı WebP boyut varyantı
-config/media/            Ön sınıflandırma, seçim kararları ve kırpma kutuları
-data/media/              Güncel katalog, orijinaller ve eşleştirme JSON'ları
-data/research/           Kaynak URL'leri ve önceki arama kararları; tarihsel kayıt
-data/reports/            Bütünlük, önizleme ve temizlik kanıtları
-docs/                    Envanter, hazırlık ve kalite notları
-preview/                 Yalnızca yerel medya inceleme aracı
-scripts/                 Medya doğrulama, envanter ve araştırma araçları
-tests/                   Araç testleri
-src/                     Gelecekteki site uygulaması için boş
-public/                  Gelecekteki yayın dosyaları için boş
-work/                    Gerekirse üretilen geçici araştırma çıktıları; temizlenebilir
-```
-
-Güncel set: **43 fotoğraf + logo**; 12 doğrudan çekim ve 31 model referansı.
-79 kaynak görselin tamamı seçime/alternatife bağlıdır. İki video arşivde durur.
-Model referansları tamamlanan firma işi olarak sunulmaz.
-
-## Günlük araçlar
+Payas / Hatay’daki Şimşek Mobilya için statik katalog sitesi. **73 model, 7 kategori**;
+favorilere ekleme, toplu WhatsApp mesajı, paylaşılabilir model bağlantısı ve fotoğraf
+büyütme içerir. Kütüphanede ayrıca iki atölye fotoğrafı bulunur. Orijinal medya korunur.
 
 ```bash
-make check          # Medya, kaynak, piksel ve sekiz araç testi
-make media-docs     # Açıklamalı Markdown envanterini JSON kayıtlarından üret
-make media-preview  # Yerel galeri/karşılaştırmayı üret
+make site          # Kaynaklardan public/ ve kategori sayfalarını oluştur
+make serve         # http://localhost:8080
+make check         # Medya bütünlüğü ve Python testleri
+make qr            # site_url için doğrulanmış PNG/SVG katalog QR kodu
 ```
 
-Python ortamı korunur; gerekenler `requirements.txt` içindedir. Ortam yoksa:
+- [Site kullanımı ve fotoğraf ekleme](docs/SITE_KULLANIM.md)
+- [Revizyon durumu ve doğrulama kanıtları](docs/SITE_REVIZYON_DURUMU.md)
+- [Gemini UX/UI analiz raporu](docs/SITE_ANALIZ_RAPORU_GEMINI.md)
+- [Tasarım sözleşmesi](docs/SITE_TASARIM_PLANI.md)
+- [Fotoğraf envanteri](docs/FOTO_ENVANTERI.md)
+- [Medya kalitesi](docs/MEDYA_KALITESI.md)
+- [Medya inceleme galerisi](preview/index.html) · [Karşılaştırma](preview/comparison.html)
+
+## Kaynaklar
+
+| Yol | İçerik |
+|---|---|
+| `content/site.json` | Firma bilgileri, metinler, kategori tanımları, site adresi |
+| `src/` | HTML şablonu, CSS, JavaScript, yerel fontlar ve paylaşım görseli |
+| `public/` | Derlenmiş ana sayfa, 7 kategori sayfası ve yayın varlıkları |
+| `assets/originals/` | Teslim arşivleri, orijinal fotoğraf ve videolar |
+| `assets/catalog/`, `assets/web/` | Seçilmiş masterlar ve WebP varyantları |
+| `data/media/` | Katalog, orijinal/eşleme kayıtları ve işlenmiş görsel manifesti |
+| `config/media/` | Seçim ve işleme ayarları |
+| `scripts/` | Site derlemesi, medya işleme/doğrulama ve QR üretimi |
+| `tests/` | Python kontrolleri ve isteğe bağlı tarayıcı kabul testi |
+| `work/` | Yerel test raporları ve ekran görüntüleri; Git dışında |
+
+Site çalışma sırasında framework veya sunucu uygulaması gerektirmez. Derleme Python
+standart kütüphanesini kullanır. Fotoğraf işleme ve QR araçları mevcut Pillow/OpenCV
+ortamında çalışır. Ortam yoksa:
 
 ```bash
 uv venv --python 3.14
 uv pip install --python .venv/bin/python -r requirements.txt
 ```
 
-Siteyi hazırlarken `data/media/catalog.json` kayıtları kullanılmalı. Her kayıtta
-Türkçe açıklama/alt metin, kategori, rol, master/WebP yolları ve kaynak izi var.
-Dosya adlarını veya hangi fotoğrafın ne olduğunu yeniden tahmin etmek gerekmiyor.
+Fotoğraflar değiştiğinde `make photos`, ardından `make site` çalıştırılır.
+`make media-docs` envanteri, `make media-preview` medya inceleme galerisini günceller.
+Fotoğraf ekleme mevcut yardımcı süreciyle sürdürülür; yönetim paneli kapsam dışıdır.
 
-## Yeniden araştırma gerektiğinde
-
-Mevcut 43 fotoğrafı kullanmak için tekrar indirme gerekmez. `catalog_assets.py` ve
-`catalog_curation.py` araştırma araçları korundu; çıktıları artık `work/catalog/`
-altına gider. Örneğin yeni teslimler için çevrimdışı envanter:
+Tarayıcı testi için ayrı bir Playwright kurulumu ve Chromium gerekir; bunlar sitenin
+çalışma veya Python derleme bağımlılığı değildir:
 
 ```bash
-.venv/bin/python scripts/catalog_assets.py audit
+PLAYWRIGHT_MODULE=/path/to/node_modules/playwright node tests/browser_site.cjs
 ```
 
-Tersine arama yalnızca `reference` olarak sınıflanan kırpımları, açık
-`--upload-references` seçeneğiyle yükler. Kullanıcı hesapları/çerezleri veya ücretli
-API kullanılmaz. Araştırma aşaması otomatik görsel onay vermez; yeni adaylar inceleme
-sonrası güncel medya kayıtlarına alınır. Önceki aday dosyaları silindi, kaynak URL ve
-karar kayıtları `data/research/` altında korunuyor. Tarihsel kayıtlardaki eski dosya
-yolları etkin medya yolları değildir.
+Mevcut yayın düzeni GitHub Pages'tir: `.github/workflows/pages.yml`, `main` dalına
+`public/` değişikliği gönderildiğinde yayın dosyalarını dağıtır. Yerel derleme yayını
+güncellemez. `public/` içindeki HTML/CSS/JS elle düzenlenmez.
+
+Medya kaynakları ve orijinal koruma kuralları [hazırlık notunda](docs/SITE_HAZIRLIK.md)
+ve [temizlik kaydında](docs/TEMIZLIK_RAPORU.md) tarihsel olarak belgelenmiştir.
+`reference` fotoğraflar örnek modellerdir; `provided` fotoğraflar firmanın uygulamalarıdır.

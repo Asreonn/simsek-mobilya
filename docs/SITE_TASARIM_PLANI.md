@@ -169,3 +169,26 @@ kategoriler, her kategoride fotoğraflar, iletişim bilgileri. v1'in çakışan 
   yapışkan kategori sekmeleri (mobilde yatay kaydırma, sayılarla) + düzenli eşit oranlı ürün ızgarası
   (4:3, masaüstü 4 sütun, tablet 3, mobil 2) → Atölye → İletişim (adres, harita, yol tarifi).
   URL hash ile kategori paylaşılabilir (#katalog/mutfak).
+
+## v3 revizyonu (2026-11-14) — Gemini analizinin devamı
+
+Kullanıcının rapordaki iyileştirmeleri uygulama talebiyle v2'nin görsel/etkileşim
+kuralları yenilendi. Güncel durum: [SITE_REVIZYON_DURUMU.md](SITE_REVIZYON_DURUMU.md).
+
+- Sıcak krem/ceviz paleti, yerel Fraunces ve Inter fontları, 16px kart köşeleri.
+- Görünür metin en az 14px; gövde 17px. Ana düğmeler 48–52px, filtreler 48px.
+- Hero'da firma uygulaması; kategoriler tek fotoğraflı düğme satırında.
+- Kartta ve lightbox'ta kalp; tarayıcıda saklanan Seçtiklerim ve toplu WhatsApp mesajı.
+- Model adresi `#model/<model_no>`; paylaşım, benzer modeller, ok/klavye/kaydırma,
+  yakınlaştırma ve iki parmak desteği. Fotoğraf türüne göre ek filtre.
+- Mobil üst bar aşağı kaydırmada gizlenir; iletişim çubuğu hero geçilince belirir.
+  Seçim varsa alt alanı Seçtiklerim çubuğu kullanır.
+- Süreç, SSS, mevcut montaj videosu ve tıklanınca yüklenen harita.
+- Arama talebi WhatsApp'ta hazırlanır; otomatik talep gönderimi veya sunucu kaydı yoktur.
+- 7 ayrı kategori sayfası, canonical, sitemap, mutlak paylaşım görseli; baskı QR'si.
+- Azaltılmış hareket tercihi desteklenen kısa animasyonlar. JS bütçesi, seçim ve
+  dokunma akışları nedeniyle kaynakta 25 KB; CSS 30 KB. Framework bağımlılığı yoktur.
+- **Fotoğraf ekleme mevcut yardımcı süreciyle belgeli olarak sürer; yönetim paneli
+  eklenmemesi kullanıcı tarafından seçildi.**
+- Çalışma saatleri, izinli yorumlar, sosyal hesaplar ve analitik hizmeti boş bırakılır;
+  bu bilgiler veya dış servis kurulumu doğrulanmadan etkinleştirilmez.

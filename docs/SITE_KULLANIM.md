@@ -1,70 +1,96 @@
-# Siteyi güncelleme
+# Siteyi kullanma ve güncelleme
 
-Bu site bir katalogdur. Ziyaretçi fotoğraflara bakar, sizi arar veya WhatsApp'tan yazar.
-Fiyat veya sepet yoktur.
+Katalogda kategori seçin, beğendiğiniz fotoğrafların kalbine dokunun. **Seçtiklerim**
+listesini açıp modelleri çıkarabilir veya tek WhatsApp mesajında ustaya gönderebilirsiniz.
+Seçimler aynı tarayıcıda saklanır. Tarayıcı saklamaya izin vermiyorsa sayfa açıkken
+seçim yapılabilir; bu durum ekranda bildirilir.
 
-## Yeni fotoğraf eklemek
+Fotoğrafa dokununca büyük görünüm açılır. Oklar, klavye veya kaydırma ile aynı
+kategoride ilerleyin. Yakınlaştır düğmesi, fotoğrafa dokunma veya iki parmak hareketi
+ile ayrıntıyı görün. Paylaş düğmesi modele özel bağlantı üretir. Adres çubuğundaki
+`#model/…` bağlantısını da kopyalayabilirsiniz.
 
-1. Fotoğrafın orijinalini saklayın. Mümkünse WhatsApp'tan küçültülmüş kopya yerine
-   telefonun asıl fotoğrafını kullanın. Fotoğrafta tarih, telefon damgası veya başka
-   bir firmanın yazısı olmasın.
-2. Yardımcınıza fotoğrafla birlikte şunları verin: **ne olduğu** (örneğin beyaz
-   mutfak), **hangi bölümde gösterileceği** ve **kendi işiniz mi, örnek model mi**
-   olduğu. Başka bir yerden alınan model, “Uygulamalarımız” bölümüne konmaz.
-3. Yardımcınız fotoğrafı aşağıda anlatıldığı gibi kataloğa kaydetsin. Yalnızca
-   `public/media/` klasörüne fotoğraf atmak sitede görünmesi için yeterli değildir.
-4. Proje klasöründe terminal açıp çalıştırın:
+**Bizim işlerimiz** firma uygulamalarını, **Örnek modeller** fikir veren modelleri
+filtreler. “Uygulamamız” rozeti yalnızca firma fotoğraflarında görünür.
+
+İletişim bölümünde arama, WhatsApp ve yol tarifi bulunur. Harita “Haritayı göster”
+düğmesiyle yüklenir. Mesaj ve arama talebi formları WhatsApp'ı açar; mesajın gönderilmesi
+WhatsApp'taki Gönder düğmesiyle tamamlanır. Formlar talebi kendiliğinden iletmez.
+
+## Yeni fotoğraf ekleme
+
+Fotoğraf ekleme **mevcut yardımcı süreciyle** sürer. Yönetim paneli eklenmedi.
+
+1. Telefonun asıl fotoğrafını koruyun. Yardımcınıza fotoğrafın ne olduğunu,
+   kategorisini ve kendi işiniz mi, örnek model mi olduğunu söyleyin.
+2. Yardımcı orijinali, temiz masterı ve kaynak/eşleme bilgilerini mevcut medya
+   kayıtlarına eklesin. Sadece `public/media/` içine fotoğraf bırakmak yeterli değildir.
+3. `data/media/catalog.json` kaydına benzersiz ID/model numarası, `title`,
+   `description`, `alt_tr`, kategori, `role`, `master`, boyut, SHA-256, `web` ve kaynak
+   bilgilerini gerçek dosyaya göre yazsın. Başka modelin numarasını veya özetini taşımayın.
+4. Orijinal kayıtlarını `data/media/originals.json`, kaynak eşlemelerini
+   `data/media/mapping.json` ve gerekiyorsa `config/media/` altında tamamlasın.
+5. Proje klasöründe çalıştırsın:
 
    ```bash
    make photos
+   make check
+   make media-docs
+   make media-preview
    make site
    make serve
    ```
 
-5. Tarayıcıda **http://localhost:8080** adresini açın. Yeni fotoğrafı bulun,
-   büyütün ve WhatsApp düğmesine basınca doğru model numarasının yazdığını kontrol
-   edin. Telefonda Ara ve WhatsApp düğmelerini de deneyin.
-6. İnternetteki siteyi güncellemek için **public klasörünün tamamını** mevcut
-   barındırma alanına yükleyin. Terminaldeki önizlemeyi kapatmak için `Ctrl+C` basın.
+6. `http://localhost:8080` adresinde yeni fotoğrafı, büyük görünümü, kategori
+   filtrelerini ve WhatsApp mesajındaki model numarasını kontrol edin.
 
-## Fotoğrafı kaydeden yardımcı için
+Kategoriler: `kitchen`, `coffee`, `wardrobe`, `tv`, `armchair`, `prefab`, `hall`.
+Atölye fotoğrafları `workshop` kategorisindedir. `provided` kendi işiniz,
+`reference` örnek model, `brand` logo anlamına gelir.
 
-- Orijinali koruyun; seçilen temiz kopyayı `assets/catalog/` altında uygun bölümde
-  saklayın. Mevcut dosyaların üzerine yazmayın.
-- `data/media/catalog.json` içindeki `assets` listesine benzer bir kaydı kopyalayıp
-  **yeni, benzersiz bir ID** verin. Örneğin sıradaki kullanılmayan `P-MUT-07`.
-- `provided` kendi çekimleriniz, `reference` ilham modelleri içindir. Kategoriler:
-  `kitchen` (mutfak), `tv`, `coffee` (kahve köşesi), `hall` (antre), `workshop` (atölye).
-- `title` kısa ad, `description` fotoğrafın açıklaması, `alt_tr` ise fotoğrafı
-  göremeyen ziyaretçi için açık bir Türkçe betimleme olsun. `master`, `width`,
-  `height`, `sha256`, `provenance` ve `suggested_usage` alanlarını yeni dosyanın
-  gerçek bilgileriyle güncelleyin; önceki kaydın özetini veya kaynak bilgisini bırakmayın.
-- `web` listesine `assets/web/` altındaki WebP kopyalarını gerçek `path`, `width`,
-  `height`, `sha256` bilgileriyle ekleyin. En fazla 600 / 1000 / 1400 px genişlik;
-  kaynak küçükse büyütmeyin. Bu kopyalar işlenmiş manifest olmadığında yedektir.
-- `make photos` daha iyi web boyutlarını ve `data/media/web_manifest.json`
-  dosyasını üretir. `preview/enhance.html` ile kadrajları inceleyin.
-- Ardından `make media-check`, `make media-docs`, `make media-preview` ve
-  `make site` çalıştırın. Hata varsa yayınlamadan önce düzeltin.
-- Mutfak, TV, kahve ve antre fotoğrafları uygun galeriye kendiliğinden eklenir.
-  İlk ekranda bazı fotoğraflar gösterilir; devamı “Diğer uygulamaları gör” veya
-  “Daha fazla model gör” düğmesiyle açılır. Atölye bölümü seçilmiş `P-ATL-01/02`
-  fotoğraflarını kullanır; seçimi değiştirmek için siteyi hazırlayan kişiye danışın.
+Masterlar `assets/catalog/` altında; orijinaller `assets/originals/` altında korunur.
+Mevcut kaynakların üzerine yazmayın. Yedek WebP'ler `assets/web/` ve katalogdaki
+`web` listesinde kayıtlıdır. `make photos` işlenmiş boyutları ve
+`data/media/web_manifest.json` dosyasını üretir; kadrajlar `preview/enhance.html`
+ile incelenebilir. Yeni kayıtlar, SHA-256 ve ilişkiler `make check` ile doğrulanır.
 
-## Yazı veya telefon değişirse
+## Yazı, telefon veya adres değişikliği
 
-Metinler `content/site.json` dosyasındadır. Yardımcınız değişikliği yaptıktan sonra
-yalnızca `make site` yeterlidir; fotoğrafların yeniden işlenmesine gerek yoktur.
-Dosya yoksa `content/site.example.json` içindeki örnek metinler kullanılır.
+`content/site.json` dosyasını düzenleyip `make site` çalıştırın. Telefon değişirse
+`phone_display`, `phone_e164`, `whatsapp` birlikte değişmelidir. Çalışma saatlerini,
+sosyal hesapları, müşteri yorumlarını ve hizmet iddialarını yalnızca doğrulanmış bilgiyle
+doldurun; boş alanlar gösterilmez. `src/` kaynak, `public/` üretim çıktısıdır.
 
-Adres, çalışma saatleri ve hizmet bölgesi alanları boşsa gösterilmez. Bilmediğiniz
-bilgiyi tahmin ederek doldurmayın. Telefon değişirse `phone_display`, `phone_e164`
-ve `whatsapp` alanlarını birlikte güncelleyin.
+`site_url` mevcut GitHub Pages adresidir. Alan adı değişirse `make site` ve
+`make qr` çalıştırın. Ana sayfa, 7 kategori sayfası, canonical, sosyal paylaşım
+etiketleri ve site haritası birlikte güncellenir.
 
-Alan adınız belli olduğunda `site_url` alanına `https://` ile başlayan gerçek
-adresi yazdırın ve `make site` çalıştırın. Site haritası ve paylaşım bağlantıları
-bu adrese göre hazırlanır. Alan boşsa site haritası oluşturulmaz.
+## Yayın ve QR
 
-`src/` kaynak şablonlardır. `public/` içindeki HTML, CSS ve JS dosyalarını elle
-düzenlemeyin; bir sonraki derlemede yeniden yazılırlar. Derleme fotoğraf klasörünü
-temizlemez; fotoğraf silmek ayrı bir işlemdir.
+GitHub Pages iş akışı, `main` dalına gönderilen `public/` değişikliklerini yayınlar.
+Yerelde dosya üretmek yayındaki siteyi değiştirmez. Başka barındırma kullanılacaksa
+`public/` klasörünün tamamını, kategori alt klasörleri dahil yükleyin.
+
+`make qr`, kayıtlı site adresini içeren şu dosyaları üretir ve PNG'yi tekrar okuyarak
+doğrular:
+
+- [Baskıya uygun SVG](../public/media/katalog-qr.svg)
+- [592 px PNG](../public/media/katalog-qr.png)
+- [Doğrulama kaydı](../data/reports/qr-validation.json)
+
+Kartvizit/tabela baskısından önce QR'yi telefonla okuyup yayındaki kataloğun açıldığını
+kontrol edin. Kodun çevresindeki beyaz boşluğu koruyun.
+
+## Kontroller
+
+`make check` medya ve Python kontrollerini çalıştırır. Tarayıcı kabul testi isteğe
+bağlı Playwright kurulumuyla çalışır; site bu pakete bağımlı değildir:
+
+```bash
+make serve
+# Ayrı terminalde:
+PLAYWRIGHT_MODULE=/path/to/node_modules/playwright node tests/browser_site.cjs
+```
+
+Testler gerçek WhatsApp mesajı göndermez. Harita testinde dış servis yerine yerel
+bir yanıt kullanılır. Ekran görüntüleri `work/screens/` altında oluşur.
