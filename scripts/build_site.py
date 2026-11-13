@@ -81,8 +81,9 @@ class Media:
             if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9-]*", entry["id"]) or entry["id"] in self.assets:
                 raise ValueError(f'Geçersiz veya yinelenen medya ID: {entry["id"]}')
             asset = dict(entry)
-            asset["description"] = public_text(entry["description"])
-            asset["alt_tr"] = public_text(entry["alt_tr"])
+            asset["description"] = public_text(entry.get("description", ""))
+            asset["model_no"] = entry.get("model_no") or "ŞM-" + entry["id"]
+            asset["alt_tr"] = public_text(entry.get("alt_tr", entry["title"]))
             generated = enhanced.get(entry["id"], self.logo if entry["role"] == "brand" else {})
             full = self.variants(generated.get("full", []))
             if not any(a["format"] == "webp" for a in full):
@@ -95,8 +96,6 @@ class Media:
                 asset[kind] = self.variants(generated.get(kind, []))
             color = generated.get("color", "#EFE3D6")
             asset["color"] = color if re.fullmatch(r"#[a-fA-F0-9]{6}", color) else "#EFE3D6"
-            lqip = generated.get("lqip", "")
-            asset["lqip"] = lqip if re.fullmatch(r"data:image/(?:webp|png|avif|jpeg);base64,[A-Za-z0-9+/=]+", lqip) else ""
             self.assets[entry["id"]] = asset
 
     def variants(self, items):
@@ -143,8 +142,6 @@ class Media:
         avif = self.srcset(variants, "avif")
         source = f'<source type="image/avif" srcset="{e(avif)}" sizes="{e(sizes)}">' if avif else ""
         style = f'background-color:{asset["color"]};'
-        if asset["lqip"]:
-            style += f'background-image:url({asset["lqip"]});background-size:cover;'
         priority = 'loading="eager" fetchpriority="high"' if hero else 'loading="lazy"'
         cls = "pic" if hero else "pic lazy-pic"
         return (f'<picture class="{cls}" style="{e(style)}">{source}<img src="{e(quote(candidate["path"]))}" '
@@ -165,6 +162,17 @@ class Media:
         return self.variants(self.logo.get(key, []))
 
 
+CATEGORY_META = {
+    "kitchen": ("mutfak", "Mutfak Dolabı"),
+    "coffee": ("kahve-kosesi", "Kahve Köşesi"),
+    "wardrobe": ("gomme-dolap", "Gömme Dolap"),
+    "tv": ("tv-unitesi", "TV Ünitesi"),
+    "armchair": ("berjer", "Berjer"),
+    "prefab": ("prefabrik-ev", "Prefabrik Ev"),
+    "hall": ("antre-ayna", "Antre & Ayna"),
+}
+
+
 def build(root=ROOT):
     public = root / "public"
     public.mkdir(parents=True, exist_ok=True)
@@ -182,10 +190,6 @@ def build(root=ROOT):
     def whatsapp(message):
         return f"https://wa.me/{wa_number}?text={quote(message, safe='')}"
 
-    def ask(asset):
-        message = f'Merhaba, {asset["id"]} modeline benzer bir mobilya istiyorum. Bilgi alabilir miyim?' if asset["role"] == "reference" else f'Merhaba, web sitenizdeki {asset["id"]} fotoğrafı hakkında bilgi almak istiyorum.'
-        return whatsapp(message)
-
     base = site["site_url"].strip().rstrip("/")
     if base:
         parsed = urlsplit(base)
@@ -200,104 +204,80 @@ def build(root=ROOT):
     if marks:
         mark = next((a for a in marks if a["format"] == "webp"), marks[0])
         brand_mark = f'<img class="brand-mark" src="{e(quote(mark["path"]))}" width="{mark["w"]}" height="{mark["h"]}" alt="" decoding="async">'
-    logos = media.logo_variants("full")
-    if logos:
-        logo = next((a for a in logos if a["format"] == "webp"), logos[0])
-        contact_logo = f'<div class="contact-logo"><img src="{e(quote(logo["path"]))}" width="{logo["w"]}" height="{logo["h"]}" alt="{e(brand["name"])} logosu" loading="lazy" decoding="async"></div>'
-    else:
-        contact_logo = f'<div class="contact-logo">{media.picture("LOGO-01", sizes="90px")}</div>' if "LOGO-01" in media.assets else ""
     favicon = ""
     for v in media.logo_variants("favicon"):
         if v["format"] == "png":
             rel = "apple-touch-icon" if v["w"] == 180 else "icon"
             favicon += f'<link rel="{rel}" type="image/png" sizes="{v["w"]}x{v["h"]}" href="{e(quote(v["path"]))}">\n'
 
-    categories = []
-    labels = site["models"]["filters"]
-    for index, category in enumerate(site["categories"], 1):
-        picture = media.picture(category["cover"], "card", "(max-width: 639px) calc(100vw - 40px), (max-width: 1023px) 45vw, (max-width: 1392px) 22vw, 304px")
-        categories.append(f'<a class="category-card" href="#modeller" data-category-link="{e(category["key"])}"><div class="category-photo">{picture}<span class="category-index">0{index}</span></div>'
-                          f'<div class="category-body"><h3>{e(category["title"])}</h3><p>{e(category["text"])}</p><span class="text-link">Modelleri gör {icon("arrow")}</span></div></a>')
-    gallery_data = {}
+    definitions = {c["key"]: c for c in site["categories"]}
+    buckets = {key: sorted([a for a in media.assets.values() if a["category"] == key and a["role"] in ("provided", "reference")], key=lambda a: a["role"] != "provided") for key in CATEGORY_META}
+    buckets = {key: assets for key, assets in buckets.items() if assets}
+    categories, tabs, gallery = [], [], {}
+    card_groups = []
+    total = sum(map(len, buckets.values()))
+    tabs.append(f'<a class="filter-button" href="#katalog" data-filter="all" aria-controls="model-grid">Tümü <span>{total}</span></a>')
+    for key, assets in buckets.items():
+        cards = []
+        card_groups.append(cards)
+        slug, fallback_title = CATEGORY_META[key]
+        category = definitions.get(key, {})
+        title = category.get("title", fallback_title)
+        cover = category.get("cover")
+        if cover not in {a["id"] for a in assets}:
+            cover = assets[0]["id"]
+        categories.append(f'<a class="category-card" href="#katalog/{slug}" data-category-link="{key}"><div class="category-photo">{media.picture(cover, "card", "(max-width: 639px) 46vw, (max-width: 1023px) 30vw, 280px")}</div><div class="category-body"><h3>{e(title)}</h3><span>{len(assets)} model {icon("arrow")}</span></div></a>')
+        tabs.append(f'<a class="filter-button" href="#katalog/{slug}" data-filter="{key}" data-slug="{slug}" aria-controls="model-grid">{e(title)} <span>{len(assets)}</span></a>')
+        for asset in assets:
+            full = [v for v in asset["full"] if v["format"] == "webp"]
+            largest = full[-1]
+            description = re.split(r"(?<=[.!?])\s+", asset["description"])[0]
+            gallery[asset["id"]] = {"id": asset["id"], "model_no": asset["model_no"], "title": asset["title"], "description": description,
+                "alt": asset["alt_tr"], "role": asset["role"], "category": key, "src": quote(largest["path"]), "srcset": media.srcset(full),
+                "width": largest["w"], "height": largest["h"], "whatsapp": whatsapp(f'Merhaba, {asset["model_no"]} modeli hakkında bilgi almak istiyorum.')}
+            badge = '<span class="work-badge">Uygulamamız</span>' if asset["role"] == "provided" else ''
+            cards.append(f'<article class="model-card" data-category="{key}"><a class="product-link" href="{e(quote(largest["path"]))}" data-lightbox="{e(asset["id"])}" aria-label="{e(asset["title"])} — Model No: {e(asset["model_no"])}"><div class="product-photo">{media.picture(asset["id"], "card", "(max-width: 639px) 46vw, (max-width: 1023px) 30vw, 23vw")}{badge}</div><div class="model-body"><h3>{e(asset["title"])}</h3><p>Model No: {e(asset["model_no"])}</p></div></a></article>')
 
-    def photo_link(asset, group, kind, sizes):
-        full = [a for a in asset["full"] if a["format"] == "webp"]
-        largest = full[-1]
-        gallery_data[asset["id"]] = {
-            "id": asset["id"], "title": asset["title"], "description": asset["description"], "alt": asset["alt_tr"],
-            "role": asset["role"], "category": asset["category"], "src": quote(largest["path"]), "srcset": media.srcset(full),
-            "width": largest["w"], "height": largest["h"], "whatsapp": ask(asset),
-        }
-        return (f'<a class="photo-link" href="{e(quote(largest["path"]))}" data-lightbox="{e(asset["id"])}" data-gallery="{group}" aria-label="{e(asset["title"])} — Fotoğrafı büyüt">'
-                f'{media.picture(asset["id"], kind, sizes)}<span class="zoom-hint">{icon("zoom")}</span></a>')
-
-    projects, models, workshop_pictures = [], [], []
-    # Mix categories on the initial "Tümü" view instead of showing only the
-    # catalog's first category. Preserve every record and its original metadata.
-    buckets = {key: [] for key in labels if key != "all"}
-    for asset in media.assets.values():
-        if asset["role"] == "reference":
-            buckets.setdefault(asset["category"], []).append(asset)
-    for category in site["categories"]:
-        bucket = buckets.get(category["key"], [])
-        bucket.sort(key=lambda asset: asset["id"] != category["cover"])
-    ordered_assets = [asset for asset in media.assets.values() if asset["role"] != "reference"]
-    while any(buckets.values()):
-        for bucket in buckets.values():
-            if bucket:
-                ordered_assets.append(bucket.pop(0))
-    for asset in ordered_assets:
-        if asset["role"] == "provided" and asset["category"] != "workshop":
-            picture = photo_link(asset, "projects", "full", "(max-width: 639px) calc(100vw - 40px), (max-width: 1392px) 46vw, 626px")
-            projects.append(f'<article class="project-card">{picture}<div class="project-caption"><h3>{e(asset["title"])}</h3></div></article>')
-        elif asset["role"] == "reference":
-            kind = "tall" if asset["height"] > asset["width"] else "full"
-            picture = photo_link(asset, "models", kind, "(max-width: 639px) calc(100vw - 40px), (max-width: 1023px) 45vw, (max-width: 1392px) 29vw, 410px")
-            models.append(f'<article class="model-card" data-category="{e(asset["category"])}">{picture}<div class="model-body"><div class="model-meta"><span class="model-category">{e(labels.get(asset["category"], asset["category"]))}</span><span class="asset-id">Model No: {e(asset["id"])}</span></div>'
-                          f'<h3>{e(asset["title"])}</h3><a class="model-ask" href="{e(ask(asset))}" aria-label="{e(asset["id"])} — {e(site["models"]["ask_label"])}">{icon("wa")} {e(site["models"]["ask_label"])}</a></div></article>')
-    for asset_id in ("P-ATL-01", "P-ATL-02"):
-        if asset_id in media.assets:
-            workshop_pictures.append(media.picture(asset_id, sizes="(max-width: 639px) 44vw, 23vw"))
-    hero = media.assets["P-MUT-01"]
+    # Tümü offers a cross-section; category views retain provided-first order.
+    cards = [group[index] for index in range(max(map(len, card_groups), default=0)) for group in card_groups if index < len(group)]
+    hero = media.assets.get("P-MUT-01") or next(a for assets in buckets.values() for a in assets)
     hero_image = [a for a in hero["full"] if a["format"] == "webp"][-1]
-    seo_extra = f'<meta property="og:image" content="{e(absolute(hero_image["path"]))}">\n<meta property="og:image:alt" content="{e(hero["alt_tr"])}">\n<meta property="og:image:width" content="{hero_image["w"]}">\n<meta property="og:image:height" content="{hero_image["h"]}">'
+    seo_extra = f'<meta property="og:image" content="{e(absolute(hero_image["path"]))}"><meta property="og:image:alt" content="{e(hero["alt_tr"])}"><meta property="og:image:width" content="{hero_image["w"]}"><meta property="og:image:height" content="{hero_image["h"]}">'
     if base:
-        seo_extra += f'\n<link rel="canonical" href="{e(base)}/">\n<meta property="og:url" content="{e(base)}/">'
+        seo_extra += f'<link rel="canonical" href="{e(base)}/"><meta property="og:url" content="{e(base)}/">'
     structured = {"@context": "https://schema.org", "@type": "FurnitureStore", "name": brand["name"], "telephone": phone, "image": absolute(hero_image["path"])}
     if base:
         structured["url"] = base + "/"
-    if brand["address"].strip():
-        structured["address"] = brand["address"]
+    address = brand["address"].strip()
+    if address:
+        structured["address"] = {"@type": "PostalAddress", "streetAddress": ", ".join(part.strip() for part in address.split(",")[:2]), "addressLocality": "Payas", "addressRegion": "Hatay", "postalCode": "31900", "addressCountry": "TR"}
     if brand["service_area"].strip():
         structured["areaServed"] = brand["service_area"]
-    details = []
-    for key, title in (("address", "Adres"), ("hours", "Çalışma saatleri"), ("service_area", "Hizmet bölgesi")):
-        if brand[key].strip():
-            tag = "address" if key == "address" else "p"
-            details.append(f'<{tag}><strong>{title}:</strong> {e(brand[key])}</{tag}>')
-    aliases = {"surec": "nasil-calisiriz"}
+    maps = "https://www.google.com/maps/dir/?api=1&destination=" + quote(address, safe="")
+    map_embed = "https://maps.google.com/maps?q=" + quote(address, safe="") + "&z=16&output=embed"
+    contact_map = f'<iframe class="contact-map" src="{e(map_embed)}" loading="lazy" title="Şimşek Mobilya — Payas atölye konumu" referrerpolicy="no-referrer-when-downgrade"></iframe>' if address else ""
+    workshop = [a for a in media.assets.values() if a["category"] == "workshop" and a["role"] == "provided"]
     values = {
-        "seo_title": e(site["seo"]["title"]), "seo_description": e(site["seo"]["description"]),
-        "seo_extra": seo_extra, "favicon": favicon, "structured_data": json_script(structured), "gallery_data": json_script(gallery_data),
+        "seo_title": e(site["seo"]["title"]), "seo_description": e(site["seo"]["description"]), "seo_extra": seo_extra,
+        "favicon": favicon, "structured_data": json_script(structured), "gallery_data": json_script(gallery),
         "brand_name": e(brand["name"]), "brand_tagline": e(brand["tagline"]), "brand_mark": brand_mark,
         "owner": e(brand["owner"]), "tel": "tel:" + phone, "phone_display": e(brand["phone_display"]),
         "whatsapp": e(whatsapp(site["contact"]["whatsapp_message"])),
-        "nav": "".join(f'<a href="#{e(aliases.get(item["id"], item["id"]))}">{e(item["label"])}</a>' for item in site["nav"]),
-        "hero_picture": media.picture("P-MUT-01", hero=True),
-        "hero_preload": media.preload("P-MUT-01"),
+        "hero_picture": media.picture(hero["id"], hero=True, sizes="(max-width: 767px) 100vw, 50vw"),
+        "hero_preload": media.preload(hero["id"], sizes="(max-width: 767px) 100vw, 50vw"),
         "badges": "".join(f'<li>{icon("check")}{e(badge)}</li>' for badge in site["hero"]["badges"]),
-        "categories": "\n".join(categories), "projects": "\n".join(projects), "models": "\n".join(models),
-        "filters": "".join(f'<button class="filter-button" type="button" data-filter="{e(key)}" aria-pressed="{str(key == "all").lower()}" aria-controls="model-grid">{e(label)}</button>' for key, label in labels.items()),
-        "steps": "".join(f'<li data-reveal><span class="step-number">0{index}</span><h3>{e(step["title"])}</h3><p>{e(step["text"])}</p></li>' for index, step in enumerate(site["process"]["steps"], 1)),
-        "workshop_pictures": "".join(workshop_pictures), "contact_logo": contact_logo,
-        "contact_details": f'<div class="contact-details">{"".join(details)}</div>' if details else "",
+        "categories": "".join(categories), "models": "".join(cards), "filters": "".join(tabs), "model_count": total,
+        "workshop_pictures": "".join(media.picture(a["id"], "card", "(max-width: 767px) 46vw, 25vw") for a in workshop[:2]),
+        "address": e(address), "map_url": e(maps), "contact_map": contact_map,
+        "directions": f'<a class="button button-outline" href="{e(maps)}">{icon("arrow")} Yol Tarifi</a>' if address else "",
         "footer_text": e(site["footer"]["text"]), "year": date.today().year,
     }
     for key in ("eyebrow", "title", "subtitle", "cta_call", "cta_whatsapp"):
         values[key if key.startswith("cta_") else f"hero_{key}"] = e(site["hero"][key])
-    for section in ("projects", "models", "process", "workshop", "contact"):
-        for key in ("title", "intro", "note", "text"):
+    for section in ("workshop", "contact"):
+        for key in ("title", "text"):
             values[f"{section}_{key}"] = e(site[section].get(key, ""))
+    values["catalog_intro"] = e(site.get("catalog", {}).get("intro", "Beğendiğiniz modeli seçin, ölçü ve renk seçeneklerini konuşalım."))
     values.update({f"{name}_icon": icon(name) for name in ICONS})
     document = Template((root / "src/index.html.tpl").read_text(encoding="utf-8")).substitute(values)
     (public / "index.html").write_text(document, encoding="utf-8")
@@ -312,11 +292,8 @@ def build(root=ROOT):
     elif sitemap.is_file():
         sitemap.unlink()
     (public / "robots.txt").write_text(robots, encoding="utf-8")
-    print(f"Site hazır: {public / 'index.html'}")
-    print(f"Metin: {'content/site.json' if content_path.is_file() else 'content/site.example.json (yedek)'}")
-    print(f"Medya: {len(media.assets)} kayıt; {media.fallback_count} katalog yedeği; {len(projects)} uygulama, {len(models)} örnek model")
+    print(f"Site hazır: {public / 'index.html'} · {total} model · {len(buckets)} kategori")
     print(f"CSS: {(public / 'assets/site.css').stat().st_size:,} bayt · JS: {(public / 'assets/site.js').stat().st_size:,} bayt")
-    print("Sitemap: " + (base + "/sitemap.xml" if base else "site_url boş; üretilmedi"))
 
 
 if __name__ == "__main__":

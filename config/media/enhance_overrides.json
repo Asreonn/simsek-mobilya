@@ -1,14 +1,55 @@
 {
   "assets": {
-    "P-TV-02": {"wb": false},
-    "P-TV-03": {"wb": false},
-    "P-TV-04": {"wb": false},
-    "R-KAH-14": {"focus": [0.5, 0.43]}
+    "P-TV-02": {
+      "wb": false
+    },
+    "P-TV-03": {
+      "wb": false
+    },
+    "R-KAH-14": {
+      "focus": [
+        0.5,
+        0.43
+      ]
+    },
+    "P-TV-05": {
+      "wb": false
+    },
+    "P-TV-06": {
+      "wb": false
+    },
+    "P-TV-07": {
+      "wb": false
+    },
+    "P-TV-08": {
+      "wb": false
+    },
+    "P-ANT-03": {
+      "wb": false
+    },
+    "P-ANT-04": {
+      "wb": false
+    }
   },
   "logo": {
-    "crop_box": [140, 20, 1200, 936],
-    "emblem_region": [130, 20, 1200, 940],
-    "lettering_region": [80, 940, 1250, 1225],
+    "crop_box": [
+      140,
+      20,
+      1200,
+      936
+    ],
+    "emblem_region": [
+      130,
+      20,
+      1200,
+      940
+    ],
+    "lettering_region": [
+      80,
+      940,
+      1250,
+      1225
+    ],
     "foreground_threshold": 85
   }
 }

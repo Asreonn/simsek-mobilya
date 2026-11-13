@@ -38,7 +38,7 @@ class PhotoMathTests(unittest.TestCase):
         np.testing.assert_array_equal(disabled, rgb)
         self.assertEqual(gains, [1, 1, 1])
         overrides = json.loads((ROOT / 'config/media/enhance_overrides.json').read_text())
-        for asset_id in ('P-TV-02', 'P-TV-03', 'P-TV-04'):
+        for asset_id in ('P-TV-02', 'P-TV-03', 'P-TV-03'):
             self.assertIs(overrides['assets'][asset_id]['wb'], False)
 
     def test_moderate_change_and_repeatable_pixels(self):

@@ -12,7 +12,7 @@ from urllib.parse import quote
 
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data/media'
-RELATIONS={
+RELATIONS={'same_photo_v2':'Aynı fotoğraf (v2: damga kırpılıp doğrudan kullanıldı)',
     'brand_asset':'Marka görseli',
     'same_photo':'Aynı çekim',
     'same_photo_bottom_crop':'Aynı çekim; alt damga kırpıldı',
@@ -46,13 +46,22 @@ def validate(args):
     for a in assets.values():
         assert a['title'] and a['description'] and a['alt_tr'] and a['suggested_usage'],a['id']
         assert sha(path(a['master']))==a['sha256'],a['id']
-        p=a['provenance'];assert sha(path(p['source_path']))==p['source_sha256']
-        with Image.open(path(a['master'])) as master,Image.open(path(p['source_path'])) as original:
-            assert master.size==(a['width'],a['height'])
-            cropped=ImageOps.exif_transpose(original).crop(p['source_crop_box'])
-            assert np.array_equal(np.asarray(master),np.asarray(cropped)),a['id']
-        if a['role']!='brand':
+        p=a['provenance'];v2=a.get('visual_review','').startswith('v2')
+        with Image.open(path(a['master'])) as master:
+            assert master.size==(a['width'],a['height']),a['id']
+        if v2:
+            # v2 (2026-11-13): JPEG master, gerekirse küçültülmüş; kaynak izi URL/orijinal ID ile tutulur.
+            assert p.get('original_id') or p.get('url'),a['id']
+            if p.get('source_path'): assert sha(path(p['source_path']))==p['source_sha256'],a['id']
+            assert min(a['width'],a['height'])>=900,a['id']
+        else:
+            assert sha(path(p['source_path']))==p['source_sha256']
+            with Image.open(path(a['master'])) as master,Image.open(path(p['source_path'])) as original:
+                cropped=ImageOps.exif_transpose(original).crop(p['source_crop_box'])
+                assert np.array_equal(np.asarray(master),np.asarray(cropped)),a['id']
+        if a['role']!='brand' and not v2:
             assert min(a['width'],a['height'])>=1000 and max(a['width'],a['height'])>=1500,a['id']
+        if a['role']!='brand':
             assert a['text_clear'] and a['visual_review'],a['id']
         for w in a['web']:
             assert sha(path(w['path']))==w['sha256']

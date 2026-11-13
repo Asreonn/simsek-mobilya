@@ -147,3 +147,25 @@ coffee→`R-KAH-03`, hall→`R-ANT-03`.
 | Site iskeleti + build | Codex **c1** | `src/*`, `scripts/build_site.py`, `public/`, Makefile |
 | Türkçe metinler | opencode free model | `content/site.json` |
 | Görsel/UX inceleme | agy Sonnet | inceleme raporu |
+
+---
+
+## v2 revizyonu (2026-11-13) — "gerçek katalog" yönü
+
+Kullanıcı geri bildirimi: yazı tipleri/animasyonlar/yumuşaklık kötü; açıklamalar görselle
+uyuşmuyor; katalog havası yok; foto ve çeşit az. Müşteri isteği: katalog (sipariş yok),
+kategoriler, her kategoride fotoğraflar, iletişim bilgileri. v1'in çakışan kuralları geçersizdir.
+
+- **Kategoriler:** Mutfak Dolabı (kitchen), Kahve Köşesi (coffee), Gömme Dolap (wardrobe),
+  TV Ünitesi (tv), Berjer (armchair), Prefabrik Ev (prefab), Antre & Ayna (hall); Atölye ayrı bölüm.
+- **Konum:** İstiklal Mahallesi, Müge Sokak No:3, 31900 Payas / Hatay · 0532 652 78 13.
+- **Tipografi:** Başlık **Outfit** (600/700), gövde **Inter** (400/500/600). Fraunces/Manrope kaldırılır.
+- **Biçim:** Köşe kart 6px, buton 8px (hap yok). Gölge çok hafif ya da yok; ince kenarlık.
+- **Hareket:** Yalnız 200ms opacity fade; blur, shimmer, scale, translate yok. Görsel yüklenirken
+  düz baskın renk zemin, yüklenince 200ms fade.
+- **Metin:** Kartlarda yalnız kısa ürün adı + Model No (ŞM-MUT-07) + gerçek iş ise "Uygulamamız" rozeti.
+  Uzun açıklama kartta yok; lightbox'ta tek cümle.
+- **Katalog düzeni:** Hero kısa → kategori döşemeleri (foto + ad + "N model") → Katalog bölümü:
+  yapışkan kategori sekmeleri (mobilde yatay kaydırma, sayılarla) + düzenli eşit oranlı ürün ızgarası
+  (4:3, masaüstü 4 sütun, tablet 3, mobil 2) → Atölye → İletişim (adres, harita, yol tarifi).
+  URL hash ile kategori paylaşılabilir (#katalog/mutfak).

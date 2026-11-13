@@ -1,873 +1,881 @@
 {
-  "schema_version": 1,
-  "assignments": [
-    {
-      "original_id": "O001",
-      "legacy_id": "617e71c9eb17a47a",
-      "selected": [
-        "LOGO-01"
-      ],
-      "relation": "brand_asset",
-      "category": "logo",
-      "do_not_claim_same_installation": false
-    },
-    {
-      "original_id": "O002",
-      "legacy_id": "9d00cfe6fb4d8e5e",
-      "selected": [
-        "R-MUT-01",
-        "R-MUT-07"
-      ],
-      "relation": "similar_reference",
-      "category": "kitchen",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O003",
-      "legacy_id": "1965e8ecaa2e742b",
-      "selected": [
-        "R-MUT-01",
-        "R-MUT-07"
-      ],
-      "relation": "exact_online_photo",
-      "category": "kitchen",
-      "do_not_claim_same_installation": false
-    },
-    {
-      "original_id": "O004",
-      "legacy_id": "36e9188d757635a0",
-      "selected": [
-        "R-MUT-01",
-        "R-MUT-02"
-      ],
-      "relation": "similar_reference",
-      "category": "kitchen",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O005",
-      "legacy_id": "1961f4e54eac9475",
-      "selected": [
-        "R-MUT-07",
-        "R-MUT-01"
-      ],
-      "relation": "similar_reference",
-      "category": "kitchen",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O006",
-      "legacy_id": "4978abce1788839d",
-      "selected": [
-        "R-MUT-03",
-        "R-MUT-02"
-      ],
-      "relation": "similar_reference",
-      "category": "kitchen",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O007",
-      "legacy_id": "06f40e6c95913ba6",
-      "selected": [
-        "R-MUT-08",
-        "R-MUT-01"
-      ],
-      "relation": "similar_reference",
-      "category": "kitchen",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O008",
-      "legacy_id": "232dab30fee07314",
-      "selected": [
-        "R-MUT-08",
-        "R-MUT-03"
-      ],
-      "relation": "exact_online_photo",
-      "category": "kitchen",
-      "do_not_claim_same_installation": false
-    },
-    {
-      "original_id": "O009",
-      "legacy_id": "18fc1d60832758f1",
-      "selected": [
-        "R-MUT-03",
-        "R-MUT-04"
-      ],
-      "relation": "similar_reference",
-      "category": "kitchen",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O010",
-      "legacy_id": "33a970315a2438dc",
-      "selected": [
-        "R-MUT-03",
-        "R-MUT-02"
-      ],
-      "relation": "similar_reference",
-      "category": "kitchen",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O011",
-      "legacy_id": "316f7d275e2cf94f",
-      "selected": [
-        "R-MUT-09",
-        "R-MUT-08"
-      ],
-      "relation": "similar_reference",
-      "category": "kitchen",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O012",
-      "legacy_id": "864a45fce317d948",
-      "selected": [
-        "R-MUT-08",
-        "R-MUT-06"
-      ],
-      "relation": "similar_reference",
-      "category": "kitchen",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O013",
-      "legacy_id": "6ed887425f7a7fe8",
-      "selected": [
-        "R-MUT-06",
-        "R-MUT-02"
-      ],
-      "relation": "similar_reference",
-      "category": "kitchen",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O014",
-      "legacy_id": "8e8ed2a4e9e95dd2",
-      "selected": [
-        "R-KAH-07",
-        "R-KAH-01"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O015",
-      "legacy_id": "3af7488daff1acdf",
-      "selected": [
-        "R-KAH-14",
-        "R-KAH-03"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O016",
-      "legacy_id": "cbce826f65d6f3a0",
-      "selected": [
-        "R-KAH-03",
-        "R-KAH-15"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O017",
-      "legacy_id": "3f2eb9bbbb76c758",
-      "selected": [
-        "R-KAH-15",
-        "R-KAH-03"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O018",
-      "legacy_id": "ea5580414899e901",
-      "selected": [
-        "R-KAH-15",
-        "R-KAH-03"
-      ],
-      "relation": "exact_online_photo",
-      "category": "coffee",
-      "do_not_claim_same_installation": false
-    },
-    {
-      "original_id": "O019",
-      "legacy_id": "0f4d5594bd5aadb8",
-      "selected": [
-        "R-KAH-14",
-        "R-KAH-02"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O020",
-      "legacy_id": "5a54a3b87093c60a",
-      "selected": [
-        "R-KAH-16",
-        "R-KAH-01"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O021",
-      "legacy_id": "0f85c7dba92fee33",
-      "selected": [
-        "P-MUT-01",
-        "R-MUT-01"
-      ],
-      "relation": "same_photo_bottom_crop",
-      "category": "kitchen",
-      "do_not_claim_same_installation": false
-    },
-    {
-      "original_id": "O022",
-      "legacy_id": "c4ba22a0fe90f25a",
-      "selected": [
-        "P-TV-01",
-        "R-TV-01"
-      ],
-      "relation": "same_photo_bottom_crop",
-      "category": "tv",
-      "do_not_claim_same_installation": false
-    },
-    {
-      "original_id": "O023",
-      "legacy_id": "226db81fd4daf56b",
-      "selected": [
-        "R-ANT-02",
-        "R-ANT-03"
-      ],
-      "relation": "similar_reference",
-      "category": "hall",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O024",
-      "legacy_id": "11e706ac35c7b5c7",
-      "selected": [
-        "R-ANT-03",
-        "R-ANT-02"
-      ],
-      "relation": "similar_reference",
-      "category": "hall",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O025",
-      "legacy_id": "20022a5f6621507c",
-      "selected": [
-        "P-MUT-02",
-        "R-MUT-01"
-      ],
-      "relation": "same_photo_bottom_crop",
-      "category": "kitchen",
-      "do_not_claim_same_installation": false
-    },
-    {
-      "original_id": "O026",
-      "legacy_id": "b1ff5d93121b6057",
-      "selected": [
-        "P-MUT-03",
-        "R-MUT-01"
-      ],
-      "relation": "same_photo_bottom_crop",
-      "category": "kitchen",
-      "do_not_claim_same_installation": false
-    },
-    {
-      "original_id": "O027",
-      "legacy_id": "8c41c2a48e0bced0",
-      "selected": [
-        "P-MUT-04",
-        "R-MUT-01"
-      ],
-      "relation": "same_photo",
-      "category": "kitchen",
-      "do_not_claim_same_installation": false
-    },
-    {
-      "original_id": "O028",
-      "legacy_id": "97d0d1f04e69a0c3",
-      "selected": [
-        "P-MUT-05",
-        "R-MUT-01"
-      ],
-      "relation": "same_photo",
-      "category": "kitchen",
-      "do_not_claim_same_installation": false
-    },
-    {
-      "original_id": "O029",
-      "legacy_id": "6981577bb0097f7e",
-      "selected": [
-        "P-MUT-04",
-        "P-MUT-05"
-      ],
-      "relation": "different_provided_photo",
-      "category": "kitchen",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O030",
-      "legacy_id": "5426e4be09d05c75",
-      "selected": [
-        "P-MUT-06",
-        "R-MUT-01"
-      ],
-      "relation": "same_photo",
-      "category": "kitchen",
-      "do_not_claim_same_installation": false
-    },
-    {
-      "original_id": "O031",
-      "legacy_id": "e2237a5d060918ae",
-      "selected": [
-        "R-KAH-14",
-        "R-KAH-15"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O032",
-      "legacy_id": "9457cb14caeb0fca",
-      "selected": [
-        "R-KAH-11",
-        "R-KAH-09"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O033",
-      "legacy_id": "c38869d3702c5ab3",
-      "selected": [
-        "R-KAH-10",
-        "R-KAH-11"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O034",
-      "legacy_id": "0fe15646efeffbf0",
-      "selected": [
-        "R-KAH-10",
-        "R-KAH-11"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O035",
-      "legacy_id": "e86f7c01472f9c3a",
-      "selected": [
-        "R-KAH-09",
-        "R-KAH-11"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O036",
-      "legacy_id": "82aec020f679eb77",
-      "selected": [
-        "R-KAH-12",
-        "R-KAH-06"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O037",
-      "legacy_id": "6d718b12e6044332",
-      "selected": [
-        "R-KAH-02",
-        "R-KAH-10"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O038",
-      "legacy_id": "092d869c68990bbf",
-      "selected": [
-        "R-KAH-16",
-        "R-KAH-04"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O039",
-      "legacy_id": "a4ec981ad2b21071",
-      "selected": [
-        "R-KAH-17",
-        "R-KAH-07"
-      ],
-      "relation": "exact_online_photo",
-      "category": "coffee",
-      "do_not_claim_same_installation": false
-    },
-    {
-      "original_id": "O040",
-      "legacy_id": "d554d6fa7e8db3b0",
-      "selected": [
-        "R-KAH-17",
-        "R-KAH-07"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O041",
-      "legacy_id": "f5feec999a513d71",
-      "selected": [
-        "R-KAH-17",
-        "R-KAH-01"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O042",
-      "legacy_id": "28963d2d094389bb",
-      "selected": [
-        "R-KAH-02",
-        "R-KAH-01"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O043",
-      "legacy_id": "137bb8a3dce41da9",
-      "selected": [
-        "R-KAH-14",
-        "R-KAH-02"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O044",
-      "legacy_id": "c3a6016aa8f9e35e",
-      "selected": [
-        "R-KAH-16",
-        "R-KAH-01"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O045",
-      "legacy_id": "3eb75a6471c44b00",
-      "selected": [
-        "R-KAH-15",
-        "R-KAH-03"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O046",
-      "legacy_id": "f6b8ac5fff2b5785",
-      "selected": [
-        "R-KAH-16",
-        "R-KAH-04"
-      ],
-      "relation": "exact_online_photo",
-      "category": "coffee",
-      "do_not_claim_same_installation": false
-    },
-    {
-      "original_id": "O047",
-      "legacy_id": "f0189973da2d282e",
-      "selected": [
-        "R-KAH-03",
-        "R-KAH-02"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O048",
-      "legacy_id": "dd95cd6fb2303993",
-      "selected": [
-        "R-KAH-03",
-        "R-KAH-02"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O049",
-      "legacy_id": "2571907b5e7d3ec8",
-      "selected": [
-        "R-MUT-02",
-        "R-MUT-01"
-      ],
-      "relation": "similar_reference",
-      "category": "kitchen",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O050",
-      "legacy_id": "867975cb78a4ff20",
-      "selected": [
-        "R-MUT-05",
-        "R-MUT-07"
-      ],
-      "relation": "similar_reference",
-      "category": "kitchen",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O051",
-      "legacy_id": "e5c31c15fdbb778a",
-      "selected": [
-        "R-ANT-02",
-        "R-ANT-04"
-      ],
-      "relation": "similar_reference",
-      "category": "hall",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O052",
-      "legacy_id": "36eb196c2a33247c",
-      "selected": [
-        "R-KAH-01",
-        "R-KAH-14"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O053",
-      "legacy_id": "2baa41b634569b62",
-      "selected": [
-        "R-MUT-04",
-        "R-MUT-03"
-      ],
-      "relation": "similar_reference",
-      "category": "kitchen",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O054",
-      "legacy_id": "02be11269eb70b07",
-      "selected": [
-        "R-MUT-04",
-        "R-MUT-03"
-      ],
-      "relation": "similar_reference",
-      "category": "kitchen",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O055",
-      "legacy_id": "80834f5bf6c036c5",
-      "selected": [
-        "R-MUT-04",
-        "R-MUT-03"
-      ],
-      "relation": "similar_reference",
-      "category": "kitchen",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O056",
-      "legacy_id": "a463884d51961542",
-      "selected": [
-        "R-TV-01",
-        "P-TV-02"
-      ],
-      "relation": "similar_reference",
-      "category": "tv",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O057",
-      "legacy_id": "4c0c0d0671265f86",
-      "selected": [
-        "R-TV-01",
-        "P-TV-02"
-      ],
-      "relation": "similar_reference",
-      "category": "tv",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O058",
-      "legacy_id": "e8fce620508f442f",
-      "selected": [
-        "R-TV-01",
-        "P-TV-02"
-      ],
-      "relation": "similar_reference",
-      "category": "tv",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O059",
-      "legacy_id": "7f88e2367f50aa60",
-      "selected": [
-        "R-KAH-03",
-        "R-KAH-14"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O060",
-      "legacy_id": "7373e1e0594340f3",
-      "selected": [
-        "R-KAH-03",
-        "R-KAH-02"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O061",
-      "legacy_id": "84bff7924d7f4036",
-      "selected": [
-        "R-KAH-03",
-        "R-KAH-02"
-      ],
-      "relation": "similar_reference",
-      "category": "coffee",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O062",
-      "legacy_id": "7fe3190bfb823b70",
-      "selected": [
-        "R-ANT-02",
-        "R-ANT-04"
-      ],
-      "relation": "similar_reference",
-      "category": "hall",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O063",
-      "legacy_id": "9b102d9fb74f2b5f",
-      "selected": [
-        "P-TV-01",
-        "P-TV-02"
-      ],
-      "relation": "different_provided_photo",
-      "category": "tv",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O064",
-      "legacy_id": "a0556ef7e09fcd20",
-      "selected": [
-        "P-TV-01",
-        "P-TV-02"
-      ],
-      "relation": "different_provided_photo",
-      "category": "tv",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O066",
-      "legacy_id": "9a1f4fde66170d01",
-      "selected": [
-        "P-TV-02",
-        "R-TV-01"
-      ],
-      "relation": "same_photo_bottom_crop",
-      "category": "tv",
-      "do_not_claim_same_installation": false
-    },
-    {
-      "original_id": "O067",
-      "legacy_id": "82b7e566b6e3439c",
-      "selected": [
-        "P-TV-03",
-        "R-TV-01"
-      ],
-      "relation": "same_photo_bottom_crop",
-      "category": "tv",
-      "do_not_claim_same_installation": false
-    },
-    {
-      "original_id": "O068",
-      "legacy_id": "76db4dd44ab29823",
-      "selected": [
-        "P-TV-04",
-        "R-TV-01"
-      ],
-      "relation": "same_photo_bottom_crop",
-      "category": "tv",
-      "do_not_claim_same_installation": false
-    },
-    {
-      "original_id": "O069",
-      "legacy_id": "e975b4e92f44a365",
-      "selected": [
-        "P-ATL-01",
-        "P-ATL-02"
-      ],
-      "relation": "same_photo",
-      "category": "workshop",
-      "do_not_claim_same_installation": false
-    },
-    {
-      "original_id": "O070",
-      "legacy_id": "65c73b1df3b96daa",
-      "selected": [
-        "P-ATL-01",
-        "P-ATL-02"
-      ],
-      "relation": "different_provided_photo",
-      "category": "workshop",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O071",
-      "legacy_id": "0ca01e2784fa4d0e",
-      "selected": [
-        "P-ATL-02",
-        "P-ATL-01"
-      ],
-      "relation": "same_photo",
-      "category": "workshop",
-      "do_not_claim_same_installation": false
-    },
-    {
-      "original_id": "O072",
-      "legacy_id": "366a5a446bb91914",
-      "selected": [
-        "P-ATL-01",
-        "P-ATL-02"
-      ],
-      "relation": "different_provided_photo",
-      "category": "workshop",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O073",
-      "legacy_id": "b2ff3ee312004507",
-      "selected": [
-        "P-ATL-01",
-        "P-ATL-02"
-      ],
-      "relation": "different_provided_photo",
-      "category": "workshop",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O074",
-      "legacy_id": "00b85eb60e691a5f",
-      "selected": [
-        "P-ATL-01",
-        "P-ATL-02"
-      ],
-      "relation": "different_provided_photo",
-      "category": "workshop",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O075",
-      "legacy_id": "1b5088bfc29f2b04",
-      "selected": [
-        "R-MUT-07",
-        "R-MUT-01"
-      ],
-      "relation": "similar_reference",
-      "category": "kitchen",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O077",
-      "legacy_id": "86a53da45275b5da",
-      "selected": [
-        "R-MUT-07",
-        "R-MUT-01"
-      ],
-      "relation": "similar_reference",
-      "category": "kitchen",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O078",
-      "legacy_id": "213848c9c0e880cd",
-      "selected": [
-        "P-TV-02",
-        "P-TV-01"
-      ],
-      "relation": "different_provided_photo",
-      "category": "tv",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O079",
-      "legacy_id": "3e99dc3182da6f0b",
-      "selected": [
-        "R-ANT-02",
-        "R-ANT-04"
-      ],
-      "relation": "similar_reference",
-      "category": "hall",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O080",
-      "legacy_id": "fb6e320ad40c052c",
-      "selected": [
-        "P-TV-02",
-        "P-TV-01"
-      ],
-      "relation": "different_provided_photo",
-      "category": "tv",
-      "do_not_claim_same_installation": true
-    },
-    {
-      "original_id": "O081",
-      "legacy_id": "885956d382fc6225",
-      "selected": [
-        "P-TV-02",
-        "P-TV-01"
-      ],
-      "relation": "different_provided_photo",
-      "category": "tv",
-      "do_not_claim_same_installation": true
-    }
-  ]
+ "schema_version": 1,
+ "assignments": [
+  {
+   "original_id": "O001",
+   "legacy_id": "617e71c9eb17a47a",
+   "selected": [
+    "LOGO-01"
+   ],
+   "relation": "brand_asset",
+   "category": "logo",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O002",
+   "legacy_id": "9d00cfe6fb4d8e5e",
+   "selected": [
+    "R-MUT-01",
+    "R-MUT-07"
+   ],
+   "relation": "similar_reference",
+   "category": "kitchen",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O003",
+   "legacy_id": "1965e8ecaa2e742b",
+   "selected": [
+    "R-MUT-01",
+    "R-MUT-07"
+   ],
+   "relation": "exact_online_photo",
+   "category": "kitchen",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O004",
+   "legacy_id": "36e9188d757635a0",
+   "selected": [
+    "R-MUT-01",
+    "R-MUT-02"
+   ],
+   "relation": "similar_reference",
+   "category": "kitchen",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O005",
+   "legacy_id": "1961f4e54eac9475",
+   "selected": [
+    "R-MUT-07",
+    "R-MUT-01"
+   ],
+   "relation": "similar_reference",
+   "category": "kitchen",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O006",
+   "legacy_id": "4978abce1788839d",
+   "selected": [
+    "R-MUT-03",
+    "R-MUT-02"
+   ],
+   "relation": "similar_reference",
+   "category": "kitchen",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O007",
+   "legacy_id": "06f40e6c95913ba6",
+   "selected": [
+    "R-MUT-08",
+    "R-MUT-01"
+   ],
+   "relation": "similar_reference",
+   "category": "kitchen",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O008",
+   "legacy_id": "232dab30fee07314",
+   "selected": [
+    "R-MUT-08",
+    "R-MUT-03"
+   ],
+   "relation": "exact_online_photo",
+   "category": "kitchen",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O009",
+   "legacy_id": "18fc1d60832758f1",
+   "selected": [
+    "R-MUT-03",
+    "R-MUT-04"
+   ],
+   "relation": "similar_reference",
+   "category": "kitchen",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O010",
+   "legacy_id": "33a970315a2438dc",
+   "selected": [
+    "R-MUT-03",
+    "R-MUT-02"
+   ],
+   "relation": "similar_reference",
+   "category": "kitchen",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O011",
+   "legacy_id": "316f7d275e2cf94f",
+   "selected": [
+    "R-MUT-09",
+    "R-MUT-08"
+   ],
+   "relation": "similar_reference",
+   "category": "kitchen",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O012",
+   "legacy_id": "864a45fce317d948",
+   "selected": [
+    "R-MUT-08",
+    "R-MUT-06"
+   ],
+   "relation": "similar_reference",
+   "category": "kitchen",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O013",
+   "legacy_id": "6ed887425f7a7fe8",
+   "selected": [
+    "R-MUT-06",
+    "R-MUT-02"
+   ],
+   "relation": "similar_reference",
+   "category": "kitchen",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O014",
+   "legacy_id": "8e8ed2a4e9e95dd2",
+   "selected": [
+    "R-KAH-07",
+    "R-KAH-01"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O015",
+   "legacy_id": "3af7488daff1acdf",
+   "selected": [
+    "R-KAH-14",
+    "R-KAH-03"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O016",
+   "legacy_id": "cbce826f65d6f3a0",
+   "selected": [
+    "R-KAH-03",
+    "R-KAH-15"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O017",
+   "legacy_id": "3f2eb9bbbb76c758",
+   "selected": [
+    "R-KAH-15",
+    "R-KAH-03"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O018",
+   "legacy_id": "ea5580414899e901",
+   "selected": [
+    "R-KAH-15",
+    "R-KAH-03"
+   ],
+   "relation": "exact_online_photo",
+   "category": "coffee",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O019",
+   "legacy_id": "0f4d5594bd5aadb8",
+   "selected": [
+    "R-KAH-14",
+    "R-KAH-02"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O020",
+   "legacy_id": "5a54a3b87093c60a",
+   "selected": [
+    "R-KAH-16",
+    "R-KAH-01"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O021",
+   "legacy_id": "0f85c7dba92fee33",
+   "selected": [
+    "P-MUT-01",
+    "R-MUT-01"
+   ],
+   "relation": "same_photo_bottom_crop",
+   "category": "kitchen",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O022",
+   "legacy_id": "c4ba22a0fe90f25a",
+   "selected": [
+    "P-TV-01",
+    "R-TV-01"
+   ],
+   "relation": "same_photo_bottom_crop",
+   "category": "tv",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O023",
+   "legacy_id": "226db81fd4daf56b",
+   "selected": [
+    "P-ANT-01",
+    "R-ANT-02",
+    "R-ANT-03"
+   ],
+   "relation": "same_photo_v2",
+   "category": "hall",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O024",
+   "legacy_id": "11e706ac35c7b5c7",
+   "selected": [
+    "P-ANT-02",
+    "R-ANT-03",
+    "R-ANT-02"
+   ],
+   "relation": "same_photo_v2",
+   "category": "hall",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O025",
+   "legacy_id": "20022a5f6621507c",
+   "selected": [
+    "P-MUT-02",
+    "R-MUT-01"
+   ],
+   "relation": "same_photo_bottom_crop",
+   "category": "kitchen",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O026",
+   "legacy_id": "b1ff5d93121b6057",
+   "selected": [
+    "P-MUT-02",
+    "R-MUT-01"
+   ],
+   "relation": "same_photo_bottom_crop",
+   "category": "kitchen",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O027",
+   "legacy_id": "8c41c2a48e0bced0",
+   "selected": [
+    "P-MUT-04",
+    "R-MUT-01"
+   ],
+   "relation": "same_photo",
+   "category": "kitchen",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O028",
+   "legacy_id": "97d0d1f04e69a0c3",
+   "selected": [
+    "P-MUT-05",
+    "R-MUT-01"
+   ],
+   "relation": "same_photo",
+   "category": "kitchen",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O029",
+   "legacy_id": "6981577bb0097f7e",
+   "selected": [
+    "P-GOM-01",
+    "P-MUT-04",
+    "P-MUT-05"
+   ],
+   "relation": "same_photo_v2",
+   "category": "kitchen",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O030",
+   "legacy_id": "5426e4be09d05c75",
+   "selected": [
+    "P-MUT-06",
+    "R-MUT-01"
+   ],
+   "relation": "same_photo",
+   "category": "kitchen",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O031",
+   "legacy_id": "e2237a5d060918ae",
+   "selected": [
+    "R-KAH-14",
+    "R-KAH-15"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O032",
+   "legacy_id": "9457cb14caeb0fca",
+   "selected": [
+    "R-KAH-11",
+    "R-KAH-09"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O033",
+   "legacy_id": "c38869d3702c5ab3",
+   "selected": [
+    "R-KAH-10",
+    "R-KAH-11"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O034",
+   "legacy_id": "0fe15646efeffbf0",
+   "selected": [
+    "R-KAH-10",
+    "R-KAH-11"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O035",
+   "legacy_id": "e86f7c01472f9c3a",
+   "selected": [
+    "R-KAH-09",
+    "R-KAH-11"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O036",
+   "legacy_id": "82aec020f679eb77",
+   "selected": [
+    "R-KAH-12",
+    "R-KAH-06"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O037",
+   "legacy_id": "6d718b12e6044332",
+   "selected": [
+    "R-KAH-02",
+    "R-KAH-10"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O038",
+   "legacy_id": "092d869c68990bbf",
+   "selected": [
+    "R-KAH-16",
+    "R-KAH-04"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O039",
+   "legacy_id": "a4ec981ad2b21071",
+   "selected": [
+    "R-KAH-17",
+    "R-KAH-07"
+   ],
+   "relation": "exact_online_photo",
+   "category": "coffee",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O040",
+   "legacy_id": "d554d6fa7e8db3b0",
+   "selected": [
+    "R-KAH-17",
+    "R-KAH-07"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O041",
+   "legacy_id": "f5feec999a513d71",
+   "selected": [
+    "R-KAH-17",
+    "R-KAH-01"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O042",
+   "legacy_id": "28963d2d094389bb",
+   "selected": [
+    "R-KAH-02",
+    "R-KAH-01"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O043",
+   "legacy_id": "137bb8a3dce41da9",
+   "selected": [
+    "R-KAH-14",
+    "R-KAH-02"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O044",
+   "legacy_id": "c3a6016aa8f9e35e",
+   "selected": [
+    "R-KAH-16",
+    "R-KAH-01"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O045",
+   "legacy_id": "3eb75a6471c44b00",
+   "selected": [
+    "R-KAH-15",
+    "R-KAH-03"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O046",
+   "legacy_id": "f6b8ac5fff2b5785",
+   "selected": [
+    "R-KAH-16",
+    "R-KAH-04"
+   ],
+   "relation": "exact_online_photo",
+   "category": "coffee",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O047",
+   "legacy_id": "f0189973da2d282e",
+   "selected": [
+    "R-KAH-03",
+    "R-KAH-02"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O048",
+   "legacy_id": "dd95cd6fb2303993",
+   "selected": [
+    "R-KAH-03",
+    "R-KAH-02"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O049",
+   "legacy_id": "2571907b5e7d3ec8",
+   "selected": [
+    "R-MUT-02",
+    "R-MUT-01"
+   ],
+   "relation": "similar_reference",
+   "category": "kitchen",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O050",
+   "legacy_id": "867975cb78a4ff20",
+   "selected": [
+    "R-MUT-05",
+    "R-MUT-07"
+   ],
+   "relation": "similar_reference",
+   "category": "kitchen",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O051",
+   "legacy_id": "e5c31c15fdbb778a",
+   "selected": [
+    "R-ANT-02",
+    "R-ANT-04"
+   ],
+   "relation": "similar_reference",
+   "category": "hall",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O052",
+   "legacy_id": "36eb196c2a33247c",
+   "selected": [
+    "R-KAH-01",
+    "R-KAH-14"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O053",
+   "legacy_id": "2baa41b634569b62",
+   "selected": [
+    "R-MUT-04",
+    "R-MUT-03"
+   ],
+   "relation": "similar_reference",
+   "category": "kitchen",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O054",
+   "legacy_id": "02be11269eb70b07",
+   "selected": [
+    "R-MUT-04",
+    "R-MUT-03"
+   ],
+   "relation": "similar_reference",
+   "category": "kitchen",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O055",
+   "legacy_id": "80834f5bf6c036c5",
+   "selected": [
+    "R-MUT-04",
+    "R-MUT-03"
+   ],
+   "relation": "similar_reference",
+   "category": "kitchen",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O056",
+   "legacy_id": "a463884d51961542",
+   "selected": [
+    "R-TV-01",
+    "P-TV-02"
+   ],
+   "relation": "similar_reference",
+   "category": "tv",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O057",
+   "legacy_id": "4c0c0d0671265f86",
+   "selected": [
+    "R-TV-01",
+    "P-TV-02"
+   ],
+   "relation": "similar_reference",
+   "category": "tv",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O058",
+   "legacy_id": "e8fce620508f442f",
+   "selected": [
+    "R-TV-01",
+    "P-TV-02"
+   ],
+   "relation": "similar_reference",
+   "category": "tv",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O059",
+   "legacy_id": "7f88e2367f50aa60",
+   "selected": [
+    "R-KAH-03",
+    "R-KAH-14"
+   ],
+   "relation": "similar_reference",
+   "category": "coffee",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O060",
+   "legacy_id": "7373e1e0594340f3",
+   "selected": [
+    "P-KAH-01",
+    "R-KAH-03",
+    "R-KAH-02"
+   ],
+   "relation": "same_photo_v2",
+   "category": "coffee",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O061",
+   "legacy_id": "84bff7924d7f4036",
+   "selected": [
+    "P-KAH-02",
+    "R-KAH-03",
+    "R-KAH-02"
+   ],
+   "relation": "same_photo_v2",
+   "category": "coffee",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O062",
+   "legacy_id": "7fe3190bfb823b70",
+   "selected": [
+    "P-ANT-03",
+    "R-ANT-02",
+    "R-ANT-04"
+   ],
+   "relation": "same_photo_v2",
+   "category": "hall",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O063",
+   "legacy_id": "9b102d9fb74f2b5f",
+   "selected": [
+    "P-TV-05",
+    "P-TV-01",
+    "P-TV-02"
+   ],
+   "relation": "same_photo_v2",
+   "category": "tv",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O064",
+   "legacy_id": "a0556ef7e09fcd20",
+   "selected": [
+    "P-TV-06",
+    "P-TV-01",
+    "P-TV-02"
+   ],
+   "relation": "same_photo_v2",
+   "category": "tv",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O066",
+   "legacy_id": "9a1f4fde66170d01",
+   "selected": [
+    "P-TV-02",
+    "R-TV-01"
+   ],
+   "relation": "same_photo_bottom_crop",
+   "category": "tv",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O067",
+   "legacy_id": "82b7e566b6e3439c",
+   "selected": [
+    "P-TV-03",
+    "R-TV-01"
+   ],
+   "relation": "same_photo_bottom_crop",
+   "category": "tv",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O068",
+   "legacy_id": "76db4dd44ab29823",
+   "selected": [
+    "P-TV-03",
+    "R-TV-01"
+   ],
+   "relation": "same_photo_bottom_crop",
+   "category": "tv",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O069",
+   "legacy_id": "e975b4e92f44a365",
+   "selected": [
+    "P-ATL-01"
+   ],
+   "relation": "same_photo",
+   "category": "workshop",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O070",
+   "legacy_id": "65c73b1df3b96daa",
+   "selected": [
+    "P-ATL-01"
+   ],
+   "relation": "different_provided_photo",
+   "category": "workshop",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O071",
+   "legacy_id": "0ca01e2784fa4d0e",
+   "selected": [
+    "P-ATL-01"
+   ],
+   "relation": "same_photo",
+   "category": "workshop",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O072",
+   "legacy_id": "366a5a446bb91914",
+   "selected": [
+    "P-ATL-01"
+   ],
+   "relation": "different_provided_photo",
+   "category": "workshop",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O073",
+   "legacy_id": "b2ff3ee312004507",
+   "selected": [
+    "P-ATL-03",
+    "P-ATL-01"
+   ],
+   "relation": "same_photo_v2",
+   "category": "workshop",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O074",
+   "legacy_id": "00b85eb60e691a5f",
+   "selected": [
+    "P-ATL-01"
+   ],
+   "relation": "different_provided_photo",
+   "category": "workshop",
+   "do_not_claim_same_installation": true
+  },
+  {
+   "original_id": "O075",
+   "legacy_id": "1b5088bfc29f2b04",
+   "selected": [
+    "P-MUT-07",
+    "R-MUT-07",
+    "R-MUT-01"
+   ],
+   "relation": "same_photo_v2",
+   "category": "kitchen",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O077",
+   "legacy_id": "86a53da45275b5da",
+   "selected": [
+    "P-MUT-08",
+    "R-MUT-07",
+    "R-MUT-01"
+   ],
+   "relation": "same_photo_v2",
+   "category": "kitchen",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O078",
+   "legacy_id": "213848c9c0e880cd",
+   "selected": [
+    "P-TV-07",
+    "P-TV-02",
+    "P-TV-01"
+   ],
+   "relation": "same_photo_v2",
+   "category": "tv",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O079",
+   "legacy_id": "3e99dc3182da6f0b",
+   "selected": [
+    "P-ANT-04",
+    "R-ANT-02",
+    "R-ANT-04"
+   ],
+   "relation": "same_photo_v2",
+   "category": "hall",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O080",
+   "legacy_id": "fb6e320ad40c052c",
+   "selected": [
+    "P-TV-08",
+    "P-TV-02",
+    "P-TV-01"
+   ],
+   "relation": "same_photo_v2",
+   "category": "tv",
+   "do_not_claim_same_installation": false
+  },
+  {
+   "original_id": "O081",
+   "legacy_id": "885956d382fc6225",
+   "selected": [
+    "P-TV-02",
+    "P-TV-01"
+   ],
+   "relation": "different_provided_photo",
+   "category": "tv",
+   "do_not_claim_same_installation": true
+  }
+ ]
 }

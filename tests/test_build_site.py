@@ -80,7 +80,7 @@ class SiteBuildTests(unittest.TestCase):
         # Original sources and the other worker's media remain unchanged.
         self.assertEqual(self.sentinel.read_bytes(), b"preserve this")
 
-    def test_enhanced_manifest_lqip_avif_and_logo_are_used(self):
+    def test_enhanced_manifest_uses_solid_color_avif_and_logo(self):
         variants = []
         for fmt in ("webp", "avif"):
             path = f"media/enhanced-1024.{fmt}"
@@ -94,7 +94,7 @@ class SiteBuildTests(unittest.TestCase):
         source = self.build()
         self.assertIn('type="image/avif"', source)
         self.assertIn("media/enhanced-1024.webp", source)
-        self.assertIn("data:image/webp;base64,AAAA", source)
+        self.assertNotIn("data:image/webp;base64,AAAA", source)
         self.assertIn('sizes="32x32"', source)
         self.assertIn("background-color:#123456", source)
 
@@ -104,7 +104,7 @@ class SiteBuildTests(unittest.TestCase):
         original = (self.root / "content/site.json").read_bytes()
         source = self.build()
         self.assertIn('href="https://example.test/katalog/"', source)
-        self.assertIn('href="#nasil-calisiriz"', source)
+        self.assertIn('href="#katalog"', source)
         self.assertIn("Bilinen adres", source)
         sitemap = self.root / "public/sitemap.xml"
         self.assertEqual(ET.parse(sitemap).find(".//{*}loc").text, "https://example.test/katalog/")
@@ -121,15 +121,84 @@ class SiteBuildTests(unittest.TestCase):
         self.assertNotIn('<script>alert("x")</script>', source)
         self.assertIn("&lt;script&gt;", source)
         self.assertIn("\\u003c/script>", source)
+        gallery = self.gallery(source)
+        for item in gallery.values():
+            message = parse_qs(urlsplit(item["whatsapp"]).query)["text"][0]
+            self.assertIn(item["model_no"], message)
+        cards = [attrs for tag, attrs in Page(source).tags if tag == "article" and attrs.get("class") == "model-card"]
+        expected = [a for a in self.catalog["assets"] if a["role"] in ("reference", "provided") and a["category"] in MODULE.CATEGORY_META]
+        self.assertEqual(len(cards), len(expected))
+
+    @staticmethod
+    def gallery(source):
+        return json.loads(source.split('<script id="gallery-data" type="application/json">')[1].split('</script>')[0])
+
+    def test_v2_category_counts_provided_order_and_automatic_covers(self):
+        site = json.loads((ROOT / "content/site.json").read_text())
+        self.write_json("content/site.json", site)
+        source = self.build()
         page = Page(source)
-        for tag, attrs in page.tags:
-            if tag == "a" and attrs.get("class") == "model-ask":
-                message = parse_qs(urlsplit(attrs["href"]).query)["text"][0]
-                self.assertIn(attrs["aria-label"].split(" — ")[0], message)
-        model_tags = [attrs for tag, attrs in page.tags if tag == "article" and attrs.get("class") == "model-card"]
-        project_tags = [attrs for tag, attrs in page.tags if tag == "article" and attrs.get("class") == "project-card"]
-        self.assertEqual(len(model_tags), sum(a["role"] == "reference" for a in self.catalog["assets"]))
-        self.assertEqual(len(project_tags), sum(a["role"] == "provided" and a["category"] != "workshop" for a in self.catalog["assets"]))
+        gallery = self.gallery(source)
+        tiles = [attrs for tag, attrs in page.tags if attrs.get("class") == "category-card"]
+        active = {a["category"] for a in self.catalog["assets"] if a["category"] in MODULE.CATEGORY_META}
+        self.assertEqual(len(tiles), len(active))
+        for key in active:
+            entries = [a for a in gallery.values() if a["category"] == key]
+            roles = [a["role"] for a in entries]
+            self.assertEqual(roles, sorted(roles, key=lambda r: r != "provided"))
+            first = next(a for a in self.catalog["assets"] if a["id"] == entries[0]["id"])
+            self.assertIn(f'data-category-link="{key}"><div class="category-photo">', source)
+            tile = source.split(f'data-category-link="{key}">')[1].split('</a>')[0]
+            # Cover without explicit ID uses the first provided image, else first reference.
+            self.assertIn(first["id"].lower(), tile.lower())
+            self.assertIn(f'{len(entries)} model', tile)
+        self.assertEqual(source.count('class="work-badge"'), sum(a["role"] == "provided" for a in gallery.values()))
+        self.assertIn('family=Outfit', source)
+        self.assertIn('family=Inter', source)
+        self.assertNotIn('Fraunces', source)
+        self.assertNotIn('Manrope', source)
+
+    def test_new_categories_model_numbers_invalid_cover_and_internal_notes(self):
+        site = json.loads((ROOT / "content/site.json").read_text())
+        for c in site["categories"]:
+            c["cover"] = "DOES-NOT-EXIST"
+        self.write_json("content/site.json", site)
+        prototype = next(a for a in self.catalog["assets"] if a["category"] == "kitchen")
+        for index, key in enumerate(("wardrobe", "armchair", "prefab")):
+            self.catalog["assets"].append(dict(prototype, id=f"R-NEW-{index}", category=key, model_no=f"ŞM-NEW-{index}", description="Sade bir model. Filigran kırpılmalı. İkinci cümle."))
+        self.write_json("data/media/catalog.json", self.catalog)
+        source = self.build()
+        gallery = self.gallery(source)
+        for index, slug in enumerate(("gomme-dolap", "berjer", "prefabrik-ev")):
+            self.assertIn(f'href="#katalog/{slug}"', source)
+            item = gallery[f"R-NEW-{index}"]
+            self.assertEqual(item["model_no"], f"ŞM-NEW-{index}")
+            self.assertEqual(item["description"], "Sade bir model.")
+        old = next(a for a in self.catalog["assets"] if a["category"] == "kitchen")
+        old.pop("model_no", None)
+        self.write_json("data/media/catalog.json", self.catalog)
+        item = self.gallery(self.build())[old["id"]]
+        self.assertEqual(item["model_no"], "ŞM-" + old["id"])
+        self.assertNotIn("Filigran", source)
+        self.assertEqual(MODULE.public_text("Doğrudan çekim: Beyaz dolap. JPEG damga kaldırılmalı."), "Beyaz dolap.")
+
+    def test_contact_directions_embed_and_postal_address(self):
+        site = json.loads((ROOT / "content/site.json").read_text())
+        self.write_json("content/site.json", site)
+        source = self.build()
+        page = Page(source)
+        iframe = next(attrs for tag, attrs in page.tags if tag == "iframe")
+        self.assertEqual(iframe["loading"], "lazy")
+        self.assertTrue(iframe["title"])
+        self.assertEqual(parse_qs(urlsplit(iframe["src"]).query)["q"][0], site["brand"]["address"])
+        directions = next(attrs for tag, attrs in page.tags if tag == "a" and attrs.get("href", "").startswith("https://www.google.com/maps/dir/"))
+        self.assertEqual(parse_qs(urlsplit(directions["href"]).query)["destination"][0], site["brand"]["address"])
+        structured = json.loads(source.split('<script type="application/ld+json">')[1].split('</script>')[0])
+        self.assertEqual(structured["@type"], "FurnitureStore")
+        self.assertEqual(structured["address"], {"@type": "PostalAddress", "streetAddress": "İstiklal Mahallesi, Müge Sokak No:3", "addressLocality": "Payas", "addressRegion": "Hatay", "postalCode": "31900", "addressCountry": "TR"})
+        self.assertIn("0532 652 78 13", source)
+        self.assertNotIn("Ücretsiz keşif", source)
+        self.assertNotIn("Montaj dahil", source)
 
     def test_external_manifest_path_is_rejected(self):
         self.write_json("data/media/web_manifest.json", {"assets": {"P-MUT-01": {"full": [{"path": "../outside.webp", "w": 100, "h": 100}]}}})

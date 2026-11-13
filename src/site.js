@@ -1,78 +1,55 @@
 (() => {
   'use strict';
-  document.documentElement.classList.add('js');
-  const markLoaded = img => { if (img.complete) img.classList.add('is-loaded'); };
-  document.querySelectorAll('.lazy-pic img').forEach(markLoaded);
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const menuButton = document.querySelector('.menu-toggle');
-  const menu = document.querySelector('.main-nav');
-  const setMenu = (open, restoreFocus = false) => {
-    menu.classList.toggle('is-open', open);
-    menuButton.setAttribute('aria-expanded', String(open));
-    menuButton.setAttribute('aria-label', open ? 'Menüyü kapat' : 'Menüyü aç');
-    if (restoreFocus) menuButton.focus();
-  };
-  menuButton.addEventListener('click', () => setMenu(menuButton.getAttribute('aria-expanded') !== 'true'));
-  menu.addEventListener('click', event => { if (event.target.closest('a')) setMenu(false); });
-  document.addEventListener('click', event => {
-    if (!event.target.closest('.site-header')) setMenu(false);
+  document.querySelectorAll('.pic img').forEach(img => {
+    if (img.complete) img.classList.add('is-loaded');
   });
-  document.addEventListener('keydown', event => {
-    if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') setMenu(false, true);
-  });
-  window.matchMedia('(min-width: 1024px)').addEventListener('change', () => setMenu(false));
-
   const modelCards = [...document.querySelectorAll('.model-card')];
   const filters = [...document.querySelectorAll('[data-filter]')];
   const modelStatus = document.querySelector('#model-status');
   const moreModels = document.querySelector('#more-models');
   let activeCategory = 'all';
-  let modelLimit = 6;
+  let modelLimit = 12;
+  const matchingCards = () => modelCards.filter(card => activeCategory === 'all' || card.dataset.category === activeCategory);
   const updateModels = () => {
-    const matching = modelCards.filter(card => activeCategory === 'all' || card.dataset.category === activeCategory);
+    const matching = matchingCards();
     modelCards.forEach(card => { card.hidden = true; });
     matching.slice(0, modelLimit).forEach(card => { card.hidden = false; });
-    filters.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === activeCategory)));
-    const label = filters.find(button => button.dataset.filter === activeCategory)?.textContent.trim() || 'Tümü';
-    modelStatus.textContent = matching.length
-      ? `${label} · ${matching.length} modelden ${Math.min(modelLimit, matching.length)} tanesi gösteriliyor`
-      : 'Bu kategoride henüz örnek model yok. Fikrinizi bize WhatsApp ile anlatabilirsiniz.';
+    filters.forEach(link => {
+      if (link.dataset.filter === activeCategory) link.setAttribute('aria-current', 'true');
+      else link.removeAttribute('aria-current');
+    });
+    modelStatus.textContent = `${matching.length} modelden ${Math.min(modelLimit, matching.length)} tanesi gösteriliyor`;
     moreModels.hidden = matching.length <= modelLimit;
   };
-  const filterModels = category => {
-    activeCategory = filters.some(button => button.dataset.filter === category) ? category : 'all';
-    modelLimit = 6;
+  const route = (scroll = false) => {
+    const slug = location.hash.startsWith('#katalog/') ? location.hash.slice(9) : '';
+    activeCategory = filters.find(link => link.dataset.slug === slug)?.dataset.filter || 'all';
+    modelLimit = 12;
     updateModels();
+    if (scroll && location.hash.startsWith('#katalog')) {
+      document.querySelector('#katalog').scrollIntoView();
+    }
   };
-  document.querySelector('.filter-list').hidden = false;
-  filters.forEach(button => button.addEventListener('click', () => filterModels(button.dataset.filter)));
-  document.querySelectorAll('[data-category-link]').forEach(link => {
+  window.addEventListener('hashchange', () => route(true));
+  document.querySelectorAll('[data-category-link], [data-filter]').forEach(link => {
     link.addEventListener('click', () => {
-      filterModels(link.dataset.categoryLink);
-      // Move keyboard focus past the category cards into the newly filtered gallery.
-      const heading = document.querySelector('#models-title');
-      heading.setAttribute('tabindex', '-1');
-      heading.focus({ preventScroll: true });
+      // Also reset pagination when the selected hash is already current.
+      if (link.hash === location.hash) route(true);
+      if (link.hasAttribute('data-category-link')) {
+        document.querySelector('#models-title').focus({preventScroll: true});
+      }
     });
   });
   moreModels.addEventListener('click', () => {
-    const matching = modelCards.filter(card => activeCategory === 'all' || card.dataset.category === activeCategory);
-    const nextCard = matching[modelLimit];
-    modelLimit += 6;
+    const nextCard = matchingCards()[modelLimit];
+    modelLimit += 12;
     updateModels();
-    nextCard?.querySelector('a').focus({ preventScroll: true });
+    nextCard?.querySelector('a').focus({preventScroll: true});
   });
-  updateModels();
-
-  const projects = [...document.querySelectorAll('.project-card')];
-  const moreProjects = document.querySelector('#more-projects');
-  projects.forEach((card, index) => { card.hidden = index >= 4; });
-  moreProjects.hidden = projects.length <= 4;
-  moreProjects.addEventListener('click', () => {
-    projects.forEach(card => { card.hidden = false; });
-    moreProjects.hidden = true;
-    projects[4]?.querySelector('a').focus({ preventScroll: true });
-  });
+  route();
+  if (location.hash.startsWith('#katalog/')) {
+    requestAnimationFrame(() => document.querySelector('#katalog').scrollIntoView());
+  }
 
   const dialog = document.querySelector('#lightbox');
   const gallery = JSON.parse(document.querySelector('#gallery-data').textContent);
@@ -92,7 +69,8 @@
     image.src = item.src;
     document.querySelector('#lightbox-title').textContent = item.title;
     document.querySelector('#lightbox-description').textContent = item.description;
-    document.querySelector('#lightbox-kind').textContent = `${item.role === 'reference' ? 'Örnek model · Size özel uyarlanır' : item.category === 'workshop' ? 'Atölyemiz' : 'Uygulamalarımız'}${item.role === 'reference' ? ' · Model No: ' + item.id : ''}`;
+    document.querySelector('#lightbox-kind').textContent = item.role === 'provided' ? 'Uygulamamız' : 'Örnek model · Size özel uyarlanır';
+    document.querySelector('#lightbox-model').textContent = 'Model No: ' + item.model_no;
     document.querySelector('#lightbox-count').textContent = `${currentIndex + 1} / ${currentGroup.length}`;
     document.querySelector('#lightbox-ask').href = item.whatsapp;
     document.querySelectorAll('.lightbox-prev, .lightbox-next').forEach(button => { button.hidden = currentGroup.length < 2; });
@@ -102,7 +80,7 @@
     if (!link || !dialog.showModal || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
     opener = link;
-    currentGroup = [...document.querySelectorAll(`[data-gallery="${link.dataset.gallery}"]`)]
+    currentGroup = [...document.querySelectorAll('[data-lightbox]')]
       .filter(candidate => !candidate.closest('[hidden]'))
       .map(candidate => candidate.dataset.lightbox);
     showImage(currentGroup.indexOf(link.dataset.lightbox));
@@ -143,22 +121,4 @@
   }, { passive: true });
   image.addEventListener('touchcancel', () => { touchStart = null; }, { passive: true });
 
-  if ('IntersectionObserver' in window && !reducedMotion.matches) {
-    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
-    }), { threshold: 0.08 });
-    document.querySelectorAll('[data-reveal]').forEach(element => {
-      element.classList.add('reveal-ready');
-      observer.observe(element);
-    });
-    reducedMotion.addEventListener('change', () => {
-      if (reducedMotion.matches) {
-        observer.disconnect();
-        document.querySelectorAll('.reveal-ready').forEach(element => element.classList.add('is-visible'));
-      }
-    });
-  }
 })();
